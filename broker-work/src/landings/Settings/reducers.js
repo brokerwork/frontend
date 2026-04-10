@@ -1,0 +1,28 @@
+import { combineReducers } from 'redux';
+import * as messageReducers from './path/Message/controls/reducers';
+import * as logReducers from './path/Log/controls/reducers';
+import * as roleReducers from './path/RoleSetting/controls/reducers';
+import * as linkReducers from './path/LinkSetting/controls/reducers';
+import * as accountReducers from './path/Account/controls/reducers';
+import * as tradeModeReducers from './path/Trade/controls/reducers';
+import * as rebateReducers from './path/Rebate/reducers';
+import * as baseReducers from './controls/reducers';
+import * as searchConditionReducers from './path/SearchCondition/controls/reducers';
+import * as depositWithdrawReducers from './path/DepositWithdraw/controls/reducers';
+import * as TimeReportReducer from './path/NotifyCenter/controls/reducers';
+import * as CustomReportReducer from './path/CustomReport/controls/reducer';
+import * as BlackListReducer from './path/BlackList/controls/reducers';
+
+export const messageTemplate = combineReducers({ ...messageReducers });
+export const settingLog = combineReducers({ ...logReducers });
+export const role = combineReducers({ ...roleReducers });
+export const link = combineReducers({ ...linkReducers });
+export const account = combineReducers({ ...accountReducers });
+export const tradeMode = combineReducers({ ...tradeModeReducers });
+export const rebate = combineReducers({ ...rebateReducers });
+export const base = combineReducers({ ...baseReducers });
+export const searchConditions = combineReducers({ ...searchConditionReducers });
+export const depositWithdraw = combineReducers({ ...depositWithdrawReducers });
+export const timeReport = combineReducers({ ...TimeReportReducer });
+export const customReport = combineReducers({ ...CustomReportReducer });
+export const blackList = combineReducers({ ...BlackListReducer });

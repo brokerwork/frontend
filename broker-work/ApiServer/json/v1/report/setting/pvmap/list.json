@@ -1,0 +1,410 @@
+{
+  "data": [
+    {
+      "factor1": 1.0E-4,
+      "id": 1,
+      "mapName": "直盘(XXXUSD)",
+      "pointValue": "0.0001 * contract_size ",
+      "stdSymbol": "XXXUSD",
+      "symbols": [
+        {
+          "serverId": "1",
+          "serverName": "MT4真实测试1",
+          "symbols": [
+            "AUDUSD",
+            "EURUSD",
+            "GBPUSD",
+            "NZDUSD"
+          ]
+        },
+        {
+          "serverId": "5",
+          "serverName": "MT4真实测试2-我就是第二个真实服务器",
+          "symbols": [
+            "AUDUSD",
+            "EURUSD",
+            "GBPUSD",
+            "NZDUSD"
+          ]
+        },
+        {
+          "serverId": "6",
+          "serverName": "MT5真实测试1",
+          "symbols": [
+            "AUDUSD",
+            "EURUSD",
+            "GBPUSD",
+            "NZDUSD"
+          ]
+        }
+      ]
+    },
+    {
+      "factor1": 0.01,
+      "id": 2,
+      "mapName": "直盘(XXXUSD)",
+      "pointValue": "0.01 * contract_size ",
+      "stdSymbol": "XXXUSD",
+      "symbols": [
+        {
+          "serverId": "1",
+          "serverName": "MT4真实测试1",
+          "symbols": [
+            "XAGUSD",
+            "XAUUSD",
+            "UKOUSD",
+            "USOUSD"
+          ]
+        },
+        {
+          "serverId": "5",
+          "serverName": "MT4真实测试2-我就是第二个真实服务器",
+          "symbols": [
+            "XAGUSD",
+            "XAUUSD",
+            "UKOUSD",
+            "USOUSD"
+          ]
+        },
+        {
+          "serverId": "6",
+          "serverName": "MT5真实测试1",
+          "symbols": [
+            "XAGUSD",
+            "XAUUSD",
+            "UKOUSD",
+            "USOUSD"
+          ]
+        }
+      ]
+    },
+    {
+      "factor1": 1.0E-4,
+      "id": 3,
+      "mapName": "直盘(USDXXX)",
+      "pointValue": "0.0001 * contract_size / market_price",
+      "stdSymbol": "USDXXX",
+      "symbols": [
+        {
+          "serverId": "1",
+          "serverName": "MT4真实测试1",
+          "symbols": [
+            "USDCAD",
+            "USDCHF",
+            "USDCNH",
+            "USDHKD",
+            "USDSGD"
+          ]
+        },
+        {
+          "serverId": "5",
+          "serverName": "MT4真实测试2-我就是第二个真实服务器",
+          "symbols": [
+            "USDCAD",
+            "USDCHF",
+            "USDCNH",
+            "USDHKD",
+            "USDSGD"
+          ]
+        },
+        {
+          "serverId": "6",
+          "serverName": "MT5真实测试1",
+          "symbols": [
+            "USDCAD",
+            "USDCHF",
+            "USDCNH",
+            "USDHKD",
+            "USDSGD"
+          ]
+        }
+      ]
+    },
+    {
+      "factor1": 0.01,
+      "id": 4,
+      "mapName": "直盘(USDXXX)",
+      "pointValue": "0.01 * contract_size / market_price",
+      "stdSymbol": "USDXXX",
+      "symbols": [
+        {
+          "serverId": "1",
+          "serverName": "MT4真实测试1",
+          "symbols": [
+            "USDJPY"
+          ]
+        },
+        {
+          "serverId": "5",
+          "serverName": "MT4真实测试2-我就是第二个真实服务器",
+          "symbols": [
+            "USDJPY"
+          ]
+        },
+        {
+          "serverId": "6",
+          "serverName": "MT5真实测试1",
+          "symbols": [
+            "USDJPY"
+          ]
+        }
+      ]
+    },
+    {
+      "factor1": 0.01,
+      "id": 5,
+      "mapName": "交叉盘(XXXJPY)",
+      "pointValue": "0.01 * contract_size / USDJPY",
+      "stdSymbol": "AUDJPY",
+      "symbols": [
+        {
+          "serverId": "1",
+          "serverName": "MT4真实测试1",
+          "symbols": [
+            "AUDJPY",
+            "CADJPY",
+            "CHFJPY",
+            "EURJPY",
+            "GBPJPY",
+            "NZDJPY"
+          ]
+        },
+        {
+          "serverId": "5",
+          "serverName": "MT4真实测试2-我就是第二个真实服务器",
+          "symbols": [
+            "AUDJPY",
+            "CADJPY",
+            "CHFJPY",
+            "EURJPY",
+            "GBPJPY",
+            "NZDJPY"
+          ]
+        },
+        {
+          "serverId": "6",
+          "serverName": "MT5真实测试1",
+          "symbols": [
+            "AUDJPY",
+            "CADJPY",
+            "CHFJPY",
+            "EURJPY",
+            "GBPJPY",
+            "NZDJPY"
+          ]
+        }
+      ]
+    },
+    {
+      "factor1": 1.0E-4,
+      "id": 6,
+      "mapName": "交叉盘(XXXCAD)",
+      "pointValue": "0.0001 * contract_size / USDCAD",
+      "stdSymbol": "AUDCAD",
+      "symbols": [
+        {
+          "serverId": "1",
+          "serverName": "MT4真实测试1",
+          "symbols": [
+            "AUDCAD",
+            "EURCAD",
+            "GBPCAD",
+            "NZDCAD"
+          ]
+        },
+        {
+          "serverId": "5",
+          "serverName": "MT4真实测试2-我就是第二个真实服务器",
+          "symbols": [
+            "AUDCAD",
+            "EURCAD",
+            "GBPCAD",
+            "NZDCAD"
+          ]
+        },
+        {
+          "serverId": "6",
+          "serverName": "MT5真实测试1",
+          "symbols": [
+            "AUDCAD",
+            "EURCAD",
+            "GBPCAD",
+            "NZDCAD"
+          ]
+        }
+      ]
+    },
+    {
+      "factor1": 1.0E-4,
+      "id": 7,
+      "mapName": "交叉盘(XXXCHF)",
+      "pointValue": "0.0001 * contract_size / USDCHF",
+      "stdSymbol": "AUDCHF",
+      "symbols": [
+        {
+          "serverId": "1",
+          "serverName": "MT4真实测试1",
+          "symbols": [
+            "AUDCHF",
+            "CADCHF",
+            " EURCHF",
+            "GBPCHF",
+            "NZDCHF"
+          ]
+        },
+        {
+          "serverId": "5",
+          "serverName": "MT4真实测试2-我就是第二个真实服务器",
+          "symbols": [
+            "AUDCHF",
+            "CADCHF",
+            " EURCHF",
+            "GBPCHF",
+            "NZDCHF"
+          ]
+        },
+        {
+          "serverId": "6",
+          "serverName": "MT5真实测试1",
+          "symbols": [
+            "AUDCHF",
+            "CADCHF",
+            " EURCHF",
+            "GBPCHF",
+            "NZDCHF"
+          ]
+        }
+      ]
+    },
+    {
+      "factor1": 1.0E-4,
+      "id": 8,
+      "mapName": "交叉盘(XXXNZD)",
+      "pointValue": "0.0001 * contract_size * NZDUSD",
+      "stdSymbol": "AUDNZD",
+      "symbols": [
+        {
+          "serverId": "1",
+          "serverName": "MT4真实测试1",
+          "symbols": [
+            "AUDNZD",
+            "EURNZD",
+            "GBPNZD"
+          ]
+        },
+        {
+          "serverId": "5",
+          "serverName": "MT4真实测试2-我就是第二个真实服务器",
+          "symbols": [
+            "AUDNZD",
+            "EURNZD",
+            "GBPNZD"
+          ]
+        },
+        {
+          "serverId": "6",
+          "serverName": "MT5真实测试1",
+          "symbols": [
+            "AUDNZD",
+            "EURNZD",
+            "GBPNZD"
+          ]
+        }
+      ]
+    },
+    {
+      "factor1": 1.0E-4,
+      "id": 9,
+      "mapName": "交叉盘(XXXAUD)",
+      "pointValue": "0.0001 * contract_size * AUDUSD",
+      "stdSymbol": "EURAUD",
+      "symbols": [
+        {
+          "serverId": "1",
+          "serverName": "MT4真实测试1",
+          "symbols": [
+            "EURAUD",
+            "GBPAUD"
+          ]
+        },
+        {
+          "serverId": "5",
+          "serverName": "MT4真实测试2-我就是第二个真实服务器",
+          "symbols": [
+            "EURAUD",
+            "GBPAUD"
+          ]
+        },
+        {
+          "serverId": "6",
+          "serverName": "MT5真实测试1",
+          "symbols": [
+            "EURAUD",
+            "GBPAUD"
+          ]
+        }
+      ]
+    },
+    {
+      "factor1": 1.0E-4,
+      "id": 10,
+      "mapName": "交叉盘(XXXGBP)",
+      "pointValue": "0.0001 * contract_size * GBPUSD",
+      "stdSymbol": "EURGBP",
+      "symbols": [
+        {
+          "serverId": "1",
+          "serverName": "MT4真实测试1",
+          "symbols": [
+            "EURGBP",
+            "AUS200.",
+            "CADCHF.",
+            "USDJPY.."
+          ]
+        },
+        {
+          "serverId": "5",
+          "serverName": "MT4真实测试2-我就是第二个真实服务器",
+          "symbols": [
+            "EURGBP"
+          ]
+        },
+        {
+          "serverId": "6",
+          "serverName": "MT5真实测试1",
+          "symbols": [
+            "EURGBP"
+          ]
+        }
+      ]
+    },
+    {
+      "factor1": 32,
+      "id": 37,
+      "mapName": "谈价一个",
+      "pointValue": "32",
+      "symbols": [
+        {
+          "serverId": "1",
+          "serverName": "MT4真实测试1",
+          "symbols": [
+            "EURJPY..",
+            "USDCHF."
+          ]
+        },
+        {
+          "serverId": "5",
+          "serverName": "MT4真实测试2-我就是第二个真实服务器",
+          "symbols": []
+        },
+        {
+          "serverId": "6",
+          "serverName": "MT5真实测试1",
+          "symbols": []
+        }
+      ]
+    }
+  ],
+  "mcode": "m0000000",
+  "result": true
+}

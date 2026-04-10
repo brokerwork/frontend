@@ -1,0 +1,69 @@
+@import '~less/variables';
+
+.message-box {
+  position: relative;
+  width: 0;
+  height: 0;
+  display: inline-block;
+
+  .message-list:global(.popover) {
+    width: 300px;
+    top: 28px;
+    right: -36px;
+    left: auto;
+    .message-all {
+      color: @main-color;
+      &:hover {
+        color: darken(@main-color, 10%);
+      }
+    }
+    :global(.popover-content) {
+      padding: 10px;
+    }
+    > :global(.arrow) {
+      left: auto;
+      right: 32px;
+    }
+  }
+
+  .message-list-item {
+    margin-top: 10px;
+    background-color: @gray-btn-bg;
+    padding: 5px 15px;
+    font-size: 12px;
+  }
+}
+
+.message-col {
+  display: flex;
+  & + & {
+    margin-top: 5px;
+  }
+}
+
+
+.message-left {
+  flex-grow: 1;
+}
+
+.text-ellipsis {
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.readIcon {
+  color: @main-color;
+  cursor: pointer;
+  font-size: 14px;
+  &:hover {
+    color: darken(@main-color, 10%);
+  }
+}
+
+
+.nomessage {
+  text-align: center;
+  padding: 10px 0;
+  background-color: @gray-btn-bg;
+  font-size: 12px;
+}

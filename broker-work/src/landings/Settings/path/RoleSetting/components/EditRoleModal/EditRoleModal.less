@@ -1,0 +1,27 @@
+@import '~less/variables.less';
+.error {
+  border-color: @red;
+}
+.errorText {
+  color: @red;
+  height: 12px;
+  font-size: 12px;
+  line-height: 12px;
+}
+
+.fillWidth {
+  width: 100%;
+}
+
+.itemWrapper {
+  display: flex;
+  align-items: center;
+}
+
+.form {
+  :global {
+    .lean-form-item:last-child {
+      margin-bottom: 0;
+    }
+  }
+}

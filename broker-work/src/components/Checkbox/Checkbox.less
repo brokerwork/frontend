@@ -1,0 +1,60 @@
+@import '~less/variables.less';
+
+.checkbox {
+  position: relative;
+  display: block;
+  margin: 0;
+  font-size: 12px;
+  cursor: pointer;
+  color: inherit;
+
+  &.inline {
+    display: inline-block;
+    & + & {
+      margin-left: 5px;
+    }
+  }
+
+  :global {
+    input {
+      position: absolute;
+      z-index: -1;
+      visibility: hidden;
+    }
+
+    .fa {
+      font-size: 12px;
+      height: 16px;
+      width: 16px;
+      line-height: 16px;
+      margin-right: 1px;
+      color: @text-color-light;
+      &:before {
+        vertical-align: middle;
+      }
+      &.fa-square.fa-checkbox-partial {
+        position: relative;
+        &:after {
+          content: '';
+          display: block;
+          position: absolute;
+          border: 2px solid @white;
+          left: 10%;
+          right: calc(~'10% + 2px');
+          top: 10%;
+          bottom: calc(~'10% + 2px');
+          border-radius: 2px;
+        }
+      }
+    }
+
+  }
+  .checked {
+    color: @brand-primary;
+  }
+  
+  .disabled{
+    color: @gray-light;
+    cursor: @cursor-disabled;
+  }
+}

@@ -1,0 +1,86 @@
+@import '~less/fn.less';
+@textColor: #6ec3fb;
+@sloganColor: #8bd6ff;
+.header {
+  .rem(60px, padding-top);
+  .rem(80px, padding-bottom);
+}
+
+.sector {
+  display: flex;
+  &.h250 {
+    .rem(250px, height);
+    .rem(60px, padding-top);
+    .rem(80px, padding-bottom);
+    .rem(45, margin-top);
+  }
+  &.h255 {
+    .rem(255px, height);
+  }
+  &.h172 {
+    .rem(172px, height);
+  }
+  &.h218 {
+    .rem(218px, height);
+  }
+}
+
+.buttons {
+  display: flex;
+  flex-direction: column;
+}
+
+.logo {
+  .rem(112px, height);
+  .rem(404px, width);
+  margin: 0 auto;
+  text-align: center;
+	>img{
+		.rem(112px, max-height);
+    .rem(404px, max-width);
+	}
+}
+
+.computer {
+  .rem(580px, width);
+  .rem(250px, height);
+  margin: 0 auto;
+  background: url('images/tr_ill@2x.png') no-repeat;
+  background-size: 100% 100%;
+}
+
+.text {
+  margin: auto;
+  font-size: 14px;
+  >p {
+    text-align: center;
+    color: @sloganColor;
+  }
+}
+
+.palceholder {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 auto;
+}
+
+[data-dpr="2"] .text {
+    font-size: 28px;
+}
+
+[data-dpr="3"] .text {
+    font-size: 42px;
+}
+
+.gradient-bg {
+  min-height: 100vh;
+  background: linear-gradient(45deg, #67cbec, #2686ff);
+  display: flex;
+  flex-direction: column;
+}
+
+.selector{
+  .rem(30, top);
+  .rem(30, right);
+  position: absolute;
+}

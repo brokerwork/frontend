@@ -1,0 +1,91 @@
+@form: ~"@{prefix}-form";
+
+.@{form} {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -@form-margin;
+  margin-right: -@form-margin;
+}
+.@{form}-horizontal {
+  margin-left: 0;
+  margin-right: 0;
+  .@{form}-item {
+    display: flex;
+    position: relative;
+    padding-left: 0;
+    padding-right: 0;
+    > .@{form}-error-msg {
+      left: 40%;
+      top: 100%;
+    }
+    .@{form}-label {
+      width: 40%;
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      padding-right: 10px;
+      margin-bottom: 0;
+    }
+    &.@{form}-item-1 {
+      > .@{form}-error-msg {
+        left: 20%;
+      }
+      .@{form}-label {
+        width: 20%;
+      }
+    }
+    .@{form}-control {
+      flex: 1;
+    }
+  }
+}
+.@{form}-item-required {
+  .@{form}-label::before {
+    content: "*";
+    color: @form-error-color;
+    margin-right: 4px;
+  }
+}
+.@{form}-item {
+  margin-bottom: 25px;
+  box-sizing: border-box;
+  padding-left: @form-margin;
+  padding-right: @form-margin;
+  &.@{form}-item-1 {
+    width: 100%;
+  }
+  &.@{form}-item-2 {
+    width: 50%;
+  }
+  .@{form}-error-msg {
+    color: @form-error-color;
+    font-size: @form-error-font-size;
+    line-height: @form-error-line-height;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    margin-top: @form-label-margin;
+    .@{form}-error-icon {
+      margin-right: @form-label-margin;
+    }
+  }
+}
+
+.@{form}-label {
+  font-size: @form-label-font-size;
+  color: @form-label-color;
+  margin-bottom: @form-label-margin;
+  .@{form}-error-msg {
+    color: @form-error-color;
+    font-size: @form-error-font-size;
+    line-height: @form-error-line-height;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    margin-top: @form-label-margin;
+    .@{form}-error-icon {
+      margin-right: @form-label-margin;
+    }
+  }
+}

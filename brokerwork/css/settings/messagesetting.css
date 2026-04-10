@@ -1,0 +1,153 @@
+#messagesetting{
+    table{
+        th{
+            text-align: center;
+        }
+        td{
+            text-align:center;
+        }
+    }
+}
+#messagetemplatesetting{
+    height: auto;
+    .topselect .btn {
+        height: 30px;
+        padding-left: 10px;
+        padding-right: 10px;
+        font-size: 12px;
+    }
+    >.btn.yesbtn {
+        padding-left: 20px;
+        padding-right: 20px;
+        height: 30px;
+         line-height: 1;
+        span {
+            margin-left: 5px;
+            font-size: 12px;
+        }
+    }
+    table{
+        th{
+            text-align: center;
+        }
+        tr{
+            height: 40px;
+            line-height: 40px;
+        }
+        td{
+            text-align:center;
+            padding: 0px;
+            button{
+                width:24px;
+                height:24px;
+                border:0px;
+                font-size:10px;
+                i{
+                    width:16px;
+                    height: 16px;
+                    position:relative;
+                    margin-left: -8px;
+                    top:-2px;
+                }
+            }
+        }
+    }
+    
+}
+  .add-template{
+        width: 870px;
+        height: 380px;
+        text-align: left;
+        font-size:12px;
+        & .basiclabel{
+              width: 100px;
+              text-align: right;
+              height: 34px;
+              line-height: 34px;
+              margin-right: 30px;
+              margin-left:60px;
+              display: inline-block;
+        }
+        & .lastline{
+            position: relative;
+            margin-top: 30px;
+        }
+        & .extallabel{
+            position: relative;
+            top:-35px;
+        }
+        & .richeditor{
+            width: 645px;
+            height: 200px;
+            display: inline-block;
+            margin-left: -15px;
+        }
+        & .add-buttons{
+            margin-right: 15px;
+        }
+        & .halfline{
+            width: 300px;
+            display: inline-block;
+             .form-control{
+                 font-size: 12px;
+             }
+           
+        }
+    }
+#messagetemplatesettingContent{
+    .topselect{
+        width: 100px;
+        margin-left:15px;
+    }
+    .add-template{
+        width: 870px;
+        text-align: left;
+        & .basiclabel{
+              width: 80px;
+              text-align: right;
+              height: 34px;
+              line-height: 34px;
+              margin-right: 30px;
+              margin-left:60px;
+              display: inline-block;
+        }
+        & .lastline{
+            position: relative;
+            margin-top: 30px;
+        }
+        & .extallabel{
+            position: relative;
+            top:-35px;
+        }
+        & .richeditor{
+            width: 645px;
+            height: 200px;
+            display: inline-block;
+            margin-left: -15px;
+        }
+        & .add-buttons{
+            margin-right: 15px;
+        }
+        & .halfline{
+            width: 300px;
+            display: inline-block;
+           
+        }
+    }
+    .form-horizontal{
+        .form-group{
+            margin-left:0px;
+            margin-right:0px;
+        }
+    }
+.fui-modal-mask {
+
+.panel-body {
+    padding-bottom:5px;
+    .btn-default{
+        margin-left:10px;
+    }
+}
+
+}
+}

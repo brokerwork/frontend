@@ -1,0 +1,22 @@
+{
+	"result": true,
+	"mcode": "TW_VIDEO_0000000",
+	"data": {
+		"id": "5966ceed76a45b4c2b0b825f",
+		"subject": "1留下来 leads",
+		"cover": "//broker-upload.oss-cn-hangzhou.aliyuncs.com/test/dc042430-676b-11e7-b2fb-0f76d7fabdea.jpg",
+		"lecturerId": "593e39b876a45b11740ebe4e",
+		"description": "阿大短发短发短发短发时",
+		"startTime": 1499996250,
+		"endTime": 1500082650,
+		"lecturerName": "QQQ",
+		"pushUrl": "",
+		"pullUrl": "http://not.exists.com/dumy.m3u8",
+		"state": "NOTSTART",
+		"pubState": "PUBBED",
+		"createTime": 1499909869,
+		"modifyTime": 1499909881,
+		"needRecord": false,
+		"onlineCnt": 0
+	}
+}

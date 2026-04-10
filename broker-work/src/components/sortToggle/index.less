@@ -1,0 +1,19 @@
+@import '~less/variables.less';
+
+.sort-text {
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+.sort-icon {
+  position: relative;
+  margin-left: 3px;
+  color: @text-color-light;
+  > :global(.fa) {
+    position: absolute;
+    transform: translateY(3px);
+    &.active {
+      color: @main-color;
+    }
+  }
+}

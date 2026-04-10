@@ -1,0 +1,54 @@
+{
+  "data": [{
+    "stepId": "c75ff7e0-0fd1-4d73-bfbe-e4db2290f743",
+    "stepName": "开户处理",
+    "stepUserList": [
+      {
+        "entityNo": "121",
+        "email": "51720227967@qq.com",
+        "levelId": "0",
+        "name": "jerry1",
+        "phone": "17701324967",
+        "right": "ADMIN",
+        "roleId": "2",
+        "roleName": "销售经理",
+        "userId": "121"
+      },
+      {
+        "entityNo": "121",
+        "email": "51720227967@qq.com",
+        "levelId": "0",
+        "name": "jerry2",
+        "phone": "17701324967",
+        "right": "SUPER",
+        "roleId": "2",
+        "roleName": "销售经理",
+        "userId": "122"
+      },
+      {
+        "entityNo": "121",
+        "email": "51720227967@qq.com",
+        "levelId": "0",
+        "name": "jerry3",
+        "phone": "17701324967",
+        "right": "ADMIN",
+        "roleId": "2",
+        "roleName": "销售经理",
+        "userId": "123"
+      },
+      {
+        "entityNo": "121",
+        "email": "51720227967@qq.com",
+        "levelId": "0",
+        "name": "jerry4",
+        "phone": "17701324967",
+        "right": "COMMON",
+        "roleId": "2",
+        "roleName": "销售经理",
+        "userId": "124"
+      }
+    ]
+  }],
+  "mcode": "m0000000",
+  "result": true
+}

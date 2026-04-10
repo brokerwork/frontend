@@ -1,0 +1,167 @@
+@import '~less/variables.less';
+
+.pvmap-modal {
+  width: auto;
+  min-width: 1100px;
+  max-width: ~'calc(100% - 20px)';
+  height: 100%;
+  :global(.lean-modal-content) {
+    height: 100%;
+  }
+  :global(.lean-modal-body) {
+    height: ~'calc(100% - 96px)';
+  }
+}
+
+.body {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.table {
+  margin-bottom: 0;
+
+  .dropdown {
+    width: 100%;
+    max-width: 400px;
+  }
+
+  tbody > tr > td:last-child {
+    white-space: nowrap;
+  }
+}
+
+.dropdown-group {
+  width: 350px;
+
+  td {
+    padding: 10px 0;
+  }
+
+  td:first-child {
+    text-align: right;
+    padding-right: 15px;
+    white-space: nowrap;
+    width: 1%;
+  }
+
+  .dropdown {
+    width: 80%;
+    max-width: 260px;
+  }
+
+  + .help-text {
+    top: 100%;
+    margin-top: -3px;
+  }
+}
+
+.help-text {
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  margin-top: 20px;
+}
+
+.tips {
+  // background-color: #eee;
+  color: #637381;
+  // padding: 20px 15px;
+  border-radius: 4px;
+  margin-bottom: 15px;
+  line-height: normal;
+  font-size: 13px;
+}
+
+.list {
+  display: block;
+  text-align: left;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  width: 350px;
+  margin: 8px 0;
+}
+
+.actions-bar {
+  text-align: right;
+  padding-top: 24px;
+}
+
+.map-name-input {
+  :global(.col-sm-12) {
+    padding: 0;
+  }
+
+  :global(.validate-error-msg) {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    margin-top: 20px;
+  }
+}
+
+.point-value {
+  word-wrap: break-word;
+  white-space: nowrap;
+}
+
+.point-value-input {
+  display: inline-block;
+  width: 50px;
+  margin-right: 10px;
+}
+
+.point-value-dropdown-short {
+  max-width: 50px;
+  margin-left: 10px;
+  display: inline-flex;
+}
+
+.point-value-dropdown {
+  margin-left: 10px;
+  display: inline-flex;
+  width: 100px;
+  :global(.lean-select-selection) {
+    width: 100px;
+  }
+}
+.btn-left {
+  margin-left: 10px;
+}
+.table_list {
+  height: 100%;
+}
+.create_btn {
+  display: inline-block;
+  color: #099694;
+  font-size: 13px;
+  cursor: pointer;
+  border: none;
+  span {
+    position: relative;
+    top: 1px;
+    right: 9px;
+  }
+  padding: 0 16px;
+}
+.table_operate {
+  padding-left: 16px;
+}
+.operate_td {
+  width: 60px;
+  color: #099694;
+  span {
+    margin-right: 15px;
+    cursor: pointer;
+  }
+}
+.table_container {
+  height: ~'calc(100% - 51px)';
+  :global(.lean-table-container) {
+    height: 100%;
+  }
+}
+.container {
+  border-top: 1px solid #dfe3e8;
+}

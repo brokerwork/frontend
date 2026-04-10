@@ -1,0 +1,75 @@
+{
+  "data": {
+    "list": [
+      {
+        "tasksJobs": [{
+          "allStep": 1,
+          "category": {
+            "key": "34146884-0e07-4e3c-a66a-3d6f37a5fcac",
+            "name": "开户"
+          },
+          "createTime": 1476179967515,
+          "creator": {
+            "key": "121",
+            "name": "121"
+          },
+          "emergency": false,
+          "endTime": 1473947769600000,
+          "itemId": "f0f53288-0073-46fe-9b62-e64ae4484da0",
+          "jobId": "147915b9-ebdf-4c5b-9cfc-3be96e11f819",
+          "jobName": "申请人：徐天翔；申请账号：321456",
+          "jobTag": "",
+          "modifyTime": 1476180314956,
+          "nowStep": -1,
+          "priority": "3",
+          "processorList": [{
+            "handle": false,
+            "realName": "121",
+            "userId": "121"
+          }],
+          "state": "Finished",
+          "verify": true
+        }],
+        "time": "2016-10-11"
+      },
+      {
+        "tasksJobs": [{
+          "allStep": 1,
+          "category": {
+            "key": "34146884-0e07-4e3c-a66a-3d6f37a5fcac",
+            "name": "开户"
+          },
+          "createTime": 1476179967515,
+          "creator": {
+            "key": "121",
+            "name": "121"
+          },
+          "emergency": false,
+          "endTime": 1473947769600000,
+          "itemId": "f0f53288-0073-46fe-9b62-e64ae4484da0",
+          "jobId": "147915b9-ebdf-4c5b-9cfc-3be96e11f819",
+          "jobName": "申请人：徐天翔；申请账号：321456",
+          "jobTag": "",
+          "modifyTime": 1476180314956,
+          "nowStep": -1,
+          "priority": "3",
+          "processorList": [{
+            "handle": false,
+            "realName": "121",
+            "userId": "121"
+          }],
+          "state": "Finished",
+          "verify": true
+        }],
+        "time": "2016-10-12"
+      }
+    ],
+    "offset": 0,
+    "pager": 1,
+    "pages": 1,
+    "size": 10,
+    "total": 1
+  },
+  "mcode": "m0000000",
+  "result": true
+}

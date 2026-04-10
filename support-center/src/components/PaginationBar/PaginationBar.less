@@ -1,0 +1,50 @@
+@import "~less/sc/variables.less";
+
+.pagination-bar {
+  width: 100%;
+  text-align: right;
+  vertical-align: middle;
+  color: @base-text-color;
+}
+
+.page-summary {
+  text-align: left;
+  color: @base-text-light-color;
+
+  span {
+    color: @base-text-color;
+    margin: 0 3px;
+  }
+}
+
+.per-page,
+.jump-page {
+  width: 1%;
+  white-space: nowrap;
+}
+
+.pagination {
+  display: inline-block;
+}
+
+.per-page {
+  padding: 0 10px;
+}
+
+.jump-page-text {
+  display: inline-block;
+  margin: 0 10px;
+  width: 62px;
+  height: 28px;
+  color: @base-text-color;
+}
+
+.select {
+
+  :global(.dropdown-menu) {
+    top: auto;
+    bottom: 100%;
+    margin: 0 0 2px;
+    box-shadow: 0 -6px 12px rgba(0, 0, 0, .175);
+  }
+}

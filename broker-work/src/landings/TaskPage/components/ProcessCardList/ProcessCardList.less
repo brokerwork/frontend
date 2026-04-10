@@ -1,0 +1,136 @@
+@import '~less/variables.less';
+
+.process-end {
+  margin: 8px 0 0;
+  text-align: center;
+}
+
+.process-card-item {
+  position: relative;
+  margin-top: 10px;
+  :global(.lean-card-head) {
+    margin: 0;
+    padding: 0 24px;
+  }
+  :global(.lean-card-content) {
+    padding: 0;
+  }
+  :global(.lean-card-head-title) {
+    white-space: normal;
+  }
+  .responseArea {
+    padding: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+  }
+  &:first-child {
+    margin-top: 0;
+  }
+}
+.name-box {
+  flex: 1;
+  .name-content {
+    overflow: hidden;
+    width: 100%;
+    margin: 0;
+    text-align: justify;
+    /*! autoprefixer: off */
+    display: box;
+    display: -ms-box;
+    display: -moz-box;
+    display: -webkit-box;
+    line-clamp: 2;
+    -ms-line-clamp: 2;
+    -webkit-line-clamp: 2;
+    -moz-line-clamp: 2;
+    box-orient: vertical;
+    -webkit-box-orient: vertical;
+    -moz-box-orient: vertical;
+    -ms-box-orient: vertical;
+    /* autoprefixer: on */
+  }
+}
+
+.arrow-box {
+  padding-left: 14.8px;
+  text-align: center;
+}
+
+:global(.lean-card) {
+  :global(.lean-card-head-extra) {
+    cursor: pointer;
+  }
+  .title {
+    .icon {
+      margin-right: 8px;
+    }
+  }
+}
+.process-point-box {
+  width: 100%;
+  height: 84px;
+  margin-top: 8px;
+  position: relative;
+  .dotted {
+    width: 0;
+    margin: 0 auto;
+    border-left: 1px dotted @lean-grey-4;
+    height: 84px;
+  }
+  .add-box {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background-color: @main-color;
+    text-align: center;
+    font-size: 16px;
+    line-height: 2;
+    color: @white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -16px 0 0 -15px;
+    cursor: pointer;
+  }
+  .point {
+    position: absolute;
+    bottom: -8px;
+    left: 50%;
+    margin-left: -4px;
+  }
+  .triangle {
+    border: 5px solid transparent;
+    border-top: 5px solid @lean-grey-4;
+    width: 0;
+    height: 0;
+  }
+}
+.process-tip-box {
+  width: 137px;
+  height: 60px;
+  display: flex;
+  .process-tip-approval {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    cursor: pointer;
+    > span {
+      font-size: 20px;
+    }
+    p {
+      margin: 0;
+    }
+    &:first-child {
+      border-right: 1px solid rgba(255, 255, 255, 0.14);
+    }
+  }
+}
+.process-tip {
+  :global(.lean-tooltip-inner) {
+    padding: 0;
+  }
+}

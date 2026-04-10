@@ -1,0 +1,62 @@
+@import '~less/variables.less';
+
+.tag {
+  cursor: pointer;
+}
+
+.tag-box {
+  margin-bottom: 15px;
+}
+
+.save-btn-box {
+  height: 62px;
+}
+
+.save-btn {
+  background-color: @white;
+  height: 62px;
+  text-align: right;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 15px;
+  border-top: 1px solid @border-color;
+}
+
+.mtgroups {
+  text-align: right;
+  white-space: nowrap;
+  & + &{
+    margin-top: 5px;
+  }
+  &.mtgroups-center {
+    text-align: center;
+  }
+  .mtgroups-select .empty-group {
+    border-color: @brand-danger;
+  }
+}
+
+.mtgroups-select {
+  width: 140px;
+}
+.mtgroups-server-name {
+  margin: 0 5px;
+}
+
+.add-member {
+  margin-top: 20px;
+}
+
+.th ,.td {
+  padding: 7px 10px;
+}
+.item {
+  position: relative;
+  z-index: 1;
+  overflow: visible;
+  :global(.lean-table-fixed-scroll){
+    overflow: visible;
+  }
+}

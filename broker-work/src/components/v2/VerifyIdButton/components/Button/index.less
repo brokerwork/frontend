@@ -1,0 +1,53 @@
+@import '../index.less';
+.verify-button {
+	display: inline-flex;
+	align-items: center;
+	vertical-align: middle;
+	background: @successed-bg-color;
+	border: 1px solid @successed-border-color;
+	border-radius: 4px;
+	i {
+		color: @successed-color;
+		padding:5px;
+		height: 30px;
+		line-height: 18px;
+    	text-align: center;
+		width: 30px;
+		
+	}
+	span {
+		padding: 5px 10px;
+		color: @successed-color;
+		display: flex;
+		height: 30px;
+		line-height: 18px;
+    	text-align: center;
+	}
+	&:hover {
+		cursor: pointer;
+		opacity: .9;
+	}
+	&.failed {
+		background-color: @failed-color;
+		border-color:@failed-color;
+		span {
+			color: #fff;
+		}
+	}
+	&.verifing {
+		b {
+			display: inline-block;
+			animation: loading 1s infinite;
+		}
+	}
+}
+
+@keyframes loading
+{
+  from {
+    transform:rotate(0deg);
+  }
+  to {
+    transform:rotate(360deg)
+  }
+}

@@ -1,0 +1,40 @@
+.container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+  text-align: center;
+
+  &.show :global(.alert){
+    transform: translateY(10px);
+  }
+
+  :global(.alert) {
+    margin-bottom: 0;
+    display: inline-flex;
+    min-width: 200px;
+    max-width: 80%;
+    text-align: left;
+    transform: translateY(-100%);
+    transition: all .3s;
+  }
+}
+
+.content {
+  flex-grow: 1;
+  padding-right: 10px;
+}
+
+.alert-danger {
+  background-color: #ffe9ec;
+}
+
+.alert-success {
+  background-color: #e7f6ef;
+}
+
+.alert-warning {
+  background-color: #fff9ec;
+  color: #ffae00;
+}

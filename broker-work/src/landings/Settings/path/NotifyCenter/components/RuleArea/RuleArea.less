@@ -1,0 +1,87 @@
+@import '~less/variables.less';
+.important-notification {
+  margin-bottom: 20px;
+}
+.remain-blank {
+  width: 10px;
+  display: inline-block;
+}
+.operation {
+  display: flex;
+  align-items: center;
+  flex-wrap: nowrap;
+  > button:not(:first-child) {
+    margin-left: 5px;
+  }
+}
+
+.operationIcon {
+  color: @main-color;
+  margin-right: 10px;
+  cursor: pointer;
+  &.danger {
+    color: @red;
+  }
+}
+.table,
+.traderTable {
+  th:nth-child(1),
+  th:nth-child(4) {
+    width: 260px;
+  }
+  th:nth-child(2),
+  th:nth-child(3) {
+    width: 450px;
+  }
+  th:nth-child(5) {
+    width: 64px;
+  }
+}
+.traderTable {
+  th:last-child {
+    width: 80px;
+  }
+}
+
+.add {
+  margin-right: 7px;
+}
+.panel {
+  margin-bottom: 20px;
+  position: relative;
+  font-size: 13px;
+  line-height: 1.5;
+  color: #303842;
+  box-sizing: border-box;
+  border-radius: 4px;
+  background-color: #fff;
+  border: 1px solid #dfe3e8;
+  overflow: hidden;
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #fafafa;
+    padding: 12px 15px 12px 15px;
+    border-bottom: 1px solid #dfe3e8;
+    :global(.lean-btn) {
+      padding-left: 10px;
+    }
+  }
+  .body {
+    padding: 16px;
+    padding-bottom: 24px;
+    :global(.lean-table) {
+      border-top: 0;
+      .lean-table-cell {
+        padding: 10px;
+      }
+    }
+  }
+  :global(.lean-table-cell) {
+    padding: 10px;
+  }
+}
+:global(.fa-plus) {
+  margin-right: 5px;
+}

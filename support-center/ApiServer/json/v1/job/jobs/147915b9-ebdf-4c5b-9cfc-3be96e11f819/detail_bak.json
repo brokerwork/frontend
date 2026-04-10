@@ -1,0 +1,50 @@
+{
+  "data": {
+    "allStep": 1,
+    "business": {},
+    "categoryName": "开户",
+    "categoryId": "34146884-0e07-4e3c-a66a-3d6f37a5fcac",
+    "commentList": [{
+      "automatic": false,
+      "content": "我是评论",
+      "createTime": 1476180602677,
+      "jcFile": "url",
+      "jcId": "6d3ecc6d-a447-4f3a-8047-0ecf42a28677",
+      "reviewer": {
+        "key": "121",
+        "name": "121@121"
+      }
+    }],
+    "createTime": "2016-10-11T17:59:27.515",
+    "creator": {
+      "key": "121",
+      "name": "121"
+    },
+    "emergency": false,
+    "enabled": true,
+    "endTime": "2016-10-11T18:10:02.681",
+    "itemId": "f0f53288-0073-46fe-9b62-e64ae4484da0",
+    "itemName": "Ta",
+    "jobId": "147915b9-ebdf-4c5b-9cfc-3be96e11f819",
+    "jobName": "申请人：徐天翔；申请账号：321456",
+    "jobNo": "A00-000006",
+    "jobTag": "",
+    "modifyTime": "2016-10-11T18:10:02.681",
+    "nowStep": -1,
+    "priority": "3",
+    "processorList": [{
+      "handle": false,
+      "name": "tom",
+      "userId": "121"
+    }],
+    "productId": "BW",
+    "resource": "",
+    "isEdit": true,
+    "state1": "Submited",
+    "state": "Dealed",
+    "tenantId": "T001001",
+    "verify": true
+  },
+  "mcode": "m0000000",
+  "result": true
+}

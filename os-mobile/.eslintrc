@@ -1,0 +1,16 @@
+{
+  "parser": "babel-eslint",
+//   "parserOptions": {
+//     "ecmaFeatures": {
+//         "tsx": true
+//     }
+//   },
+  "extends": [ "eslint:recommended"],
+  "plugins": [ "prettier"],
+  "env": {
+    "browser": true
+  },
+  "rules": {
+    "prettier/prettier": ["error"]
+  }
+}

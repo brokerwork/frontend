@@ -1,0 +1,125 @@
+@import "~less/fn.less";
+.login {
+  .logo {
+    width: 5.33rem;
+    height: 1.43rem;
+    text-align: center;
+		>img{
+			max-width: 5.33rem;
+      max-height: 1.43rem;
+		}
+  }
+}
+
+.tabs {
+  .specialLine::before {
+    position: absolute;
+    bottom: 0;
+    left: -0.4rem;
+    background: #e0e0e0;
+    width: 0.4rem;
+    height: 1px;
+    content: ''
+  }
+  .specialLine::after {
+    position: absolute;
+    bottom: 0;
+    right: -0.4rem;
+    background: #e0e0e0;
+    width: 0.4rem;
+    height: 1px;
+    content: ''
+  }
+  .item{
+    position: relative;
+  }
+  .item-select{
+    top: 0;
+    bottom: 0;
+    z-index: 9;
+    .rem(75px, left);
+    .rem(100px, width);
+    position: absolute;
+    select{
+      top: 0;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      position: absolute;
+    }
+    img{
+      top: 50%;
+      .rem(17px, width);
+      .rem(12px, right);
+      position: absolute;
+      transform: translateY(-50%);
+    }
+  }
+  .rem( -88px,
+  margin-top) !important;
+  >div:nth-of-type(1) {
+    background-color: transparent !important;
+    .tab {
+      >div {
+        >div {
+          .rem( 88px,
+          height) !important;
+        }
+      }
+    }
+  }
+}
+
+.e-area {
+  background: #fff;
+}
+
+.footer {
+  .rem( 210px, margin-top);
+  .rem( 20px, margin-bottom);
+  .weixin-login {
+    width: max-content;
+    .rem( 40px,
+    padding-left);
+    height: max-content;
+    background: url("images/icon_weixin@3x.png") no-repeat;
+    background-size: 0.53rem 0.44rem;
+    background-position-y: center;
+    margin: 0 auto;
+    p {
+      .rem( 14px,
+      margin-left);
+      color: #02ae00;
+      font-size: 12px !important;
+    }
+  }
+}
+
+[data-dpr="2"] .footer {
+  .weixin-login {
+    p {
+      font-size: 24px !important;
+    }
+  }
+}
+
+[data-dpr="3"] .footer {
+  .weixin-login {
+    p {
+      font-size: 36px !important;
+    }
+  }
+}
+
+.footer {
+  .weixin-login {
+    .link {
+      text-decoration: none;
+      line-height: 200%;
+      display: inline-block;  
+    }
+    .link:active {
+      background-color: #E1E1E1;
+    }
+  }
+}

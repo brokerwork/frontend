@@ -1,0 +1,17 @@
+@import './mix.less';
+@yellow-1: #fa7000;
+@yellow-2: #ff8800;
+@yellow-3: #ff9b28;
+@yellow-4: #ffac4d;
+@yellow-5: #ffbc70;
+:global {
+  .orange-theme {
+    a {
+      color: @yellow-2;
+      &:hover {
+        color: @yellow-1;
+      }
+    }
+    .createThemes(@yellow-1, @yellow-2, @yellow-3, @yellow-4, @yellow-5, #000);
+  }
+}

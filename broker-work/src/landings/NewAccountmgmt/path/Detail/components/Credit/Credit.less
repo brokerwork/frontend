@@ -1,0 +1,25 @@
+@import "~less/variables.less";
+
+.container {
+  padding-top: 20px;
+}
+
+.label {
+  font-size: 12px;
+  font-weight: normal;
+  padding-top: 9px;
+  padding-right: 0;
+}
+
+.dropdown {
+  &:global(.btn-group) :global(.btn) {
+    border-right: 0;
+    max-width: 120px;
+  }
+}
+
+.errorMsg {
+  color: @red;
+  padding-top: 3px;
+  font-size: 12px;
+}

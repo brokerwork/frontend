@@ -1,0 +1,34 @@
+@import "~less/sc/variables.less";
+
+.container {
+  flex: 1;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  position: relative;
+}
+
+.header {
+  border-radius: 4px 4px 0 0;
+  background-color: @content-header-bg-color;
+  height: @content-header-height;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid @content-header-border-color;
+  padding: 0 15px;
+  font-size: 14px;
+}
+
+.body {
+  flex: 1;
+  overflow: auto;
+  padding: 15px;
+  background-color: #fff;
+  border-radius: 0 0 4px 4px;
+}
+
+.body-content {
+  display: inline-block;
+  min-width: 100%;
+}

@@ -1,0 +1,156 @@
+@import '~less/variables.less';
+@ownerinfo-border: 1px solid #dfe3e8;
+
+.owner-info {
+  margin-top: 15px;
+}
+
+.header {
+  margin: 20px 0;
+  padding: 0 10px;
+  height: 38px;
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  color: #333;
+  border-radius: 4px;
+
+  .relate-account {
+    font-size: 12px;
+    color: #666;
+    flex: 1;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+
+    & + .more {
+      flex: none;
+    }
+  }
+
+  .more {
+    flex: 1;
+    text-align: right;
+  }
+
+  .edit-btn {
+    color: @brand-primary;
+    font-size: 12px;
+    cursor: pointer;
+
+    &:hover {
+      text-decoration: none;
+    }
+
+    :global(.fa) {
+      margin-right: 5px;
+    }
+  }
+
+  > * {
+    line-height: normal;
+  }
+
+  .verify-btn {
+    margin-right: 15px;
+    i,
+    span {
+      height: 24px;
+      font-size: 12px;
+      line-height: 24px;
+      padding: 0 4px;
+    }
+    i {
+      width: 24px;
+    }
+  }
+}
+
+.content {
+  border: @ownerinfo-border;
+  border-radius: 4px;
+  max-width: 900px;
+  overflow: hidden;
+  :global(.lean-menu) {
+    border-bottom: none;
+  }
+  :global(.lean-menu-item) {
+    &,
+    &:hover {
+      border-bottom: none;
+    }
+    &.red {
+      background-color: red !important;
+      color: #fff !important;
+    }
+  }
+  :global(.lean-menu-item-selected) {
+    background-color: #fff;
+    border-bottom: none;
+    border-right: @ownerinfo-border !important;
+    border-left: @ownerinfo-border !important;
+    &:first-child {
+      border-left: none;
+    }
+  }
+  :global(.lean-form) {
+    margin: 0;
+  }
+  .line {
+    margin-top: -1px;
+    height: 1px;
+    border-bottom: @ownerinfo-border;
+    margin-bottom: 20px;
+  }
+  .show {
+    display: block;
+  }
+  .hidden {
+    display: none;
+  }
+}
+
+.tabs {
+  margin-bottom: 20px;
+}
+
+.actions {
+  margin-top: 10px;
+  text-align: right;
+
+  :global(.btn) {
+    margin-left: 10px;
+  }
+  :global(.btn-primary) {
+    color: #fff !important;
+  }
+}
+
+.related-info {
+  padding-left: 10px;
+
+  label {
+    font-size: 12px;
+    display: block;
+    white-space: nowrap;
+    font-weight: normal;
+    color: #999;
+  }
+
+  .related-info-content {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.ta-user {
+  color: @brand-primary;
+  font-size: 12px;
+  width: 50%;
+}
+
+.icon {
+  color: orange;
+  font-size: 24px;
+  margin-right: 12px;
+}

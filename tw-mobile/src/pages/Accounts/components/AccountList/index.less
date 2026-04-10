@@ -1,0 +1,206 @@
+// .container-x{
+// 	display:flex;
+// 	flex-direction: column;
+// }
+
+// .tabs{
+// 	flex:1;
+// 	flex-direction: column;
+// 	height: 100%;
+// 	display:flex;
+// 	> div:first-child{
+// 		background: linear-gradient(90deg, #67cBEC, #2686ff);
+// 		display: table !important;
+// 	}
+// }
+
+// .tabs-item-wrapper{
+// 	flex:1;
+// 	height:100%;
+// 	overflow:hidden;
+// }
+
+// .flex1{
+// 	flex:1;
+// }
+
+// .x1{
+// 	display:flex;
+// 	color:red;
+// 	background:#eee;
+// 	flex:1;
+// 	flex-direction: column;
+// }
+// .item1{
+// 	height:200px;
+// }
+// .item2{
+// 	color:blue;
+// 	flex:1;
+// 	overflow:auto;
+// 	display:flex;
+// }
+@import '~less/fn.less';
+.taMobileAccount {
+	.taMobileAccountTips {
+		text-align: center;
+		color: #666;
+		.rem(160px, padding-top);
+		.taMobileNoRealAccount {
+			margin: 0 auto;
+			.rem(250px, height);
+			.rem(346px, width);
+			background: url("images/icon_no_debutted@3x.png") no-repeat center;
+			background-size: auto 250/75rem;
+		}
+		.tip {
+			.rem(30px, margin-top);
+			text-align: center;
+			font-size: 14px;
+			color: #000000;
+		}
+		.clickOpenAcct {
+			color: #939393;
+			font-size: 14px;
+			text-align: center;
+			.rem(30, padding-bottom);
+			.rem(40, padding-top); 
+			.openAcct {
+				text-decoration: none;
+				font-size: 17px;
+				color: #00a3fe;
+			}
+			.openAcct:active {
+				background-color: #E1E1E1;
+			}
+			.openAcctBtn{
+				.rem(215, width);
+				.rem(62, height);
+				.rem(30, margin-right)
+			}
+			.bindAcctBtn{
+				.rem(215, width);
+				.rem(62, height);
+			}
+		}
+	}
+	[data-dpr="2"].taMobileAccountTips {
+		.tip {
+			font-size: 28px;
+		}
+		.clickOpenAcct {
+			font-size: 28px;
+			a {
+				font-size: 34px;
+			}
+		}
+	}
+	[data-dpr="3"].taMobileAccountTips {
+		.tip {
+			font-size: 42px;
+		}
+		.clickOpenAcct {
+			font-size: 42px;
+			a {
+				font-size: 51px;
+			}
+		}
+	}
+	.taMobileAccountFooter {
+		.rem(98px, height);
+		.taMobileAccountFooterAvatar {
+			margin: 17/75rem auto;
+			.rem(0, margin-bottom);
+			.rem(40px, width);
+			.rem(40px, height);
+			background: url('images/icon_account_number@3x.png') no-repeat center;
+			background-size: 100% 100%;
+		}
+		.taMobileAccountFooterText {
+			color: #00a3fe;
+			text-align: center;
+			font-size: 8px;
+			.rem(16px, margin-bottom);
+		}
+	}
+	[data-dpr="2"].taMobileAccountFooter {
+		.taMobileAccountFooterText {
+			font-size: 16px;
+		}
+	}
+	[data-dpr="3"].taMobileAccountFooter {
+		.taMobileAccountFooterText {
+			font-size: 32px;
+		}
+	}
+	.title {
+		text-align: left;
+		font-size: 12px;
+		color: "#3e3e3e";
+		.rem(30px, padding-top);
+		.rem(30px, padding-left);
+		.rem(30px, padding-bottom);
+	}
+	[data-dpr="2"].title {
+		font-size: 24px;
+	}
+	[data-dpr="3"].title {
+		font-size: 36px;
+	}
+	.wrapper {
+		border-top: 1px solid #ededed;
+		.rem(30px, padding-left);
+		.rem(30px, padding-right);
+		background: #FFF;
+	}
+	.wrapper:before {
+		position: absolute;
+		left: 0;
+		.rem(0, bottom);
+		.rem(0, height);
+		.rem(30px, width);
+		content: '';
+		border-top: 1px solid #ededed;
+	}
+	.wrapper:after {
+		position: absolute;
+		right: 0;
+		.rem(0, bottom);
+		.rem(0, height);
+		.rem(30px, width);
+		content: '';
+		border-top: 1px solid #ededed;
+	}
+}
+
+.tabs {
+  .specialLine::before {
+    position: absolute;
+    bottom: 0;
+    left: -0.4rem;
+    background: #e0e0e0;
+    width: 0.4rem;
+    height: 1px;
+    content: ''
+  }
+  .specialLine::after {
+    position: absolute;
+    bottom: 0;
+    right: -0.4rem;
+    background: #e0e0e0;
+    width: 0.4rem;
+    height: 1px;
+    content: ''
+  }
+  .rem( -88px, margin-top) !important;
+  >div:nth-of-type(1) {
+    background-color: transparent !important;
+    .tab {
+      >div {
+        >div {
+          .rem( 88px, height) !important;
+        }
+      }
+    }
+  }
+}

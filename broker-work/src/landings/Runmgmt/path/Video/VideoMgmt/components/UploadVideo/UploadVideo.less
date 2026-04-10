@@ -1,0 +1,102 @@
+@import '~less/variables.less';
+.container {
+    padding: 0;
+    display: block;
+    width: 100%;
+    :global(.lean-form-item) {
+        padding-left: 0px;
+    }
+}
+
+.list {
+    display: block;
+    width: 100%;
+    .list-tbody {
+        width: 100%;
+    }
+    td {
+        text-align:left;
+        padding: 7px 0px;
+        width: auto
+    }
+}
+
+.upload-button {
+    margin-left: 114px;
+}
+
+.top-button {
+    border: 0;
+    background: none;
+    font-size: 18px;
+    color: @main-color;
+    outline: none;
+    cursor: pointer;
+    display: inline-block;
+    padding: 0 5px;
+
+}
+
+.remove-btn {
+    border: 0;
+    background: none;
+    font-size: 18px;
+    color: #C8CBD7;
+    outline: none;
+    cursor: pointer;
+    display: inline-block;
+}
+
+.icon {
+    width: 20px;
+}
+
+.value {
+    width: 240px;
+     :global(.btn-group) {
+        width: 100%;
+    }
+}
+
+.progressBar {
+    width: 180px;
+    margin-bottom: 0px;
+}
+
+.control-input {
+    position: absolute;
+    z-index: -1;
+    visibility: hidden;
+}
+
+.control {
+    position: relative;
+    border: 1px solid @input-border;
+    border-radius: @input-border-radius;
+    height: @input-height-base;
+    padding: @padding-base-vertical @padding-base-horizontal;
+    font-size: 12px;
+    line-height: normal;
+    color: @input-color;
+    background-color: @input-bg;
+    cursor: pointer;
+    &.disabled,
+    &.disabled:hover {
+        background-color: #eee;
+        border-color: #ccc;
+        cursor: not-allowed;
+    }
+    &.error,
+    &.error:hover {
+        border-color: @red;
+    }
+}
+
+.control-text {
+    margin-left: 5px;
+    font-weight: normal;
+}
+
+.label {
+    padding: 4px 10px 0 0;
+}

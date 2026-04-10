@@ -1,0 +1,13 @@
+{
+	"data": {
+		"email": "sunny@lwork.com",
+		"phone": "11312312312123",
+		"wxname": "aaa",
+		"username": "dd",
+		"language": "zh-CN",
+		"lastLoginTime": 1495770479016,
+		"token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJUMDAxMTE3VFciLCJleHAiOjE0OTU3NzI3OTEsImlhdCI6MTQ5NTc3MDk5MX0.nHiFaIf9V6WUGxR5qHLL2SQAzKh6JaGDk6kWy8nHhMg"
+	},
+	"mcode": "m0000000",
+	"result": true
+}

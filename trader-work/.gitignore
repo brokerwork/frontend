@@ -1,0 +1,9 @@
+node_modules
+dist
+webpack/test.html
+*.log
+server.js
+webpack/dll_lib/
+.vscode
+.DS_Store
+.idea

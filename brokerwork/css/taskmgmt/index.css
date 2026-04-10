@@ -1,0 +1,275 @@
+.taskmgmt{
+    .unselected {
+        background: #fff;
+        color: #999;
+    }
+    .btn {
+        height: 30px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .btn.fa-plus {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .fa-plus:before {
+        margin-right: 3px;
+    }
+    .btn-group{
+        a:not(:first-child){
+            border-left-color: white;
+        }
+        margin:0 2px;
+    }
+    .calendar-group{
+        display: inline-block;
+        .inline-calendar{
+            vertical-align:middle;
+        }
+        input {
+            height: 30px;
+            font-size: 12px;
+        }
+        input:hover {
+            border-color: #1ca59e;
+        }
+        .fa-calendar {
+            top: 7px;
+        }
+        .btn:hover {
+            border-color: #1ca59e;
+        }
+        .btn {
+            font-size: 12px;
+        }
+    }
+    .fui-searchbox {
+        input{
+            height: 30px;
+            border-color: #ddd;
+            border-left: 1px solid #ddd;
+            font-size: 12px;
+            border-radius: 4px;
+        }
+        input:hover {
+            border-color:#1ca59e;
+        }
+        .fa-search {
+            top: 8px;
+        }
+        .fa-search:hover {
+            color: #1ca59e;
+        }
+    }
+    .task-column-body{
+        background:#fafafa;
+    }
+    .task-list{
+        border: 1px solid #ddd;
+        height: 400px;
+        overflow-y:auto;
+        border-bottom-left-radius:4px;
+        border-bottom-right-radius:4px;
+
+        .task-item{
+            border-left: 5px solid blue;
+            padding: 5px;
+            padding-bottom: 15px;
+            border-bottom: 1px solid #ddd;
+
+            &.assign-to-me{
+                 border-left-color: green;
+                 background:#fff;
+                &:hover{
+                    background:#f0f1f6;
+                     .top-column{
+                        .fa-times{
+                            display:block;
+                            &:hover{
+                                color:#999;
+                            }
+                         }
+                    }
+                 }
+                .top-column{
+                    position:relative;
+                    .fa-times{
+                        position:absolute;
+                        top:10px;
+                        right:10px;
+                        display:none;
+                        color:#c5c5c5;
+                        cursor:pointer;
+             }
+             }
+            .btn-default{
+                margin-left:10px;
+            }
+             }
+            &.report-to-me{
+                 border-left-color: orange;
+             }
+
+            .avanta{
+                margin: 10px;
+                margin-bottom:15px;
+                width:34px;
+                height:34px;
+                border-radius:34px;
+            }
+            .comments{margin: 0 10px;}
+            .taskName{
+                margin: 0 15px 0 1px;
+                background-color: #1fb5ad;
+                color: white;
+                padding: 5px;
+                border-radius: 5px;
+                user-select: none;
+                display:inline-block;
+            }
+        }
+        li{
+            &:last-child{
+                border-bottom:none;
+            }
+        }
+    }
+
+    .toolbar{
+        width: 100%;
+        margin-bottom: 10px;
+        .fa{
+            line-height: 1;
+        }
+        .calendar-group .inline-calendar .date-range-input {
+            border-left: none;
+            border-top-left-radius: 0;
+            border-bottom-left-radius: 0;
+        }
+        .calendar-group .btn-group:first-child .ghost-btn {
+            margin-right: 0px;
+            border-top-right-radius: 0px;
+            border-bottom-right-radius: 0px;
+            border-right-color: #ddd;
+        }
+        .calendar-group .nav-select:first-child > .btn-group{
+            margin-right: 0;
+        }
+        > * {
+            margin: 0 3px;
+        }
+    }
+
+    .dashboardview{
+        &.row{
+            margin-top:30px;
+            .col-sm-3{
+                padding-right:0px;
+                &:last-child{
+                     padding-right:15px;
+                 }
+            }
+         }
+        ul{
+            list-style: none;
+            padding:0;
+            margin:0;
+        }
+    }
+    .pagination-wrapper{
+        margin-top: 10px;
+    }
+
+    .task-column-header{
+        height: 50px;
+        background-color: #fafafa;
+        line-height: 50px;
+        padding-left: 10px;
+        border-top-left-radius: 4px;
+        border-top-right-radius: 4px;
+        color:#333;
+        font-size:14px;
+        border:1px solid #ddd;
+        border-bottom:none;
+    }
+    .user-img{
+        img{
+            border-radius:29px;
+        }
+    }
+    .important-types{
+        padding:0px 8px!important;
+        font-size:12px;
+        height:20px;
+        line-height:20px;
+        vertical-align: middle;
+
+
+    }
+    .fa-exclamation-circle{
+        font-size:16px;
+        color:#fc445b;
+    }
+    .comment-number{
+        margin-left:5px;
+    }
+    .jobName{
+        margin-left:5px;
+        position:relative;
+        top:-9px;
+    }
+    .column-position{
+        position:relative;
+        top:-7px;
+    }
+    .right-position{
+        vertical-align: middle;
+    }
+table.table thead {
+.sorting,.sorting_asc,.sorting_desc,.sorting_asc_disabled,.sorting_desc_disabled{
+    background-position:  calc(50% + 20px) center!important;
+    display: block!important;
+
+}
+}
+.comment-date{
+    color:#999;
+    font-size:12px;
+    position: relative;
+    top: 2px;
+}
+.comment-number{
+    font-size:12px;
+}
+.taskRole{
+    height: 38px;
+    position: relative;
+    .task-divide{
+        position: absolute;
+        right: 0px;
+        list-style:none;
+        margin-top:20px;
+        li{
+            float: left;
+            .around{
+                width:12px;
+                height:12px;
+                display:inline-block;
+                vertical-align: middle;
+                margin-right:5px;
+                position: relative;
+                top: -1px;
+                &.blue-color{
+                    background:#cceeed;
+                }
+                &.red-color{
+                    background:#fedade;
+                }
+            }
+            &:first-child{
+                margin-right:30px;
+            }
+        }
+    }
+}
+}

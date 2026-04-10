@@ -1,0 +1,75 @@
+@import '~less/variables.less';
+
+.body {
+  padding-top: 10px;
+}
+
+.text {
+  font-size: 12px;
+}
+.dropdown-group {
+  table-layout: fixed;
+
+  td {
+    padding: 10px 0;
+  }
+
+  td:first-child {
+    text-align: right;
+    white-space: nowrap;
+    padding-right: 5px;
+  }
+
+  + .help-text {
+    top: 100%;
+    margin-top: -15px;
+  }
+}
+
+.help-text {
+  position: absolute;
+  left: -13px;
+  top: 50%;
+  margin-top: 20px;
+  color: @brand-danger;
+  display: none;
+}
+
+:global(.has-error) {
+  position: relative;
+
+  .help-text {
+    display: block;
+  }
+  :global(.lean-picklist-button) {
+    border: red 1px solid;
+  }
+}
+.tree-select {
+  width: 100%;
+}
+header {
+  margin: 24px 0 6px;
+}
+.symbol {
+  padding: 16px 16px 0;
+  border-radius: 4px;
+  border: solid 1px #dfe3e8;
+  background-color: #fafafa;
+  .item {
+    margin-bottom: 24px;
+    :global(.lean-picklist-button) {
+      width: 100%;
+    }
+    label {
+      display: block;
+    }
+  }
+}
+.popoverStyle {
+  color: red;
+  :global(.lean-popover-inner-content) {
+    background-color: black;
+    color: #fff;
+  }
+}

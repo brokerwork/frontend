@@ -1,0 +1,120 @@
+@import '~less/variables.less';
+
+.container,
+.bg {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  overflow: auto;
+}
+.container {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .inner-box {
+    display: inline-block;
+    text-align: left;
+    position: relative;
+    width: 380px;
+    vertical-align: middle;
+    z-index: 2;
+  }
+  .inner-box-bg {
+    background-color: @white;
+    padding: 38px 50px;
+    border-radius: 4px;
+  }
+}
+
+.containerLeft {
+  display: flex;
+  .inner-box {
+    width: 640px;
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 2;
+    background-color: #fafafb;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .inner-box-bg {
+    width: 380px;
+  }
+  :global {
+    .lean-form {
+      background-color: @white;
+      border-radius: 4px;
+      padding: 32px 50px;
+      margin-left: 0;
+      margin-right: 0;
+      border: 1px solid @border-color;
+    }
+    .lean-form-item {
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
+}
+
+.containerRight {
+  display: flex;
+  .inner-box {
+    width: 540px;
+    position: fixed;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 2;
+    background-color: #fafafb;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .inner-box-bg {
+    width: 420px;
+  }
+  :global {
+    .lean-form {
+      margin-left: 0;
+      margin-right: 0;
+    }
+    .lean-form-item {
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
+}
+
+.bg {
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 700px;
+  &.bg_left {
+    background-image: url('../Root/bg_left.jpg');
+    left: 640px;
+  }
+  &.bg_center {
+    background-image: url('../Root/bg_center.jpg');
+  }
+  &.bg_right {
+    background-image: url('../Root/bg_right.jpg');
+    right: 540px;
+  }
+}
+
+.transparent-mask {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: @loading-mask-zindex;
+  background-color: transparent;
+}

@@ -1,0 +1,45 @@
+@import "~less/sc/variables.less";
+.form-wrapper {
+  padding: 20px 15px;
+
+  :global {
+    .form-item {
+
+      .form-item-label {
+        width: 15%;
+      }
+
+      .form-item-control {
+        width: 85%;
+      }
+    }
+  }
+}
+
+.tips {
+  padding: 0 15px;
+}
+
+.params {
+  padding-top: 20px;
+}
+.param-lable{
+  cursor: pointer;
+  display: inline-block;
+  padding: 5px 10px;
+  background-color: lighten(@btn-default-bg-color,15);
+  color: @brand-primary;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  border-radius: 3px;
+  &:hover{
+    background-color:darken(lighten(@btn-default-bg-color,15),5);
+  }
+  span{
+    &::before{
+      content: '： ';
+      color: @brand-primary;
+    }
+    color: @input-color;
+  }
+}

@@ -1,0 +1,62 @@
+.account-info {
+  border-radius: 4px;
+  background-color: #fff;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
+  margin-right: 15px;
+  margin-bottom: 15px;
+  border: 1px solid #dfe3e8;
+}
+
+.header {
+  padding: 0 10px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  .title {
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    color: #212224;
+    .icon {
+      font-size: 24px;
+      margin-right: 12px;
+      color: #57b8f4;
+    }
+  }
+
+  .more {
+    flex: 1;
+    text-align: right;
+  }
+
+  > * {
+    line-height: normal;
+  }
+}
+
+.content {
+  padding: 0 20px;
+}
+
+.actions {
+  padding: 0 20px 15px;
+  text-align: right;
+
+  :global(.btn) {
+    margin-left: 10px;
+  }
+}
+
+.account-type {
+  padding-left: 10px;
+  margin-bottom: 25px;
+  input {
+    width: 367px;
+  }
+}
+.lastDate {
+  font-size: 12px;
+  padding-right: 20px;
+}

@@ -1,0 +1,82 @@
+@import '~less/variables.less';
+
+@listLineHeight: 20px;
+@listHeight: 20px;
+@timeTagIconSize: 8px;
+@commentUserImageSize: 35px;
+
+.list-wraper {
+  position: relative;
+  height: @listHeight;
+  font-size: 13px;
+  &:not(.first) {
+    margin-top: @listLineHeight;
+    &:before {
+      content: '';
+      display: block;
+      position: absolute;
+      height: @listLineHeight;
+      width: 0;
+      border-left: 1px solid @border-color;
+      left: 11px;
+      bottom: @listHeight;
+    }
+  }
+}
+
+.timelineBox {
+  max-height: 300px;
+  overflow-y: auto;
+}
+
+.time,
+.content {
+  margin-left: 5px;
+}
+.time {
+  color: @text-color-light;
+}
+.user {
+  margin-left: 10px;
+}
+.content-type {
+  border-radius: @listHeight / 2;
+  height: @listHeight;
+  width: @listHeight;
+  line-height: @listHeight;
+  text-align: center;
+  display: inline-block;
+  color: @white;
+  background-color: @text-color-light;
+  font-size: 11px;
+  margin-left: 1.5px;
+  padding-left: 1px;
+}
+
+.add-comment-box {
+  display: flex;
+  padding-top: 15px;
+}
+
+.user-image {
+  > img {
+    border-radius: @commentUserImageSize / 2;
+    height: @commentUserImageSize;
+    width: @commentUserImageSize;
+  }
+}
+
+.comment-content {
+  flex: 1;
+  padding: 0 0 0 15px;
+  display: flex;
+  align-items: center;
+}
+
+.comment-btns {
+  text-align: right;
+  margin-top: 12px;
+  :global(.lean-btn) {
+    margin-left: 10px;
+  }
+}

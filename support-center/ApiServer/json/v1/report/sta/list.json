@@ -1,0 +1,107 @@
+{"data":
+     {
+      "list":
+           [
+               {
+                "symbol_group": "黄金",
+                "deposit_amount": "13.3755555555",
+                "commission": 101,
+                "account_count": 2,
+                "storage":30,
+                "profit": 11466674,
+                "trade_login": 8001128,
+                "id": 1
+                },
+                {
+                "symbol_group": "黄金",
+                "deposit_amount": "0",
+                "commission": 101,
+                "account_count": 2,
+                "storage":30,
+                "profit": 11466674,
+                "trade_login": 8001128,
+                "id": 1
+                },
+                {
+                "symbol_group": "黄金",
+                "deposit_amount": "0",
+                "commission": 101,
+                "account_count": 2,
+                "storage":30,
+                "profit": 11466674,
+                "trade_login": 8001128,
+                "id": 1
+                },
+                {
+                "symbol_group": "黄金",
+                "close_volume": "300",
+                "commission": 101,
+                "account_count": 2,
+                "storage":30,
+                "profit": 11466674,
+                "trade_login": 8001128,
+                "id": 1
+                },
+                {
+                "symbol_group": "黄金",
+                "close_volume": "300",
+                "commission": 101,
+                "account_count": 2,
+                "storage":30,
+                "profit": 11466674,
+                "trade_login": 8001128,
+                "id": 1
+                },
+                {
+                "symbol_group": "黄金",
+                "close_volume": "300",
+                "commission": 101,
+                "account_count": 2,
+                "storage":30,
+                "profit": 11466674,
+                "trade_login": 8001128,
+                "id": 1
+                },
+                {
+                "symbol_group": "黄金",
+                "close_volume": "300",
+                "commission": 101,
+                "account_count": 2,
+                "storage":30,
+                "profit": 11466674,
+                "trade_login": 8001128,
+                "id": 1
+                },
+               {
+                "symbol_group": "黄金",
+                "close_volume": "300",
+                "commission": 101,
+                "account_count": 2,
+                "storage":30,
+                "profit": 11466674,
+                "trade_login": 8001128,
+                "id": 1
+                },
+                {
+                "symbol_group": "黄金",
+                "close_volume": "300",
+                "commission": 101,
+                "account_count": 2,
+                "storage":30,
+                "profit": 11466674,
+                "trade_login": 8001128,
+                "id": 1
+                }
+            ],
+        "sta":
+            {  
+                "total_deposit_amount": 4900
+            },
+        "pager":2,
+        "pages":86,
+        "size":10,
+        "total":138
+    },
+    "mcode":"m0000000",
+    "result":true   
+}

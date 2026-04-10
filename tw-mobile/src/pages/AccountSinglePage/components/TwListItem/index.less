@@ -1,0 +1,33 @@
+@import '~less/fn.less';
+
+.list {
+    position: relative;
+}
+
+.leftImage {
+    top: 50%;
+    .rem( 30 , left );
+    .rem( 38 , width );
+    position: absolute;
+    transform: translateY(-50%);
+}
+
+.rightImage {
+    top: 50%;
+    .rem( 30 , right );
+    .rem( 12 , width );
+    position: absolute;
+    transform: translateY(-50%);
+}
+
+.centerText {
+    font-size: 15px;
+}
+
+[data-dpr="2"] .centerText {
+    font-size: 30px;
+}
+
+[data-dpr="3"] .centerText {
+    font-size: 45px;
+}

@@ -1,0 +1,40 @@
+@margin-val: 16px;
+
+.action-bar {
+  padding: @margin-val;
+  display: flex;
+  justify-content: space-between;
+  max-width: 1440px;
+  min-width: 1000px;
+  margin: 0 auto;
+  .info {
+    display: flex;
+  }
+  .icon {
+    font-size: 32px;
+    color: #00a8a6;
+    margin-right: @margin-val;
+  }
+  .detail {
+    font-size: 16px;
+    .currency {
+      font-size: 12px;
+      line-height: 18px;
+      color: #637381;
+    }
+  }
+  .options {
+    .group {
+      margin-right: @margin-val;
+      display: inline;
+    }
+  }
+  .blank_list {
+    display: flex;
+    align-items: center;
+    .text {
+      font-size: 12px;
+      color: red;
+    }
+  }
+}

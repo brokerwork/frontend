@@ -1,0 +1,43 @@
+.settings {
+  padding: 0;
+  overflow: hidden; //避免双重滚动条的问题
+  :global {
+    .panel-body {
+      padding: 15px;
+    }
+    .actions-bar {
+      .btn {
+        margin-left: 10px;
+      }
+    }
+    .lean-table {
+      word-break: break-all;
+      overflow-wrap: anywhere;
+      border-bottom: 0;
+    }
+    .lean-table .lean-table-cell {
+      min-width: 200px;
+    }
+    .lean-table-fixed-header {
+      height: 100%;
+    }
+    .lean-table-fixed-scroll {
+      height: 100%;
+    }
+    .lean-table-fixed-header:before {
+      border-top: 0;
+    }
+    .lean-card-content {
+      height: 100%;
+      padding: 0;
+    }
+    .lean-card {
+      overflow: hidden; //显示圆角
+      height: 100%;
+    }
+  }
+}
+
+.container {
+  overflow-x: auto;
+}

@@ -1,0 +1,69 @@
+@import '~less/variables.less';
+.actions-bar {
+  width: 100%;
+}
+
+.left-part {
+  display: inline-flex;
+  width: 82%;
+  flex-direction: column;
+  .primary-top-title {
+    height: 42px;
+    .customer-icon {
+      font-size: 32px;
+      color: #00a8a6;
+      display: inline-block;
+      position: relative;
+      top: -3px;
+    }
+    .module-info {
+      display: inline-block;
+      min-width: 84px;
+      margin-left: 16px;
+      .module-name {
+        font-size: 12px;
+      }
+      .module-main-filter {
+        line-height: 24px;
+      }
+    }
+  }
+  .list-item-summarize {
+    height: 18px;
+    font-size: 12px;
+    margin-top: 20px;
+    color: #637381;
+  }
+}
+
+.right-part {
+  display: inline-flex;
+  width: 18%;
+  flex-direction: column;
+  text-align: right;
+  position: relative;
+  top: -15px;
+  .button-area {
+    height: 32px;
+    .more-menu {
+      border: 1px solid #eee;
+      width: 32px;
+      height: 32px;
+      line-height: 32px;
+      margin-left: 8px;
+      display: inline-block;
+      text-align: center;
+      font-size: 16px;
+      border-radius: 4px;
+    }
+  }
+  .search-input {
+    height: 32px;
+    text-align: right;
+    margin-top: 16px;
+    font-size: 13px;
+  }
+}
+.tool-link {
+  text-decoration: none;
+}

@@ -1,0 +1,95 @@
+.open-account {
+  padding: 30px;
+  .account-title {
+    color: #333;
+    font-size: 16px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid #e5e5e5;
+  }
+  .account-ul {
+    list-style: none;
+  }
+  .account-list {
+    height: 138px;
+    position: relative;
+    transition: all 0.3s;
+    border-bottom: 1px solid #e5e5e5;
+    &:hover {
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    }
+  }
+  .account-logo {
+    top: 50%;
+    left: 20px;
+    width: 78px;
+    height: 78px;
+    margin-top: -39px;
+    position: absolute;
+  }
+  .account-logo-inner {
+    width: 78px;
+    height: 78px;
+    overflow: hidden;
+    text-align: center;
+    border-radius: 100%;
+    display: table-cell;
+    vertical-align: middle;
+    border: 1px solid #eceff0;
+    img {
+      max-width: 78px;
+      max-height: 78px;
+    }
+  }
+  .account-wrapper {
+    top: 50%;
+    left: 100px;
+    width: 370px;
+    max-height: 100%;
+    overflow-y: auto;
+    position: absolute;
+    transform: translateY(-50%);
+    span {
+      display: block;
+      word-wrap: break-word;
+    }
+  }
+  .account-wrapper-title {
+    color: #333;
+    font-size: 16px;
+    padding-bottom: 10px;
+  }
+  .account-wrapper-content {
+    color: #999;
+    font-size: 12px;
+    line-height: 1.5;
+  }
+  .account-button {
+    top: 50%;
+    right: 10px;
+    position: absolute;
+    transform: translateY(-50%);
+    .tw-btn {
+      margin-left: 10px;
+    }
+  }
+}
+.accountType_desc {
+  color: #999;
+  margin-top: 5px;
+}
+.account-modal-footer {
+  text-align: center;
+  button {
+    width: 150px;
+  }
+}
+.account_modal_container {
+  :global(.ant-radio-group) {
+    width: 100%;
+  }
+  :global(.ant-radio-wrapper) {
+    width: 100%;
+    word-break: break-all;
+    white-space: normal;
+  }
+}

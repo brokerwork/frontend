@@ -1,0 +1,66 @@
+{
+	"result": true,
+	"mcode": "TW_VIDEO_0000000",
+	"data": {
+		"list": [
+			{
+				"id": "111222333",
+				"subject": "打破旧生活，爆出新科技",
+				"cover": "https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1496902679074&di=3a03b7b0d5d2f03bc9d887021f1dcc96&imgtype=0&src=http%3A%2F%2Ff.hiphotos.baidu.com%2Fzhidao%2Fpic%2Fitem%2Fd043ad4bd11373f0a78a9e7ba10f4bfbfaed0498.jpg",
+				"lecturerName": "Darren",
+				"sourceType": "视屏来源类型",
+				"description": "以下是视频描述，以下是视频报道",
+				"replayList": [
+					{
+						"replayId": "回放ID",
+						"replayUrl": "http://http://9757.liveplay.myqcloud.comm/live/9757_T001117_593ac40676a45b72619d6b44.m3u8",
+						"replayName": "回放Name",
+						"coverUrl": "https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1496902679074&di=3a03b7b0d5d2f03bc9d887021f1dcc96&imgtype=0&src=http%3A%2F%2Ff.hiphotos.baidu.com%2Fzhidao%2Fpic%2Fitem%2Fd043ad4bd11373f0a78a9e7ba10f4bfbfaed0498.jpg"
+					},
+					{
+						"replayId": "回放ID",
+						"replayUrl": "http://http://9757.liveplay.myqcloud.comm/live/9757_T001117_593ac40676a45b72619d6b44.m3u8",
+						"replayName": "回放Name",
+						"coverUrl": "https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1496902679074&di=3a03b7b0d5d2f03bc9d887021f1dcc96&imgtype=0&src=http%3A%2F%2Ff.hiphotos.baidu.com%2Fzhidao%2Fpic%2Fitem%2Fd043ad4bd11373f0a78a9e7ba10f4bfbfaed0498.jpg"
+					},
+					{
+						"replayId": "回放ID",
+						"replayUrl": "http://http://9757.liveplay.myqcloud.comm/live/9757_T001117_593ac40676a45b72619d6b44.m3u8",
+						"replayName": "回放Name",
+						"coverUrl": "https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1496902679074&di=3a03b7b0d5d2f03bc9d887021f1dcc96&imgtype=0&src=http%3A%2F%2Ff.hiphotos.baidu.com%2Fzhidao%2Fpic%2Fitem%2Fd043ad4bd11373f0a78a9e7ba10f4bfbfaed0498.jpg"
+					}
+				],
+				"createTime": "创建时间",
+				"modifyTime": "1497283200"
+			},
+			{
+				"id": "222333444",
+				"subject": "打破旧生活，爆出新科技",
+				"cover": "https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1496902679074&di=3a03b7b0d5d2f03bc9d887021f1dcc96&imgtype=0&src=http%3A%2F%2Ff.hiphotos.baidu.com%2Fzhidao%2Fpic%2Fitem%2Fd043ad4bd11373f0a78a9e7ba10f4bfbfaed0498.jpg",
+				"lecturerName": "Darren",
+				"sourceType": "视屏来源类型",
+				"description": "以下是视频描述，以下是视频报道",
+				"replayList": [
+					{
+						"replayId": "回放ID",
+						"replayUrl": "http://http://9757.liveplay.myqcloud.comm/live/9757_T001117_593ac40676a45b72619d6b44.m3u8",
+						"replayName": "回放Name",
+						"coverUrl": "https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1496902679074&di=3a03b7b0d5d2f03bc9d887021f1dcc96&imgtype=0&src=http%3A%2F%2Ff.hiphotos.baidu.com%2Fzhidao%2Fpic%2Fitem%2Fd043ad4bd11373f0a78a9e7ba10f4bfbfaed0498.jpg"
+					},
+					{
+						"replayId": "回放ID",
+						"replayUrl": "http://http://9757.liveplay.myqcloud.comm/live/9757_T001117_593ac40676a45b72619d6b44.m3u8",
+						"replayName": "回放Name",
+						"coverUrl": "https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1496902679074&di=3a03b7b0d5d2f03bc9d887021f1dcc96&imgtype=0&src=http%3A%2F%2Ff.hiphotos.baidu.com%2Fzhidao%2Fpic%2Fitem%2Fd043ad4bd11373f0a78a9e7ba10f4bfbfaed0498.jpg"
+					}
+				],
+				"createTime": "创建时间",
+				"modifyTime": "1497369600"
+			}
+		],
+		"pager": 1,
+		"pages": 3,
+		"size": 10,
+		"total": 29
+	}
+}

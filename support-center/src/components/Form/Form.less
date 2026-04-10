@@ -1,0 +1,147 @@
+.form {
+  // display: flex;
+  // flex-wrap: wrap;
+
+  &.show-help-text {
+    .item {
+      &.col-1 {
+        width: 100%;
+
+        .label {
+          width: 20%;
+        }
+
+        .control {
+          width: 50%;
+        }
+
+        .help-text {
+          width: 30%;
+        }
+      }
+    }
+  }
+}
+
+.item {
+  display: flex;
+  margin-bottom: 15px;
+  align-items: baseline;
+
+  &.item-longLabel {
+    width: 100%;
+
+    .label {
+      width: 70%;
+    }
+
+    .control {
+      width: 30%;
+    }
+  }
+
+  &.col-1 {
+    width: 100%;
+
+    .label {
+      width: 30%;
+    }
+
+    .control {
+      width: 70%;
+    }
+  }
+
+  &.col-2 {
+    width: 50%;
+
+    .label {
+      width: 40%;
+    }
+
+    .control {
+      width: 60%;
+    }
+  }
+
+  &.col-3 {
+    width: 33.33%;
+
+    .label {
+      width: 40%;
+    }
+
+    .control {
+      width: 60%;
+    }
+  }
+
+  &.col-4 {
+    width: 25%;
+
+    .label {
+      width: 40%;
+    }
+
+    .control {
+      width: 60%;
+    }
+  }
+}
+
+.label {
+  padding: 9px 15px 0 0;
+  text-align: right;
+  line-height: 14px;
+}
+
+.control {
+  line-height: 14px;
+
+  &.static {
+    padding-top: 8px;
+  }
+
+  :global(.btn) + :global(.btn) {
+    margin-left: 10px;
+  }
+
+  &.group {
+    display: flex;
+
+    > :global(.form-group-primary) {
+      flex: 1;
+    }
+
+    > :global(.form-group-middle) {
+      :global(.form-control) {
+        border-radius: 0;
+        border-right: 0;
+      }
+    }
+
+    > :global(.form-group-left) {
+      :global(.btn),
+      :global(.form-control) {
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0;
+        border-right: 0;
+      }
+    }
+
+    > :global(.form-group-right) {
+      :global(.btn),
+      :global(.form-control) {
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0;
+      }
+    }
+  }
+}
+
+.help-text {
+  word-break: break-all;
+  padding-left: 15px;
+  line-height: 30px;
+  color: #999;
+}

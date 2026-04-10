@@ -1,0 +1,243 @@
+import PaginationBar from 'components/v2/PaginationBar';
+import i18n from 'utils/i18n';
+import NoDataView from 'components/NoDataView';
+import { Content, Layout } from 'components/v2/PageWraper';
+import { Table as UiTable } from 'lean-ui';
+import cs from './List.less';
+import TextButton from 'components/v2/TextButton';
+import { MESSAGE_TYPES_OBJECT } from '../../../../constant';
+
+const { Td, Th } = UiTable;
+
+const columns = [
+  { key: 'title', name: i18n['message.subject'] },
+  { key: 'fromName', name: i18n['message.sender'] },
+  { key: 'type', name: i18n['message.send_message_type'] },
+  { key: 'createDate', name: i18n['message.time'] }
+];
+
+export default class List extends PureComponent {
+  _renderCellNew = ({ key, data, index, rowData, listData }) => {
+    let content;
+
+    switch (key) {
+      case 'title':
+        content = (
+          <div
+            className={
+              rowData.read
+                ? cs['td-title']
+                : `main-color ${cs['td-unread-title']}`
+            }
+            onClick={this.onTitleClick.bind(this, rowData)}
+          >
+            {data}
+          </div>
+        );
+        break;
+      case 'fromName':
+        content = (
+          <div className={rowData.read ? cs['td'] : cs['td-unread']}>
+            {data}
+          </div>
+        );
+        break;
+      case 'type':
+        content = (
+          <div className={rowData.read ? cs['td'] : cs['td-unread']}>
+            {MESSAGE_TYPES_OBJECT[data]}
+          </div>
+        );
+        break;
+      case 'createDate':
+        content = (
+          <div className={rowData.read ? cs['td'] : cs['td-unread']}>
+            {data}
+          </div>
+        );
+        break;
+    }
+    return (
+      <Td key={key} title={data}>
+        {content}
+      </Td>
+    );
+  };
+
+  onTitleClick = item => {
+    const { push, markAsRead } = this.props;
+    const { read } = item;
+    if (!read) {
+      markAsRead([item.inboxId]).then(res => {
+        if (!res.result) return Promise.resolve(res);
+        push(`/msgmgmt/inbox/details/${item.id}`);
+      });
+    } else {
+      push(`/msgmgmt/inbox/details/${item.id}`);
+    }
+  };
+
+  onPageChange = ({ pageNo, pageSize }) => {
+    const { searchParams, modifyParams } = this.props;
+    modifyParams({
+      ...searchParams,
+      size: pageSize,
+      page: pageNo
+    });
+  };
+
+  onSelect = ({ item, selectedKeys, event }) => {
+    if (item === null) {
+      this.toggleSelectAll(event);
+    } else {
+      this.toggleSelect(item, !event.target.checked);
+    }
+  };
+
+  toggleSelectAll = evt => {
+    let isSelected = evt;
+    if (evt && evt.target) {
+      isSelected = evt.target.checked;
+    }
+    const { selectItem, data } = this.props;
+    let map = {};
+    if (isSelected) {
+      data.forEach(o => {
+        let inboxId = o.inboxId;
+        map[inboxId] = o;
+      });
+    }
+    selectItem(map);
+  };
+  toggleSelect = (item, isSelected) => {
+    let { inboxId } = item;
+    const { selectItem, selectedItem } = this.props;
+    let map = Object.assign({}, selectedItem);
+    if (!isSelected) {
+      map[inboxId] = item;
+    } else {
+      delete map[inboxId];
+    }
+    selectItem(map);
+  };
+
+  removeSelectedConfirm = () => {
+    const { showTipsModal } = this.props;
+    showTipsModal({
+      content: i18n['message.remove_tips'],
+      onConfirm: this.removeSelected
+    });
+  };
+
+  removeSelected = cb => {
+    const {
+      selectedItem,
+      showTopAlert,
+      selectItem,
+      removeMessage,
+      getMessages,
+      searchParams
+    } = this.props;
+    const selectedItems = Object.keys(selectedItem);
+    const inIds = selectedItems.map(item => selectedItem[item]['inId']);
+    removeMessage(selectedItems, inIds).then(res => {
+      if (!res.result) return Promise.resolve(res);
+      showTopAlert({
+        content: i18n['message.remove_success'],
+        bsStyle: 'success'
+      });
+      // 清空已选择信息
+      selectItem({});
+      // 关闭提示框
+      cb();
+      // 刷新列表
+      return getMessages(searchParams);
+    });
+  };
+
+  markSelectedAsRead = () => {
+    const {
+      selectedItem,
+      markSelectedAsRead,
+      showTipsModal,
+      getMessages,
+      selectItem,
+      searchParams
+    } = this.props;
+    const selectedItems = Object.keys(selectedItem);
+    const inIds = selectedItems.map(item => selectedItem[item]['inId']);
+    showTipsModal({
+      content: i18n['message.mark_selected_as_read.tips'],
+      onConfirm: cb => {
+        markSelectedAsRead(inIds).then(r => {
+          if (!r.result) return;
+          cb();
+          selectItem({});
+          getMessages(searchParams);
+        });
+      }
+    });
+  };
+
+  renderBatchActions = () => {
+    return (
+      <div>
+        <TextButton
+          className={cs['button-cancel']}
+          text={i18n['general.cancel']}
+          onClick={this.toggleSelectAll.bind(this, false)}
+        />
+        <TextButton
+          text={i18n['general.delete']}
+          icon="delete-outline"
+          onClick={this.removeSelectedConfirm}
+        />
+        <TextButton
+          text={i18n['message.mark_selected_as_read']}
+          icon="success-outline"
+          onClick={this.markSelectedAsRead}
+        />
+      </div>
+    );
+  };
+
+  render() {
+    const { data, paginationInfo, selectedItem } = this.props;
+
+    const selectedKeys = Object.keys(selectedItem);
+
+    const rowSelectOptions = {
+      onChange: this.onSelect,
+      selectFieldKey: 'inboxId',
+      selectedKeys,
+      selectedHeader: this.renderBatchActions()
+    };
+
+    return (
+      <Content table={true}>
+        <div>
+          <UiTable
+            data={data}
+            columns={columns}
+            fixedHeader
+            renderCell={this._renderCellNew}
+            rowSelectOptions={rowSelectOptions}
+            // renderHeadCell={this.renderHeadCell}
+          />
+        </div>
+
+        {data.length ? undefined : <NoDataView />}
+        {data.length ? (
+          <PaginationBar
+            total={paginationInfo.total}
+            pageSize={paginationInfo.pageSize}
+            pageNo={paginationInfo.pageNo}
+            onPageChange={this.onPageChange}
+          />
+        ) : (
+          undefined
+        )}
+      </Content>
+    );
+  }
+}

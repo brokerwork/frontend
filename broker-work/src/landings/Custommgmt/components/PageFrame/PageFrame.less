@@ -1,0 +1,36 @@
+@import '~less/variables.less';
+@page-frame-width: 1440px;
+@un-focus-width: 460px;
+@split-width: 30px;
+// 760
+.root {
+  // background: @body-bg;
+  // margin: -15px;
+  // padding: 15px;
+  .panel {
+    max-width: @page-frame-width;
+    min-width: 1000px;
+    margin: auto;
+    .header {
+      margin-bottom: 15px;
+    }
+    .body {
+      display: flex;
+      .left {
+        width: calc(~'100% - @{un-focus-width} - @{split-width}');
+        margin-right: @split-width;
+      }
+      .right {
+        width: @un-focus-width;
+      }
+      &.panel-right {
+        .right {
+          width: calc(~'100% - @{un-focus-width} - @{split-width}');
+        }
+        .left {
+          width: @un-focus-width;
+        }
+      }
+    }
+  }
+}

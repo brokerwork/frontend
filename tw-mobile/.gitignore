@@ -1,0 +1,9 @@
+.vscode
+node_modules
+www/js
+www/css
+.idea/
+npm-debug.log
+.DS_Store
+config.xml
+dist

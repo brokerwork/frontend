@@ -1,0 +1,257 @@
+@import '~less/variables';
+.task-detail-container {
+  :global(.lean-select-value) {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+  :global(.lean-collapseitem) {
+    overflow: unset;
+  }
+}
+.basic-info {
+  padding-bottom: 15px;
+}
+
+.reject-content {
+  margin: -10px 0;
+}
+
+.reject-reson {
+  margin-bottom: 15px;
+}
+
+.edit-btns {
+  :global(.lean-btn) {
+    margin-left: 15px;
+  }
+}
+
+.edit-task-container {
+  display: flex;
+  // align-items: center;
+}
+
+.taskInfo-div {
+  display: inline-flex;
+  align-items: center;
+}
+
+.edit-task-info {
+  flex: 1;
+  font-size: 16px;
+
+  &:hover {
+    color: @text-color-dark;
+    cursor: default;
+  }
+}
+
+.eye-icon {
+  position: absolute;
+  top: 50%;
+  right: 8px;
+  margin-top: -8px;
+}
+
+.password-field {
+  position: relative;
+  display: table;
+  width: 100%;
+}
+
+.control-width {
+  width: 100%;
+}
+.form-title {
+  font-size: 14px;
+  border-bottom: 1px solid @border-color;
+  padding-bottom: 15px;
+  margin: 0 0 15px;
+}
+
+.tab-content {
+  padding-top: 15px;
+  .error {
+    border-color: @red;
+  }
+}
+
+.tags {
+  display: block;
+}
+
+.form-text {
+  padding-top: 5px;
+}
+.pay_status_pending {
+  color: #fc445b;
+}
+
+.pay_status_finished {
+  color: #33b07d;
+}
+
+.affectedAccounts {
+  color: @text-color;
+  padding: 0;
+  margin-top: -3px;
+  & + :global(.dropdown-menu) {
+    > li > a {
+      &:hover,
+      &:focus {
+        color: @text-color-dark;
+        background-color: #fff;
+        outline: none;
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+.sendEmail {
+  margin-top: 7px;
+  font-size: 14px;
+}
+
+.dropdown-width {
+  width: 100%;
+}
+
+.comment {
+  font-size: '12px';
+  color: '#aaa';
+}
+.same-accounts {
+  padding: 5px 15px 0 0;
+}
+
+.from-bold {
+  margin-left: 5px;
+  color: #000;
+}
+
+.agencyRegisterTips {
+  color: red;
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  height: 30px;
+  line-height: 30px;
+  & .notice-text {
+    color: @state-success-text;
+  }
+}
+.warning-value {
+  color: @red;
+  font-size: 12px;
+}
+.field-image {
+  margin-right: 5px;
+}
+.tips-content-danger {
+  color: @brand-danger;
+}
+
+.deposit-input {
+  padding: 2px 5px;
+  margin: -15px 0;
+  height: auto;
+}
+
+.appropriateness-view-link {
+  float: right;
+}
+.wrap-item {
+  flex-wrap: wrap;
+  .wrap-item-child {
+    width: 100%;
+    display: flex;
+  }
+}
+.form-notice {
+  color: @text-color-light;
+  margin-top: 5px;
+}
+.updateOwnerTable {
+  //font-size: 13px;
+  .th {
+    max-width: 300px;
+    font-weight: bold;
+  }
+  .td {
+    max-width: 300px;
+    //height: 30px;
+  }
+}
+
+.form-content {
+  padding-bottom: 50px;
+}
+
+.none-padding-form-item {
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+.error-icon {
+  position: relative;
+  top: 1px;
+  left: 4px;
+  color: #fc445b;
+}
+.tipsBox {
+  margin-left: 10px;
+  vertical-align: middle;
+}
+.tpl-content {
+  width: 800px;
+  padding: 20px;
+  background: #fff;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  overflow: auto;
+  background: #fff;
+  z-index: -1;
+  .head {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+  }
+  .body {
+    color: #fff;
+    border: 1px solid #0080f7;
+    .title {
+      padding: 10px;
+      background: #0080f7;
+    }
+    .card {
+      padding: 10px;
+      color: #000;
+      .content {
+        display: flex;
+        flex-wrap: wrap;
+        font-size: 12px;
+        border-top: 1px solid #ddd;
+        margin-top: 10px;
+        div {
+          flex-basis: 50%;
+          margin-top: 10px;
+          span {
+            display: inline-block;
+            min-width: 70px;
+            margin-right: 30px;
+          }
+        }
+      }
+    }
+  }
+}
+
+:global(.lean-checkbox-wrapper+.lean-checkbox-wrapper) {
+  margin-left: 0 !important;
+}
+.current-rate {
+  color: #999;
+}

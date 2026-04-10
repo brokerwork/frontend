@@ -1,0 +1,58 @@
+@import '~less/variables.less';
+
+.container {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 1;
+  overflow: hidden;
+}
+.box-success {
+  padding-bottom: 15px;
+}
+
+.container-innerbox {
+  display: flex;
+  flex-direction: column;
+  min-width: @page-min-width;
+  height: 100%;
+}
+
+.content {
+  padding: 15px;
+  flex: 1;
+  overflow: auto;
+}
+.content-bg {
+  // background-color: @white;
+  // min-height: 100%;
+  height: 100%;
+  // 解决宽度超出时, 背景没有完全覆盖的问题.
+  display: inline-block;
+  min-width: 100%;
+  border-radius: @border-radius-base;
+}
+.rebate-content-bg {
+  // background-color: @white;
+  // min-height: 100%;
+  height: 100%;
+  // 解决宽度超出时, 背景没有完全覆盖的问题.
+  display: inline-block;
+  width: 100%;
+  border-radius: @border-radius-base;
+}
+
+.transparent-mask {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: @loading-mask-zindex;
+  background-color: transparent;
+}
+.no_scroll {
+  overflow: visible !important;
+}

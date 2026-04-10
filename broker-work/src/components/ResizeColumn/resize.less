@@ -1,0 +1,19 @@
+@import '~less/variables.less';
+
+.container {
+  display: flex;
+  & > div {
+    border-right: 1px solid @border-color;
+  }
+  .column {
+    position: relative;
+    .resize-cursor {
+      position: absolute;
+      top: 0;
+      right: 0px;
+      width: 6px;
+      cursor: e-resize;
+      height: 100%;
+    }
+  }
+}

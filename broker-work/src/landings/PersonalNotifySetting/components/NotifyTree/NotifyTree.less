@@ -1,0 +1,36 @@
+@import '~less/variables.less';
+.select-tree {
+    padding-left: @padding-base;
+    li {
+        list-style: none;
+    }
+    &.hide {
+        display: none;
+    }
+    .icon,
+    .checkbox {
+        vertical-align: middle;
+        margin: 0 5px 0 0;
+        display: inline-block;
+    }
+}
+
+.tips-content {
+    min-width: 240px;
+}
+
+.safe-warning {
+    margin-left: 5px;
+    color: @badge-orange;
+    vertical-align: middle
+}
+
+.unsafe-notice {
+    margin-left: 10px;
+    color: @badge-orange;
+    span {
+        margin-left: 5px;
+        font-size: 12px;
+        vertical-align: middle
+    }
+}

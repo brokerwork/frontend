@@ -1,0 +1,57 @@
+@import '~less/variables.less';
+
+.error {
+  color: @red;
+}
+
+.addOn-box {
+  display: flex;
+  width: 100%;
+  white-space: nowrap;
+}
+
+.addOn-text {
+  display: inline-block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  max-width: 300px;
+}
+
+.resend-button {
+  flex: 1;
+  .icon {
+    color: #999;
+    margin-left: 5px;
+  }
+}
+.message-list {
+  :global(.lean-table-cell) {
+    border-top: 1px solid #dfe3e8;
+    font-size: 13px;
+    height: 42px;
+    padding-left: 16px;
+    word-break: break-word;
+    text-align: justify;
+    min-width: 120px;
+  }
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  height: 100%;
+}
+
+.r1 {
+  position: relative;
+  height: 100%;
+  overflow: auto;
+}
+
+.r2 {
+  position: absolute;
+  height: 100%;
+  min-width: 100%;
+}

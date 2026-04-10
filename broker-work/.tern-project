@@ -1,0 +1,13 @@
+{
+  "libs": [
+    "node",
+    "browser",
+    "string_completion",
+    "commonjs",
+    "node_resolve"
+  ],
+  "loadEagerly": [
+  ],
+  "plugins": {
+  }
+}

@@ -1,0 +1,59 @@
+@import '~less/variables.less';
+.actions-bar {
+    width: 100%;
+}
+
+.left-part {
+    display: inline-flex;
+    width: 82%;
+    flex-direction: column;
+    .primary-top-title {
+        height: 42px;
+        .customer-icon {
+            font-size: 32px;
+            color: #00a8a6;
+            display: inline-block;
+            position: relative;
+        }
+        .module-info {
+            display: inline-block;
+            min-width: 84px;
+            margin-left: 16px;
+            position: relative;
+            top: -8px;
+                :global(.lean-breadcrumb-link) {
+                    font-size: 16px;
+                    color: #303842;
+                }
+        }
+    }
+}
+
+.right-part {
+    display: inline-flex;
+    width: 18%;
+    flex-direction: column;
+    text-align: right;
+    position: relative;
+    top: -15px;
+    .button-area {
+        height: 32px;
+        .more-menu {
+            border: 1px solid #eee;
+            width: 32px;
+            height: 32px;
+            line-height: 32px;
+            margin-left: 8px;
+            display: inline-block;
+            text-align: center;
+            font-size: 16px;
+            border-radius: 4px;
+        }
+    }
+    .search-input {
+        height: 32px;
+        text-align: right;
+        margin-top: 16px;
+        font-size: 13px;
+    }
+}

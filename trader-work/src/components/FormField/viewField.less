@@ -1,0 +1,111 @@
+.step-panel{
+        margin: 30px auto 0;
+        min-height: 200px;
+        border-radius: 4px;
+        border: solid 1px #eff1f1;
+        border-radius: 4px;
+        background: #fafafa;
+    .step-tit{
+        font-size: 16px;
+        padding: 36px;
+        color: #323232;
+        background: #fafafa;
+        text-align: center;
+        border-bottom: 1px solid #f0f0f0;
+    }
+    .step-body{
+        padding: 15px 30px;
+    }
+    .step-title{
+        height: 45px;
+        color: #323232;
+        font-size: 14px;
+        line-height: 45px;
+    }
+    .step-data{
+        &:after{
+            clear: both;
+            content: '';
+            display: block;
+        }
+    }
+    .step-row{
+        border-bottom: 1px dotted #eee;
+        &:after{
+            clear: both;
+            content: '';
+            display: block;
+        }
+    }
+    .step-row-full{
+        width: 100%;
+        float: left;
+        &:after{
+            clear: both;
+            content: '';
+            display: block;
+        }
+    }
+    .step-row-half{
+        width: 50%;
+        float: left;
+        &:after{
+            clear: both;
+            content: '';
+            display: block;
+        }
+    }
+    .step-row-label{
+        width: 30%;
+        float: left;
+        color: #666666;
+        line-height: 1.5;
+        padding: 10px 0;
+        text-align: right;
+        overflow: hidden;
+        word-wrap: break-word;
+    }
+    .step-row-label-lg{
+        width: 67.5%;
+    }
+    .step-row-label-sm{
+        width: 17.5%;
+    }
+    .step-row-value{
+        width: 70%;
+        float: left;
+        color: #323232;
+        padding: 10px 0 10px 20px;
+        line-height: 1.5;
+        box-sizing: border-box;
+        overflow: hidden;
+        word-wrap: break-word;
+        img{
+            height: 60px;
+            padding: 5px;
+            border-radius: 5%;
+            border: 1px dashed #d5d5d5;
+        }
+    }
+    .step-row-value-lg{
+        width: 82.5%;
+    }
+    .step-row-value-sm{
+        width: 32.5%;
+    }
+    .step-description-tit{
+        height: 45px;
+        color: #000;
+        font-size: 14px;
+        line-height: 45px;
+    }
+    .step-description-con{
+        color: #999;
+        padding: 0 30px;
+        overflow: hidden;
+        line-height: 1.5;
+        word-wrap: break-word;
+        white-space: pre-wrap;
+        box-sizing: border-box;
+    }
+}

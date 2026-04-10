@@ -1,0 +1,32 @@
+{
+  "data": {
+    "allStep": 1,
+    "categoryId": "34146884-0e07-4e3c-a66a-3d6f37a5fcac",
+    "categoryName": "真实账户开户",
+    "createTime": 1480513735846,
+    "creator": {
+      "key": "2040e751-0fc3-4dbf-bd3b-402e85666209",
+      "name": "Tiny"
+    },
+    "isEdit": true,
+    "itemId": "f0f53288-0073-46fe-9b62-e64ae4484da0",
+    "itemName": "测试项目",
+    "jobId": "1c447865-447d-43d3-8ae6-f56877d3651e",
+    "jobName": "TA 真实账户申请：申请人用户ID：2040e751-0fc3-4dbf-bd3b-402e85666209",
+    "jobType": "JOB_TYPE_TA_TRANSFER",
+    "modifyTime": 1480925740439,
+    "nowStep": 1,
+    "priority": "2",
+    "jobNo": "0000000649",
+    "processorList": [{
+      "handle": false,
+      "name": "jerry2",
+      "userId": "121"
+    }],
+    "state": "Dealed",
+    "state1": "Submited",
+    "verify": false
+  },
+  "mcode": "m0000000",
+  "result": true
+}

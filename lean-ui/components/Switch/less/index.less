@@ -1,0 +1,62 @@
+@import "./mix.less";
+
+.@{prefix}-switch {
+    cursor: pointer;
+    position: relative;
+    display: inline-block;
+    height: @switch-height;
+    box-sizing: border-box;
+    vertical-align: middle;
+    min-width: @switch-width;
+    line-height: @switch-height;
+    background-color: #919eab;
+    transition: all @switch-transition;
+    border-radius: @switch-border-radius;
+    -webkit-transition: all @switch-transition;
+    &:after{
+        content: "";
+        cursor: pointer;
+        position: absolute;
+        top: @switch-after-top;
+        left: @switch-after-left;
+        width: @switch-after-width;
+        background-color: #ffffff;
+        height: @switch-after-height;
+        transition: all @switch-transition;
+        border-radius: @switch-after-border-radius;
+        -webkit-transition: all @switch-transition;
+    }
+    .@{prefix}-switch-inner{
+        color: #fff;
+        display: block;
+        user-select: none;
+        font-size: @switch-font-size;
+        margin-left: @switch-inner-margin-left;
+        margin-right: @switch-inner-margin-right;
+    }
+}
+.@{prefix}-switch-checked{
+    background-color: @switch-checked-bg-color;
+    &:after{
+        left: @switch-checked-after-left;
+        margin-left: @switch-checked-after-margin-left;
+    }
+    .@{prefix}-switch-inner{
+        margin-left: @switch-checked-inner-margin-left;
+        margin-right:@switch-checked-inner-margin-right;
+    }
+}
+.@{prefix}-switch-disabled{
+    cursor: not-allowed;
+    background-color: @switch-disabled-bg-color;
+    &:after{
+        cursor: not-allowed;
+    }
+}
+.@{prefix}-switch-disabled-checked{
+    cursor: not-allowed;
+    background-color: @switch-disabled-checked-bg;
+    &:after{
+        cursor: not-allowed;
+    }
+}

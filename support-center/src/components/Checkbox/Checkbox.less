@@ -1,0 +1,34 @@
+@import "~less/sc/variables.less";
+
+.checkbox {
+  position: relative;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  color: @base-text-color;
+  font-weight: normal;
+
+  &.inline {
+    display: inline-flex;
+    margin-right: 10px;
+    margin-bottom: 8px;
+  }
+
+  input[type="checkbox"] {
+    visibility: hidden;
+    position: absolute;
+  }
+}
+
+.checked {
+  color: @brand-primary;
+}
+
+.disabled {
+  color: @disabled-color;
+  cursor: not-allowed;
+}
+
+.text {
+  margin-left: 5px;
+}

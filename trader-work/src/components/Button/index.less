@@ -1,0 +1,48 @@
+.tw-btn{
+    display: inline-block;
+    margin-bottom: 0;
+    font-weight: normal;
+    text-align: center;
+    vertical-align: middle;
+    touch-action: manipulation;
+    cursor: pointer;
+    background-image: none;
+    border: 1px solid #d5d5d5;
+    color:#666;
+    white-space: nowrap;
+    padding: 0 15px;
+    font-size: 14px;
+    border-radius: 4px;
+    user-select: none;
+    transition: all .3s cubic-bezier(.645,.045,.355,1);
+    transform: translateZ(0);
+    // min-width: 100px;
+    height: 32px;
+    padding: 0 15px;
+    letter-spacing: 1px;
+	outline: none;
+	text-shadow: none;
+	background-color: transparent;
+	&:disabled {
+        border: 1px solid #d5d5d5!important;
+		background-color: #fafafa!important;
+		color: #999!important;
+		cursor: not-allowed;
+		&:hover{
+			background-color: #fafafa!important;
+		}
+    }
+}
+.tw-btn-gray {
+    background-color: #d9d9d9;
+    border: 1px solid #d9d9d9;
+    &:hover{
+        background-color: #d9d9d9;
+        border: 1px solid #d9d9d9;
+    }
+}
+.tw-btn-solid {
+    color: #666;
+    background-color: transparent;
+    border-color: #d5d5d5;
+}

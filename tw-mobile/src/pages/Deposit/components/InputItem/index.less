@@ -1,0 +1,22 @@
+@import '~less/fn.less';
+
+.item {
+    position: relative;
+}
+
+.title {
+    position: absolute;
+    top: 50%;
+    .rem(30,left);
+    transform: translateY(-50%);
+    font-size: 15px;
+}
+
+[data-dpr="2"] .title {
+    font-size: 30px;
+}
+
+[data-dpr="3"] .title {
+    font-size: 45px;
+}
+

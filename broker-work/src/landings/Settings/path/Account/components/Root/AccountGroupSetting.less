@@ -1,0 +1,35 @@
+@import '~less/variables.less';
+
+.body {
+  :global(.lean-card-content) {
+    padding: 0;
+    padding-bottom: 40px;
+  }
+  :global(.lean-modal-wrap) {
+    left: -1px;
+    right: -1px;
+  }
+  :global(.lean-table) {
+    border-top: 1px solid transparent;
+  }
+  :global(.lean-card) {
+    overflow: hidden;
+  }
+}
+
+.list-table {
+  padding: 0;
+
+  :global(.lean-table-popover-td) {
+    max-width: 300px;
+  }
+}
+.list-button button {
+  margin: 0 3px;
+}
+
+.operationIcon {
+  color: @main-color;
+  margin-right: 10px;
+  cursor: pointer;
+}

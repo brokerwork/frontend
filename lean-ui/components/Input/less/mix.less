@@ -1,0 +1,27 @@
+.input(){
+    box-sizing: border-box;
+    position: relative;
+    display: inline-block;
+    padding: @input-padding;
+    width: @full-width;
+    height: @input-height;
+    line-height: @input-line-height;
+    font-size: @input-font-size;
+    color: @input-color;
+    background-color: @input-bg-color;
+    background-image: none;
+    border: 1px solid @input-color-grey4;
+    border-radius: @input-border-radius;
+    transition: all @input-transition;
+    &:hover{
+        border-color: @input-color-blue2;
+    }
+    &:focus{
+        outline: 0;
+        border-color: @input-color-blue2;
+        box-shadow: @input-focus-box-shadow;
+    }
+    &::-webkit-input-placeholder{
+        color: @input-color-grey3;
+    }
+}

@@ -1,0 +1,36 @@
+{
+    "data": [
+        {
+            "id": "12",
+            "idType": "RoleId",
+            "name": "abc123"
+        },
+        {
+            "id": "121",
+            "idType": "Id",
+            "name": "ABCD jerry22222"
+        },
+        {
+            "id": "fc216169-f0fa-4cf8-80ff-f595e1c3a5d6",
+            "idType": "Id",
+            "name": "HHTV 新增用户"
+        },
+        {
+            "id": "647b1ad8-c220-4afe-bfa7-b40934be7f4b",
+            "idType": "Id",
+            "name": "GDAB ysysyg"
+        },
+        {
+            "id": "e901e798-b81c-4947-8668-bed3428a203a",
+            "idType": "Id",
+            "name": "EABA 梵蒂冈梵蒂冈"
+        },
+        {
+            "id": "383a4db7-ed24-45c2-8586-f1cd37058a16",
+            "idType": "Id",
+            "name": "KNPG模糊化与删除节点测试 石小佳"
+        }
+    ],
+    "mcode": "m0000000",
+    "result": true
+}

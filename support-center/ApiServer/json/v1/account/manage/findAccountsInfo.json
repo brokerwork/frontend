@@ -1,0 +1,143 @@
+{
+  "data": {
+    "list": [
+      {
+        "login": "2089985821",
+        "group": "D01DemoLWVIR",
+        "enable": 1,
+        "readOnly": 1,
+        "status": "",
+        "regdate": 1480571815000,
+        "leverage": 100,
+        "balance": 10000,
+        "equity": 10000,
+        "profit": 0,
+        "credit": 0
+      },
+      {
+        "login": "2089985819",
+        "group": "D01DemoLWVIR",
+        "enable": 1,
+        "readOnly": 1,
+        "status": "",
+        "regdate": 1480571337000,
+        "leverage": 100,
+        "balance": 10000,
+        "equity": 10000,
+        "profit": 0,
+        "credit": 0
+      },
+      {
+        "login": "2089985818",
+        "group": "D01DemoLWVIR",
+        "enable": 1,
+        "readOnly": 1,
+        "status": "",
+        "regdate": 1480571242000,
+        "leverage": 100,
+        "balance": 10000,
+        "equity": 10000,
+        "profit": 0,
+        "credit": 0
+      },
+      {
+        "login": "2089985813",
+        "group": "D01DemoLWVIR",
+        "enable": 1,
+        "readOnly": 1,
+        "status": "",
+        "regdate": 1480570421000,
+        "leverage": 50,
+        "balance": 1000,
+        "equity": 1000,
+        "profit": 0,
+        "credit": 0
+      },
+      {
+        "login": "2089985810",
+        "group": "D01DemoLWVIR",
+        "enable": 1,
+        "readOnly": 1,
+        "status": "",
+        "regdate": 1480569156000,
+        "leverage": 50,
+        "balance": 1000,
+        "equity": 1000,
+        "profit": 0,
+        "credit": 0
+      },
+      {
+        "login": "2089985809",
+        "group": "D01DemoLWVIR",
+        "enable": 1,
+        "readOnly": 1,
+        "status": "",
+        "regdate": 1480569088000,
+        "leverage": 50,
+        "balance": 1000,
+        "equity": 1000,
+        "profit": 0,
+        "credit": 0
+      },
+      {
+        "login": "2089985808",
+        "group": "D01DemoLWVIR",
+        "enable": 1,
+        "readOnly": 1,
+        "status": "",
+        "regdate": 1480568719000,
+        "leverage": 50,
+        "balance": 1000,
+        "equity": 1000,
+        "profit": 0,
+        "credit": 0
+      },
+      {
+        "login": "2089985804",
+        "group": "D01DemoLWVIR",
+        "enable": 1,
+        "readOnly": 1,
+        "status": "",
+        "regdate": 1480565976000,
+        "leverage": 100,
+        "balance": 10000,
+        "equity": 10000,
+        "profit": 0,
+        "credit": 0
+      },
+      {
+        "login": "2089985803",
+        "group": "D01DemoLWVIR",
+        "enable": 1,
+        "readOnly": 1,
+        "status": "",
+        "regdate": 1480565871000,
+        "leverage": 100,
+        "balance": 10000,
+        "equity": 10000,
+        "profit": 0,
+        "credit": 0
+      },
+      {
+        "login": "2089985795",
+        "group": "D01DemoLWVIR",
+        "enable": 1,
+        "readOnly": 1,
+        "status": "",
+        "regdate": 1480563293000,
+        "leverage": 100,
+        "balance": 10000,
+        "equity": 10000,
+        "profit": 0,
+        "credit": 0
+      }
+    ],
+    "offset": 0,
+    "pageNo": 1,
+    "pageSize": 10,
+    "pages": 86,
+    "total": 857
+  },
+  "mcode": "m0000000",
+  "result": true
+}

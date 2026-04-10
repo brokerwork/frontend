@@ -1,0 +1,36 @@
+.message-fixed {
+  position: fixed;
+  top: 10px;
+  left: 0;
+  right: 0;
+  text-align: center;
+  transition: all .3s;
+  z-index:9999;
+  span {
+    opacity: 0.8;
+    border-radius: 4px;
+    width: 420px;
+    display: inline-block;
+    height: 80px;
+    font-size: 14px;
+    padding: 33px 30px;
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.2);
+    color: #fff;
+    i {
+      float: right;
+      cursor: pointer;
+    }
+    &.error {
+      background-color: #ff4157;
+    }
+    &.success {
+      background-color: #00b277;
+    }
+    &.warning {
+      background-color: #fecc55;
+    }
+    &.info {
+      background-color: #00a3fe;
+    }
+  }
+}

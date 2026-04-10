@@ -1,0 +1,55 @@
+@import '~less/variables.less';
+
+.container {
+  text-align: center;
+  padding-top: 60px;
+}
+
+.success-icon {
+  color: @state-success-text;
+  font-size: 56px;
+}
+.success-text {
+  color: @state-success-text;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.success-tips-text {
+  color: @text-color-light;
+  margin-bottom: 30px;
+}
+
+.success-item {
+  margin-bottom: 20px;
+  line-height: 16px;
+}
+
+.send-again-btn {
+  color: @text-color;
+  background-color: @white;
+  margin-left: 10px;
+  &:hover {
+    color: @text-color;
+    background-color: darken(@white, 5%);
+  }
+}
+
+.item {
+  margin-bottom: @padding-base;
+  line-height: 16px;
+}
+
+.links-wrap .link-success-message{
+  font-size: 16px;
+  display: inline-block;
+  margin-bottom: 0;
+  font-weight: 400;
+  text-align: center;
+  vertical-align: middle;
+  padding-top: 6px;
+  border: 1px solid #c7cbd6;
+}
+
+.links-wrap .link-success-message:hover{
+  color: #fff !important;
+}

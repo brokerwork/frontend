@@ -1,0 +1,122 @@
+.live-container{
+    width: 100%;
+    min-height: 100%;
+    background: #f1f4f9;
+    .live-list{
+        width: 930px;
+        margin: 0 auto;
+        min-height: 100%;
+    }
+    .live-li{
+        float: left;
+        width: 290px;
+        cursor: pointer;
+        overflow: hidden;
+        border-radius: 4px;
+        margin: 10px 10px 15px;
+        transition: transform 0.2s linear;
+        box-shadow: 0 1px 4px 0 rgba(4, 0, 0, 0.08);
+    }
+    .live-li:hover{
+        transform: scale(1.02);
+        box-shadow: 0 1px 12.9px 0.1px rgba(4, 0, 0, 0.25);
+        .li-cover{
+            display: block;
+        }
+    }
+    .li-img{
+        height: 162px;
+        position: relative;
+        background: #ccc;
+    }
+    .li-hint{
+        top: 10px;
+        z-index: 2;
+        right: 10px;
+        font-size: 14px;
+        padding: 4px 10px;
+        position: absolute;
+        border-radius: 14px;
+        background-color: rgba(0,0,0,0.5);
+    }
+    .li-hint-time{
+        top: 10px;
+        z-index: 2;
+        right: 10px;
+        font-size: 14px;
+        padding: 4px 10px;
+        position: absolute;
+        border-radius: 14px;
+        background-color: rgba(0,0,0,0.5);
+    }
+    .li-started{
+        color: #3fb8fb;
+        border: 1px solid #3fb8fb;
+    }
+    .li-not-started{
+        color: #fff;
+        border: 1px solid #fff;
+    }
+    .li-cover-img{
+        width: 100%;
+    }
+    .li-cover{
+        top: 0;
+        left: 0;
+        bottom: 0;
+        z-index: 1;
+        width: 100%;
+        display: none;
+        position: absolute;
+        background-color: rgba(0,0,0,0.5);
+        span{
+            top: 50%;
+            left: 50%;
+            color: #fff;
+            font-size: 58px;
+            position: absolute;
+            transform: translate(-50%, -50%);
+        }
+    }
+    .li-des{
+        padding: 15px;
+        background: #fff;
+        box-sizing: border-box;
+    }
+    .li-des-tit{
+        line-height: 1;
+        font-size: 18px;
+        font-weight: 500;
+        color: #3e3e3e;
+    }
+    .li-des-teacher{
+        line-height: 1;
+        font-size: 14px;
+        margin-top: 10px;
+        color: #999999;
+    }
+    .clear{
+        clear: both;
+    }
+    .live-btn{
+        width: 910px;
+        height: 45px;
+        font-size: 14px;
+        margin: 15px 0 0 10px;
+    }
+    .live-empty{
+        padding-top: 10px;
+        .live-empty-img{
+            width: 95px;
+            margin: 0 auto;
+            img{
+                width: 100%;
+            }
+        }
+        .live-empty-hint{
+            line-height: 1;
+            margin-top: 20px;
+            text-align: center;
+        }
+    }
+}

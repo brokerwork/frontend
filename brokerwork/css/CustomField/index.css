@@ -1,0 +1,64 @@
+.custom-field {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.custom-field--item {
+  display: flex;
+  margin-bottom: 15px;
+}
+.custom-field--item__width-50 {
+  width: 50%;
+  .custom-field--label {
+    width: 40%;
+  }
+}
+.custom-field--item__width-100 {
+  width: 100%;
+  .custom-field--label {
+    width: 20%;
+  }
+}
+
+.custom-field--label {
+  text-align: right;
+  padding: 8px 15px 0 0;
+}
+
+.custom-field--element {
+  flex-grow: 1;
+  .form-control {
+    font-size: 12px;
+    padding: 0 10px;
+  }
+}
+
+.custom-field--checkbox {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  input[type=checkbox],
+  input[type=radio] {
+    vertical-align: middle;
+    margin-top: 0;
+  }
+  label + label {
+    margin-left: 10px;
+  }
+}
+
+.custom-field--phone {
+  display: flex;
+}
+.custom-field--phone--country-code {
+  width: 80px;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.custom-field--phone--number {
+  flex-grow: 1;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  border-left-color: transparent;
+}

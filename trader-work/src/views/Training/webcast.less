@@ -1,0 +1,307 @@
+.webcast-container{
+    width: 100%;
+    min-height: 100%;
+    background: #f1f4f9;
+    .visit-tit{
+        font-size: 16px;
+        color: #333333;
+        padding: 28px 20px;
+        margin-bottom: 20px;
+        background-color: #fff;
+    }
+    .webcast-wrap{
+        width: 910px;
+        margin: 0 auto;
+    }
+    .webcast-tit{
+        height: 14px;
+        span{
+            line-height: 1;
+            line-height: 14px;
+        }
+        .webcast-right{
+            padding: 0 9px;
+            font-size: 12px;
+        }
+        .tit-menu-broadcast{
+            cursor: pointer;
+            color: #999999;
+        }
+    }
+    
+    .webcast-content{
+        overflow: hidden;
+        margin-top: 20px;
+        .webcast-video{
+            width: 590px;
+            border-radius: 4px;
+            vertical-align: top;
+            display: inline-block;
+            background-color: #ffffff;
+            box-shadow: 0 1px 4px 0 rgba(4, 0, 0, 0.08);
+        }
+        .video-wrap{
+            padding: 5px;
+            width: 590px;
+            height: 325px;
+            position: relative;
+            #id-webcast-wrap{
+                width: 100%;
+                height: 100%;
+                overflow: hidden;
+                background-color: #ccc;
+            }
+            .cover-webcast{
+                top: 0;
+                left: 0;
+                bottom: 0;
+                width: 100%;
+                color: #fff;
+                font-size: 15px;
+                position: absolute;
+                background-color: rgba(0, 0, 0, 0.85);
+                div{
+                    top: 50%;
+                    left: 50%;
+                    position: absolute;
+                    transform: translate(-50%, -50%);
+                }
+                p{
+                    line-height: 2;
+                    text-align: center;
+                }
+            }
+        }
+        .video-tit{
+            padding: 30px 20px;
+            .video-tit-item{
+                
+            }
+            .video-share-word{
+                margin-right: 7px;
+            }
+            .video-share{
+                float: right;
+            }
+            .video-tit-name{
+                line-height: 1;
+                font-size: 18px;
+                color: #3e3e3e;
+                font-weight: 500;
+            }
+            .wechat{
+                cursor: pointer;
+                font-size: 14px;
+                padding: 3px 5px;
+                border: solid 1px #ededed;
+                background-color: #fafafa;
+            }
+            .weibo{
+                cursor: pointer;
+                font-size: 14px;
+                padding: 3px 5px;
+                border: solid 1px #ededed;
+                background-color: #fafafa;
+            }
+            .wechat:hover{
+                color: #42ae3c;
+            }
+            .weibo:hover{
+                color: #d21e27;
+            }
+            .video-special{
+                line-height: 1;
+                font-size: 12px;
+                color: #3e3e3e;
+                margin-top: 25px;
+                span{
+                    color: #adadad;
+                }
+            }
+            .video-watch{
+                line-height: 1;
+                font-size: 12px;
+                color: #3e3e3e;
+                margin-top: 12px;
+                span{
+                    color: #adadad;
+                }
+            }
+        }
+        .video-des{
+            font-size: 14px;
+            color: #adadad;
+            line-height: 1.57;
+            padding: 0 20px 90px;
+        }
+    }
+    .webcast-comment{
+        width: 260px;
+        overflow: hidden;
+        margin-left: 20px;
+        border-radius: 4px;
+        position: relative;
+        vertical-align: top;
+        display: inline-block;
+        background-color: #f8f8f8;
+        box-shadow: 0 1px 4px 0 rgba(4, 0, 0, 0.08);
+        min-height: 525px;
+        .comment-tit{
+            width: 100%;
+            height: 45px;
+            font-size: 14px;
+            padding: 0 15px;
+            line-height: 45px;
+            background-color: #fff;
+        }
+        .comment-center{
+            width: 100%;
+            height: 430px;
+            overflow-y: auto;
+            overflow-x: hidden;
+            position: relative;
+            .webcast-start-time{
+                top: 10px;
+                left: 50%;
+                width: 135px;
+                color: #fff;
+                padding: 4px 0;
+                line-height: 1;
+                font-size: 12px;
+                text-align: center;
+                position: absolute;
+                border-radius: 10px;
+                transform: translateX(-50%);
+                background-color: #3e3e3e;
+            }
+        }
+        .comment-send{
+            width: 100%;
+            padding: 10px 0;
+            position: relative;
+            background-color: #fff;
+            border-top: 1px solid #ededed;
+            display: flex;
+            display: -webkit-flex;
+            align-items: center;
+            -webkit-align-items: center;
+            .ant-input{
+                width: 183px;
+                margin: 0 5px;
+            }
+            .ant-btn{
+
+            }
+            .comment-login{
+                z-index: 9;
+                left: 10px;
+                top: 50%;
+                position: absolute;
+                transform: translateY(-50%);
+                span{
+                    color: #00a3fe;
+                    cursor: pointer;
+                    user-select: none;
+                }
+            }
+        }
+        .comment-no{
+            top: 50%;
+            left: 50%;
+            font-size: 14px;
+            color: #adadad;
+            position: absolute;
+            transform: translate(-50%, -50%);
+        }
+        .comment-comment{
+            padding: 0 10px;
+            box-sizing: border-box;
+            .li-tit{
+                line-height: 1;
+                font-size: 12px;
+                color: #999999;
+            }
+            .li-wrap{
+                padding: 8px 3px 12px;
+            }
+            .li-comment{
+                padding: 0 10px;
+                border-left: 1px solid #ededed;
+            }
+            .li-port-name{
+                cursor: pointer;
+                .li-port{
+                    width: 20px;
+                    height: 20px;
+                    vertical-align: middle;
+                }
+                .li-name{
+                    font-size: 14px;
+                    margin-left: 5px;
+                    color: #333333;
+                    line-height: 20px;
+                    vertical-align: middle;
+                }
+                .admin-control{
+                    display: none;
+                    font-size: 14px;
+                    margin-left: 5px;
+                    color: #333333;
+                    line-height: 20px;
+                    vertical-align: middle;
+                    .admin-delete-ban{
+                        color: #333333;
+                    }
+                    .admin-delete-ban:hover{
+                        color: #00a3fe;
+                    }
+                }
+                .admin-delete{
+                    
+                }
+                .admin-ban{
+                    margin-left: 10px;
+                    padding-left: 9px;
+                    border-left: 1px solid #c8c8c8;
+                }
+            }
+            .li-port-name:hover{
+                .admin-control{
+                    display: inline-block;
+                }
+            }
+            .li-word{
+                line-height: 1.29;
+                font-size: 14px;
+                color: #666666;
+                padding: 8px 0 0;
+                word-break: break-all;
+            }
+        }
+    }
+}
+.ant-modal-mask{
+    background-color: rgba(0, 0, 0, 0.75);
+}
+.vertical-center-modal{
+    text-align: center;
+    white-space: nowrap;
+}
+.vertical-center-modal:before {
+    content: '';
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+    width: 0;
+}
+.vertical-center-modal .ant-modal {
+    display: inline-block;
+    vertical-align: middle;
+    top: 0;
+    text-align: left;
+}
+.vertical-center-modal .ant-modal-body{
+    font-size: 15px;
+    text-align: center;
+    padding: 20px 0;
+}

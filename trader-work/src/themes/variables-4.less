@@ -1,0 +1,52 @@
+/*
+科技 - 炫紫
+*/
+/* ---------------------> common <--------------------- */
+@theme-id: 4;
+@theme-color: #8b34a8; /* 主题色 */
+@theme-select-font-color: rgba(139, 52, 168, 0.8); /** select选中框的选中的色值 */ 
+@theme-select-li-color: rgba(139, 52, 168, 0.2); /** select选中下拉框的选中的色值 */ 
+@theme-hover-color: #81309c; /* 鼠标hover到主题色上后变化的颜色 */
+@theme-font-color: #fff; /* 主题色作为背景的一般情况下对应的字体颜色 */
+
+/* ---------------------> widgets <--------------------- */
+@ta-syn-dropdown-icon-color: #e5e5e5;
+@ta-syn-dropdown-icon-hover-color: #8b34a8;
+@synopsis-dp-menu-bg: #e5e5e5;
+@synopsis-dp-menu-hover-item-bg: #fff; 
+
+/* ---------------------> components <--------------------- */
+@side-menu-bg-img: '../images/menu_bg@{theme-id}.png'; /* 左侧菜单背景图片 */
+@side-menu-bg-color: @theme-color; /* 左侧菜单背景色 */
+@side-menu-hd-bg-color: rgba(17, 53, 98, 0.9); /* 左侧菜单顶部logo区域背景色 */
+
+@side-menu-font-color: #ccc; /* 左侧菜单一般字体颜色 */
+@side-menu-font-hover-color: #fff; /* 左侧菜单鼠标hover一般字体颜色 */
+
+@side-submenu-bg-color: rgba(4, 15, 47, 0.8); /* 左侧子菜单背景色 */
+@side-menu-active-font-color: #d34fff; /* 左侧被选中的菜单的字体颜色 */
+@side-menu-active-highlight-color: #d34fff; /* 左侧菜单中表示被选中项的高亮部分的颜色 */
+
+@side-menu-ft-border-color: transparent; /* 左侧菜单底部工具栏上边框颜色 */
+
+/* ---------------------> login <--------------------- */
+@login-page-bg-img: '../images/login_bg@{theme-id}.jpg'; /* 登录页背景图片 */
+@login-page-bg-left-img: '../images/login_bg@{theme-id}_left.jpg'; /* 登录页左边背景图片 */
+@login-page-bg-right-img: '../images/login_bg@{theme-id}_right.jpg'; /* 登录页右边背景图片 */
+@login-page-bg-color: #040d2d; /* 登录页背景色 */
+@login-page-bg-size: cover; /* 登录页背景图片填充方式 */
+
+@login-page-el-mass-tone: @theme-color; /* 登录页随主题变化元素的主色 */
+@login-page-el-hover-mass-tone: @theme-hover-color; /* 登录页随主题变化元素的主色被hover后的颜色 */
+@login-page-el-complementary-color: @theme-font-color; /* 登录页随主题变化元素的辅色 */
+@login-page-el-fused-color: #e5e5e5; /* 登录页随主题变化元素的融合色 */
+
+@login-input-font-color: #fff; /* 登录页输入框用户输入字体颜色 */
+@login-input-placeholder-font-color: @login-page-el-fused-color; /* 登录页输入框placeholder字体颜色 */
+@login-input-bg-color: rgba( 255, 255, 255, 0.2 ); /* 登录页输入框背景色 */
+
+@login-fast-register-font-color: @theme-color; /* 快速开户link字体颜色 */
+
+.theme-4{
+    @import url("./theme.less");
+}

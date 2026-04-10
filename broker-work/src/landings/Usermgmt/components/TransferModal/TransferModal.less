@@ -1,0 +1,48 @@
+@import '~less/variables.less';
+
+.content {
+  padding: @padding-base @padding-base @padding-base @padding-base*3;
+  :global(.lean-select-dropdown-menu) {
+    max-width: 400px;
+    :global(.lean-select-option) {
+      overflow: hidden; 
+      text-overflow:ellipsis; 
+      white-space: nowrap;
+    }
+  }
+}
+
+.tips {
+  margin-bottom: @padding-base;
+}
+
+.label {
+  margin-right: @padding-base;
+  display: inline-block;
+  height: 32px;
+  line-height: 32px;
+}
+
+.dropdown {
+  width: 176px;
+}
+.select-content {
+  height: 32px;
+  line-height: 32px;
+  .label {
+    margin-right: @padding-base;
+    display: inline-block;
+    height: 32px;
+    line-height: 32px;
+  }
+  .select-item {
+    display: inline-block;
+    width: 176px;
+    top: 13px;
+    position: relative;
+    overflow: hidden; 
+    text-overflow:ellipsis; 
+    white-space: nowrap;
+  }
+}
+

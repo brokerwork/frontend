@@ -1,0 +1,86 @@
+@import '~less/fn.less';
+
+.header {
+    width: 100%;
+    .rem(164,height);
+    background-image: url("images/fundflow_bg.png");
+    background-size: 100%;
+    .rem-padding(0,30);
+    display: flex;
+    .line{
+        top: 0;
+        right: 0;
+        .rem(3, width);
+        position: absolute
+    }
+    .column {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        color: #fff;
+        .top {
+            font-size: 12px;
+        }
+        .bottom {
+            font-size: 24px;
+            .rem(16,padding-top);
+        }
+    }
+    .left {
+        .month {
+           .rem(53,padding-right);  //  10+25+18
+           background-image: url("images/select.png");
+           background-repeat: no-repeat;
+           .rem-backgroundSize(18,12);
+           background-position: right 13px bottom 13px;
+           position: relative;
+       }
+    }
+    .right {
+        .rem(25,padding-left);
+    }
+    .date-input{
+        top: 0;
+        left: 0;
+        bottom: 0;
+        opacity: 0;
+        width: 100%;
+        font-size: 50px;
+        position: absolute
+    }
+}
+
+.borderTB {
+    border-top: 1px solid #E0E0E0;
+    border-bottom: 1px solid #E0E0E0;
+}
+.paddingBt{
+    .rem(105, padding-bottom);
+}
+
+.mb20 {
+    .rem(30,margin-bottom)
+}
+
+[data-dpr="2"] .header {
+    .column {
+        .top {
+           font-size: 24px;
+        }
+        .bottom {
+           font-size: 48px;
+        }
+    }
+}
+
+[data-dpr="3"] .header {
+    .column {
+        .top {
+           font-size: 36px;
+        }
+        .bottom {
+           font-size: 72px;
+        }
+    }
+}

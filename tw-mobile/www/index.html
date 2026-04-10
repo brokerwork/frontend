@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>TraderWork Mobile</title>
+	<meta charset="utf-8">
+	<meta name="format-detection" content="telephone=no" />
+	<meta name="msapplication-tap-highlight" content="no" />
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<link href="./css/index.css" rel="stylesheet">
+	<link href="./libs/iconfonts/iconfont.css" rel="stylesheet">
+	<link href="./libs/flexible/flexible.css" rel="stylesheet">
+	<script src="./libs/flexible/flexible.js"></script>
+	<script src="./libs/iscroll/iscroll.js"></script>
+	<script src="./libs/iscroll/iscroll-probe.js"></script>
+	<script src="./libs/iscroll/iscroll-init.js"></script>
+	<script src="//imgcache.qq.com/open/qcloud/video/vcplayer/TcPlayer.js" charset="utf-8"></script>
+	<script src="./libs/eruda.min.js"></script>
+	<script>
+		var GlobalVar = {
+			STATIC_PATCH: '${mobileStaticPath}',
+			appId: 'wxf17d61d69e8b1246',
+			appNo: '1', //公众号唯一编号
+			viewPath: '/entrance', // server controls which page to go
+			tenantId: 'T001117', //租户ID
+			compAppId: 'wx1435fe239e3a5031', //第三方平台ID
+			preSignUpKey: '', //和用户微信openid是一一对应
+			token: ''
+		};
+    //  移动端调试工具
+     //eruda.init();
+	</script>
+</head>
+
+<body>
+	<div id='app'></div>
+	<script src="./js/index.js"></script>
+</body>
+
+</html>

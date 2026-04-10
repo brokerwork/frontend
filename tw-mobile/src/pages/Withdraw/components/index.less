@@ -1,0 +1,52 @@
+@import '~less/fn.less';
+
+.top-content {
+  width: 100%;
+  background-color: rgb(250,250,250);
+  .rem(178,height);
+  .money-desc{
+    .rem(30px, padding-left);
+    .rem(32px, padding-top);
+    .rem(20px, padding-bottom);
+    border-bottom: 1px solid rgb(237,237,237);
+      background-color: #fff;
+    .money-label{
+      font-size: 14px;
+    }
+    .money-content {
+      font-size: 32px;
+      color: rgb(0, 163, 254);
+    }
+  }
+}
+.footer{
+  .rem(50px, margin-top);
+  .rem(60px, margin-bottom);
+  .rem(690px, width);
+  .rem(30px, margin-left);
+}
+.middle-content {
+  width: 100%;
+  background-color: #fff;
+}
+.notice{
+  .rem-padding(15, 30);
+  .rem(50, margin-top);
+background-color: #fef0ef;
+  border: solid 1px #fcdbd9;
+  .notice-title{
+      display: flex;
+      align-items: center;
+      img{
+          .rem(30, width);
+      }
+      span{
+          font-size: 14px;
+          font-weight: bold;
+      }
+  }
+  .notice-con{
+      .rem-padding(0, 30);
+      .rem(15, margin-top);
+  }
+}

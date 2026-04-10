@@ -1,0 +1,21 @@
+{
+    "data": [
+        {
+            "itemId": "f0f53288-0073-46fe-9b62-e64ae4484da0",
+            "itemName": "开户-修改",
+            "jobNum": 4
+        },
+        {
+            "itemId": "f0f53288-0073-46fe-9b62-e64ae4484da1",
+            "itemName": "开户-修改",
+            "jobNum": 4
+        },
+        {
+            "itemId": "f0f53288-0073-46fe-9b62-e64ae4484da2",
+            "itemName": "开户-修改",
+            "jobNum": 4
+        }
+    ],
+    "mcode": "m0000000",
+    "result": true
+}

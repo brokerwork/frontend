@@ -1,0 +1,148 @@
+@import "~less/fn.less";
+.field-container{
+    .item-container{
+        width: 100%;
+        font-size: 14px;
+        color: #6A6969;
+        .rem(100, height);
+        position: relative;
+        box-sizing: border-box;
+        border-bottom: 1px solid #E0E0E0;
+    }
+    .city-container{
+        overflow: hidden;
+    }
+    .city-label{
+        width: 100%;
+        font-size: 14px;
+        color: #6A6969;
+        .rem(10, padding-top);
+    }
+    .addr-container{
+        float: left;
+        height: 100%;
+        width: 33.33%;
+        overflow: hidden;
+        position: relative;
+        box-sizing: border-box;
+        .rem(40, padding-right);
+    }
+    .select-container{
+        select{
+            top: 0;
+            left: 0;
+            bottom: 0;
+            z-index: 9;
+            width: 100%;
+            font-size: 14px;
+            color: #6A6969;
+            position: absolute;
+            border: 0;
+            background-color: transparent;
+            appearance:none;
+            -moz-appearance:none;
+            -webkit-appearance:none;
+        }
+        img{
+            top: 50%;
+            .rem(26, right);
+            .rem(18, width);
+            position: absolute;
+            transform: translateY(-50%);
+        }
+        .img2{
+            top: 50%;
+            .rem(10, right);
+            .rem(18, width);
+            position: absolute;
+            transform: translateY(-50%);
+        }
+    }
+    .phone-container{
+        .phone-prefix{
+            width: 20%;
+            float: left;
+            height: 100%;
+            position: relative;
+            box-sizing: border-box;
+            img{
+                top: 50%;
+                .rem(25, right);
+                .rem(18, width);
+                position: absolute;
+                transform: translateY(-50%);
+            }
+            select{
+                top: 0;
+                left: 0;
+                bottom: 0;
+                width: 100%;
+                font-size: 14px;
+                color: #6A6969;
+                position: absolute;
+                border: 0;
+                background-color: transparent;
+                appearance:none;
+                -moz-appearance:none;
+                -webkit-appearance:none;
+            }
+        }
+        .phone-field{
+            width: 80%;
+            float: left;
+        }
+    }
+    .date-container{
+        .rem(30, padding-top);
+        .rem(30, padding-bottom);
+        border-bottom: 1px solid #E0E0E0;
+        .data-span{
+            
+        }
+        input{
+            border: 0;
+            outline: none;
+            font-size: 14px;
+            .rem(40, height);
+            color: '#6A6969';
+            .rem(30px, margin-left);
+            background-color: transparent;
+        }
+    }
+    .checkbox-container, .img-container{
+        .rem(30, padding-top);
+        .rem(30, padding-bottom);
+        width: 100%;
+        font-size: 14px;
+        color: #6A6969;
+        overflow: hidden;
+        position: relative;
+        box-sizing: border-box;
+        border-bottom: 1px solid #E0E0E0;
+    }
+    .checkbox-label,.img-label{
+        width: 100%;
+        font-size: 14px;
+        color: #6A6969;
+        .rem(10, padding-bottom);
+    }  
+    .line{
+        width: 100%;
+        bottom: -1px;
+        font-size: 12px;
+        text-align: right;
+        position: absolute;
+        color: rgb(244, 67, 54);
+        border-bottom: 2px solid rgb(244, 67, 54);
+    }
+    .xing{
+        color: rgb(229, 72, 72);
+        vertical-align: middle;
+        .rem(10px, padding-right);
+    }
+    .xing-select{
+        top: 50%;
+        position: absolute;
+        transform: translateY(-50%);
+    }
+}

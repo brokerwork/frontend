@@ -1,0 +1,9 @@
+{
+  "name": "tw-icon",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "oss-easy": "^0.3.6"
+  }
+}

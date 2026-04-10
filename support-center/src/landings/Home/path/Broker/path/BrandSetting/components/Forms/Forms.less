@@ -1,0 +1,71 @@
+@import '~less/sc/variables.less';
+.formSection{
+  margin-bottom: 15px;
+  &:last-child{
+    margin-bottom: 0;
+  }
+}
+.formSectionTile{
+  margin-bottom: 15px;
+  padding:0 0 10px;
+  color: @text-color-dark;
+  font-weight: 700;
+  border-bottom: 1px solid @border-color;
+}
+.formSectionBody{
+  width: 85%;
+  padding: 15px 0;
+  padding-left: 15px;
+  [class^='form-item-label']{
+    width: 130px !important;
+  }
+}
+
+.loginPicker {
+  display: flex;
+  width: 950px;
+  margin-left: 35px;
+  justify-content: space-between;
+
+  .login-module-img {
+    width: 300px;
+    height: 170px;
+    margin-top: 15px;
+  }
+}
+
+.background_item {
+  margin-top: 70px;
+}
+
+
+.theme-picker {
+  display: flex;
+  justify-content: space-between;
+  width: 510px;
+  margin-left: 35px;
+
+  .theme-fill {
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .theme-check {
+      width: 20px;
+      height: 20px;
+    }
+  }
+
+  .theme-label {
+    margin-top: 10px;
+    width: 60px;
+    text-align: center;
+    font-size: 14px;
+
+    a {
+      color: #722ed0;}
+  }
+}
+

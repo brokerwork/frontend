@@ -1,0 +1,507 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+html,
+body {
+  width: 100%;
+  height: 100%;
+  font-size: 12px;
+  font-family: "Helvetica Neue", Helvetica, "PingFang SC", "Hiragino Sans GB",
+    "Microsoft YaHei", "微软雅黑", Arial, sans-serif;
+}
+#root {
+  height: 100%;
+  width: 100%;
+}
+.login-page .ant-alert,
+.login-page .ant-anchor,
+.login-page .ant-select-auto-complete,
+.login-page .ant-avatar,
+.login-page .ant-back-top,
+.login-page .ant-badge,
+.login-page .ant-breadcrumb,
+.login-page .ant-fullcalendar,
+.login-page .ant-card,
+.login-page .ant-carousel,
+.login-page .ant-cascader,
+.login-page .ant-cascader-picker,
+.login-page .ant-checkbox,
+.login-page .ant-checkbox-wrapper,
+.login-page .ant-checkbox-group,
+.login-page .ant-collapse,
+.login-page .ant-calendar-picker-container,
+.login-page .ant-calendar-picker,
+.login-page .ant-divider,
+.login-page .ant-dropdown,
+.login-page .ant-form,
+.login-page .ant-form-item,
+.login-page .ant-input-number,
+.login-page .ant-input,
+.login-page .ant-input-group,
+.login-page .ant-input-affix-wrapper,
+.login-page .ant-list,
+.login-page .ant-mention-wrapper,
+.login-page .ant-mention-dropdown,
+.login-page .ant-menu,
+.login-page .ant-message,
+.login-page .ant-modal,
+.login-page .ant-notification,
+.login-page .ant-pagination,
+.login-page .ant-popover,
+.login-page .ant-progress,
+.login-page .ant-radio-group,
+.login-page .ant-radio-wrapper,
+.login-page .ant-radio,
+.login-page .ant-rate,
+.login-page .ant-select,
+.login-page .ant-select-dropdown,
+.login-page .ant-slider,
+.login-page .ant-spin,
+.login-page .ant-steps,
+.login-page .ant-switch,
+.login-page .ant-table,
+.login-page .ant-tabs,
+.login-page .ant-tag,
+.login-page .ant-time-picker-panel,
+.login-page .ant-time-picker,
+.login-page .ant-timeline,
+.login-page .ant-tooltip,
+.login-page .ant-transfer,
+.login-page .ant-select-tree-checkbox,
+.login-page .ant-select-tree-checkbox-wrapper,
+.login-page .ant-select-tree-checkbox-group,
+.login-page .ant-select-tree,
+.login-page .ant-select-tree-dropdown,
+.login-page .ant-tree-checkbox,
+.login-page .ant-tree-checkbox-wrapper,
+.login-page .ant-tree,
+.login-page .ant-upload,
+.login-page .ant-upload-list {
+  font-family: "PingFang SC", "Helvetica Neue", Helvetica, "Hiragino Sans GB",
+    "Microsoft YaHei", "微软雅黑", Arial, sans-serif;
+  font-size: 12px;
+  color: #000;
+  line-height: 1.15;
+}
+.img {
+  width: 100%;
+}
+.left {
+  float: left;
+}
+.right {
+  float: right;
+}
+.clearfix:before,
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.flex {
+  display: flex;
+  display: -webkit-flex;
+}
+.flex-center {
+  display: flex;
+  display: -webkit-flex;
+  align-items: center;
+  -webkit-align-items: center;
+  justify-content: center;
+  -webkit-justify-content: center;
+}
+.cursor {
+  cursor: pointer;
+}
+.login-page {
+  width: 100%;
+  height: 100%;
+  overflow-y: auto;
+  box-sizing: border-box;
+  -webkit-overflow-scrolling: touch;
+  background-attachment: fixed;
+}
+.login-page .ant-input {
+  height: 36px !important;
+  line-height: 36px !important;
+  font-size: 14px !important;
+}
+.login-page .ant-form-item-control {
+  line-height: 36px;
+}
+.login-page .login-wrap {
+  width: 400px;
+  margin: 82px auto 30px;
+  max-width: 90%;
+  border-radius: 4px;
+  box-sizing: border-box;
+  background-color: #ffffff;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.25);
+}
+.login-page .login-position {
+  padding: 32px 40px 48px;
+}
+.login-page .login-header {
+  width: 100%;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+.login-page .login-header .login-logo {
+  height: 34px;
+}
+.login-page .login-header .login-logo span {
+  display: inline-block;
+  vertical-align: middle;
+  color: #333333;
+  font-size: 18px;
+  line-height: 25px;
+}
+.login-page .login-header .login-logo img {
+  display: inline-block;
+  vertical-align: middle;
+  max-width: 180px;
+  max-height: 34px;
+  margin-right: 8px;
+}
+.login-page .ant-input-group-addon {
+  z-index: 2;
+  position: relative;
+  border: 1px solid #c5c5c5;
+  border-right-color: transparent;
+  background-color: #ffffff;
+}
+.login-page .ant-input-group-addon:hover {
+  border: 1px solid #00a8a6;
+  box-shadow: 0 0 0 2px rgba(0, 168, 168, 0.2);
+}
+.login-page .ant-btn:hover {
+  opacity: 0.7;
+}
+.login-page .login-test {
+  width: 80%;
+  margin: 0 auto;
+}
+.ant-row {
+  margin-bottom: 20px;
+  line-height: 36px;
+}
+.has-error .ant-input:not([disabled]):hover {
+  border-color: #f5222d;
+  box-shadow: 0 0 0 2px rgba(245, 34, 45, 0.2);
+}
+.ant-form-explain {
+  margin-top: 2px;
+  line-height: 1;
+}
+/* 滚动槽 */
+/* ::-webkit-scrollbar {
+  width: 0px;
+  height: 0px;
+} */
+body.theme-position-left .ant-input {
+  height: 36px !important;
+  line-height: 36px !important;
+  font-size: 14px !important;
+}
+body.theme-position-left .ant-form-item-control {
+  line-height: 36px;
+}
+body.theme-position-left .login-wrap {
+  width: 640px;
+  height: 100%;
+  border-radius: 0;
+  margin: 0;
+  position: absolute;
+  left: 0;
+  overflow-y: auto;
+  background-color: #fafafb;
+}
+body.theme-position-left .login-position {
+  padding: 0;
+  width: 380px;
+  margin: 80px 130px;
+}
+body.theme-position-left .login-header {
+  margin-bottom: 24px;
+}
+body.theme-position-left .login-reg-wrap,
+body.theme-position-left .forget-pwd-wrapper,
+body.theme-position-left .register-mock-wrapper {
+  border: 1px solid #e8e8e8;
+  border-radius: 4px;
+  background-color: #ffffff;
+}
+body.theme-position-left .login-reg-wrap {
+  padding: 20px 50px 60px;
+}
+body.theme-position-left .forget-pwd-wrapper {
+  padding: 32px 50px;
+}
+body.theme-position-left .forget-pwd-wrapper .reg-input-turn {
+  margin-top: 15px;
+}
+body.theme-position-left .register-mock-wrapper {
+  padding: 40px 50px 60px;
+}
+body.theme-position-left .login-action-wrap {
+  margin-bottom: 38px;
+  margin-top: 12px;
+}
+body.theme-position-left .login-action-wrap.wrap-center {
+  display: none;
+}
+body.theme-position-left .login-action-wrap.wrap-border {
+  display: block;
+}
+body.theme-position-left .login-input-wrap .login-input-bottom {
+  margin-top: 24px;
+}
+body.theme-position-right .login-wrap {
+  width: 540px;
+  height: 100%;
+  right: 0;
+  margin: 0;
+  border-radius: 0;
+  position: absolute;
+  overflow: hidden;
+  background-color: #fafafb;
+}
+body.theme-position-right .login-position {
+  padding: 40px 70px;
+  height: 100%;
+  overflow-y: auto;
+}
+body.theme-position-right .login-header {
+  margin-bottom: 50px;
+}
+body.theme-position-right .ant-tabs-nav-container {
+  font-size: 18px;
+}
+body.theme-position-right .ant-tabs-bar {
+  margin-bottom: 26px;
+}
+body.theme-position-right .login-type-wrap {
+  margin-bottom: 18px;
+}
+body.theme-position-right .login-type-wrap .ant-select-dropdown {
+  font-size: 16px;
+  min-width: 120px;
+}
+body.theme-position-right .login-input-wrap .login-type-wrap .ant-select {
+  font-size: 16px;
+}
+body.theme-position-right .login-input-wrap .login-other {
+  font-size: 16px;
+}
+body.theme-position-right .login-input-wrap .login-input-bottom {
+  margin-top: 34px;
+}
+body.theme-position-right .login-input-wrap .login-input-bottom span {
+  font-size: 16px;
+}
+body.theme-position-right .login-page .ant-input {
+  height: 40px !important;
+  line-height: 40px !important;
+  font-size: 16px !important;
+}
+body.theme-position-right .login-action-wrap {
+  margin-bottom: 43px;
+  margin-top: 12px;
+}
+body.theme-position-right .login-action-wrap.wrap-center {
+  display: none;
+}
+body.theme-position-right .login-action-wrap.wrap-border {
+  display: block;
+}
+body.theme-position-right .login-action-wrap .ant-checkbox-wrapper,
+body.theme-position-right .login-action-wrap .login-form-forget {
+  font-size: 16px;
+}
+body.theme-position-right .ant-form-explain {
+  font-size: 14px;
+}
+body.theme-position-right .reg-input-wrap .reg-input-way,
+body.theme-position-right .reg-input-wrap .reg-input-phone-email,
+body.theme-position-right .reg-input-wrap .iconfont {
+  font-size: 16px;
+}
+body.theme-position-right .reg-input-wrap .reg-only-btn {
+  font-size: 16px;
+  margin-top: 24px;
+}
+body.theme-position-right .login-page .ant-btn {
+  height: 40px !important;
+  font-size: 16px !important;
+}
+body.theme-position-right .login-input-wrap .ant-select-selection {
+  background: transparent;
+}
+body.theme-position-right .ant-select-selection {
+  background: #fff;
+}
+body.theme-position-right .ant-select-selection--single {
+  height: 40px !important;
+  line-height: 40px;
+}
+body.theme-position-right .login-page .ant-select-selection__rendered {
+  line-height: 40px !important;
+  font-size: 16px;
+}
+body.theme-position-right .register-mock-wrapper .login {
+  font-size: 16px;
+}
+body.theme-position-right .forget-pwd-wrapper .reg-input-way,
+body.theme-position-right .forget-pwd-wrapper .reg-input-phone-email,
+body.theme-position-right .forget-pwd-wrapper .iconfont,
+body.theme-position-right .forget-pwd-wrapper .login {
+  font-size: 16px;
+}
+@media screen and (max-width: 768px) {
+  body.theme-position-left .login-page {
+    position: relative;
+    padding-left: 0 !important;
+    background-origin: border-box !important;
+    background-position: 0 !important;
+  }
+  body.theme-position-left .login-wrap {
+    width: 400px;
+    height: auto;
+    position: relative;
+    margin: 82px auto 30px;
+    border-radius: 4px;
+    background-color: #ffffff;
+  }
+  body.theme-position-left .login-position {
+    position: relative;
+    padding: 32px 40px 60px;
+    margin: 0;
+    width: auto;
+    min-height: auto;
+    top: 0;
+    left: 0;
+    transform: translate(0, 0);
+  }
+  body.theme-position-left .login-header {
+    margin-bottom: 20px;
+  }
+  body.theme-position-left .login-reg-wrap,
+  body.theme-position-left .forget-pwd-wrapper,
+  body.theme-position-left .register-mock-wrapper {
+    border: none;
+    border-radius: 0;
+    padding: 0;
+  }
+  body.theme-position-left .login-action-wrap {
+    margin-bottom: 24px;
+    margin-top: 12px;
+  }
+  body.theme-position-left .login-action-wrap.wrap-center {
+    display: none;
+  }
+  body.theme-position-left .login-action-wrap.wrap-border {
+    display: block;
+  }
+  body.theme-position-left .login-input-wrap .login-input-bottom {
+    margin-top: 38px;
+  }
+  body.theme-position-right .login-page {
+    padding-right: 0 !important;
+    background-origin: border-box !important;
+    background-position: 0 !important;
+  }
+  body.theme-position-right .login-wrap {
+    width: 400px;
+    height: auto;
+    margin: 82px auto 30px;
+    border-radius: 4px;
+    background-color: #ffffff;
+    right: auto;
+    position: relative;
+  }
+  body.theme-position-right .login-position {
+    padding: 32px 40px 60px;
+  }
+  body.theme-position-right .login-header {
+    margin-bottom: 20px;
+  }
+  body.theme-position-right .ant-tabs-nav-container {
+    font-size: 14px;
+  }
+  body.theme-position-right .ant-tabs-bar {
+    margin-bottom: 20px;
+  }
+  body.theme-position-right .login-type-wrap {
+    margin-bottom: 10px;
+  }
+  body.theme-position-right .login-type-wrap .ant-select-dropdown {
+    font-size: 12px;
+    min-width: 95px;
+  }
+  body.theme-position-right .login-input-wrap .login-other {
+    font-size: 14px;
+  }
+  body.theme-position-right .login-input-wrap .login-input-bottom {
+    margin-top: 38px;
+  }
+  body.theme-position-right .login-input-wrap .login-input-bottom span {
+    font-size: 14px;
+  }
+  body.theme-position-right .ant-select-selection {
+    background-color: #ffffff;
+  }
+  body.theme-position-right .ant-input {
+    height: 32px;
+    line-height: 32px;
+    font-size: 12px;
+  }
+  body.theme-position-right .ant-row {
+    margin-bottom: 16px;
+  }
+  body.theme-position-right .login-action-wrap {
+    margin-bottom: 24px;
+    margin-top: 12px;
+  }
+  body.theme-position-right .login-action-wrap.wrap-center {
+    display: none;
+  }
+  body.theme-position-right .login-action-wrap.wrap-border {
+    display: block;
+  }
+  body.theme-position-right .login-action-wrap .ant-checkbox-wrapper,
+  body.theme-position-right .login-action-wrap .login-form-forget {
+    font-size: 12px;
+  }
+  body.theme-position-right .ant-form-explain {
+    font-size: 12px;
+  }
+  body.theme-position-right .reg-input-wrap .reg-input-way,
+  body.theme-position-right .reg-input-wrap .reg-input-phone-email,
+  body.theme-position-right .reg-input-wrap .iconfont {
+    font-size: 12px;
+  }
+  body.theme-position-right .reg-input-wrap .reg-only-btn {
+    margin-top: 12px;
+  }
+  body.theme-position-right .login-page .ant-btn {
+    height: 40px;
+    font-size: 14px;
+  }
+  body.theme-position-right .ant-select-selection--single {
+    height: 32px;
+  }
+  body.theme-position-right .ant-select-selection__rendered {
+    line-height: 32px !important;
+    font-size: 12px;
+  }
+  body.theme-position-right .register-mock-wrapper .login {
+    font-size: 14px;
+  }
+  body.theme-position-right .forget-pwd-wrapper .reg-input-way,
+  body.theme-position-right .forget-pwd-wrapper .reg-input-phone-email,
+  body.theme-position-right .forget-pwd-wrapper .iconfont,
+  body.theme-position-right .forget-pwd-wrapper .login {
+    font-size: 14px;
+  }
+}

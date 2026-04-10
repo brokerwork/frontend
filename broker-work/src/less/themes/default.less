@@ -1,0 +1,25 @@
+@import './mix.less';
+@default-1: #099694;
+@default-2: #00a8a6;
+@default-3: #1fb2b0;
+@default-4: #53c4c2;
+@default-5: #75cfce;
+:global {
+  .default-theme,
+  .green-theme {
+    a {
+      color: @default-2;
+      &:hover {
+        color: @default-1;
+      }
+    }
+    .createThemes(
+      @default-1,
+      @default-2,
+      @default-3,
+      @default-4,
+      @default-5,
+      #000
+    );
+  }
+}

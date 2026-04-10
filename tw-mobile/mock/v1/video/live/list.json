@@ -1,0 +1,60 @@
+{
+	"result": true,
+	"mcode": "TW_VIDEO_0000000",
+	"data": {
+		"list": [
+			{
+				"subject": "打破旧生活，爆出新科技1",
+				"cover": "https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1496902679074&di=3a03b7b0d5d2f03bc9d887021f1dcc96&imgtype=0&src=http%3A%2F%2Ff.hiphotos.baidu.com%2Fzhidao%2Fpic%2Fitem%2Fd043ad4bd11373f0a78a9e7ba10f4bfbfaed0498.jpg",
+				"lecturerName": "讲师姓名1",
+				"startTime": 1497913600,
+				"id": "01",
+				"state": "NOTSTART",
+				"createTime": 1496213123260,
+				"modifyTime": 1497061823,
+				"pullUrl": "http://http://9757.liveplay.myqcloud.comm/live/9757_T001117_593ac40676a45b72619d6b44.m3u8",
+				"description": "nice live 3"
+			},
+			{
+				"subject": "Lean Training2",
+				"cover": "https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1496902679074&di=3a03b7b0d5d2f03bc9d887021f1dcc96&imgtype=0&src=http%3A%2F%2Ff.hiphotos.baidu.com%2Fzhidao%2Fpic%2Fitem%2Fd043ad4bd11373f0a78a9e7ba10f4bfbfaed0498.jpg",
+				"lecturerName": "讲师姓名2",
+				"startTime": 1496883129,
+				"id": "02",
+				"state": "STARTED",
+				"createTime": 1496213123260,
+				"modifyTime": 1497061823,
+				"pullUrl": "http://http://9757.liveplay.myqcloud.comm/live/9757_T001117_593ac40676a45b72619d6b44.m3u8",
+				"description": "nice live 3"
+			},
+			{
+				"subject": "主题3",
+				"cover": "https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1496902679074&di=3a03b7b0d5d2f03bc9d887021f1dcc96&imgtype=0&src=http%3A%2F%2Ff.hiphotos.baidu.com%2Fzhidao%2Fpic%2Fitem%2Fd043ad4bd11373f0a78a9e7ba10f4bfbfaed0498.jpg",
+				"lecturerName": "讲师姓名3",
+				"startTime": 1496283129,
+				"id": "03",
+				"state": "FINISHED",
+				"createTime": 1496213123260,
+				"modifyTime": 1497061823,
+				"pullUrl": "http://http://9757.liveplay.myqcloud.comm/live/9757_T001117_593ac40676a45b72619d6b44.m3u8",
+				"description": "nice live 3"
+			},
+			{
+				"subject": "testtesttest",
+				"cover": "https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1496902679074&di=3a03b7b0d5d2f03bc9d887021f1dcc96&imgtype=0&src=http%3A%2F%2Ff.hiphotos.baidu.com%2Fzhidao%2Fpic%2Fitem%2Fd043ad4bd11373f0a78a9e7ba10f4bfbfaed0498.jpg",
+				"lecturerName": "DY",
+				"startTime": 1497109358,
+				"id": "593ac40676a45b72619d6b44",
+				"state": "NOTSTART",
+				"createTime": 1496213123260,
+				"modifyTime": 1497061823,
+				"pullUrl": "http://http://9757.liveplay.myqcloud.comm/live/9757_T001117_593ac40676a45b72619d6b44.m3u8",
+				"description": "nice live 3"
+			}
+		],
+		"pager": 1,
+		"pages": 3,
+		"size": 3,
+		"total": 8
+	}
+}

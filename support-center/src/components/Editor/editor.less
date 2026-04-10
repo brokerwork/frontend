@@ -1,0 +1,85 @@
+@import '~less/sc/variables.less';
+@import './CustomStyle.less';
+.container {
+  border: 1px solid @border-color;
+  border-radius: 4px;
+}
+
+:global(.has-error) {
+  .container {
+    border-color: @red;
+    :global(.form-control) {
+      border: 1px solid #ddd;
+      box-shadow: none;
+    }
+  }
+}
+.tools {
+  border-bottom: 1px solid @border-color;
+  margin: 0 15px;
+  padding: 15px 0;
+}
+
+.editor {
+  padding: 15px;
+  overflow: auto;
+  :global(.public-DraftEditor-content) {
+    max-height: 330px;
+    min-height: 200px;
+  }
+}
+
+
+.tools-item {
+  cursor: pointer;
+  margin-right: 15px;
+  margin-bottom: 5px;
+  position: relative;
+  display: inline-block;
+  &:hover,
+  &.active {
+    color: @brand-primary;
+  }
+}
+
+.tools-item-child-box {
+  position: absolute;
+  left: 0;
+  right: 0;
+}
+
+.pop-box {
+    position: absolute;
+    top: 100%;
+    width: 100%;
+    left: 0;
+    z-index: 1000;
+    float: left;
+    width: 228px;
+    padding: 10px;
+    margin: 2px 0 0;
+    list-style: none;
+    font-size: 14px;
+    text-align: left;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border: 1px solid #ddd;
+    max-height: 280px;
+    overflow-y: auto;
+    border-radius: 4px;
+    box-shadow: 0 6px 12px rgba(0,0,0,.175);
+    background-clip: padding-box;
+    margin-left: -114px;
+    &.color-pop-box {
+      width: 172px;
+      margin-left: -86px;
+    }
+    button {
+      height: 30px;
+    }
+}
+
+.link-pop-btns {
+  text-align: right;
+}
+

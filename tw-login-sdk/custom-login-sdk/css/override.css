@@ -1,0 +1,32 @@
+/* 
+这个文件用来覆盖系统默认定义的样式，比如按钮，输入框等等页面元素的样式 
+具体样式规则可以打开 chrome inspector tool 查看。下面是些简单的例子。
+*/
+body{
+
+}
+.entrance-bg {
+	background: #17181b url(../images/bg_tw1.jpg) 50% 50% no-repeat;
+}
+.entrance-content{
+  
+}
+.en-input-text{
+ 
+}
+
+/* 覆盖按钮颜色 */
+.entrance-content .tui-button{
+
+}
+.entrance-content .tui-button.en-btn-border{
+
+}
+.entrance-content .tui-button:hover{
+
+}
+
+/* 覆盖checkbox颜色 */
+.entrance-content .tui-checkbox .tui-checkbox-icon{
+
+}

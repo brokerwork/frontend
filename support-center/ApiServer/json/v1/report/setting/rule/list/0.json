@@ -1,0 +1,67 @@
+{
+  "data": [
+    {
+      "accountGroups": "303,258,223,229,304",
+      "balanceLevelId": 214,
+      "balanceType": 0,
+      "balanceUnit": 1,
+      "commissionType": 0,
+      "createTime": 1479468190507,
+      "id": 31,
+      "mt4Groups": [
+        {
+          "groups": [],
+          "serverId": "1",
+          "serverName": "MT4真实测试1"
+        },
+        {
+          "groups": [
+            "-1"
+          ],
+          "serverId": "5",
+          "serverName": "MT4真实测试2"
+        },
+        {
+          "groups": [
+            "-1"
+          ],
+          "serverId": "6",
+          "serverName": "MT5真实测试1"
+        }
+      ],
+      "name": "黄金返1佣",
+      "ruleType": 0,
+      "symbolGroups": "36"
+    },
+    {
+      "accountGroups": "",
+      "balanceType": 0,
+      "balanceUnit": 0,
+      "commissionType": 0,
+      "createTime": 1479534444645,
+      "id": 32,
+      "mt4Groups": [
+        {
+          "groups": [],
+          "serverId": "1",
+          "serverName": "MT4真实测试1"
+        },
+        {
+          "groups": [],
+          "serverId": "5",
+          "serverName": "MT4真实测试2"
+        },
+        {
+          "groups": [],
+          "serverId": "6",
+          "serverName": "MT5真实测试1"
+        }
+      ],
+      "name": "测试结算层级",
+      "ruleType": 0,
+      "symbolGroups": ""
+    }
+  ],
+  "mcode": "m0000000",
+  "result": true
+}

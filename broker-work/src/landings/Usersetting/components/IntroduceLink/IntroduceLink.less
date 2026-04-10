@@ -1,0 +1,78 @@
+@import '~less/variables';
+.container {
+  padding: 20px 24px 32px;
+  border-radius: 4px;
+  box-shadow: 0 1px 3px 0 rgba(99, 115, 129, 0.16);
+  border: solid 1px #dfe3e8;
+  background-color: #ffffff;
+  .title {
+    font-size: 16px;
+    color: #303842;
+    margin-bottom: 20px;
+  }
+}
+.icon {
+  font-size: 14px;
+  margin-right: 17px;
+  cursor: pointer;
+}
+.referralLink-div {
+  font-size: 12px;
+  line-height: 24px;
+  + .referralLink-div {
+    margin-top: 15px;
+  }
+}
+
+.label {
+  padding-left: 0;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  max-width: 300px;
+}
+
+.link-text {
+  color: @main-color;
+  text-align: left;
+  word-break: break-all;
+  padding: 0;
+  // a {
+  //   color: @main-color;
+  //   &:hover {
+  //     color: @main-color;
+  //     text-decoration: underline;
+  //   }
+  // }
+}
+
+.qrcode {
+  display: block;
+  width: 200px;
+  height: 200px;
+  margin-bottom: 10px;
+}
+
+.qrcode-box {
+  text-align: center;
+  :global(.btn) {
+    color: #fff;
+  }
+}
+
+.btn {
+  margin-right: 5px;
+  border-color: @border-color;
+  color: @text-color;
+  background-color: transparent;
+  font-size: 12px;
+}
+
+.downloadBtn {
+  display: inline-block;
+  line-height: 31px;
+  &:hover {
+    text-decoration: none;
+    color: @white;
+  }
+}

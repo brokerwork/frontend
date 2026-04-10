@@ -1,0 +1,25 @@
+@import '~less/variables.less';
+.container {
+    display: inline-flex;
+    vertical-align: middle;
+}
+
+.key,
+.type {
+    &:focus {
+        z-index: 2;
+        border-color: @main-color;
+    }
+}
+
+.key {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    margin-left: -1px;
+    min-width: 240px;
+}
+
+.type {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}

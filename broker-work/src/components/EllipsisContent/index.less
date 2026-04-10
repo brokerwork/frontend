@@ -1,0 +1,13 @@
+.container {
+  display: inline-block;
+  max-width: 100%;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  &.over-flow {
+    cursor: pointer;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}

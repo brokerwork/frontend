@@ -1,0 +1,13 @@
+{
+  "parser": "babel-eslint",
+  "plugins": ["react-hooks", "prettier"],
+  "env": {
+    "browser": true
+  },
+  "rules": {
+    "prettier/prettier": "error",
+    "react-hooks/rules-of-hooks": "error",
+    "react-hooks/exhaustive-deps": "warn" // <--- THIS IS THE NEW RULE
+  },
+  "extends": ["plugin:prettier/recommended"]
+}

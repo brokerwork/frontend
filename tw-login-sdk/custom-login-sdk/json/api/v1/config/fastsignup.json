@@ -1,0 +1,38 @@
+{
+	"data": [
+		{
+			"demoAccountTypes": [
+				{
+					"typeId": "25d80016-b54c-45c0-ae93-683db41ba327",
+					"typeName": "标准账户"
+				},
+				{
+					"typeId": "dd689972-d089-481f-ae80-d17cb2262ada",
+					"typeName": "专业账户"
+				}
+			],
+			"enableMockAccountRegister": false,
+			"vendor": "MT4"
+		},
+		{
+			"demoAccountTypes": [
+				{
+					"typeId": "863c0225-029c-4ffe-a67f-f203d2c5fc2b",
+					"typeName": "迷你账户"
+				},
+				{
+					"typeId": "a7131893-4551-4f2f-a258-589f0a01d921",
+					"typeName": "标准账户"
+				},
+				{
+					"typeId": "746e5eca-34e1-4834-870e-d1cac8f09814",
+					"typeName": "贵宾账户"
+				}
+			],
+			"enableMockAccountRegister": false,
+			"vendor": "MT5"
+		}
+	],
+	"mcode": "m0000000",
+	"result": true
+}

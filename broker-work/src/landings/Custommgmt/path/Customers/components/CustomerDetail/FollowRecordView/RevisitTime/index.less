@@ -1,0 +1,24 @@
+@import '../index.less';
+.reviset-time{
+  font-size: 13px;
+  display: flex;
+  align-items: center;
+  color: @main-color;
+  cursor: pointer;
+  .time-container {
+    position: relative;
+    :global(.datetime-trigger) {
+      > div {
+        display: flex;
+      }
+      width: 200px;
+      text-align: right;
+      .time-label{
+        display: inline-block;
+        vertical-align: middle;
+        flex: 1;
+      }
+    }
+  }
+}
+  

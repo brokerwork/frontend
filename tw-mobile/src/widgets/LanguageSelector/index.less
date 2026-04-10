@@ -1,0 +1,31 @@
+@import '~less/fn.less';
+.selector-wrap{
+    .rem(160, width);
+    .rem(70, height);
+    .rem(50, border-radius);
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(216, 216, 216, 0.2);
+}
+.icon_left{
+    .rem(40, width);
+}
+.word{
+    color: #fff;
+    font-size: 14px;
+    .rem-padding(0, 15);
+}
+.icon_right{
+    .rem(18, width);
+}
+.select{
+    top: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 2;
+    opacity: 0;
+    width: 100%;
+    position: absolute;
+}

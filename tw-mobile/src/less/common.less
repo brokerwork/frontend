@@ -1,0 +1,55 @@
+:global{
+    #app{
+        background-color: rgb(250, 250, 250);
+    }
+    .flex{
+        display: flex;
+        display: -webkit-flex;
+    }
+    .flex-center{
+        .flex;
+        align-items: center;
+        -webkit-align-items: center;
+        justify-content: center;
+        -webkit-justify-content: center;
+    }
+    .flex-align{
+        .flex;
+        align-items: center;
+        -webkit-align-items: center;
+    }
+    .flex-content{
+        .flex;
+        justify-content: center;
+        -webkit-justify-content: center;
+    }
+    .flex-align-around{
+        .flex;
+        align-items: center;
+        -webkit-align-items: center;
+        justify-content: space-around;
+        -webkit-justify-content: space-around;
+    }
+    .flex-align-between{
+        .flex;
+        align-items: center;
+        -webkit-align-items: center;
+        justify-content: space-between;
+        -webkit-justify-content: space-between;
+    }
+    .fade-enter {
+        opacity: 0.01;
+    }
+
+    .fade-enter.fade-enter-active {
+        opacity: 1;
+        transition: opacity 250ms linear;
+    }
+    .fade-leave {
+        opacity: 1;
+    }
+    .fade-leave.fade-leave-active {
+        opacity: 0.01;
+        transition: opacity 250ms linear;
+    }
+}

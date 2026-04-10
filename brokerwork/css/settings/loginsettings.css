@@ -1,0 +1,27 @@
+#loginsettingcontent{
+    width: 90%;
+    height: auto;
+    font-size:14px;
+    margin-left: 5%;
+    .logininline{
+        display: inline-block;
+    }
+    .loginbasiclabel{
+        width: 100px;
+        text-align: right;
+        margin-right: 30px;
+    }
+    .left{
+        margin-left: 30px;
+    }
+    .littleleft{
+        margin-left: 10px;
+    }
+    .checktimescontrol{
+        width: 144px;
+        margin-left: 128px;
+    }
+    .pull-center{
+       margin-left: 128px;
+    }
+}

@@ -1,0 +1,170 @@
+@import 'siderbar.css';
+@import 'personalsetting.css';
+@import 'projectsetting.css';
+@import 'messagesetting.css';
+@import 'loginsettings.css';
+@import 'linksetting.css';
+@import 'rolesetting.css';
+@import 'productsetting.css';
+@import 'accountsetting.css';
+@import 'userhierarchysetting.css';
+
+.uploadcontent{
+    display: inline-block;
+    >button{
+        margin-left: -1px;
+    }
+}
+.clearFix:after {  
+            clear: both; /*添加清除浮动属性*/  
+            display: block; /*将它设为块状元素*/  
+            content: "."; /*这个块状元素的内容为一个 . 其实也可以不设，因为下面要隐藏掉它*/  
+            visibility: hidden; /*将它隐藏掉*/  
+            height: 0; /*将它高度设为0px*/  
+            line-height: 0; /*将它行高设为0px;*/  
+ }
+.leftheightcontrol{
+    overflow-y: scroll;
+    width:100%;
+
+    .panel-heading {
+        text-transform: none;
+    }
+ }
+.defaultHeader{
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    display: inline-block;
+}
+.chosegender{
+    width: 240px;
+    color:#666;
+    text-align: left;
+}
+.chosecountry{
+    width:72px;
+    text-align: left;
+    color:#666;
+}
+.chosedisc{
+    width:72px;
+    text-align: left;
+    position: relative;
+    left: 10px;
+}
+.readonlytag{
+    color:#999;
+}
+.basicInfo{
+   select{
+        color:#666;
+    }
+}
+
+.chosecity{
+    width:72px;
+    text-align: left;
+    position: relative;
+    left: 20px;
+}
+.textarealabel{
+    height: 60px;
+    line-height: 60px;
+    display: inline-block;
+    width: 100px;
+    margin-right: 30px;
+    text-align: right;
+    position: relative;
+    top:-38px;
+}
+.textarearow{
+    height: 60px !important;
+    line-height: 60px !important;
+}
+#redstar{
+        position:relative;
+        top:2px;
+        color:#ff4040;
+        margin-right:2px;
+ }
+.panel-heading {
+    color: #333 !important;
+}
+
+/*消息模块操作日志样式*/
+.messageLog {
+    table{
+        tr{
+        height:40px;
+        line-height: 40px;
+        td{
+            padding: 0px;
+        }
+    }
+    }
+    
+    .btn {
+        height: 30px;
+        padding-left: 10px;
+        padding-right: 10px;
+        font-size: 12px;
+    }
+    .btn:hover {
+        border-color: #1ca59e;
+    }
+    >.toolbar {
+        margin-bottom: 15px;
+        >.calendar-group {
+            .dropdown-toggle {
+                margin-right: 0;
+            }
+            .dropdown-menu {
+                display: none;
+            }
+            .date-range-input {
+                border-top-left-radius: 0;
+                border-bottom-left-radius: 0;
+                border-left: none;
+                height: 30px;
+                font-size: 12px;
+            }
+            .date-range-input:hover {
+                border-color: #1ca59e;
+            }
+        }
+        >.pull-right {
+            >.btn-group {
+                margin-top: -1px;
+                margin-right: -1px;
+                >.btn {
+                    margin-right: 1px;
+                    border-top-right-radius: 0;
+                    border-bottom-right-radius: 0;
+                    border-color: #ddd;
+                }
+                 >.btn:hover {
+                    border-color: #1ca59e;
+                  }
+            }
+            >.fui-searchbox {
+                .form-control {
+                 border-top-left-radius: 0;
+                 border-bottom-left-radius: 0;
+                 border-color: #ddd;
+                    height: 30px;
+                    font-size: 12px;
+                }
+                .form-control:hover {
+                    border-color: #1ca59e;
+                }
+                .fa-search {
+                    top: 8px;
+                }
+                .fa-search:hover {
+                    color: #1ca59e;
+                }
+            }
+         }
+    }
+}

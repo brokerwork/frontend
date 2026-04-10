@@ -1,0 +1,56 @@
+.reg-input-wrap {
+  position: relative;
+}
+.reg-input-wrap .ant-tabs-bar {
+  margin-bottom: 24px;
+}
+.reg-input-wrap .reg-input-turn {
+  line-height: 1;
+  padding-bottom: 16px;
+}
+.reg-input-wrap .reg-input-way {
+  font-size: 13px;
+  line-height: 32px;
+  color: #333333;
+}
+.reg-input-wrap .reg-input-phone-email {
+  color: #00a8a6;
+  line-height: 32px;
+  font-size: 13px;
+}
+.reg-input-wrap .reg-input-phone-input .ant-input {
+  margin-left: -1px;
+  border-left-color: transparent;
+}
+.reg-input-wrap .reg-input-captcha-btn .ant-btn {
+  text-align: center;
+  height: 36px;
+  line-height: 36px;
+  font-size: 14px;
+  color: #fff;
+  border: 1px solid #c5c5c5;
+}
+.reg-input-wrap .verifycode-warp .ant-row {
+  margin-bottom: 0;
+}
+.reg-input-wrap .iconfont {
+  font-size: 12px;
+}
+.reg-input-wrap .reg-only-btn {
+  display: block;
+  color: #00a8a6;
+  margin-top: 12px;
+  font-size: 14px;
+  height: 40px;
+  line-height: 40px;
+  border-radius: 4px;
+  border-width: 1px;
+  border-style: solid;
+  text-align: center;
+}
+.reg-input-wrap .ant-select-selection__rendered {
+  line-height: 32px;
+}
+.reg-input-wrap .ant-select-selection__rendered {
+  line-height: 32px;
+}

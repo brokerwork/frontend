@@ -1,0 +1,83 @@
+#userhierarchycontent{
+    table{
+        th{
+            text-align: center;
+        }
+        tr{
+            height: 40px;
+            line-height: 40px;
+        }
+        td{
+            text-align:center;
+            padding: 0px;
+            button{
+                width:24px;
+                height:24px;
+                border:0px;
+                font-size:10px;
+                i{
+                    width:16px;
+                    height: 16px;
+                    position:relative;
+                    margin-left: -8px;
+                    top:-2px;
+                }
+            }
+        }
+    }
+    .clicklink{
+        display:inline-block;
+        padding:0 5px;
+        color:#428bca;
+    }
+    .clicklink :hover{
+        color: #2a6496!important;
+    }
+}
+ .add-hierarchysetting{
+        width: 490px;
+        text-align: left;
+        height:106px;
+        & .basiclabel{
+              width: 80px;
+              text-align: right;
+              margin-right: 30px;
+              margin-left:60px;
+              display: inline-block;
+        }
+        & .lastline{
+            position: relative;
+            margin-top: 30px;
+        }
+        & .extallabel{
+            position: relative;
+            top:-35px;
+        }
+        & .richeditor{
+            width: 645px;
+            height: 200px;
+            display: inline-block;
+            margin-left: -15px;
+        }
+        & .add-buttons{
+            margin-right: 15px;
+        }
+        & .halfline{
+            width: 300px;
+            display: inline-block;
+           
+        }
+        .pull-right{
+            margin-right: 35px;
+        }
+    }
+.showdetails{
+    width: 420px;
+    text-align: justify;
+}
+.disabledBtn {
+    background-color: #c7cbd6 !important;
+    border-color:#c7cbd6 !important;
+    cursor:not-allowed !important;
+    pointer-events: auto !important;
+}

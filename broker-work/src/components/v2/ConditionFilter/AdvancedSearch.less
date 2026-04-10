@@ -1,0 +1,389 @@
+@import '~less/variables.less';
+
+.toggle {
+  list-style: none;
+  padding: 0;
+
+  li {
+    float: left;
+    padding: 0 10px;
+    color: @text-color;
+    cursor: pointer;
+
+    &:first-child {
+      border-right: 1px solid #ddd;
+    }
+
+    &:global(.active) {
+      color: @main-color;
+    }
+  }
+
+  &:after {
+    display: table;
+    content: '';
+    clear: both;
+  }
+}
+
+.tips {
+  font-size: 12px;
+  margin: 10px 0 5px;
+  color: @text-color-light;
+  padding: 0 10px;
+}
+
+.list {
+  // overflow: auto;
+  // height: 100%;
+  position: relative;
+  .fields {
+    &:after {
+      content: '';
+      display: block;
+      clear: both;
+      height: 0;
+      line-height: 0;
+    }
+    max-width: 1360px;
+    .row {
+      .field-title {
+        :global(.lean-checkbox-wrapper) {
+          color: @lean-grey-1;
+          padding: 11px 16px;
+          display: block;
+        }
+      }
+      .field-content {
+        padding: 0px 16px 10px 38px;
+        &-item {
+          margin: 4px 0;
+          :global(.lean-calendar-range-picker-input) {
+            overflow: hidden;
+            white-space: nowrap;
+            max-width: 72px;
+          }
+          :global(.lean-calendar-picker-icon) {
+            display: none;
+          }
+          :global(.lean-input) {
+            line-height: normal;
+          }
+          :global(.lean-calendar-picker) {
+            :global(.lean-input),
+            :global(.lean-input-sm) {
+              padding: 3px 0 0 3px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  :global(.lean-picklist-button) {
+    width: 100%;
+    height: auto;
+    min-height: 24px;
+    :global(.lean-picklist-content) {
+      word-break: break-all;
+    }
+    :global(.lean-picklist-tag) {
+      height: auto;
+      min-height: 24px;
+    }
+  }
+  :global(.lean-picklist-list) {
+    // height: 182px;
+    background: #fff;
+    :global(.lean-picklist-item) {
+      display: block;
+      padding-right: 10px;
+    }
+    // :global(.lean-picklist-menu) {
+    //   min-height: 70px;
+    // }
+  }
+  :global(.lean-calendar-picker-input) {
+    height: 24px;
+    line-height: 1.5;
+  }
+  :global(.lean-dropdown) {
+    max-width: 184px;
+  }
+  :global(.lean-select-selection) {
+    overflow: hidden;
+    word-break: break-all;
+    text-overflow: ellipsis;
+  }
+}
+
+.dropdown {
+  width: 183px;
+}
+.dropdown-mini {
+  width: 62px;
+}
+
+.modal-container {
+  :global(.modal-dialog) {
+    max-width: 700px;
+  }
+  :global(.modal-body) {
+    padding: 30px 20px;
+  }
+  display: none;
+  &.show {
+    display: block;
+  }
+}
+
+.value {
+  display: block;
+  :global(.btn-group) {
+    width: 100%;
+  }
+  :global(.dropdown-toggle) {
+    padding: 0 30px 0 10px !important;
+    line-height: 24px;
+    height: auto !important;
+  }
+}
+.search-btn {
+  border-color: @main-color;
+  color: @text-color;
+  background: #fff;
+  margin-right: 10px;
+  height: 30px;
+  &:hover {
+    background: #fff;
+    color: @text-color;
+  }
+}
+.remove-btn {
+  border: 0;
+  background: none;
+  font-size: 18px;
+  color: #c8cbd7;
+  outline: none;
+  padding: 0;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.create-btn {
+  color: @main-color;
+  font-size: 12px;
+  margin-top: 18px;
+  cursor: pointer;
+  margin-left: 5px;
+
+  &:hover {
+    text-decoration: none;
+  }
+
+  :global(.fa) {
+    margin-right: 8px;
+  }
+}
+.container {
+  & > .state-0,
+  .state-1,
+  .state-2 {
+    position: relative;
+  }
+  .state-0 {
+    display: block;
+  }
+  .state-2 {
+    padding-top: 5px;
+  }
+}
+
+.button-bar {
+  button {
+    margin: 0;
+    margin-left: 10px;
+  }
+}
+.tag {
+  margin: 5px 5px 5px 0;
+  vertical-align: middle;
+  padding: 5px 10px;
+  max-width: 100%;
+  & > span {
+    display: inline-block;
+    max-width: 700px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    vertical-align: middle;
+  }
+  i {
+    cursor: pointer;
+    margin-left: 10px;
+    padding: 10px 12px;
+    margin: -10px;
+    margin-left: 0;
+    vertical-align: middle;
+    &:hover {
+      color: @red;
+    }
+  }
+}
+.button-bar-inline {
+  display: inline-block;
+  margin-top: 0;
+  vertical-align: middle;
+  margin: 5px;
+}
+.ques-tips-trigger {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  vertical-align: middle;
+  margin-right: 10px;
+  font-size: 20px;
+}
+.tags-and {
+  .tag {
+    border-color: #666;
+  }
+}
+.tags-or {
+  .tag {
+    border-color: #00a8a6;
+  }
+}
+.ques-content {
+  width: 120px;
+  text-align: center;
+}
+
+.dropdown-li {
+  display: flex;
+  .dropdown-label {
+    flex-grow: 1;
+  }
+  i {
+    padding: 10px;
+    margin: -10px;
+    margin-left: 0;
+    margin-right: -20px;
+    &:hover {
+      opacity: 0.7;
+    }
+  }
+}
+.ques-icon {
+  color: @text-color;
+}
+
+.condition-input {
+  border: none;
+  border-bottom: 1px solid #dfe3e8;
+  border-radius: 0;
+  &:focus {
+    // box-shadow: 0 2px 0 0 rgba(66, 133, 244, 0.4); //todo theme color;
+    box-shadow: none;
+  }
+}
+
+.button-bar {
+  padding: 10px;
+  background-color: #fafafa;
+  text-align: center;
+  box-shadow: inset 0 1px 0 0 #dfe3e8;
+  button {
+    margin: 0;
+  }
+  button + button {
+    margin-left: 8px;
+  }
+}
+
+.modal-container {
+  :global(.modal-dialog) {
+    max-width: 700px;
+  }
+  :global(.modal-body) {
+    padding: 30px 20px;
+  }
+}
+.collapse {
+  color: red;
+}
+.view-dropdown-label {
+  font-size: 16px;
+  cursor: pointer;
+  display: inline-block;
+  & > span {
+    vertical-align: middle;
+  }
+}
+.main-filter-menu {
+  width: 280px;
+  padding-bottom: 0;
+}
+.view-edit-btn {
+  margin-left: 10px;
+}
+.user-selector {
+  display: block;
+  padding: 5px 24px;
+  margin: -5px -24px;
+}
+.condition-filter-input {
+  input {
+    box-shadow: none;
+    border-width: 0;
+    border-bottom-width: 1px;
+    height: 46px;
+    line-height: 46px;
+    border-radius: 0;
+    margin-right: -1px;
+    &:focus {
+      box-shadow: none;
+    }
+  }
+}
+.condiiton-filter-content {
+  background: none;
+  :global(.lean-select-option) {
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}
+
+.condition-dialog {
+  width: 700px !important;
+}
+
+.condition-show,
+.condition-hide {
+  margin-top: 16px;
+}
+.condition-show {
+  display: block;
+}
+.condition-hide {
+  display: none;
+}
+
+.conditions-toggle {
+  margin-top: 24px;
+  color: @main-color;
+  cursor: pointer;
+  font-size: 13px;
+}
+
+.delete-link {
+  margin-left: 5px;
+  text-decoration: underline;
+  cursor: pointer;
+}
+.userSimpleSelector {
+  margin: 5px 10px;
+}

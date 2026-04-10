@@ -1,0 +1,33 @@
+@import '~less/variables.less';
+.action-bar {
+  .source-type,
+  .source-state {
+    display: inline-flex;
+    margin-left: 10px;
+  }
+  .source-type.hidden {
+    display: none;
+  }
+  .action-left {
+    float: left;
+  }
+  .search-bar {
+    float: right;
+    position: relative;
+    :global(.form-control) {
+        position: relative;
+        z-index: 1;
+        margin-left: -1px;
+        display: inline-block;
+        width: 180px;
+        height: 30px;
+        border-color: @dropdown-border;
+        font-size: 12px;
+    }
+  }
+  &:after {
+    content: '';
+    display: table;
+    clear: both;
+  }
+}

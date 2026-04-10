@@ -1,0 +1,20 @@
+@import "~less/sc/variables.less";
+
+.error-mode{
+  color: @state-danger;
+  width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.variety-table {
+  :global(.free-hidden-td) {
+    overflow: visible;
+  }
+}
+.variety-error-td {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 90%;
+  display: inline-block;
+}

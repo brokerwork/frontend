@@ -1,0 +1,85 @@
+@import '~less/fn.less';
+@textColor: #6ec3fb;
+@centerWidth: (650/750*100)+"%";
+.mock-acct-success {
+  .content {
+    width: 100%;
+    height: 100%;
+    .rem(6px, border-radius);
+    background: #fff;
+    border-top: 0.16rem solid #27D3BC;
+    .top {
+      width: max-content;
+      height: max-content;
+      .rem(100px, padding-left);
+      margin: 0.8267rem auto;
+      position: relative;
+      .description {
+        .rem(400px,max-width)
+      }
+    }
+    .center {
+      .rem(630px, width);
+      margin: 0 auto;
+      .rem(50px, margin-bottom);
+    }
+    .bottom {
+      width: max-content;
+      margin: 0 auto;
+      .rem( 20px , margin-bottom );
+    }
+  }
+}
+
+.mock-acct-success {
+  .top {
+    >p:nth-of-type(1) {
+      font-size: 14px;
+      color: #666;
+      .rem(2px, margin-bottom);
+    }
+    >p:nth-of-type(2) {
+      font-size: 12px;
+      color: #B7B7B7;
+    }
+    >p:nth-of-type(3) {
+      font-size: 35px;
+      position: absolute;
+      top: 0;
+      left: 0;
+      color: #27D3BC;
+    }
+  }
+}
+
+[data-dpr="2"] {
+  .mock-acct-success {
+    .top {
+      >p:nth-of-type(1) {
+        font-size: 28px;
+      }
+      >p:nth-of-type(2) {
+        font-size: 24px;
+      }
+      >p:nth-of-type(3) {
+        font-size: 70px;
+      }
+    }
+  }
+}
+
+[data-dpr="3"] {
+  .mock-acct-success {
+    .top {
+      >p:nth-of-type(1) {
+        font-size: 42px;
+      }
+      >p:nth-of-type(2) {
+        font-size: 36px;
+      }
+      >p:nth-of-type(3) {
+        font-size: 105px;
+      }
+    }
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "data":[
+    {"label":"无","value":"1"},
+    {"label":"重要","value":"2"},
+    {"label":"非常重要","value":"3"}
+  ],
+  "mcode":"m0000000",
+  "result":true
+}

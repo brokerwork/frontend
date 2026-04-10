@@ -1,0 +1,123 @@
+@import '../index.less';
+
+
+.count-badge {
+  min-width: 22px;
+  padding: 0 7px;
+  height: 22px;
+  line-height: 22px;
+	border-radius: 4px;
+	background-color: #e8e9f1;
+}
+
+.account-owner-tag{
+  padding: 0 10px;
+  height: 24px;
+  line-height: 24px;
+  border-radius: 4px;
+  background: #e5e5e5;
+  display: inline-block;
+  margin-left: 20px;
+  font-size: 12px;
+  color: @text-color;
+  &.owner-stage-checking {
+    background: rgba(4, 169, 245, 0.2);
+    color: #04a9f5;
+  }
+  &.owner-stage-checked {
+    background-color: rgba(0, 178, 119, 0.2);
+    color:  #00b277;
+  }
+}
+
+.ques-content {
+  min-width: 200px;
+}
+
+.owner-state-icon {
+  margin-left: 10px;
+  font-size: 17px;    
+}
+.modal {
+  :global(.modal-dialog){
+    width: 760px;
+  }
+  :global(.modal-header){
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  :global(.modal-body){
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  :global(.modal-footer){
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+.owner-header {
+  padding-left: 0;
+  padding-right: 0;
+  &:first-child {
+    padding-top: 0;
+  }
+  i {
+
+  }
+}
+.static-form-body {
+  padding: 20px 0 30px;
+  margin-left: 80px;
+  max-width: 100%;
+}
+.main-panel {
+  padding: 15px;
+}
+.control {
+  font-weight: 400;
+  font-size: 12px;
+  padding-top: 5px;
+  border-bottom: 1px dotted #ddd;
+  min-height: 30px;
+}
+.owner-form {
+  margin-left: -25px;
+  margin-right: -25px;
+  justify-content: space-between;
+  :global(.item) {
+    flex-direction: column;
+    padding: 0 25px;
+    :global(.item-label) {
+      width: 100%;
+      text-align: left;
+      font-size: 12px;
+      color: #666;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      overflow: hidden;
+    }
+
+    :global(.item-control)
+     {
+      width: 100%;
+      color: #333;
+
+      :global(.form-control) {
+        border-radius: 0;
+        border: 0;
+        border-bottom: 1px solid #ddd;
+        background-color: #fff;
+
+        &[disabled] {
+          border-style: dashed;
+        }
+      }
+    }
+  }
+}
+.profile {
+  color: #d189e1
+}
+.white {
+  color: #ffffff;
+}

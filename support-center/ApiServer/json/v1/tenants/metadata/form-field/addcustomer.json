@@ -1,0 +1,461 @@
+{
+  "data": [
+    {
+      "columns": "1",
+      "enable": true,
+      "fieldType": "text",
+      "key": "customName",
+      "label": "客户名称",
+      "orderNo": 1,
+      "overuse": true,
+      "readonly": false,
+      "size": 50,
+      "sysDefault": true,
+      "unique": false,
+      "validateType": {
+        "required": true
+      }
+    },
+    {
+      "columns": "1",
+      "enable": true,
+      "fieldType": "text",
+      "key": "customNo",
+      "label": "客户编号",
+      "orderNo": 2,
+      "overuse": false,
+      "readonly": false,
+      "size": 50,
+      "sysDefault": true,
+      "unique": true,
+      "validateType": {}
+    },
+    {
+      "columns": "1",
+      "enable": true,
+      "fieldType": "select",
+      "key": "oweId",
+      "label": "客户归属",
+      "orderNo": 3,
+      "overuse": true,
+      "readonly": false,
+      "size": 50,
+      "sysDefault": true,
+      "unique": false,
+      "validateType": {}
+    },
+    {
+      "columns": "1",
+      "defaultValue": "1",
+      "enable": true,
+      "fieldType": "select",
+      "key": "customerType",
+      "label": "客户类型",
+      "optionList": [
+        {
+          "label": "直客",
+          "value": "1"
+        },
+        {
+          "label": "代理",
+          "value": "2"
+        },
+        {
+          "label": "VIP",
+          "value": "3"
+        }
+      ],
+      "orderNo": 4,
+      "overuse": false,
+      "readonly": false,
+      "size": 50,
+      "sysDefault": false,
+      "unique": false,
+      "validateType": {}
+    },
+    {
+      "columns": "1",
+      "defaultValue": "1",
+      "enable": true,
+      "fieldType": "select",
+      "key": "customerLevel",
+      "label": "客户级别",
+      "optionList": [
+        {
+          "label": "高",
+          "value": "1"
+        },
+        {
+          "label": "中",
+          "value": "2"
+        },
+        {
+          "label": "低",
+          "value": "3"
+        }
+      ],
+      "orderNo": 5,
+      "overuse": false,
+      "readonly": false,
+      "size": 50,
+      "sysDefault": true,
+      "unique": false,
+      "validateType": {}
+    },
+    {
+      "columns": "1",
+      "defaultValue": "1",
+      "enable": true,
+      "fieldType": "select",
+      "key": "customSource",
+      "label": "客户来源",
+      "optionList": [
+        {
+          "label": "官网注册",
+          "value": "1"
+        },
+        {
+          "label": "名单数据",
+          "value": "2"
+        },
+        {
+          "label": "客户介绍",
+          "value": "3"
+        },
+        {
+          "label": "居间介绍",
+          "value": "4"
+        },
+        {
+          "label": "线下活动",
+          "value": "5"
+        },
+        {
+          "label": "销售新增",
+          "value": "6"
+        }
+      ],
+      "orderNo": 6,
+      "overuse": true,
+      "readonly": false,
+      "size": 50,
+      "sysDefault": false,
+      "unique": false,
+      "validateType": {}
+    },
+    {
+      "columns": "1",
+      "defaultValue": "1",
+      "enable": true,
+      "fieldType": "select",
+      "key": "ambitious",
+      "label": "客户规模",
+      "optionList": [
+        {
+          "label": "20人以下",
+          "value": "1"
+        },
+        {
+          "label": "20-99人",
+          "value": "2"
+        },
+        {
+          "label": "100-500人",
+          "value": "3"
+        },
+        {
+          "label": "500人以上",
+          "value": "4"
+        }
+      ],
+      "orderNo": 7,
+      "overuse": false,
+      "readonly": false,
+      "size": 50,
+      "sysDefault": false,
+      "unique": false,
+      "validateType": {}
+    },
+    {
+      "columns": "1",
+      "enable": true,
+      "fieldType": "text",
+      "key": "introducer",
+      "label": "介绍人",
+      "orderNo": 8,
+      "overuse": false,
+      "readonly": false,
+      "size": 50,
+      "sysDefault": false,
+      "unique": false,
+      "validateType": {}
+    },
+    {
+      "columns": "1",
+      "enable": true,
+      "fieldType": "phone",
+      "key": "phones",
+      "label": "手机",
+      "orderNo": 9,
+      "overuse": true,
+      "readonly": false,
+      "size": 50,
+      "sysDefault": true,
+      "unique": false,
+      "validateType": {}
+    },
+    {
+      "columns": "1",
+      "enable": true,
+      "fieldType": "text",
+      "key": "email",
+      "label": "邮箱",
+      "orderNo": 10,
+      "overuse": true,
+      "readonly": false,
+      "size": 50,
+      "sysDefault": true,
+      "unique": false,
+      "validateType": {
+        "required": true
+      }
+    },
+    {
+      "columns": "1",
+      "defaultValue": "1",
+      "enable": true,
+      "fieldType": "select",
+      "key": "idType",
+      "label": "身份证明类型",
+      "optionList": [
+        {
+          "label": "营业执照",
+          "value": "1"
+        },
+        {
+          "label": "组织机构代码证",
+          "value": "2"
+        },
+        {
+          "label": "税务登记证",
+          "value": "3"
+        },
+        {
+          "label": "商业登记证",
+          "value": "4"
+        },
+        {
+          "label": "身份证",
+          "value": "5"
+        },
+        {
+          "label": "营业执照",
+          "value": "6"
+        },
+        {
+          "label": "户口簿",
+          "value": "7"
+        },
+        {
+          "label": "护照",
+          "value": "8"
+        },
+        {
+          "label": "军官证",
+          "value": "9"
+        },
+        {
+          "label": "士兵证",
+          "value": "10"
+        },
+        {
+          "label": "香港居民来往内地通行证",
+          "value": "11"
+        },
+        {
+          "label": "台湾居民来往内地通行证",
+          "value": "12"
+        },
+        {
+          "label": "外国人居留证",
+          "value": "13"
+        },
+        {
+          "label": "警官证",
+          "value": "14"
+        },
+        {
+          "label": "其他证件",
+          "value": "15"
+        }
+      ],
+      "orderNo": 11,
+      "overuse": false,
+      "readonly": false,
+      "size": 50,
+      "sysDefault": false,
+      "unique": false,
+      "validateType": {
+        "required": true
+      }
+    },
+    {
+      "columns": "1",
+      "enable": true,
+      "fieldType": "text",
+      "key": "idNum",
+      "label": "身份证明号码",
+      "orderNo": 12,
+      "overuse": false,
+      "readonly": false,
+      "size": 50,
+      "sysDefault": false,
+      "unique": false,
+      "validateType": {
+        "required": true
+      }
+    },
+    {
+      "columns": "1",
+      "enable": true,
+      "fieldType": "image",
+      "key": "idUrl1",
+      "label": "身份证明A",
+      "orderNo": 13,
+      "overuse": false,
+      "readonly": false,
+      "size": 50,
+      "sysDefault": false,
+      "unique": false,
+      "validateType": {}
+    },
+    {
+      "columns": "1",
+      "enable": true,
+      "fieldType": "image",
+      "key": "idUrl2",
+      "label": "身份证明B",
+      "orderNo": 14,
+      "overuse": false,
+      "readonly": false,
+      "size": 50,
+      "sysDefault": false,
+      "unique": false,
+      "validateType": {}
+    },
+    {
+      "columns": "1",
+      "enable": true,
+      "fieldType": "text",
+      "key": "faxes",
+      "label": "传真",
+      "orderNo": 15,
+      "overuse": false,
+      "readonly": false,
+      "size": 50,
+      "sysDefault": false,
+      "unique": false,
+      "validateType": {}
+    },
+    {
+      "columns": "1",
+      "enable": true,
+      "fieldType": "text",
+      "key": "site",
+      "label": "网址",
+      "orderNo": 16,
+      "overuse": false,
+      "readonly": false,
+      "size": 50,
+      "sysDefault": false,
+      "unique": false,
+      "validateType": {}
+    },
+    {
+      "columns": "1",
+      "enable": true,
+      "fieldType": "text",
+      "key": "social",
+      "label": "社交网络",
+      "orderNo": 17,
+      "overuse": false,
+      "readonly": false,
+      "size": 50,
+      "sysDefault": false,
+      "unique": false,
+      "validateType": {}
+    },
+    {
+      "columns": "1",
+      "enable": true,
+      "fieldType": "text",
+      "key": "postcode",
+      "label": "邮编",
+      "orderNo": 18,
+      "overuse": false,
+      "readonly": false,
+      "size": 50,
+      "sysDefault": false,
+      "unique": false,
+      "validateType": {}
+    },
+    {
+      "columns": "1",
+      "enable": true,
+      "fieldType": "city",
+      "key": "country",
+      "label": "国家/省/市",
+      "orderNo": 19,
+      "overuse": true,
+      "readonly": false,
+      "size": 50,
+      "sysDefault": true,
+      "unique": false,
+      "validateType": {}
+    },
+    {
+      "columns": "2",
+      "enable": true,
+      "fieldType": "text",
+      "key": "address",
+      "label": "详细地址",
+      "orderNo": 20,
+      "overuse": false,
+      "readonly": false,
+      "size": 50,
+      "sysDefault": false,
+      "unique": false,
+      "validateType": {}
+    },
+    {
+      "columns": "2",
+      "enable": true,
+      "fieldType": "textarea",
+      "key": "comments",
+      "label": "备注",
+      "orderNo": 21,
+      "overuse": false,
+      "readonly": false,
+      "size": 1000,
+      "sysDefault": false,
+      "unique": false,
+      "validateType": {}
+    },
+    {
+      "columns": "1",
+      "enable": true,
+      "fieldType": "date",
+      "key": "createTime",
+      "label": "创建时间",
+      "orderNo": 22,
+      "overuse": true,
+      "readonly": true,
+      "size": 50,
+      "sysDefault": true,
+      "unique": false,
+      "validateType": {}
+    }
+  ],
+  "mcode": "m0000000",
+  "result": true
+}

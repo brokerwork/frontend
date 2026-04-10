@@ -1,0 +1,36 @@
+export const PAY_CURRENCY_LIST = [
+  { value: 'AUD', label: 'AUD, Australian Dollar' },
+  { value: 'AED', label: 'AED, Arab Emir. Dirham' },
+  { value: 'CAD', label: 'CAD, Canadian Dollar' },
+  { value: 'CHF', label: 'CHF, Swiss Franc' },
+  { value: 'CNY', label: 'CNY, Yuan Renminbi' },
+  { value: 'EUR', label: 'EUR, Euro' },
+  { value: 'GBP', label: 'GBP, Pound Sterling' },
+  { value: 'HKD', label: 'HKD, Hong Kong Dollar' },
+  { value: 'IDR', label: 'IDR, Rupiah' },
+  { value: 'INR', label: 'INR, Indian Rupee' },
+  { value: 'JPY', label: 'JPY, Yen' },
+  { value: 'KRW', label: 'KRW, Won' },
+  { value: 'MYR', label: 'MYR, Malaysian Ringgit' },
+  { value: 'NZD', label: 'NZD, New Zealand Dollar' },
+  { value: 'PHP', label: 'PHP, Philippine Peso' },
+  { value: 'RUB', label: 'RUB, Russian Ruble' },
+  { value: 'SGD', label: 'SGD, Singapore Dollar' },
+  { value: 'THB', label: 'THB, Baht' },
+  { value: 'TWD', label: 'TWD, New Taiwan Dollar' },
+  { value: 'USD', label: 'USD, U.S.Dollar' },
+  { value: 'VND', label: 'VND, Dong' }
+];
+export const TRANSACTION_CURRENCY_LIST = [
+  { value: 'AUD', label: 'AUD, Australian Dollar' },
+  { value: 'CAD', label: 'CAD, Canadian Dollar' },
+  { value: 'CNY', label: 'CNY, Yuan Renminbi' },
+  { value: 'EUR', label: 'EUR, Euro' },
+  { value: 'GBP', label: 'GBP,Pound Sterling' },
+  { value: 'HKD', label: 'HKD, Hong Kong Dollar' },
+  { value: 'JPY', label: 'JPY, Yen' },
+  { value: 'NZD', label: 'NZD, New Zealand Dollar' },
+  { value: 'SGD', label: 'SGD, Singapore Dollar' },
+  { value: 'THB', label: 'THB, Baht' },
+  { value: 'USD', label: 'USD, U.S.Dollar' }
+];

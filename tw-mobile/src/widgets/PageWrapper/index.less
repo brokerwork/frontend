@@ -1,0 +1,24 @@
+@import '~less/fn.less';
+
+* {
+  box-sizing: border-box;
+}
+.page{
+	display:flex;
+	flex-direction: column;
+	display:flex;
+	height:100%;
+}
+.page-content{
+	flex:1;
+	display:flex;
+	flex-direction: column;
+}
+.page-footer {
+	z-index: 2;
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+  .rem(105,height);
+  box-shadow: 0 0 0.5rem rgb(225, 225, 225);
+}

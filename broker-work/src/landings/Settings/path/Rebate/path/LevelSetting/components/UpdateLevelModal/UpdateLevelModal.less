@@ -1,0 +1,33 @@
+@import "~less/variables.less";
+ :global(.form-control) {
+        font-size: 12px;
+        line-height: 1;
+    }
+
+:global(.control-label) {
+        font-size: 12px;
+    }
+:global(.level-default) {
+    text-align: left;
+    font-size:12px;
+    margin-bottom: 0;
+    padding-top: 7px;
+}
+.errorText{
+    color: @red;
+    height: 12px;
+    font-size: 12px;
+    line-height: 12px;
+}
+
+:global(.disabled-btn) {
+    background-color: @disabled-color;
+    border-color: @disabled-color;
+    cursor:not-allowed;
+    pointer-events: auto;
+}
+
+.error {
+    border-color: @red;
+  }
+

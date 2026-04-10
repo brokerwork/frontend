@@ -1,0 +1,67 @@
+@import '~less/variables';
+.result-tints {
+    min-height: 400px;
+    line-height: 400px;
+    text-align: center;
+}
+
+.action-button {
+    width: 21px;
+    height: 21px;
+    line-height: 21px;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    color: #fff;
+    background-color: #1fb5ad;
+    border-color: #1fb5ad;
+}
+
+.action-button:hover {
+    color: #fff;
+    background-color: #1ca59e;
+    border-color: #1ca59e;
+}
+
+.action-button:active {
+    color: #fff;
+    background-color: #1ca59e;
+    border-color: #1ca59e;
+}
+
+.action-button:focus {
+    color: #fff;
+    background-color: #1ca59e;
+    border-color: #1ca59e;
+}
+
+:global(.btn-default:active) {
+    color: #fff;
+    background-color: #1ca59e;
+    border-color: #1ca59e;
+}
+
+.sort-text {
+    white-space: nowrap;
+    cursor: pointer;
+}
+
+.sort-icon {
+    position: relative;
+    margin-left: 3px;
+    color: @text-color-light;
+    > :global(.fa) {
+        position: absolute;
+        transform: translateY(3px);
+        &.active {
+            color: @main-color;
+        }
+    }
+}
+
+.report_td {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    max-width: 230px;
+}

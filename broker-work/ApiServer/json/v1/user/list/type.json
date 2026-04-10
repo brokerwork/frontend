@@ -1,0 +1,46 @@
+{
+  "data": [
+    {
+      "commissionValue":0,
+      "detailId": 1,
+      "maxCommissionValue": 0,
+      "name": "4",
+      "ruleId": 1,
+      "ruleType":0,
+      "unit": "BW_REPORT_UNIT_0_0",
+      "values": [{"detailId": 5, "value": "3"}]
+    },
+    {
+      "commissionValue": 4,
+      "detailId": 0,
+      "maxCommissionValue": 10,
+      "name": "泰吴",
+      "ruleId": 2,
+      "ruleType":0,
+      "unit": 0,
+      "roleName": "BW_REPORT_UNIT_1_1"
+    },
+    {
+      "commissionValue": 0,
+      "detailId": 0,
+      "maxCommissionValue": 0.6,
+      "name": "3",
+      "ruleId": 3,
+      "ruleType":0,
+      "unit": 0,
+      "roleName": "BW_REPORT_UNIT_0_0"
+    },
+    {
+      "commissionValue":0,
+      "detailId": 2,
+      "maxCommissionValue": 0,
+      "name": "7",
+      "ruleId": 4,
+      "ruleType":0,
+      "unit": "BW_REPORT_UNIT_0_0",
+      "values": [{"detailId": 2, "value": "7"}]
+    }
+  ],
+  "mcode": "string",
+  "result": true
+}

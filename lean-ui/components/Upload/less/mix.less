@@ -1,0 +1,54 @@
+.upload-container(
+  @border,
+  @border-color,
+  @width,
+  @padding,
+  @border-radius,
+  @background-color,
+  @cursor-background-color,
+  @img-width,
+  @img-height,
+  @img-mr,
+  @font-size,
+  @color
+) {
+  &:hover {
+    background-color: @cursor-background-color;
+    border-color: @border-color;
+    cursor: pointer;
+    .icon {
+      display: block;
+    }
+  }
+  position: relative;
+  max-width: @width;
+  padding: @padding;
+  margin-bottom: 8px;
+  border-radius: @border-radius;
+  background-color: @background-color;
+  border: solid 1px #dfe3e8;
+  .icon {
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    color: #000000;
+    font-size: 12px;
+  }
+  img {
+    width: @img-width;
+    height: @img-height;
+    margin-right: @img-mr;
+    vertical-align: middle;
+    &+span{
+      max-width: 200px;
+      display: inline-block;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      overflow: hidden;
+    }
+  }
+  span {
+    font-size: @font-size;
+    color: @color;
+  }
+}

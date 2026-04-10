@@ -1,0 +1,40 @@
+@import '~less/variables.less';
+
+.body {
+  :global(.lean-card-content) {
+    padding: 0;
+  }
+  :global(.lean-table) {
+    border-top: 1px solid transparent;
+  }
+  :global(.lean-card) {
+    overflow: hidden;
+  }
+}
+
+.right {
+  float: right;
+}
+:global(.disabled-btn) {
+  background-color: @disabled-color;
+  border-color: @disabled-color;
+  cursor: not-allowed;
+}
+.role-btn {
+  width: 100%;
+  text-align: right;
+}
+.list-button button {
+  margin: 0 3px;
+}
+.list-table {
+  padding-bottom: 40px;
+  a {
+    cursor: pointer;
+  }
+}
+.operationIcon {
+  color: @main-color;
+  margin-right: 10px;
+  cursor: pointer;
+}

@@ -1,0 +1,83 @@
+.forget-pwd-wrapper input:hover {
+  border-color: #00a8a6;
+}
+.forget-pwd-wrapper .input {
+  height: 32px;
+  line-height: 32px;
+  font-size: 14px;
+}
+.forget-pwd-wrapper button {
+  width: 100%;
+  height: 40px;
+  margin-bottom: 14px;
+  font-size: 14px;
+}
+.forget-pwd-wrapper button.ant-btn-primary {
+  background-color: #00a8a6;
+  border-color: #00a8a6;
+}
+.forget-pwd-wrapper button:hover,
+.forget-pwd-wrapper button:focus {
+  background-color: #00a8a6;
+  border-color: #00a8a6;
+}
+.forget-pwd-wrapper .code-button {
+  float: right;
+  width: 35%;
+}
+.forget-pwd-wrapper .code-button:hover,
+.forget-pwd-wrapper .code-button:focus {
+  background-color: #fff;
+  color: rgba(0, 0, 0, 0.65);
+}
+.forget-pwd-wrapper .code-input {
+  width: 62%;
+  display: inline-block;
+}
+.forget-pwd-wrapper .text-center {
+  text-align: center;
+}
+.forget-pwd-wrapper .text-center div {
+  font-size: 14px;
+  color: #999999;
+  margin-top: 25px;
+  margin-bottom: 60px;
+}
+.forget-pwd-wrapper .text {
+  font-size: 14px;
+  margin-bottom: 14px;
+}
+.forget-pwd-wrapper .login {
+  text-align: center;
+  color: #999999;
+  font-size: 13px;
+  margin-top: 10px;
+}
+.forget-pwd-wrapper .login a {
+  color: #00a8a6;
+}
+.forget-pwd-wrapper span.error {
+  color: #f04134;
+}
+.forget-pwd-wrapper input.error {
+  border-color: #f04134;
+}
+.forget-pwd-wrapper input.error:focus {
+  box-shadow: none;
+}
+.forget-pwd-wrapper .reg-input-turn {
+  margin-top: 40px;
+  line-height: 1;
+  padding-bottom: 16px;
+}
+.forget-pwd-wrapper .reg-input-way {
+  font-size: 14px;
+  color: #333333;
+}
+.forget-pwd-wrapper .reg-input-phone-email {
+  color: #00a8a6;
+  font-size: 13px;
+}
+.forget-pwd-wrapper .iconfont {
+  font-size: 13px;
+}

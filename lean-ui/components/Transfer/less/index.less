@@ -1,0 +1,167 @@
+@transfer-prefix-cls: ~"@{prefix}-transfer";
+.@{transfer-prefix-cls} {
+  .reset-component;
+  position: relative;
+  &-list {
+    border: @border-width-base @border-style-base @border-color-base;
+    display: inline-block;
+    border-radius: @border-radius-base;
+    vertical-align: middle;
+    position: relative;
+    width: 200px;
+    height: 340px;
+    padding-top: 41px;
+    &-with-footer {
+      padding-bottom: 34px;
+    }
+    &-search {
+      padding: 0 @control-padding-horizontal-sm;
+      &-action {
+        color: @transfer-disabled-color;
+        position: absolute;
+        top: 4px;
+        right: 4px;
+        bottom: 4px;
+        width: 28px;
+        line-height: @input-height-base;
+        text-align: center;
+        .@{iconfont-css-prefix} {
+          transition: all 0.3s;
+          color: @transfer-disabled-color;
+          &:hover {
+            color: @text-color-secondary;
+          }
+        }
+        span& {
+          pointer-events: none;
+        }
+      }
+    }
+    &-header {
+      padding: 9px 0 9px 17px;
+      border-radius: @border-radius-base @border-radius-base 0 0;
+      background: @component-background;
+      color: @text-color;
+      border-bottom: @border-width-base @border-style-base @border-color-split;
+      overflow: hidden;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      &-title {
+        position: absolute;
+        right: 16px;
+        font-size: 13px;
+        line-height: @transfer-line-height;
+        top: 13px;
+      }
+      &-selected {
+        > span {
+          font-size: 13px;
+        }
+      }
+    }
+    &-body {
+      font-size: @font-size-base;
+      position: relative;
+      height: 297px;
+      &-search-wrapper {
+        position: absolute;
+        top: 0;
+        left: 0;
+        padding: 4px;
+        width: 100%;
+      }
+    }
+    &-body-with-search {
+      padding-top: @input-height-base + 8px;
+    }
+    &-content {
+      height: 100%;
+      overflow: auto;
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      // > .LazyLoad {
+      //   animation: transferHighlightIn 1s;
+      // }
+      &-item {
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        padding: 7px 0 7px @transfer-item-padding;
+        min-height: 25px;
+        transition: all 0.3s;
+        list-style: none;
+        > span {
+          padding-right: 0;
+        }
+      }
+      &-item:not(&-item-disabled):hover {
+        cursor: pointer;
+        background-color: @transfer-item-hover-bg;
+      }
+      &-item-sortable:not(&-item-disabled):hover {
+        &:after {
+          cursor: move;
+          float: right;
+          margin-right: 10px;
+          width: 14px;
+          color: #919eab;
+          color: @transfer-hamburger-color;
+          font-family: "LeanWork-Icons" !important;
+          content: @icon-lw-hamburger-table;
+        }
+      }
+      &-item-disabled {
+        cursor: not-allowed;
+        color: @transfer-btn-disable-color;
+      }
+    }
+    &-body-not-found {
+      padding-top: 0;
+      color: @transfer-disabled-color;
+      text-align: center;
+      display: none;
+      position: absolute;
+      top: 50%;
+      width: 100%;
+      margin-top: -10px;
+    }
+    &-content:empty + &-body-not-found {
+      display: block;
+    }
+    &-footer {
+      border-top: @border-width-base @border-style-base @border-color-split;
+      border-radius: 0 0 @border-radius-base @border-radius-base;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+    }
+  }
+  &-operation {
+    display: inline-block;
+    // overflow: hidden;
+    margin: 0 24px;
+    vertical-align: middle;
+    .@{prefix}-btn {
+      display: block;
+      &:first-child {
+        margin-bottom: 8px;
+      }
+      .@{iconfont-css-prefix} {
+        font-size: 12px;
+      }
+    }
+  }
+}
+
+@keyframes transferHighlightIn {
+  0% {
+    background: @transfer-high-light-bg;
+  }
+  100% {
+    background: transparent;
+  }
+}

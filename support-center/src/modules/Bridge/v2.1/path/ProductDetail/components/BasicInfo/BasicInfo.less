@@ -1,0 +1,33 @@
+@import "~less/sc/variables.less";
+
+.basic-info {
+  flex: 1;
+}
+
+.title {
+  display: flex;
+  align-items: center;
+  height: 30px;
+  font-size: 14px;
+  border-left: 3px solid @border-color;
+  padding-left: 15px;
+  margin-bottom: 15px;
+}
+
+.info-table {
+  width: 100%;
+  font-size: 12px;
+
+  th {
+    font-weight: normal;
+    text-align: right;
+    width: 10px;
+    white-space: nowrap;
+  }
+
+  th,
+  td {
+    padding: 8px;
+    vertical-align: middle;
+  }
+}

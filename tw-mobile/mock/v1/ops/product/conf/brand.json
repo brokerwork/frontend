@@ -1,0 +1,22 @@
+{
+  "data": {
+    "companyAddress": "上海市徐汇区漕溪北路45号base创意园602",
+    "companyEmail": "support@lwork.com",
+    "companyName": "LEAN WORK HK LIMITED",
+    "companyPhone": "+86-021-33682196",
+    "companySite": "https://www.lwork.com",
+    "customerDomain": "trader.tamsc.lwork.com",
+    "olCustomerSrv": "http://wpa.qq.com/msgrd?v=3&uin=800190193&site=qq&menu=yes",
+    "productDomain": "tasfclt1.tamsc.lwork.com",
+    "productIcon": "//broker-upload.oss-cn-hangzhou.aliyuncs.com/test/8b598bc2-3e65-485c-bb14-caf3b7d73426.ico",
+    "productLogo": "//broker-upload.oss-cn-hangzhou.aliyuncs.com/test/45d952ed-8ca9-4fac-8302-6e735e4d105e.png ",
+		"mobileLogo":"http://broker-upload.oss-cn-hangzhou.aliyuncs.com/test/a2d130ee-8262-46de-ad66-da6cda9be7b8.png",
+    "siteName": "Trader Work",
+    "tenantId": "T001117",
+    "tenantName": "BROKER-开发环境",
+    "themeId": "default",
+    "tpId": "58b521dd49d8231f8671c37c"
+  },
+  "mcode": "m0000000",
+  "result": true
+}

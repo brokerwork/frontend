@@ -1,0 +1,84 @@
+@import '~less/variables.less';
+
+.tools {
+  padding: 15px 15px;
+}
+
+.form {
+  padding: 0px 15px;
+}
+
+.tool-item {
+  margin-right: 5px;
+}
+
+.form-item {
+  display: flex;
+  margin-bottom: @padding-base;
+  &.avaliable_emails {
+    display: inline-flex;
+    margin-bottom: 0;
+  }
+}
+
+.form-label {
+  width: 140px;
+  text-align: right;
+  padding-top: 3px;
+}
+
+.form-control {
+  flex: 1;
+  padding-left: @padding-base;
+  .content-textarea {
+    height: 283px;
+    resize: none;
+  }
+  span {
+    flex:1;
+  }
+}
+
+.form-control-auto {
+  flex: 1;
+  padding-left: @padding-base;
+  .content-textarea {
+    height: 283px;
+    resize: none;
+  }
+}
+
+.warning-text {
+  color: @brand-warning;
+  margin-bottom: @padding-base;
+  text-align: center;
+}
+
+.send-object {
+  display: flex;
+}
+.contorl-right {
+  padding-left: 15px;
+}
+
+.chart-length {
+  padding-left: 15px;
+  width: 100px;
+  line-height: 30px;
+}
+
+.tipsBox {
+  margin-left: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.tipsContent {
+  width: 240px;
+}
+
+.email-tips {
+  font-size: 12px;
+  color: #999;
+  margin-left: 10px;
+}

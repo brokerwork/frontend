@@ -1,0 +1,157 @@
+@import '~less/variables.less';
+
+.modal-body {
+  padding: 15px 15px;
+}
+
+.heading {
+  font-size: 14px;
+  border-bottom: 1px solid #ddd;
+  padding: 10px;
+  margin: 0 0 30px;
+}
+
+.label {
+  font-size: 12px;
+  font-weight: normal;
+  padding-top: 9px;
+  padding-right: 0;
+  width: 95px;
+}
+
+.input {
+  width: 300px;
+}
+
+.logic-table {
+  font-size: 12px;
+  width: 100%;
+  margin-bottom: 15px;
+  margin-top: 10px;
+
+  :global(.fa) {
+    font-size: 16px;
+  }
+
+  td {
+    padding-top: 10px;
+  }
+
+  tr {
+    td {
+      padding-left: 95px;
+
+      :global(.fa-check-circle) {
+        margin-left: -20px;
+        margin-right: 6px;
+        line-height: normal;
+        vertical-align: text-bottom;
+      }
+    }
+  }
+}
+
+.dropdown {
+  width: 150px;
+  margin: 0 15px;
+
+  :global(.dropdown-menu) {
+    overflow: visible;
+
+    > li > a {
+      overflow: visible;
+    }
+  }
+}
+
+.hidden-input {
+  display: inline-block;
+  white-space: nowrap;
+
+  & + .hidden-input {
+    margin-left: 10px;
+  }
+
+  :global(.form-control) {
+    display: inline-block;
+    width: 80px;
+    margin-right: 5px;
+  }
+}
+
+.remove-btn {
+  padding: 0;
+  border: 0;
+  background: none;
+  border-radius: 0;
+  color: @btn-default-bg;
+  margin-left: 10px;
+
+  &:hover {
+    background: none;
+    color: @btn-default-bg;
+  }
+}
+
+.col-inline {
+  display: inline-block;
+  float: none;
+  width: auto;
+  vertical-align: middle;
+  padding: 0;
+
+  :global(.validate-error-msg) {
+    display: none;
+  }
+}
+
+.logic-form {
+  font-size: 12px;
+}
+
+.add-btn {
+  float: right;
+}
+
+.placeholder {
+  display: inline-block;
+  width: 80px;
+  text-align: right;
+  vertical-align: middle;
+}
+
+.tips {
+  margin-left: 5px;
+
+  :global(.fa) {
+    font-size: 14px;
+    vertical-align: text-top;
+  }
+
+  :global(.popover) {
+    color: @text-color-dark;
+  }
+}
+
+.dropdown-tips {
+  display: flex;
+  align-items: center;
+}
+
+.text {
+  font-size: 12px;
+  width: 250px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.parameter-modal {
+
+  :global(.modal-dialog) {
+    width: auto;
+    min-width: 900px;
+    max-width: ~"calc(100% - 20px)";
+  }
+}

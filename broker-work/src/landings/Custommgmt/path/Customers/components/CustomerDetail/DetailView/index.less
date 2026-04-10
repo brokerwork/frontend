@@ -1,0 +1,39 @@
+@import '../index.less';
+.foot-bottons {
+  flex: 1;
+  text-align: center;
+  button {
+    margin-left: 10px;
+  }
+}
+// .add-button-link{
+//   color: @main-color;
+//   cursor: pointer;
+//   font-size: 12px;
+//   &:hover {
+//     opacity: .7;
+//   }
+// }
+.footer {
+  position: fixed;
+  z-index: 1;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  animation: 3s slideUpIn;
+  align-content: center;
+  transition: .4s ease-in-out;
+  &.show {
+    opacity: 1;
+    transform-origin: 0% 0%;
+    transform: translateY(0);
+  }
+  &.hidden {
+    opacity: 0;
+    transform-origin: 0% 0%;
+    transform: translateY(100%);
+  }
+}
+.profile-vertical {
+  color: #73cc55;
+}

@@ -1,0 +1,165 @@
+@import '~less/variables.less';
+
+.container {}
+
+.table-panel {
+  margin-top: @padding-base;
+}
+
+.table-panel-body {
+  padding-top: 10px;
+}
+
+.navigation-bar {
+  display: flex;
+  align-items: center;
+  padding: 15px 0;
+  min-height: 45px;
+  :global(.lean-select) {
+    background-color: #fff;
+    margin-right: 10px;
+  }
+  :global(.lean-picklist-button) {
+    height: 30px;
+    overflow: hidden;
+  }
+}
+
+.navigation-left {
+  flex: 1;
+}
+
+.navigation {
+  padding-top: 5px;
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.chart-title {
+  flex: 1;
+}
+
+.chart {
+  height: 380px;
+}
+
+.panel-margin {
+  margin-top: @padding-base;
+}
+
+.source-selector {
+  margin-right: 5px;
+}
+
+.datepicker-container {
+  padding-top: @padding-base;
+  text-align: right;
+  .datepicker {
+    text-align: left;
+  }
+}
+
+.chart-range-item {
+  padding: 0 7px;
+  cursor: pointer;
+  height: 100%;
+  line-height: @page-panel-header-height;
+  font-size: 14px;
+  &.active {
+    border-width: 0 0 1px;
+    border-style: solid;
+  }
+}
+
+.customersPanel {
+  padding-top: @padding-base;
+  margin-bottom: -5px;
+}
+
+.tips-box {
+  max-width: none;
+}
+.tips-box-content {
+  width: auto;
+  max-width: none;
+  white-space: nowrap;
+  padding-left: 20px;
+  margin-bottom: 0;
+}
+.tips-content {
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.customersPanel-row {
+  display: flex;
+  padding: 0;
+  margin: 0 -5px;
+  &.customersPanel-row-autoWidth > li {
+    width: auto;
+    flex: 1;
+    &:not(:last-child) {
+      border-right: 1px solid @border-color;
+    }
+  }
+  &:not(:last-child) > li {
+    position: relative;
+    &:after{
+      content: '';
+      position: absolute;
+      left: 5px;
+      right: 5px;
+      bottom: -5px;
+      border-top: 1px solid @border-color;
+    }
+  }
+  > li {
+    list-style: none;
+    width: 100% / 6;
+    padding: 15px 0;
+    text-align: center;
+    justify-content: center;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+    border-right: 1px solid @border-color;
+    &.no-border {
+      border-right: 0;
+    }
+  }
+  .number {
+    font-size: 24px;
+    font-weight: bold;
+  }
+}
+
+.panel-title {
+  font-size: 16px;
+  color: #666;
+  margin-right: 10px;
+}
+
+.wraper {
+  margin: 15px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  > * {
+    width: ~"calc(50% - 7.5px)";
+    margin: 0!important;
+  }
+}
+
+.panel-header {
+  display: flex;
+  align-items: center;
+
+  .panel-header-tips {
+    margin-left: 5px;
+    line-height: 0;
+  }
+}
+
+.icon {
+  cursor: pointer;
+}

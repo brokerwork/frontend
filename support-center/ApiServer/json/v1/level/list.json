@@ -1,0 +1,482 @@
+{
+  "data": [
+    {
+      "id": 33,
+      "name": "我是一层（前三层请别轻易删除）",
+      "sid": 1,
+      "userCount": 49
+    },
+    {
+      "id": 174,
+      "name": "我的id22是10000",
+      "sid": 2,
+      "userCount": 2
+    },
+    {
+      "id": 103,
+      "name": "我的id是10000",
+      "sid": 3,
+      "userCount": 7
+    },
+    {
+      "comment": "",
+      "entityNo": "111",
+      "id": 232,
+      "name": "zdhcengji513",
+      "sid": 4,
+      "userCount": 0
+    },
+    {
+      "comment": "",
+      "entityNo": "111",
+      "id": 230,
+      "name": "zdhcengji492",
+      "sid": 5,
+      "userCount": 0
+    },
+    {
+      "comment": "",
+      "entityNo": "111",
+      "id": 228,
+      "name": "zdhcengji485",
+      "sid": 6,
+      "userCount": 0
+    },
+    {
+      "comment": "",
+      "entityNo": "111",
+      "id": 226,
+      "name": "zdhcengji478",
+      "sid": 7,
+      "userCount": 0
+    },
+    {
+      "comment": "",
+      "entityNo": "111",
+      "id": 222,
+      "name": "zdhcengji463",
+      "sid": 8,
+      "userCount": 0
+    },
+    {
+      "comment": "",
+      "entityNo": "111",
+      "id": 217,
+      "name": "zdhcengji446",
+      "sid": 9,
+      "userCount": 1
+    },
+    {
+      "comment": "",
+      "entityNo": "111",
+      "id": 214,
+      "name": "zdhcengji418",
+      "sid": 10,
+      "userCount": 0
+    },
+    {
+      "comment": "",
+      "entityNo": "111",
+      "id": 212,
+      "name": "zdhcengji410",
+      "sid": 11,
+      "userCount": 0
+    },
+    {
+      "comment": "",
+      "entityNo": "111",
+      "id": 210,
+      "name": "zdhcengji402",
+      "sid": 12,
+      "userCount": 1
+    },
+    {
+      "comment": "",
+      "entityNo": "111",
+      "id": 208,
+      "name": "zdhcengji394",
+      "sid": 13,
+      "userCount": 0
+    },
+    {
+      "comment": "",
+      "entityNo": "111",
+      "id": 206,
+      "name": "zdhcengji386",
+      "sid": 14,
+      "userCount": 0
+    },
+    {
+      "comment": "",
+      "entityNo": "111",
+      "id": 204,
+      "name": "zdhcengji378",
+      "sid": 15,
+      "userCount": 0
+    },
+    {
+      "comment": "",
+      "entityNo": "111",
+      "id": 200,
+      "name": "zdhcengji362",
+      "sid": 16,
+      "userCount": 2
+    },
+    {
+      "comment": "",
+      "entityNo": "111",
+      "id": 198,
+      "name": "zdhcengji354",
+      "sid": 17,
+      "userCount": 0
+    },
+    {
+      "comment": "",
+      "entityNo": "111",
+      "id": 196,
+      "name": "zdhcengji346",
+      "sid": 18,
+      "userCount": 0
+    },
+    {
+      "comment": "",
+      "entityNo": "111",
+      "id": 194,
+      "name": "zdhcengji327",
+      "sid": 19,
+      "userCount": 0
+    },
+    {
+      "comment": "",
+      "entityNo": "111",
+      "id": 192,
+      "name": "zdhcengji318",
+      "sid": 20,
+      "userCount": 0
+    },
+    {
+      "comment": "",
+      "entityNo": "111",
+      "id": 190,
+      "name": "zdhcengji311",
+      "sid": 21,
+      "userCount": 1
+    },
+    {
+      "comment": "",
+      "entityNo": "111",
+      "id": 188,
+      "name": "zdhcengji304",
+      "sid": 22,
+      "userCount": 0
+    },
+    {
+      "comment": "",
+      "entityNo": "111",
+      "id": 186,
+      "name": "zdhcengji286",
+      "sid": 23,
+      "userCount": 0
+    },
+    {
+      "comment": "",
+      "entityNo": "111",
+      "id": 184,
+      "name": "zdhcengji277",
+      "sid": 24,
+      "userCount": 0
+    },
+    {
+      "comment": "",
+      "entityNo": "111",
+      "id": 182,
+      "name": "zdhcengji270",
+      "sid": 25,
+      "userCount": 0
+    },
+    {
+      "comment": "",
+      "entityNo": "111",
+      "id": 180,
+      "name": "zdhcengji262",
+      "sid": 26,
+      "userCount": 0
+    },
+    {
+      "comment": "",
+      "entityNo": "111",
+      "id": 178,
+      "name": "zdhcengji251",
+      "sid": 27,
+      "userCount": 0
+    },
+    {
+      "comment": "",
+      "entityNo": "111",
+      "id": 176,
+      "name": "zdhcengji242",
+      "sid": 28,
+      "userCount": 0
+    },
+    {
+      "id": 102,
+      "name": "我的id是10000",
+      "sid": 29,
+      "userCount": 6
+    },
+    {
+      "comment": "",
+      "entityNo": "111",
+      "id": 173,
+      "name": "zdhcengji234",
+      "sid": 30,
+      "userCount": 0
+    },
+    {
+      "comment": "",
+      "entityNo": "111",
+      "id": 171,
+      "name": "zdhcengji219",
+      "sid": 31,
+      "userCount": 0
+    },
+    {
+      "comment": "",
+      "entityNo": "111",
+      "id": 169,
+      "name": "zdhcengji215",
+      "sid": 32,
+      "userCount": 0
+    },
+    {
+      "comment": "",
+      "entityNo": "111",
+      "id": 167,
+      "name": "zdhcengji199",
+      "sid": 33,
+      "userCount": 0
+    },
+    {
+      "comment": "",
+      "entityNo": "111",
+      "id": 165,
+      "name": "zdhcengji190",
+      "sid": 34,
+      "userCount": 0
+    },
+    {
+      "comment": "",
+      "entityNo": "111",
+      "id": 163,
+      "name": "zdhcengji182",
+      "sid": 35,
+      "userCount": 0
+    },
+    {
+      "comment": "",
+      "entityNo": "111",
+      "id": 161,
+      "name": "zdhcengji173",
+      "sid": 36,
+      "userCount": 0
+    },
+    {
+      "comment": "",
+      "entityNo": "111",
+      "id": 159,
+      "name": "zdhcengji165",
+      "sid": 37,
+      "userCount": 0
+    },
+    {
+      "comment": "",
+      "entityNo": "111",
+      "id": 157,
+      "name": "zdhcengji152",
+      "sid": 38,
+      "userCount": 0
+    },
+    {
+      "comment": "",
+      "entityNo": "111",
+      "id": 155,
+      "name": "zdhcengji145",
+      "sid": 39,
+      "userCount": 0
+    },
+    {
+      "comment": "",
+      "entityNo": "111",
+      "id": 153,
+      "name": "zdhcengji135",
+      "sid": 40,
+      "userCount": 0
+    },
+    {
+      "comment": "",
+      "entityNo": "111",
+      "id": 151,
+      "name": "zdhcengji127",
+      "sid": 41,
+      "userCount": 0
+    },
+    {
+      "comment": "",
+      "entityNo": "111",
+      "id": 149,
+      "name": "zdhcengji119",
+      "sid": 42,
+      "userCount": 0
+    },
+    {
+      "comment": "",
+      "entityNo": "111",
+      "id": 147,
+      "name": "zdhcengji111",
+      "sid": 43,
+      "userCount": 0
+    },
+    {
+      "comment": "",
+      "entityNo": "111",
+      "id": 145,
+      "name": "zdhcengji92",
+      "sid": 44,
+      "userCount": 0
+    },
+    {
+      "comment": "",
+      "entityNo": "111",
+      "id": 143,
+      "name": "zdhcengji71",
+      "sid": 45,
+      "userCount": 1
+    },
+    {
+      "comment": "",
+      "entityNo": "111",
+      "id": 141,
+      "name": "zdhcengji56",
+      "sid": 46,
+      "userCount": 0
+    },
+    {
+      "comment": "",
+      "entityNo": "111",
+      "id": 139,
+      "name": "zdhcengji52",
+      "sid": 47,
+      "userCount": 0
+    },
+    {
+      "comment": "",
+      "entityNo": "111",
+      "id": 137,
+      "name": "zdhcengji48",
+      "sid": 48,
+      "userCount": 1
+    },
+    {
+      "comment": "",
+      "entityNo": "111",
+      "id": 135,
+      "name": "zdhcengji44",
+      "sid": 49,
+      "userCount": 0
+    },
+    {
+      "comment": "",
+      "entityNo": "111",
+      "id": 133,
+      "name": "zdhcengji35",
+      "sid": 50,
+      "userCount": 0
+    },
+    {
+      "comment": "",
+      "entityNo": "111",
+      "id": 131,
+      "name": "zdhcengji31",
+      "sid": 51,
+      "userCount": 1
+    },
+    {
+      "comment": "",
+      "entityNo": "111",
+      "id": 119,
+      "name": "sdsdsd",
+      "sid": 52,
+      "userCount": 1
+    },
+    {
+      "comment": "",
+      "entityNo": "111",
+      "id": 116,
+      "name": "sdsdsd",
+      "sid": 53,
+      "userCount": 1
+    },
+    {
+      "id": 96,
+      "name": "123",
+      "sid": 54,
+      "userCount": 4
+    },
+    {
+      "id": 82,
+      "name": "sdsdsd",
+      "sid": 55,
+      "userCount": 2
+    },
+    {
+      "comment": "",
+      "entityNo": "111",
+      "id": 101,
+      "name": "sdsdsd",
+      "sid": 56,
+      "userCount": 1
+    },
+    {
+      "comment": "",
+      "entityNo": "111",
+      "id": 100,
+      "name": "sdsdsd",
+      "sid": 57,
+      "userCount": 2
+    },
+    {
+      "id": 32,
+      "name": "我是二层（前三层请别轻易删除）",
+      "sid": 58,
+      "userCount": 7
+    },
+    {
+      "comment": "",
+      "entityNo": "111",
+      "id": 94,
+      "name": "sdsdsd",
+      "sid": 59,
+      "userCount": 1
+    },
+    {
+      "id": 87,
+      "name": "22",
+      "sid": 60,
+      "userCount": 1
+    },
+    {
+      "id": 54,
+      "name": "abc",
+      "sid": 61,
+      "userCount": 4
+    },
+    {
+      "id": 126,
+      "name": "qqqq",
+      "sid": 62,
+      "userCount": 2
+    }
+  ],
+  "mcode": "m0000000",
+  "result": true
+}

@@ -1,0 +1,52 @@
+@import '~less/variables';
+.head {
+    font-size: 15px;
+    padding: 10px 15px 20px;
+}
+.body {
+    box-shadow: 0 1px 1px 0 #dfe3e8;
+    margin: 0 15px 32px;
+    border-radius: 4px;
+    border: 1px solid #dfe3e8;
+    overflow: hidden;
+    :global(.lean-form){
+        width: 800px;
+        margin-right: 80px;
+    }
+    :global(.lean-tabs-bar) {
+        background: #fafafa;
+    }
+    :global(.lean-tabs-card>.lean-tabs-bar .lean-tabs-tab){
+        border: 0;
+        background: transparent;
+        transition: none;
+    }
+    :global(.lean-tabs-card>.lean-tabs-bar .lean-tabs-tab:last-child){
+        border-top-right-radius: 0;
+        border-top-left-radius: 0;
+        &:global(.lean-tabs-tab-active) {
+          border-left: 1px solid #dfe3e8;
+        }
+        &:global(:not(.lean-tabs-tab-active)) {
+            border-right: 0;
+          }
+    }
+    :global(.lean-tabs-card>.lean-tabs-bar .lean-tabs-tab-active){
+        background: #ffffff;
+        border-bottom: 1px solid #ffffff;
+        border-right: 1px solid #dfe3e8;
+    }
+}
+.tab-content {
+    padding: 24px 116px 0;
+    .error {
+        border-color: @red;
+    }
+    :global(.upload-button){
+        width: 100%;
+        text-align: left;
+    }
+    textarea{
+        resize: vertical;
+    }
+}

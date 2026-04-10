@@ -1,0 +1,49 @@
+@import "~less/sc/variables.less";
+
+.switch {
+  position: relative;
+  display: block;
+  border: 1px solid #999;
+  padding: 2px;
+  border-radius: 20px;
+  width: 40px;
+  height: 20px;
+  cursor: pointer;
+  text-align: left;
+
+  &.inline {
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+  input {
+    position: absolute;
+    z-index: -1;
+    visibility: hidden;
+  }
+
+  &.active {
+    border-color: @brand-primary;
+
+    .ball {
+      left: calc(~"100% - 14px");
+      background-color: @brand-primary;
+    }
+  }
+
+  &.disabled {
+    opacity: 0.65;
+    cursor: default;
+  }
+}
+
+.ball {
+  position: relative;
+  left: 0;
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background-color: #999;
+  transition: left 0.1s ease-in;
+}

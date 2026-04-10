@@ -1,0 +1,117 @@
+@import '~less/variables';
+.sort-text {
+    white-space: nowrap;
+    cursor: pointer;
+}
+
+.sort-icon {
+    position: relative;
+    margin-left: 3px;
+    color: @text-color-light;
+    > :global(.fa) {
+        position: absolute;
+        transform: translateY(3px);
+        &.active {
+            color: @main-color;
+        }
+    }
+}
+
+.image-size {
+    background-color: rgba(0, 0, 0, .7);
+    height: 80.5px;
+    width: 161px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    border-radius: 4px;
+    img {
+        height: 80.5px;
+        width: 161px;
+    }
+}
+
+.header-size {
+    background-color: rgba(0, 0, 0, .7);
+    height: 50px;
+    width: 50px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    border-radius: 4px;
+    img {
+        height: 50px;
+        width: 50px;
+    }
+}
+.stop-button {
+        position: relative;
+        margin-bottom: 10px;
+}
+.detail-button {
+    display: block;
+    margin-left: 12px;
+}
+
+.status-label {
+    height: 30px;
+    line-height: 30px;
+    margin: auto 0;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.spinner {
+    width: 35px;
+    height: 30px;
+    display: inline-block;
+    font-size: 10px;
+    position: relative;
+    vertical-align: middle;
+    div {
+        background-color: @main-color;
+        height: 20px;
+        position: absolute;
+        width: 4px;
+        bottom: 50%-20px;
+        display: inline-block;
+        animation: stretchdelay alternate linear infinite; // border-radius: 10px;
+    }
+    .rect1 {
+        left: 0px;
+        animation-duration: .4s;
+    }
+    .rect2 {
+        left: 5px;
+        animation-duration: .6s;
+    }
+    .rect3 {
+        left: 10px;
+        animation-duration: .4s;
+        animation-delay: .4s;
+    }
+    .rect4 {
+        left: 15px;
+        animation-duration: .3s;
+    }
+    .rect5 {
+        left: 20px;
+        animation-duration: .5s;
+    }
+}
+
+@keyframes stretchdelay {
+    0% {
+        height: 1px;
+    }
+    100% {
+        height: 20px;
+    }
+}
+
+.live-expire-div {
+    display: inline-block;
+    color: red;
+}

@@ -1,0 +1,63 @@
+@import '~less/variables.less';
+
+@big-panel-icon-size: 60px;
+.panel-content {
+  padding-top: @padding-base;
+}
+
+.panel {
+  display: flex;
+  border: 1px solid @border-color;
+  & + & {
+    margin-top: -1px;
+  }
+  > .panel-item {
+    width: auto;
+    flex: 1;
+  }
+}
+
+.panel-item {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  & + & {
+    border-left: 1px solid @border-color;
+  }
+  &.small-item {
+    padding: @padding-base 0;
+  }
+}
+
+.big-panel {
+  display: inline-flex;
+  padding: 30px 0;
+}
+
+.big-panel-icon {
+  font-size: 31px;
+  color: @white;
+  text-align: center;
+  background-color: #FF5E7C;
+  border-radius: 50%;
+  height: @big-panel-icon-size;
+  line-height: @big-panel-icon-size;
+  width: @big-panel-icon-size;
+  margin-right: 10px;
+  &.account {
+    background-color: #28E0DA;
+  }
+}
+
+.big-panel-data {
+  padding-top: 5px;
+  .label {
+    font-size: 14px;
+  }
+  .data {
+    font-size: 24px;
+  }
+}
+
+

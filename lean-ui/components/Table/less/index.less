@@ -1,0 +1,125 @@
+@import "./editablePopover.less";
+@tablecls: ~"@{prefix}-table";
+
+.header-mix() {
+  height: @table-header-height;
+  padding-left: @table-cell-padding-horizontal;
+  color: @table-header-color;
+  font-size: @table-header-font-size;
+  font-weight: 400;
+  text-align: left;
+}
+
+.@{tablecls}-container {
+  position: relative;
+}
+.@{tablecls} {
+  border-spacing: 0;
+  border-collapse: collapse;
+  background-color: @white;
+  width: 100%;
+  border-top: 1px solid @border-color;
+  border-bottom: 1px solid @border-color;
+  &.@{tablecls}-striped > tbody > tr:nth-of-type(odd) {
+    background-color: @table-row-background-color-hover;
+  }
+  &.@{tablecls}-bordered {
+    border: 1px solid @border-color;
+    & td,
+    & th {
+      border: 1px solid @border-color;
+    }
+  }
+  thead th {
+    .header-mix();
+  }
+
+  tbody > tr,
+  thead th {
+    &:hover, &.@{tablecls}-tr-checked{
+      background-color: @table-row-background-color-hover;
+    }
+  }
+  .@{tablecls}-cell,
+  .@{tablecls}-edit-cell {
+    border-top: 1px solid @border-color;
+    font-size: @table-body-font-size;
+    height: @table-row-height;
+    padding-left: @table-cell-padding-horizontal;
+  }
+}
+
+.@{tablecls}-header-checkbox {
+  width: 1px;
+}
+.@{tablecls}-header-icon {
+  font-size: 14px;
+  margin: 0 6px;
+}
+
+.@{tablecls}-selected-header {
+  position: absolute;
+  height: @table-header-height - 1px;
+  background-color: @white;
+  left: 0;
+  right: 0;
+  top: 1px;
+  z-index: 2;
+  padding-left: @table-cell-padding-horizontal;
+  display: flex;
+  align-items: center;
+}
+
+.@{tablecls}-fixed-scroll {
+  overflow-y: auto;
+}
+.@{tablecls}-fixed-header-border {
+  &::before {
+    border: 1px solid @border-color;
+  }
+  .@{tablecls}-fixed-header-item {
+    border-left: 1px solid @border-color;
+  }
+}
+.@{tablecls}-fixed-header {
+  position: relative;
+  padding-top: @table-header-height - 2px;
+  &::before {
+    content: "";
+    background-color: @white;
+    height: @table-header-height;
+    border-top: 1px solid @border-color;
+    border-bottom: 1px solid @border-color;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+  }
+  thead td,
+  thead th {
+    line-height: 0;
+    height: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+  .@{tablecls}-fixed-header-item {
+    .header-mix();
+    margin-left: -@table-cell-padding-horizontal - 1px;
+    position: absolute;
+    top: 1px;
+    display: flex;
+    align-items: center;
+  }
+  .@{tablecls}-fixed-header-hidden {
+    visibility: hidden;
+    height: 0;
+    display: block;
+    white-space: nowrap; //因为fixed的header是定高度的，文字换行会超出高度，ui错位
+    .@{tablecls}-header-icon {
+      height: 0;
+    }
+  }
+  .@{tablecls}-selected-header {
+    border-bottom: 1px solid @border-color;
+  }
+}

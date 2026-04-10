@@ -1,0 +1,17 @@
+@import '../node_modules/fooui/css/app.css';
+
+@import './header/index.css';
+@import './footer/index.css';
+@import './entrance/index.css';
+@import './usermgmt/index.css';
+@import './customermgmt/index.css';
+@import './settings/index.css'; 
+@import './usersetting/index.css';
+@import './taskmgmt/index.css';
+@import './resetpassword/index.css';
+@import './mailbind/index.css';
+@import './message/index.css';
+@import './accountmgmt/index.css';
+@import './common.css';
+@import './CustomField/index.css';
+@import './tausermgmt/index.css';

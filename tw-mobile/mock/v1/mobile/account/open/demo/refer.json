@@ -1,0 +1,24 @@
+{
+  "data": [
+    {
+      "demoAccountTypes": [
+        {
+          "typeId": "b33d4cd1-bc42-4039-973d-55ca762a8a40",
+          "typeName": "迷你账户"
+        },
+        {
+          "typeId": "d9c1ecd5-0150-44f6-b3f0-0ceca9295d38",
+          "typeName": "标准账户"
+        },
+        {
+          "typeId": "bd980a2c-f7a6-4109-989d-7686f87a91af",
+          "typeName": "贵宾账户"
+        }
+      ],
+      "serverName": "LEAN WORK MT4",
+      "vendor": "MT4"
+    }
+  ],
+  "mcode": "m0000000",
+  "result": true
+}

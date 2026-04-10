@@ -1,0 +1,48 @@
+.rem-width(@px, @base: 75) {
+  @remValue: unit(@px/@base);
+  width:~"@{remValue}rem";
+}
+
+.rem-height(@px, @base: 75) {
+  @remValue: unit(@px/@base);
+  height:~"@{remValue}rem";
+}
+
+.rem-size(@w, @h, @base: 75) {
+  @remWidth: unit(@w/@base);
+  @remHeight: unit(@h/@base);
+  width:~"@{remWidth}rem";
+  height:~"@{remHeight}rem";
+}
+
+.rem-backgroundSize(@w,@h,@base: 75) {
+  @remW: unit(@w/@base);
+  @remH: unit(@h/@base);
+  background-size: ~"@{remW}rem @{remH}rem"
+}
+
+.rem-padding(@updown,@leftright,@base: 75) {
+  @remValue1: unit(@updown/@base);
+  @remValue2: unit(@leftright/@base);
+  padding: ~"@{remValue1}rem @{remValue2}rem";
+}
+
+.rem-margin(@updown,@leftright,@base: 75){
+  @remValue1: unit(@updown/@base);
+  @remValue2: unit(@leftright/@base);
+  margin: ~"@{remValue1}rem @{remValue2}rem";
+}
+
+.rem-padding-f(@up, @right, @down, @left,@base: 75) {
+  @remValue1: unit(@up/@base);
+  @remValue2: unit(@right/@base);
+  @remValue3: unit(@down/@base);
+  @remValue4: unit(@left/@base);
+  padding: ~"@{remValue1}rem @{remValue2}rem @{remValue3}rem @{remValue4}rem";
+}
+
+.rem(@px, @property, @base: 75) {
+  @value: unit(@px/@base);
+  @{property}:~"@{value}rem";
+}
+

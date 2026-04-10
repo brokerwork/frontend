@@ -1,0 +1,58 @@
+.language-selector {
+  height: 32px;
+  padding: 0 10px;
+  cursor: pointer;
+  line-height: 32px;
+  border: 1px solid #e8e8e8;
+  border-radius: 4px;
+  background: #ffffff;
+}
+.language-selector .selector-panel {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-right: 6px;
+}
+.language-selector .selector-panel .type-icon {
+  width: 19px;
+}
+.language-selector .selector-panel .down-icon {
+  color: #333333;
+  right: -6px;
+}
+.language-selector .selector-panel .country {
+  color: #333333;
+  padding: 0 4px;
+  font-size: 14px;
+}
+.language-selector .text {
+  margin: 0 6px;
+  font-size: 12px;
+  display: inline-block;
+  max-width: 65px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  vertical-align: middle;
+}
+.language-selector .icon {
+  text-align: center;
+}
+.language-selector-menu {
+  position: absolute;
+  left: -64px;
+}
+.language-selector-menu .ant-dropdown-menu-item {
+  margin: 10px;
+  padding: 7px 20px;
+  border-radius: 4px;
+}
+.language-selector-menu .ant-dropdown-menu-item:hover {
+  color: #fff;
+  background-color: #1fb5ad;
+}
+.language-selector-menu .ant-dropdown-menu-item-selected {
+  background-color: #1fb5ad;
+  color: #fff;
+}

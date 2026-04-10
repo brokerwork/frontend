@@ -1,0 +1,33 @@
+@import '~less/variables.less';
+.body {
+  max-height: 600px;
+  height: auto;
+  overflow: auto;
+}
+
+.error {
+  border: 1px solid @red !important;
+  border-radius: 4px !important;
+}
+.errorText {
+  color: @red;
+  height: 12px;
+  font-size: 12px;
+  line-height: 12px;
+}
+.fillWidth {
+  width: 100%;
+}
+
+.itemWrapper {
+  display: flex;
+  align-items: center;
+}
+
+.modalBody {
+  :global {
+    .lean-modal-body {
+      padding-bottom: 0;
+    }
+  }
+}

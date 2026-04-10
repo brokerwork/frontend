@@ -1,0 +1,146 @@
+@import '~less/variables.less';
+
+@listLineHeight: 20px;
+@listHeight: 27px;
+@timeTagIconSize: 8px;
+@lineToLeft: 20px;
+
+.container {
+  position: relative;
+  &:empty{
+    padding: 0;
+  }
+  
+}
+
+.list-wraper {
+  position: relative;
+  min-height: @listHeight;
+  font-size: 13px;
+  &:before {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 0;
+    border-left: 1px dashed #c6c6c6;
+    left: @lineToLeft;
+    top: 0;
+    bottom: 0;
+  }
+  .timeTag {
+    position: relative;
+    color: @white;
+    background-color: @main-color;
+    padding: 0 29px 0 15px;;
+    border-radius: 100px;
+    height: @listHeight;
+    line-height: @listHeight;
+    display: inline-block;
+    font-size: 14px;
+  }
+  .timeTag-text {
+    vertical-align: middle;
+  }
+  .timeTag-icon {
+    margin-right: 12px;
+    display: inline-block;
+    height: @timeTagIconSize;
+    width: @timeTagIconSize;
+    background-color: @white;
+    border-radius: 50%;
+    vertical-align: middle;
+  }
+  &:not(.first) {
+    padding-top: @listLineHeight;
+  }
+  
+  :global(.timeline-hover) {
+    visibility: hidden;
+  }
+  &:hover{
+    :global(.timeline-hover) {
+      visibility: visible;
+    }
+  }
+}
+.time-block:last-child {
+  .list-wraper:last-child {
+    padding-bottom: 20px;
+    &::before{
+      bottom: auto;
+      height: 36px;
+    }
+  }
+}
+
+.message {
+  display: flex;
+}
+.box-style {
+  .message-detail {
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
+    background-color:@white; 
+    padding-left: 15px; 
+  }
+}
+.message-detail {
+  display: inline-block;
+  margin-left: 20px;
+  flex: 1;
+	padding: 8px 16px;
+	border-radius: 4px;
+  font-size: 13px;
+}
+.message-load-more, .box-style .message-load-more {
+  box-shadow: none;
+  background: none;
+  padding-left: 0;
+  cursor: pointer;
+  color: @main-color;
+  line-height: 36px;
+  a{
+    &:hover {
+      opacity: .7;
+    }
+  }
+  
+}
+
+.user, .extras{
+  margin-left: 20px;
+}
+.user {
+  margin: 0;
+  color: #637381;
+}
+.content {
+  margin-top: 5px;
+}
+.time {
+  float: right;
+  color: #767d85;
+}
+.content-type {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: @white;
+  background-color: @main-color;
+
+  border-radius: 50%;
+  height: 30px;
+  width: 30px;
+  font-size: 14px;
+  margin-left: calc(~'@{lineToLeft} - 15px');
+  margin-top: 10px;
+}
+.extras {
+  display: inline-block;
+}
+
+.time-ignore {
+  .timeTag, .content-type{
+    background: #919eab;
+  }
+}

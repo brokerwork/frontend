@@ -1,0 +1,98 @@
+@import '~less/fn.less';
+.settings{
+    .settingsHeader{
+        background: url("images/tr_logo@3x.png") no-repeat;
+        background-size: 100% 100%;
+        .rem(400px, width);
+        .rem(108px, height);
+        .rem(60px, margin-top);
+        .rem(175px, margin-left);
+        .rem(175px, margin-right);
+    }
+    .settingsContentTip{
+        text-align: center;
+        color: #b7b7b7;
+        opacity: 1;
+        font-size: 12px;
+        .rem(88px, height);
+        .rem(32px, padding-top);
+    }
+    [data-dpr="2"].settingsContentTip{
+        font-size: 24px;
+    }
+    [data-dpr="3"].settingsContentTip{
+        font-size: 36px;
+    }
+    .settingsContentOK{
+        color: #fff;
+        font-size: 18px;
+        .rem(88px, height);
+        .rem(34px, padding-left);
+        .rem(34px, padding-right);
+        .rem(50px, margin-top);
+    }
+    [data-dpr="2"].settingsContentOK{
+        font-size: 36px;
+    }
+    [data-dpr="3"].settingsContentOK{
+        font-size: 48px;
+    }
+    .settingsContentBind{
+        position: relative;
+        text-align: center;
+        color: #00a3fe;
+        font-size: 12px;
+        .rem(0px, left);
+        .rem(0px, right);
+        // .rem(210px, top);
+        .rem(210px,margin-top);
+        a{
+           text-decoration: none;
+           color: #00a3fe;
+           display: inline-block;
+           line-height: 200%;
+        }
+        a:active {
+            background-color: #E1E1E1;
+        }
+    }
+    [data-dpr="2"].settingsContentBind{
+        font-size: 24px;
+    }
+    [data-dpr="3"].settingsContentBind{
+        font-size: 36px;
+    }
+    .clearHr{
+        height: 48px;
+        hr{
+            bottom: 0!important;
+        }
+    }
+    .divWrapper{
+        position: relative;
+        background: #fff;
+    }
+    .divWrapper:before{
+        position: absolute;
+        .rem(0, bottom);
+        left: 0;
+        .rem(0, height);
+        .rem(30px, width);
+        content: '';
+        border-top: 1px solid rgb(224,224,224);
+    }
+    .divWrapper:after{
+        position: absolute;
+        .rem(0, bottom);
+        right: 0;
+        .rem(0, height);
+        .rem(30px, width);
+        content: '';
+        border-top: 1px solid rgb(224,224,224);
+    }
+    .clearLineHeight{
+        div{
+            line-height: initial;
+        }
+    }
+}

@@ -1,0 +1,70 @@
+@import '~less/fn.less';
+
+.top {
+    border-top: 1px solid #E1E1E1;
+}
+
+.top ,
+.bottom {
+    background-color: #fff;
+}
+
+.content {
+    .rem(25,margin-top);
+}
+
+.center {
+    .rem-padding(25,30);
+    border-bottom: 1px solid #E1E1E1;
+}
+
+.item {
+    font-size: 14px;
+    color: #939393;
+}
+
+.item:nth-child(2) {
+    .rem(25,margin-top);
+}
+
+.blue {
+    color: #00A3FE;
+}
+
+.red {
+    color: red;
+}
+
+[data-dpr="2"] .item {
+    font-size: 28px;
+}
+
+[data-dpr="3"] .item {
+    font-size: 42px;
+}
+
+.footer {
+    .rem-padding(50,30)
+}
+.notice{
+    .rem-padding(15, 30);
+    .rem(50, margin-top);
+	background-color: #fef0ef;
+    border: solid 1px #fcdbd9;
+    .notice-title{
+        display: flex;
+        align-items: center;
+        img{
+            .rem(30, width);
+        }
+        span{
+            font-size: 14px;
+            font-weight: bold;
+        }
+    }
+    .notice-con{
+        .rem-padding(0, 30);
+        .rem(15, margin-top);
+    }
+}
+

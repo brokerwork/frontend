@@ -1,0 +1,55 @@
+@editable-popover: ~"@{prefix}-table-popover";
+.@{editable-popover}-td {
+  position: relative;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  margin-left: -@table-cell-padding-horizontal;
+  padding-left: @table-cell-padding-horizontal;
+  &:hover,
+  &.hover {
+    box-shadow: inset 0 0 0 1px #4285f4;
+    .@{editable-popover}-edit {
+      visibility: visible;
+    }
+  }
+}
+.@{editable-popover}-edit {
+  visibility: hidden;
+}
+
+.@{editable-popover}-overlay {
+  z-index: 2;
+}
+.@{editable-popover}-container {
+  width: 280px;
+  background-color: @white;
+  border-radius: @border-radius-base;
+  margin-top: 4px;
+  box-shadow: 0 2px 10px 0 rgba(48, 56, 66, 0.2);
+}
+
+.@{editable-popover}-body {
+  padding: 16px;
+}
+.@{editable-popover}-footer {
+  background-color: #fafafa;
+  display: flex;
+  padding: 8px 16px;
+  box-shadow: inset 0 1px 0 0 #dfe3e8;
+  justify-content: flex-end;
+  border-bottom-left-radius: @border-radius-base;
+  border-bottom-right-radius: @border-radius-base;
+  .@{prefix}-btn {
+    margin-left: 5px;
+  }
+}
+
+.@{editable-popover}-edit-container {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  right: 10px;
+  top: 0;
+  bottom: 0;
+}

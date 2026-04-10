@@ -1,0 +1,245 @@
+@import 'siderbar.css';
+body{
+    height: 100%;
+}
+html{
+    height: 100%;
+}
+#main{
+    height: 100%;
+    min-width: 1300px;
+    overflow: auto;
+}
+#mainContent{
+    display:flex;
+    padding-top:80px;
+    min-height: 100%;
+    & #leftcontent{
+        overflow: hidden;
+        margin-left:247px;
+        >div{
+            height:100%;
+            padding: 15px;
+            float:left;
+            .panel{
+                margin-bottom:0;
+             }
+         }
+        flex:1;
+        background-color: rgb(241,242,247);
+        .basicInfo{
+            .btn-basicinfo{
+                height: 30px;
+                font-size:12px;
+             }
+             .uploadcontent{
+                 position: absolute;
+                 top:2px;
+                 left:60px;
+             }
+            .yesbtn{
+                margin-right: 10px;
+            }
+             .basicinfocontent{
+                 width:820px;
+                 margin-top:25px;
+                 .row{
+                     margin-bottom: 25px;
+                     height: 34px;
+                     line-height: 34px;;
+                 }
+                 .basiclabel{
+                     width:100px;
+                     text-align: right;
+                     height: 27px;
+                     line-height: 27px;
+                     margin-right:30px;
+                     display: inline-block;
+                 }
+                 .form-group{
+                    display: inline-block;
+                    width:247px;
+                 }
+                 .wholeline{
+                     width: 636px;
+                     display: inline-block;
+                 }
+                 .halfline{
+                     width:254px;
+                 }
+                 .confirmbasic{
+                     margin-left: 130px;
+                     .yesbtn{
+                         margin-right: 5px;
+                     }
+                 }
+             }
+        }
+        .changepwd{
+             height: 100%;
+              .btn-basicinfo{
+                height: 30px;
+                font-size:12px;
+             }
+            .yesbtn{
+                margin-right: 10px;
+            }
+              .changepwdcontent{
+                 width:411px;
+                 .row{
+                     margin-bottom: 15px;
+                     height: 34px;
+                     line-height: 34px;;
+                 }
+                 .basiclabel{
+                     width:100px;
+                     text-align: right;
+                     height: 34px;
+                     line-height: 34px;
+                     margin-right:30px;
+                     display: inline-block;
+                     
+                 }
+                 #redstar{
+                         position:relative;
+                         top:2px;
+                         color:#ff4040;
+                         margin-right:2px;
+                     }
+                 .form-group{
+                    display: inline-block;
+                    width:247px;
+                 }
+                 .wholeline{
+                     width: 612px;
+                     display: inline-block;
+                 }
+                 .halfline{
+                     width:240px;
+                 }
+                 .confirmbasic{
+                     margin-left: 130px;
+                     .btn-basicinfo{
+                         height: 30px;
+                     }
+                     .yesbtn{
+                         margin-right: 10px;
+                     }
+                 }
+             }
+        }
+         .phonesetting{
+             width:98%;
+             margin:0 auto;
+             margin-top: 13px;
+             height: 90%;
+              .phonesettingcontent{
+                 width:411px;
+                 margin-top:25px;
+                 .row{
+                     margin-bottom: 25px;
+                     height: 34px;
+                     line-height: 34px;;
+                 }
+                 .basiclabel{
+                     width:100px;
+                     text-align: right;
+                     height: 34px;
+                     line-height: 34px;
+                     margin-right:30px;
+                     display: inline-block;
+                     & .redstar{
+                         position:relative;
+                         top:2px;
+                         color:#ff4040;
+                         margin-right:2px;
+                     }
+                 }
+                 .form-group{
+                    display: inline-block;
+                    width:247px;
+                 }
+                 .wholeline{
+                     width: 612px;
+                     display: inline-block;
+                 }
+                 .halfline{
+                     width:299px;
+                 }
+                 .threepartline{
+                     width: 177px;
+                 }
+                 .checkcodebtn{
+                     width: 110px;
+                     margin-left: 10px;
+                 }
+                 .confirmbasic{
+                     margin-left: 130px;
+                     .yesbtn{
+                         margin-right: 5px;
+                     }
+                 }
+             }
+        }
+         .emailsetting{
+              height:100%;
+             .btn-basicinfo{
+                height: 30px;
+                font-size:12px;
+             }
+             .yesbtn{
+                margin-right: 10px;
+             }
+              .emailsettingcontent{
+                 width:411px;
+                 .row{
+                     margin-bottom: 15px;
+                     height: 34px;
+                     line-height: 34px;;
+                 }
+                 .basiclabel{
+                     width:100px;
+                     text-align: right;
+                     height: 34px;
+                     line-height: 34px;
+                     margin-right:30px;
+                     display: inline-block;
+                     & .redstar{
+                         position:relative;
+                         top:2px;
+                         color:#ff4040;
+                         margin-right:2px;
+                     }
+                 }
+                 .form-group{
+                    display: inline-block;
+                    width:247px;
+                 }
+                 .wholeline{
+                     width: 612px;
+                     display: inline-block;
+                 }
+                 .halfline{
+                     width:299px;
+                 }
+                 .threepartline{
+                     width: 177px;
+                 }
+                 .checkcodebtn{
+                     width: 110px;
+                     margin-left: 10px;
+                 }
+                 .confirmbasic{
+                     margin-left: 130px;
+                     .yesbtn{
+                         margin-right: 10px;
+                     }
+                 }
+             }
+        }
+    }
+}
+
+.basicInfo.panel{
+    height: 100%;
+}

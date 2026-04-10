@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>TraderWork Mobile</title>
+    <meta charset="utf-8">
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="msapplication-tap-highlight" content="no" />
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <script>
+        var GlobalVar = {
+            STATIC_PATCH: '//traderaccount.oss-cn-hangzhou.aliyuncs.com/mobile/test',
+            viewPath : '/entrance',
+            appId : 'wx7c1e951dc5918c38',
+            appNo : '1',//公众号唯一编号
+            token : 'null'
+        };
+    </script>
+</head>
+<body>
+    <form id="myForm" action="/v1/wechat/redirect">
+        <input type="hidden" name="appId" value="1"/>
+        <input type="hidden" name="appNo" value="2"/>
+        <input type="hidden" name="token" value="3"/>
+        <input type="hidden" name="viewPath" value="4"/>
+    </form>
+    <script>
+        document.getElementById('myForm').submit();
+    </script>
+</body>
+</html>

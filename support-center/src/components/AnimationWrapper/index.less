@@ -1,0 +1,40 @@
+:global {
+  .animation-enter {
+    .card-panel {
+      right: -903px;
+    }
+  }
+
+  .animation-enter.animation-enter-active {
+    .card-panel {
+      right: 0;
+      transition: right .3s ease-in-out;
+    }
+  }
+
+  .animation-appear {
+    .card-panel {
+      right: -903px;
+    }
+  }
+
+  .animation-appear.animation-appear-active {
+    .card-panel {
+      right: 0;
+      transition: right .3s ease-in-out;
+    }
+  }
+
+  .animation-leave {
+    .card-panel {
+      right: 0;
+    }
+  }
+
+  .animation-leave.animation-leave-active {
+    .card-panel {
+      right: -903px;
+      transition: right .3s ease-in-out;
+    }
+  }
+}

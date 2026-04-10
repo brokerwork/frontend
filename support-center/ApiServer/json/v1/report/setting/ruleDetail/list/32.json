@@ -1,0 +1,56 @@
+{
+  "data": [
+    {
+      "id": 19,
+      "levelIdValues": [
+        {
+          "levelId": "33",
+          "value": "0"
+        },
+        {
+          "levelId": "174",
+          "value": "0"
+        },
+        {
+          "levelId": "103",
+          "value": "0"
+        },
+        {
+          "levelId": "222",
+          "value": "0"
+        },
+        {
+          "levelId": "217",
+          "value": "0.0010"
+        }
+      ],
+      "ruleId": 32,
+      "ruleType": 0
+    },
+    {
+      "id": 23,
+      "levelIdValues": [
+        {
+          "levelId": "33",
+          "value": "0"
+        },
+        {
+          "levelId": "174",
+          "value": "0"
+        },
+        {
+          "levelId": "103",
+          "value": "0"
+        },
+        {
+          "levelId": "222",
+          "value": "11"
+        }
+      ],
+      "ruleId": 32,
+      "ruleType": 0
+    }
+  ],
+  "mcode": "m0000000",
+  "result": true
+}

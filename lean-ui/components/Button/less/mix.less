@@ -1,0 +1,35 @@
+.generate-button(
+  @color,
+  @border-color,
+  @background,
+  @background-hover,
+  @background-disabled,
+  @border-color-disabled,
+  @box-shadow-active,
+  @box-shadow-focus
+) {
+  border-radius: @border-radius-base;
+  color: @color;
+  border: 1px solid @border-color;
+  background: @background;
+
+  &:hover,
+  &.hover {
+    background: @background-hover;
+  }
+  &:active,
+  &.active {
+    box-shadow: @box-shadow-active;
+  }
+  &:focus,
+  &.focus {
+    box-shadow: @box-shadow-focus;
+    outline: none;
+  }
+  &:disabled,
+  &.disabled {
+    background: @background-disabled;
+    border: 1px solid @border-color-disabled;
+    cursor: not-allowed;
+  }
+}

@@ -1,0 +1,232 @@
+@import '~less/variables.less';
+
+.body {
+  :global(.lean-card-content) {
+    padding: 0;
+    padding-bottom: 40px;
+  }
+  :global(.lean-modal-wrap) {
+    left: -1px;
+    right: -1px;
+  }
+  :global(.lean-table) {
+    border-top: 1px solid transparent;
+  }
+  :global {
+    .lean-table-cell > a {
+      cursor: pointer;
+    }
+    .lean-card {
+      overflow: hidden;
+    }
+  }
+}
+
+.popupLimit {
+  :global {
+    .lean-tooltip-inner {
+      max-width: 300px;
+    }
+  }
+}
+
+.tableWrapper {
+  :global(.lean-table) {
+    border-top: 1px solid transparent;
+    border-bottom: 1px solid transparent;
+  }
+  :global(.lean-table-cell) {
+    border-top: 1px solid transparent;
+  }
+}
+
+.actions-bar {
+  padding: 0 0 10px;
+  display: flex;
+  justify-content: space-between;
+}
+.actions-bar-select {
+  display: flex;
+  > div:last-child {
+    margin-left: 10px;
+  }
+}
+
+.dropdown {
+  margin-left: 10px;
+  vertical-align: top;
+
+  &:global(.btn-group) > :global(.dropdown-toggle) {
+    height: 30px;
+    border-color: @main-color;
+  }
+
+  &:global(.btn-group.open) > :global(.dropdown-toggle) {
+    border-color: #1ca59e;
+  }
+}
+
+.icon {
+  color: @main-color;
+
+  &.disable {
+    color: #c7cbd6;
+  }
+}
+.operationIcon {
+  color: @main-color;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.link-text {
+  margin: 0 5px;
+}
+.link-operations {
+  padding-top: 5px;
+  display: inline-block;
+  .icon {
+    margin-left: 10px;
+    cursor: pointer;
+  }
+}
+
+.qrcode {
+  display: block;
+  width: 200px;
+  height: 200px;
+  margin-bottom: 10px;
+}
+
+.qrcode-box {
+  text-align: center;
+  button {
+    padding: 0;
+  }
+  a {
+    color: white !important;
+    display: inline-block;
+    text-decoration: none;
+    padding: 6px 12px;
+  }
+  a:hover {
+    color: white;
+  }
+}
+
+.table {
+  > tbody > tr {
+    > th {
+      white-space: nowrap;
+    }
+
+    > td {
+      word-break: break-all;
+    }
+    &.statistic-table-wrapper {
+      background-color: #f5f5f5;
+
+      &:hover {
+        background-color: #f5f5f5;
+      }
+
+      > td {
+        padding: 0 15px;
+      }
+    }
+
+    &:hover {
+      background-color: #fff;
+    }
+
+    &:nth-child(odd):not(.statistic-table-wrapper) {
+      background-color: #fff;
+
+      &:hover {
+        background-color: #fff;
+      }
+    }
+  }
+}
+
+.statistic-table {
+  width: 100%;
+  table-layout: fixed;
+
+  th,
+  td {
+    text-align: center;
+    padding: 11px 10px;
+    vertical-align: middle;
+    line-height: normal;
+  }
+
+  th {
+    color: @text-color-dark;
+    border-bottom: 1px solid @dropdown-border;
+    white-space: nowrap;
+  }
+
+  td {
+    padding-bottom: 10px;
+    word-break: break-all;
+  }
+}
+
+.btn {
+  border-color: @dropdown-border;
+  color: @text-color;
+  background-color: transparent;
+  font-size: 12px;
+
+  &:hover,
+  &:focus,
+  &:active {
+    color: @text-color;
+    background-color: transparent;
+  }
+}
+
+.icon-btn {
+  border-color: @dropdown-border;
+  color: @main-color;
+  background-color: transparent;
+  font-size: 12px;
+
+  &:hover,
+  &:focus,
+  &:active {
+    color: @main-color;
+    background-color: transparent;
+  }
+
+  &:global(.active) {
+    color: @brand-danger;
+    background-color: transparent;
+
+    &:hover,
+    &:focus,
+    &:active {
+      color: @brand-danger;
+    }
+  }
+}
+
+.ellipsis {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  max-width: 130px;
+}
+
+.overlay {
+  position: relative;
+}
+.table-btn button {
+  margin: 0 5px;
+}
+
+.expandIcon {
+  cursor: pointer;
+  color: @lean-text-color-dark;
+}

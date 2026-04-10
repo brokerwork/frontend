@@ -1,0 +1,46 @@
+@import '~less/variables.less';
+
+.table-container {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -@padding-base -@padding-base 0;
+  .table-item {
+    margin-top: 0;
+  }
+}
+
+.table-item {
+  width: 33.33%;
+  padding: @padding-base;
+  display: flex;
+  flex-direction: column;
+}
+
+.panel-body {
+  min-height: 400px;
+  flex: 1;
+}
+
+.rank-switch-container {
+  border-radius: 4px;
+  border: 1px solid #ddd;
+  overflow: hidden;
+  margin-right: 10px;
+  .rank-switch {
+    float: left;
+    box-sizing: border-box;
+    padding: 4px 15px;
+    background-color: #f6f6f6;
+    color: #666;
+    &:not(:first-child) {
+      border-left: 1px solid #ddd;
+    }
+  }
+  
+  :global(.active) {
+    background-color: @white;
+    text-decoration: none;
+  }
+}
+
+

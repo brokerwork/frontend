@@ -1,0 +1,28 @@
+@import '~less/variables';
+
+.actionBar {
+  display: flex;
+  padding: 15px 0;
+}
+
+.newArticle {
+  flex: 1;
+}
+
+.sortHelper {
+  background-color: rgba(0,0,0,0.2);
+  z-index: 9999;
+  cursor: row-resize;
+  > * {
+    visibility: hidden;
+  }
+}
+
+.tips {
+  text-align: center;
+  padding: 20px;
+}
+
+.actions-button {
+  margin-left: 10px;
+}

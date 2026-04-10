@@ -1,0 +1,320 @@
+/*
+默认
+*/
+/* ---------------------> common <--------------------- */
+/* 主题色 */
+/** select选中框的选中的色值 */
+/** select选中下拉框的选中的色值 */
+/* 鼠标hover到主题色上后变化的颜色 */
+/* 主题色作为背景的一般情况下对应的字体颜色 */
+/* ---------------------> widgets <--------------------- */
+/* ---------------------> components <--------------------- */
+/* 左侧菜单背景图片 */
+/* 左侧菜单背景色 */
+/* 左侧菜单顶部logo区域背景色 */
+/* 左侧菜单一般字体颜色 */
+/* 左侧菜单鼠标hover一般字体颜色 */
+/* 左侧子菜单背景色 */
+/* 左侧被选中的菜单的字体颜色 */
+/* 左侧菜单中表示被选中项的高亮部分的颜色 */
+/* 左侧菜单底部工具栏上边框颜色 */
+/* ---------------------> login <--------------------- */
+/* 登录页背景图片 */
+/* 登录页左边背景图片 */
+/* 登录页右边背景图片 */
+/* 登录页背景色 */
+/* 登录页背景图片填充方式 */
+/* 登录页随主题变化元素的主色 */
+/* 登录页随主题变化元素的主色被hover后的颜色 */
+/* 登录页随主题变化元素的辅色 */
+/* 登录页随主题变化元素的融合色 */
+/* 登录页输入框用户输入字体颜色 */
+/* 登录页输入框placeholder字体颜色 */
+/* 登录页输入框背景色 */
+/* 快速开户link字体颜色 */
+.theme-default .ant-input:focus,
+.theme-default .ant-input:hover {
+  border-color: #00a3fe;
+  box-shadow: 0 0 0 2px rgba(0, 163, 254, 0.2);
+}
+.theme-default .ant-pagination-item:focus,
+.theme-default .ant-pagination-item:hover {
+  border-color: #00a3fe;
+}
+.theme-default .ant-pagination-item:focus a,
+.theme-default .ant-pagination-item:hover a {
+  color: #00a3fe;
+}
+.theme-default .ant-pagination-item-active a,
+.theme-default .ant-pagination-item-active:focus a,
+.theme-default .ant-pagination-item-active:hover a {
+  color: #ffffff;
+}
+.theme-default .ant-pagination-item-active,
+.theme-default .ant-pagination-item-active:hover,
+.theme-default .ant-pagination-item-active:focus {
+  background-color: #00a3fe;
+  border-color: #00a3fe;
+}
+.theme-default .ant-pagination-prev:focus,
+.theme-default .ant-pagination-next:focus,
+.theme-default .ant-pagination-prev:hover,
+.theme-default .ant-pagination-next:hover {
+  border-color: #00a3fe;
+}
+.theme-default .ant-radio-wrapper .ant-radio-checked .ant-radio-inner {
+  border-color: #00a3fe;
+}
+.theme-default .ant-radio-wrapper .ant-radio-checked .ant-radio-inner:after {
+  background-color: #00a3fe;
+}
+.theme-default .ant-radio-wrapper:hover .ant-radio .ant-radio-inner {
+  border-color: #00a3fe;
+}
+.theme-default .ant-select {
+  color: #00a3fe;
+}
+.theme-default .ant-select-selection:focus,
+.theme-default .ant-select-selection:active {
+  color: rgba(0, 163, 254, 0.8);
+}
+.theme-default .ant-select-dropdown-menu-item:hover {
+  background-color: rgba(0, 163, 254, 0.2);
+}
+.theme-default .ant-checkbox-wrapper:hover {
+  border-color: #00a3fe;
+}
+.theme-default .ant-checkbox-wrapper:hover .ant-checkbox-inner {
+  border-color: #00a3fe;
+}
+.theme-default .ant-checkbox:hover {
+  border-color: #00a3fe;
+}
+.theme-default .ant-checkbox:hover .ant-checkbox-inner {
+  border-color: #00a3fe;
+}
+.theme-default .ant-checkbox-checked .ant-checkbox-inner {
+  border-color: #00a3fe;
+  background-color: #00a3fe;
+}
+.theme-default .ant-checkbox-input:focus + .ant-checkbox-inner {
+  border-color: #00a3fe;
+}
+.theme-default .ant-calendar-picker:hover .ant-calendar-picker-input:not(.ant-input-disabled) {
+  border-color: #00a3fe;
+}
+.theme-default .ant-calendar-selected-day .ant-calendar-date {
+  background: #00a3fe;
+}
+.theme-default .ant-calendar-selected-day .ant-calendar-date:hover {
+  background: #00a3fe;
+}
+.theme-default .tw-btn:hover {
+  color: #00a3fe;
+  border-color: #00a3fe;
+}
+.theme-default .tw-btn-primary {
+  color: #fff;
+  background-color: #00a3fe;
+  border-color: transparent;
+}
+.theme-default .tw-btn-primary:hover {
+  color: #fff;
+  background-color: #0085cc;
+  border-color: transparent;
+}
+.theme-default .tw-btn-primary[disabled] {
+  color: rgba(0, 0, 0, 0.25);
+  background-color: #f7f7f7;
+  border-color: #d9d9d9;
+}
+.theme-default .tw-btn-solid:hover {
+  color: #00a3fe;
+  border-color: #00a3fe;
+}
+.theme-default .login-page {
+  background: url('../images/login_bg0.jpg') no-repeat;
+  background-size: cover;
+}
+.theme-default .app-header .header-select .account-type-live {
+  border: 1px solid #00a3fe;
+  color: #00a3fe;
+}
+.theme-default .app-header .header-select .account-curr,
+.theme-default .app-header .header-select .account-select-label:hover {
+  color: #00a3fe;
+}
+.theme-default .app-notice .header {
+  background: #00a3fe;
+}
+.theme-default .app-sidebar {
+  background: #2b333e url("") center center no-repeat;
+  background-size: cover;
+  color: #7b91b2;
+}
+.theme-default .app-sidebar .app-logo {
+  background-color: #333c48;
+}
+.theme-default .app-sidebar .app-menu .ant-menu-submenu-title:hover {
+  color: #00a3fe;
+}
+.theme-default .app-sidebar .app-menu .ant-menu-submenu {
+  color: #7b91b2;
+}
+.theme-default .app-sidebar .app-menu .ant-menu-submenu > .ant-menu {
+  background-color: #222932;
+}
+.theme-default .app-sidebar .app-menu .ant-menu-submenu > .ant-menu > .ant-menu-item > a:hover {
+  color: #00a3fe;
+}
+.theme-default .app-sidebar .app-menu .ant-menu-submenu > .ant-menu > .ant-menu-item-selected {
+  color: #00a3fe;
+  border-left: 2px solid #00a3fe;
+}
+.theme-default .app-sidebar .app-menu .ant-menu-submenu > .ant-menu > .ant-menu-item-selected > a {
+  color: #00a3fe;
+}
+.theme-default .app-sidebar .app-menu .ant-menu-submenu > .ant-menu > .ant-menu-item-selected > a:hover {
+  color: #00a3fe;
+}
+.theme-default .app-sidebar .synopsis .ant-tooltip-inner {
+  background-color: #00a3fe;
+}
+.theme-default .app-sidebar .synopsis .ant-tooltip-arrow {
+  border-top-color: #00a3fe;
+}
+.theme-default .app-sidebar .synopsis .side-language li:hover,
+.theme-default .app-sidebar .synopsis .side-language .li-select {
+  color: #00a3fe;
+}
+.theme-default .app-sidebar .about-us .logo {
+  background-color: #333c48;
+}
+.theme-default .ant-steps .ant-steps-item-finish > .ant-steps-item-content > .ant-steps-item-title:after {
+  background-color: #00a3fe;
+}
+.theme-default .ant-steps .ant-steps-item-finish .ant-steps-item-icon {
+  border-color: #00a3fe;
+}
+.theme-default .ant-steps .ant-steps-item-finish .ant-steps-item-icon > .ant-steps-icon {
+  color: #00a3fe;
+}
+.theme-default .ant-steps .ant-steps-item-finish .ant-steps-item-icon:before {
+  background: #00a3fe;
+}
+.theme-default .ant-steps .ant-steps-item-finish .ant-steps-item-icon:after {
+  background: #00a3fe;
+}
+.theme-default .ant-steps .ant-steps-item-process .ant-steps-item-icon {
+  border-color: #00a3fe;
+  background-color: #00a3fe;
+}
+.theme-default .ant-steps .ant-steps-item-process .ant-steps-item-icon:before {
+  background: #00a3fe;
+}
+.theme-default .ant-tabs .ant-tabs-nav .ant-tabs-tab-active {
+  color: #00a3fe;
+}
+.theme-default .ant-tabs .ant-tabs-nav .ant-tabs-tab:hover {
+  color: #0085cc;
+}
+.theme-default .ant-tabs .ant-tabs-ink-bar {
+  background-color: #00a3fe;
+}
+.theme-default .overview .welcome-msg .last-login-msg {
+  color: #00a3fe;
+}
+.theme-default .overview .welcome-msg .ant-tooltip-inner {
+  background-color: #00a3fe;
+}
+.theme-default .overview .welcome-msg .ant-tooltip-arrow {
+  border-top-color: #00a3fe;
+}
+.theme-default .overview .ant-table-tbody .account-default-flag {
+  color: #00a3fe;
+  border-color: #00a3fe;
+}
+.theme-default .overview .ant-table-tbody .account-optbtn {
+  color: #00a3fe;
+}
+.theme-default .overview .account-empty-text a,
+.theme-default .overview .account-empty-text a:hover {
+  color: #00a3fe;
+}
+.theme-default .live-container .li-hint {
+  color: #00a3fe;
+  border: 1px solid #00a3fe;
+}
+.theme-default .webcast-container .webcast-content .ant-popover-buttons .ant-btn-primary {
+  color: #fff;
+  background-color: #00a3fe;
+  border-color: transparent;
+}
+.theme-default .webcast-container .webcast-content .ant-popover-buttons .ant-btn-primary:hover {
+  color: #fff;
+  background-color: #0085cc;
+  border-color: transparent;
+}
+.theme-default .bind-account .ant-select-selection:hover {
+  border-color: #00a3fe;
+}
+.theme-default .account-info .account-changed-confirm {
+  color: #00a3fe;
+}
+.theme-default .link-container .link-href {
+  color: #00a3fe;
+}
+.theme-default .card-theme {
+  border-color: #00a3fe;
+}
+.theme-default .card-theme .card-header {
+  background: #00a3fe;
+}
+.theme-default .appropriate-test .result-item i {
+  color: #00a3fe;
+}
+.theme-default .step-tit {
+  background: #00a3fe;
+}
+.theme-default .reg-input-wrap .reg-only-btn {
+  color: #00a3fe;
+  border-color: #00a3fe;
+}
+.theme-default .same-account .same-panel {
+  border: 1px solid #00a3fe;
+}
+.theme-default .same-account .same-title {
+  background: #00a3fe;
+}
+.theme-default .disclaimer .disclaimer-point {
+  color: #00a3fe;
+}
+.theme-default .form-field-group .icon-delete-outline:hover {
+  color: #00a3fe;
+}
+.theme-default .login-form-forget {
+  color: #00a3fe;
+}
+.theme-default .login-page .ant-btn {
+  border-color: #00a3fe !important;
+  background-color: #00a3fe !important;
+}
+.theme-default .login-input-wrap .login-input-bottom span {
+  color: #00a3fe;
+}
+.theme-default .ant-input-group-addon:hover {
+  border: 1px solid #00a3fe;
+  box-shadow: 0 0 0 2px rgba(0, 163, 254, 0.2);
+}
+.theme-default .reg-input-phone-email {
+  color: #00a3fe;
+}
+.theme-default .forget-pwd-wrapper .login a {
+  color: #00a3fe;
+}
+.theme-default .register-mock-wrapper .select .ant-select-selection:hover {
+  border-color: #00a3fe;
+}
+.theme-default .register-mock-wrapper .login a {
+  color: #00a3fe;
+}

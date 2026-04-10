@@ -1,0 +1,37 @@
+{
+  "data": {
+    "lastModifiedTime": "2016-11-30T13:48:23.554",
+    "vendor": "MT5",
+    "tenantId": "T001001",
+    "step2": {
+      "bankAccount": "1",
+      "totalAssets": "1",
+      "netAssets": "1",
+      "investmentExperience": "2",
+      "investmentYear": "1"
+    },
+    "step3": {
+      "addressDocType": "1",
+      "idType": "1",
+      "idUrl2": "http://traderaccount.oss-cn-hangzhou.aliyuncs.com/test/6ce01af0-b703-11e6-80e2-872c88150077.png",
+      "addressFile1": "http://traderaccount.oss-cn-hangzhou.aliyuncs.com/test/6ea68310-b703-11e6-80e2-872c88150077.png",
+      "idUrl1": "http://traderaccount.oss-cn-hangzhou.aliyuncs.com/test/6b7874a0-b703-11e6-80e2-872c88150077.png",
+      "idNum": "1111111111"
+    },
+    "stepStatus": "Step3",
+    "pubUserId": "2040e751-0fc3-4dbf-bd3b-402e85666209",
+    "step1": {
+      "birthday": "20161130",
+      "homePlace": "monkey monkey monkey",
+      "gender": "0",
+      "accountName": "123",
+      "postcode": "123",
+      "phones": "+86 123",
+      "residence": "monkey monkey monkey",
+      "email": "123"
+    },
+    "status": 3
+  },
+  "mcode": "m0000000",
+  "result": true
+}

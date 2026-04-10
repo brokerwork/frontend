@@ -1,0 +1,64 @@
+.comment_list{
+	padding: 5px 10px 110px 10px;
+	font-size: 14px;
+	color:#3e3e3e;
+	// height: 100%;
+	overflow-y: auto;
+	.comment_time{
+		font-size: 15px;
+		color:#939393;
+		margin-top: 10px;
+	}
+	.comment_container{
+		display: flex;
+		.left_line{
+			width: 2px;
+			height: auto;
+			background: #ededed;
+			// border: solid 4px #ededed;
+			margin: 0 10px;
+		}
+		.comment_header{
+			width: 22px;
+			height: 22px;
+			border-radius:11px;
+		}
+		.comment_username{
+			margin: 0 5px;
+		}
+		.comment_text{
+			line-height: 1.43;
+			word-break: break-word;
+		}
+	}
+}
+.comment_input_panel{
+	width: 100%;
+	// height: 50px;
+	background-color: #f6f5f5;
+	box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.15);
+	position: fixed;
+	bottom: 0;
+	display: flex;
+	padding: 6px;
+	align-items: flex-end;
+	.comment_input{
+		flex: 1;
+		padding: 0 5px;
+		background-color: #fff!important;
+	}
+	.comment_button{
+		margin-left: 8px;
+		button{
+			line-height: 48px;
+		}
+	}
+}
+.dialog_title{
+	font-size: 18px!important;
+	width: 100%;
+	text-align: center;
+	color: #3e3e3e!important;
+	background: url("images/training_dialog_title_bg.png") no-repeat center;
+	background-size: cover;
+}

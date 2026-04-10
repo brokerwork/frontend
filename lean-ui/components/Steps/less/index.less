@@ -1,0 +1,149 @@
+@steps-prefix-cls: ~"@{prefix}-steps";
+@process-bg-color: @grey-4;
+@process-title-color: @grey-2;
+@process-description-color: @process-title-color;
+
+@wait-bg-color: @grey-4;
+@wait-title-color: @grey-2;
+@wait-description-color: @wait-title-color;
+
+@finish-bg-color: @primary;
+@finish-title-color: @white;
+@finish-description-color: @finish-title-color;
+
+@error-bg-color: @grey-2;
+@error-title-color: @white;
+@error-description-color: @error-title-color;
+
+@steps-icon-size: 32px;
+@steps-small-icon-size: 24px;
+@steps-dot-size: 8px;
+@steps-current-dot-size: 10px;
+@steps-desciption-max-width: 140px;
+@title-line-height: 40px;
+
+.@{steps-prefix-cls} {
+  .reset-component;
+  font-size: 0;
+  width: 100%;
+  display: flex;
+}
+
+.@{steps-prefix-cls}-item {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  flex: 1;
+  text-align: center;
+  margin-right: 30px;
+  &:first-child {
+    border-top-left-radius: @title-line-height / 2;
+    border-bottom-left-radius: @title-line-height / 2;
+  }
+  &:last-child {
+    margin-right: 0;
+    border-top-right-radius: @title-line-height / 2;
+    border-bottom-right-radius: @title-line-height / 2;
+  }
+  // head tail
+  &:after,
+  &:before {
+    position: absolute;
+    font-size: 40px;
+    top: -10px;
+    font-family: "LeanWork-Icons" !important;
+  }
+  &:after {
+    content: @icon-lw-steps-behind;
+    left: -11px;
+  }
+  &:before {
+    content: @icon-lw-steps-front;
+    right: -11px;
+  }
+  &:last-child:before,
+  &:first-child:after {
+    content: none;
+  }
+
+  &-content {
+    display: inline-block;
+    vertical-align: top;
+  }
+
+  &-tail {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    top: 12px;
+    padding: 0 10px;
+  }
+  &-title {
+    font-size: @font-size-base;
+    color: @text-color;
+    display: inline-block;
+    position: relative;
+    line-height: @title-line-height;
+  }
+  &-description {
+    font-size: @font-size-base;
+    color: @text-color-secondary;
+  }
+  .step-item-status(wait);
+  .step-item-status(process);
+  &-process {
+    background-color: @process-bg-color;
+  }
+  &-process &-title {
+    font-weight: 500;
+  }
+  .step-item-status(finish);
+  .step-item-status(error);
+}
+
+.@{steps-prefix-cls}-next-error {
+  background-color: @error-bg-color;
+  &:before,
+  &:after {
+    color: @error-bg-color;
+  }
+}
+
+.@{steps-prefix-cls}-horizontal:not(.@{steps-prefix-cls}-label-vertical) {
+  .@{steps-prefix-cls}-item {
+    white-space: nowrap;
+    &:last-child {
+      margin-right: 0;
+    }
+    &:last-child .@{steps-prefix-cls}-item-title {
+      padding-right: 0;
+    }
+    &-tail {
+      display: none;
+    }
+    &-description {
+      max-width: @steps-desciption-max-width;
+    }
+  }
+}
+
+.step-item-status(@status) {
+  @bg-color: "@{status}-bg-color";
+  @title-color: "@{status}-title-color";
+  @description-color: "@{status}-description-color";
+  &-@{status} {
+    border-color: @@bg-color;
+    background-color: @@bg-color;
+    &:after,
+    &:before {
+      color: @@bg-color;
+    }
+  }
+  &-@{status} > &-content > &-title {
+    color: @@title-color;
+  }
+  &-@{status} > &-content > &-description {
+    color: @@description-color;
+  }
+  
+}

@@ -1,0 +1,110 @@
+{
+    "data": {
+        "list": [
+            {
+                "entityNo": "TUCV",
+                "id": 406,
+                "levelId": 103,
+                "name": "测试daisy",
+                "parent": "222",
+                "pubUserId": "606ca2f1-6940-44c9-a824-c1befc54f866",
+                "roleId": 3,
+                "roleName": "销售经理2"
+            },
+            {
+                "entityNo": "ALHR",
+                "id": 347,
+                "levelId": 0,
+                "name": "Darren",
+                "parent": "",
+                "pubUserId": "4eb10823-d2d8-4f13-80eb-2873f40b3368",
+                "roleId": 2,
+                "roleName": "销售经理"
+            },
+            {
+                "entityNo": "LXYJ",
+                "id": 331,
+                "levelId": 0,
+                "name": "kaixin",
+                "parent": "340",
+                "pubUserId": "76368b54-f926-45ef-82b8-271f57623276",
+                "roleId": 2,
+                "roleName": "销售经理"
+            },
+            {
+                "entityNo": "OJLY",
+                "id": 216,
+                "levelId": 0,
+                "name": "kaixin",
+                "parent": "",
+                "pubUserId": "49eeba9c-3db7-4fdb-a8a9-4f5f4e1adea1",
+                "roleId": 2,
+                "roleName": "销售经理"
+            },
+            {
+                "id": 215,
+                "levelId": 0,
+                "name": "kaixin",
+                "parent": "",
+                "pubUserId": "7ac90e8b-eb10-4898-a255-d31c3b91af90",
+                "roleId": 2,
+                "roleName": "销售经理"
+            },
+            {
+                "entityNo": "VIHU",
+                "id": 200,
+                "levelId": 0,
+                "name": "illegal56",
+                "parent": "",
+                "pubUserId": "e37cd705-18a3-4767-a08d-e83e733db2fb",
+                "roleId": 2,
+                "roleName": "销售经理"
+            },
+            {
+                "entityNo": "UUVL",
+                "id": 186,
+                "levelId": 32,
+                "name": "jasonn",
+                "parent": "50",
+                "pubUserId": "69f92172-7550-44ee-9181-e69c3aabec55",
+                "roleId": 3,
+                "roleName": "销售经理2"
+            },
+            {
+                "entityNo": "",
+                "id": 175,
+                "levelId": 0,
+                "name": "jason",
+                "parent": "",
+                "pubUserId": "75b1874b-c7dc-4543-a2b5-1d334fca9605",
+                "roleId": 2,
+                "roleName": "销售经理"
+            },
+            {
+                "entityNo": "VFGM",
+                "id": 93,
+                "levelId": 0,
+                "name": "自动化mail",
+                "pubUserId": "8c6226bd-e124-4094-9a81-7be95b54d135",
+                "roleId": 2,
+                "roleName": "销售经理"
+            },
+            {
+                "entityNo": "GRJQ",
+                "id": 74,
+                "levelId": 0,
+                "name": "atong",
+                "pubUserId": "a8db3bb7-6c83-49c5-87c3-b25567bbab15",
+                "roleId": 2,
+                "roleName": "销售经理"
+            }
+        ],
+        "offset": 0,
+        "pager": 1,
+        "pages": 2,
+        "size": 10,
+        "total": 14
+    },
+    "mcode": "m0000000",
+    "result": true
+}

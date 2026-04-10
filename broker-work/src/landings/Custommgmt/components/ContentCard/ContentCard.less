@@ -1,0 +1,113 @@
+@import '~less/variables.less';
+@card-bg: @white;
+@border-radius: 4px;
+@padding-horiz: 20px;
+@padding-ver: 15px;
+@card-border-color: @border-color;
+@dark-bg: #fafafa;
+.root {
+  background: @card-bg;
+  border-radius: @border-radius;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
+  margin-bottom: 15px;
+}
+.header {
+  padding: @padding-ver @padding-horiz;
+  line-height: 18px;
+  display: flex;
+  align-items: center;
+  &.border {
+    border-bottom: 1px solid @card-border-color;
+  }    
+  .icon {
+    font-size: 24px;
+    display: inline-block;
+    margin-right: 10px;
+    i {
+      color: #bfbfbf;
+    }
+    &.iconWrap {
+      font-size: 12px;
+      width: 24px;
+      height: 24px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: #bfbfbf;
+      border-radius: 5px;
+      i {
+        color: @white;
+      }
+    }
+  }
+  .title{
+    font-size: 14px;
+    color: @text-color-dark;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    i {
+      color: #919eab;
+      margin-left: 5px;
+    }
+  }
+  .tools {
+  }
+}
+
+.footer {
+  padding: @padding-ver @padding-horiz  ;
+  line-height: 18px;
+  display: flex;
+  align-items: center;   
+  border-bottom-left-radius: @border-radius; 
+  border-bottom-right-radius: @border-radius; 
+  &.border {
+    border-top: 1px solid @card-border-color;
+  } 
+  &.dark {
+    background: @dark-bg;
+  } 
+  &.min {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }   
+}
+.buttons {
+  flex: 1;
+  > button, > input{
+    margin-right: 10px;
+  }
+  &.right {
+    text-align: right;
+    > button, > input{
+      margin-right: 0;
+      margin-left: 10px;
+    }
+  }
+}
+.toggle-click{
+  display: flex;
+  width: 100%;
+  font-size: 12px;
+  align-items: center;
+  cursor: pointer;
+  font-size: 12px;
+  height: 15px;
+  i {
+    font-size: 25px;
+    margin-right: 9px;
+  }
+}
+.toggle-click{
+  text-align: center;
+}
+.body {
+  padding: @padding-ver @padding-horiz;
+}
+.header:not(.border) + .body {
+  padding-top:0;
+}
+.body:empty {
+  padding:0 ;
+}

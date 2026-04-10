@@ -1,0 +1,46 @@
+@primaryColor: #1fb5ad;
+@warningColor: #ffc341;
+@errorColor: #ff4157;
+@backgroundColor: #eee;
+
+.background-content {
+  width: 100%;
+  min-width: 360px;
+  height: 25px;
+  background-color: @backgroundColor;
+  border-radius: 4px;
+  overflow: hidden;
+  font-size: 0;
+
+  span {
+    display: inline-block;
+    height: 100%;
+    width: 60px;
+    background-color: @primaryColor;
+    border-radius: 3px;
+    box-shadow: 0 0.5px 0 rgba(255, 255, 255, 0.5) inset;
+    transition: all 0.5s ease;
+    position: relative;
+    z-index: 1;
+  }
+
+  &.small {
+    height: 10px;
+
+    span {
+      border-radius: 10px;
+    }
+  }
+}
+
+.primary span {
+  background-color: @primaryColor;
+}
+
+.warning span {
+  background-color: @warningColor;
+}
+
+.error span {
+  background-color: @errorColor;
+}

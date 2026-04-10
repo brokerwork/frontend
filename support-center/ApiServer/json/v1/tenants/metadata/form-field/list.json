@@ -1,0 +1,151 @@
+{
+"data": [
+    {
+      "columns": "2",
+      "enable": true,
+      "fieldType": "text",
+      "key": "contactsName",
+      "label": "姓名",
+      "orderNo": 1,
+      "overuse": false,
+      "readonly": false,
+      "size": 50,
+      "sysDefault": true,
+      "unique": false,
+      "validateType": {
+      "required": true
+    }
+},
+{
+"columns": "2",
+"enable": true,
+"fieldType": "text",
+"key": "customName",
+"label": "客户名称",
+"orderNo": 2,
+"overuse": true,
+"readonly": false,
+"size": 50,
+"sysDefault": true,
+"unique": false,
+"validateType": {
+"required": true
+}
+},
+{
+"columns": "2",
+"enable": true,
+"fieldType": "text",
+"key": "duty",
+"label": "职务",
+"orderNo": 3,
+"overuse": false,
+"readonly": false,
+"size": 10,
+"sysDefault": false,
+"unique": false,
+"validateType": {
+"required": true
+}
+},
+{
+"columns": "2",
+"defaultValue": "0",
+"enable": true,
+"fieldType": "select",
+"key": "gender",
+"label": "性别",
+"optionList": [
+{
+"label": "男",
+"value": "0"
+},
+{
+"label": "女",
+"value": "1"
+}
+],
+"orderNo": 4,
+"overuse": false,
+"readonly": false,
+"size": 50,
+"sysDefault": false,
+"unique": false,
+"validateType": { }
+},
+{
+"columns": "2",
+"enable": true,
+"fieldType": "phone",
+"key": "phones",
+"label": "手机",
+"orderNo": 5,
+"overuse": true,
+"readonly": false,
+"size": 50,
+"sysDefault": true,
+"unique": false,
+"validateType": { }
+},
+{
+"columns": "2",
+"enable": true,
+"fieldType": "text",
+"key": "email",
+"label": "邮箱",
+"orderNo": 6,
+"overuse": true,
+"readonly": false,
+"size": 50,
+"sysDefault": true,
+"unique": false,
+"validateType": {
+"required": true
+}
+},
+{
+"columns": "2",
+"enable": true,
+"fieldType": "datestring",
+"key": "birthday",
+"label": "出生年月",
+"orderNo": 7,
+"overuse": false,
+"readonly": false,
+"size": 50,
+"sysDefault": false,
+"unique": false,
+"validateType": { }
+},
+{
+"columns": "2",
+"enable": true,
+"fieldType": "textarea",
+"key": "comments",
+"label": "备注",
+"orderNo": 8,
+"overuse": false,
+"readonly": false,
+"size": 1000,
+"sysDefault": false,
+"unique": false,
+"validateType": { }
+},
+{
+"columns": "2",
+"enable": true,
+"fieldType": "date",
+"key": "createTime",
+"label": "创建时间",
+"orderNo": 9,
+"overuse": true,
+"readonly": true,
+"size": 50,
+"sysDefault": true,
+"unique": false,
+"validateType": { }
+}
+],
+"mcode": "m0000000",
+"result": true
+}

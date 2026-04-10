@@ -1,0 +1,15 @@
+{
+  "data": {
+    "accountName": "bruce hu",
+    "tenantId": "T001117",
+    "customerId": "00074dcb-bef7-4fd7-be97-c37fa5ce7207",
+    "phones": {
+      "phone": "18602920456",
+      "countryCode": "+86",
+      "phoneStr": "+86 18602920456"
+    },
+    "email": "bruce@lwork.com"
+  },
+  "mcode": "m0000000",
+  "result": true
+}

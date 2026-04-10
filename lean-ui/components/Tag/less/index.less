@@ -1,0 +1,55 @@
+@import "./mix";
+
+.@{prefix}-tag {
+  display: inline-flex;
+  padding: 0 10px;
+  border-style: solid;
+  border-width: 1px;
+  border-radius: @border-radius-base;
+  font-size: @font-size-sm;
+  align-items: center;
+  height: 24px;
+  > .close-icon {
+    cursor: pointer;
+    margin-left: 6px;
+    font-size: 12px;
+    transform: scale(0.84);
+  }
+  > .add-icon {
+    margin-right: 4px;
+    font-size: 12px;
+    transform: scale(0.84);
+  }
+}
+
+.@{prefix}-tag-default {
+  .generate-tag(@tag-text-color-default, @tag-border-color-default, @tag-background-color-default);
+}
+
+.@{prefix}-tag-red {
+  .generate-tag(@tag-text-color-red, @tag-border-color-red, @tag-background-color-red);
+}
+
+.@{prefix}-tag-orange {
+  .generate-tag(@tag-text-color-orange, @tag-border-color-orange, @tag-background-color-orange);
+}
+
+.@{prefix}-tag-yellow {
+  .generate-tag(@tag-text-color-yellow, @tag-border-color-yellow, @tag-background-color-yellow);
+}
+
+.@{prefix}-tag-green {
+  .generate-tag(@tag-text-color-green, @tag-border-color-green, @tag-background-color-green);
+}
+
+.@{prefix}-tag-blue {
+  .generate-tag(@tag-text-color-blue, @tag-border-color-blue, @tag-background-color-blue);
+}
+
+.@{prefix}-tag-pink {
+  .generate-tag(@tag-text-color-pink, @tag-border-color-pink, @tag-background-color-pink);
+}
+
+.@{prefix}-tag-grey {
+  .generate-tag(@tag-text-color-grey, @tag-border-color-grey, @tag-background-color-grey);
+}

@@ -1,0 +1,101 @@
+@import '~less/variables.less';
+
+.container {
+    width: 760px;
+    margin: auto;
+    background: #fff;
+    box-shadow: -0.1px 2px 8px 0 rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+    color: #333;
+    h1,h2,h3,h4,h5  {
+        margin: 0;
+        font-weight: normal;
+    }
+    ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+    dl {
+        margin: 0;
+    }
+    .test-detail {
+        padding: 30px 21px;
+    }
+    .header {
+        padding:13px 0;
+        font-size: 16px; 
+        margin: 0;
+        text-align: center;
+        background: @main-color;
+        font-weight: normal;
+        color: #fff;
+        border-radius: 4px 4px 0 0;
+    }
+    
+    .content {
+        padding: 40px 30px;
+    }
+    
+    .box {
+        border-radius: 4px;
+        background-color: #fafafa;
+        border: solid 1px #eceff0;
+    }
+    .main-info {
+        margin-bottom: 20px;
+        display: flex;
+        padding: 25px 0;
+        li {
+            padding: 0 15px;
+            flex: 1;
+            border-right: 1px solid #ddd;
+            &:last-child {
+                border-right:  none;
+            }
+        }
+        .main-info-title {        
+            font-weight: bold;
+            font-size: 12px;
+            line-height: 1.2;
+            letter-spacing: normal;
+            color: #666666;
+            margin-bottom: 10px;
+        }
+        .main-info-sub-title {
+            color: #999;
+            font-weight: bold;
+            font-size: 12px;
+            margin-right: 14px;
+        }
+    }
+    .question-title {
+        font-size: 14px;
+        font-weight: normal;
+        line-height: 2;
+        margin: 0;
+    }
+    .answer-list {
+        padding: 15px;
+        margin-right: -39px;
+        li {
+            display: inline-block;
+            margin-right: 39px;
+            i {
+                margin-right: 5px;
+                font-size: 16px;
+                vertical-align: middle;
+                color: #d5d5d5;
+                &:global(.fa-dot-circle-o) {
+                    color: @main-color;
+                }
+                & + span {
+                    vertical-align: middle;
+                }
+            }
+        }
+    }
+    
+}
+
+

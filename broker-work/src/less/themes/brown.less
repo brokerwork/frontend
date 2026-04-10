@@ -1,0 +1,24 @@
+@import './mix.less';
+@brown-1: #975214;
+@brown-2: #A26127;
+@brown-3: #A66D3B;
+@brown-4: #B07E51;
+@brown-5: #BD8E63;
+:global {
+  .brown-theme {
+    a {
+      color: @brown-2;
+      &:hover {
+        color: @brown-1;
+      }
+    }
+    .createThemes(
+      @brown-1,
+      @brown-2,
+      @brown-3,
+      @brown-4,
+      @brown-5,
+      #000
+    );
+  }
+}

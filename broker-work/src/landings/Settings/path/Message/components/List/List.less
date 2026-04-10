@@ -1,0 +1,37 @@
+@import '~less/variables.less';
+
+:global(.disabled-btn) {
+  background-color: @disabled-color;
+  border-color: @disabled-color;
+  cursor: not-allowed;
+}
+.state_draft {
+  color: @disabled-color;
+}
+.state_success {
+  color: @brand-primary;
+}
+.state_faild {
+  color: @red;
+}
+.list-button button {
+  margin: 0 3px;
+}
+.list-table {
+  // padding: 20px 0;
+  a {
+    cursor: pointer;
+  }
+
+  :global {
+    .lean-table thead th {
+      min-width: 200px;
+    }
+  }
+}
+
+.operationIcon {
+  color: @main-color;
+  margin-right: 10px;
+  cursor: pointer;
+}

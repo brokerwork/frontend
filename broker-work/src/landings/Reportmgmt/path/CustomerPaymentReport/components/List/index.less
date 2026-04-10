@@ -1,0 +1,45 @@
+@import '~less/variables';
+.th-cell, .td-cell {
+    border-left: 1px solid #ddd;
+    width: 100px;
+    padding-left: 5px;
+    padding-right: 5px;
+    &.th-cell-sub {
+        border-left: 1px dashed #eee;
+    }
+}
+.payment-report-table {
+    & > thead > tr > th{
+        text-align: center;
+        &.th-cell-year {
+            border-bottom: none;
+        }
+    }
+    & > tbody > tr > td {
+        &.td-cell {
+            // max-width: 120px;
+            min-width: 100px;
+        }
+        &.total-label{
+            text-align: right;
+        }
+        &.td-product {
+            overflow: visible;
+        }
+    }
+}
+.value-successed{
+    color: @state-success-text;
+}
+.value-failed{
+    color: @red;
+}
+.ques-content {
+    white-space: nowrap;
+}
+.tip-click {
+    color: @main-color;
+    text-decoration: underline;
+    cursor: pointer;
+    padding: 0 6px;
+}

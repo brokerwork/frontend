@@ -1,0 +1,38 @@
+.c-switch {
+    display: inline-block;
+    width: 44px;
+    height: 22px;
+    box-sizing: border-box;
+    border: 2px solid #1fb5ad;
+    border-radius: 11px;
+    box-sizing: border-box;
+    background-color: #1fb5ad;
+    position: relative;
+    vertical-align: -5px;
+    .inner {
+        position: absolute;
+        background-color: white;
+        height: 18px;
+        width: 18px;
+        border-radius: 50%;
+        transition: .4s;
+    }
+    &.left {
+        border-color: #bbb;
+        background-color: #bbb;
+        .inner {
+            left: 0;
+        }
+    }
+    &.right {
+        .inner {
+            left: 21px;
+        }
+    }
+}
+
+.disabled-style {
+    border-color: #bbb;
+    background-color: #bbb;
+    cursor: not-allowed;
+}

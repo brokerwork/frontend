@@ -1,0 +1,80 @@
+@import '../index.less';
+
+.duplicate-highlight {
+  color: @state-success-text;
+  margin: 0 3px;
+}
+.phone-record-time {
+  color: @text-color-light;
+}
+.timeline-delete{
+  margin-left: 5px;
+}
+.time-line-box {
+  display: flex;
+}
+.time-line-content {
+  flex: 1;
+}
+
+.deeal-account-id {
+  color: #637381;
+  margin-right: 20px;
+  b {
+    // color: @text-color-dark;
+    font-weight: normal;
+  }
+}
+.time-line {
+  margin-bottom: 8px;
+}
+.deal-detail {
+  padding: 10px;
+  margin-top: 10px;
+  border-radius: @border-radius-base;
+  display: flex;
+  border: 1px solid @border-color;
+  background: #fafafa;
+  flex-flow: wrap;
+  & > div {
+    font-size: 12px;
+    margin-top: 6px;
+    color: @text-color-dark;
+    max-width: 50%;
+    width: 50%;
+    display: flex;
+    b {
+      font-weight: normal;
+      color: #637381;
+      margin-right: 5px;
+      margin-left: 5px;
+    }
+  }
+}
+
+.deal-time {
+  float: right;
+  color: #767d85;
+  font-size: 12px;
+  line-height: 12px;
+}
+.loadmore{
+  text-align: center;
+  padding-left: 55px;
+  span {
+    cursor: pointer; 
+    &:hover {
+      opacity: .7;
+    } 
+  }
+}
+
+.no-data {
+  // font-size: 12px;
+  height: 200px;
+  min-height: 200px;
+  color: @text-color-light;
+  // img {
+  //   width: 60px;
+  // }
+}

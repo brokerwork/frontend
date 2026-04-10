@@ -1,0 +1,41 @@
+@import '~less/variables.less';
+
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.body {
+  padding-top: @padding-base;
+  flex: 1;
+  overflow: auto;
+  :global(.panel:last-child) {
+    margin-bottom: 0;
+  }
+}
+
+.breadcrumb {
+  a {
+    &:hover {
+      text-decoration: none;
+    }
+  }
+  .icon {
+    margin: 0 5px;
+  }
+}
+
+.space-between {
+  justify-content: space-between;
+}
+
+.header-botton-box {
+  button {
+    margin-left: 8px;
+  }
+}
+.process-card-wrapper {
+  margin: 24px auto;
+  width: 260px;
+}

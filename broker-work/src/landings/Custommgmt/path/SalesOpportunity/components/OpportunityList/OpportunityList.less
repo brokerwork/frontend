@@ -1,0 +1,65 @@
+@import '~less/variables.less';
+
+.actions-bar {
+  padding: 15px 0 10px;
+}
+
+.search-bar {
+  float: right;
+  position: relative;
+
+  .dropdown {
+    &:global(.btn-group) > :global(.dropdown-toggle) {
+      border-color: @dropdown-border;
+      border-top-right-radius: 0;
+      border-bottom-right-radius: 0;
+    }
+  }
+
+  :global(.fa) {
+    position: absolute;
+    top: 7px;
+    right: 6px;
+    z-index: 1;
+    font-size: 12px;
+    line-height: inherit;
+  }
+}
+
+.dropdown {
+  margin-left: 10px;
+  vertical-align: top;
+
+  &:global(.btn-group) > :global(.dropdown-toggle) {
+    height: 30px;
+
+    :global(.caret) {
+      font-family: FontAwesome;
+      font-style: normal;
+      font-weight: normal;
+      -webkit-font-smoothing: antialiased;
+      font-size: 12px;
+      border: 0;
+      width: auto;
+      height: auto;
+      margin-top: -5px;
+
+      &:before {
+        content: '\f107';
+      }
+    }
+  }
+}
+
+.pagination-bar {
+  padding-bottom: 25px;
+}
+
+.menu-pop {
+  :global(.lean-popover-inner-content) {
+    padding: 0;
+  }
+  ::global(.lean-menu) {
+    border: none;
+  }
+}

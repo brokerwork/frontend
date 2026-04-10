@@ -1,0 +1,41 @@
+@import '~less/variables';
+
+.container {
+  margin-top: 15px;
+}
+.status-finished {
+  color: @state-success-text;
+}
+.status-closed {
+  color: @state-danger-text;
+}
+td {
+  .td-content {
+    max-width: 400px;
+  }
+}
+.panel {
+  overflow: hidden;
+  border-radius: 4px;
+  border: solid 1px #dfe3e8;
+  background-color: #ffffff;
+  .head {
+    padding: 9px 16px;
+    font-size: 13px;
+    background-color: #fafafa;
+    &+div{
+      padding: 16px;
+      :global(.lean-table){
+        border-top: 0;
+      }
+      :global(.lean-table-container+div){
+        box-shadow: none;
+        padding-left: 0;
+        padding-right: 0;
+      }
+    }
+  }
+  .body {
+
+  }
+}

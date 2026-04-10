@@ -1,0 +1,184 @@
+.agent-form {
+  width: 80%;
+}
+
+.risk-switch {
+  padding: 10px 0;
+}
+
+.upload-file {
+  display: inline-flex;
+  vertical-align: top;
+  margin-left: 10px;
+}
+
+.copy-link {
+  margin-bottom: 10px;
+
+  .copy-link-text {
+    margin-right: 10px;
+  }
+}
+
+.result-container {
+  tbody > tr > td:first-child {
+    width: 100px;
+    word-break: break-word;
+  }
+
+  td {
+    padding: 11px 9px;
+    line-height: 30px;
+    vertical-align: top;
+  }
+
+  .number-input {
+    display: inline-block;
+    vertical-align: top;
+    width: 68px;
+    margin: 0 5px;
+  }
+
+  .select-input {
+    display: inline-block;
+    vertical-align: top;
+    width: 182px;
+    line-height: normal;
+  }
+
+  .group {
+    display: inline-block;
+    vertical-align: top;
+    white-space: nowrap;
+    line-height: 30px;
+  }
+
+  .result-summary {
+    white-space: nowrap;
+  }
+
+  .feedback-content {
+    margin-top: 10px;
+
+    textarea {
+      height: 64px;
+    }
+  }
+
+  .feedback-wrap-title {
+    line-height: 1.5;
+  }
+
+  .feedback-title,
+  .feedback-content {
+    margin-left: 5px;
+  }
+
+  :global(.error-msg) {
+    line-height: normal;
+  }
+
+  .number-input + :global(.error-msg) {
+    margin-left: 5px;
+  }
+
+  .show-more {
+    i {
+      margin-left: 5px;
+      transition: transform 0.3s ease;
+      vertical-align: text-top;
+    }
+
+    &.active {
+      i {
+        transform: rotate(-180deg);
+      }
+    }
+  }
+}
+
+.buttons {
+  padding-top: 15px;
+}
+
+.result-header {
+  display: flex;
+  align-items: center;
+  width: 100%;
+
+  .result-header-name {
+    color: #333;
+    font-size: 14px;
+    flex: 1;
+  }
+}
+
+.help-text {
+  width: 150px;
+}
+
+.option-table {
+  width: 100%;
+
+  td {
+    padding: 10px 8px;
+    white-space: nowrap;
+
+    &:first-child {
+      text-align: right;
+      width: 10px;
+      padding-left: 30px;
+    }
+
+    &:last-child {
+      width: 10px;
+    }
+  }
+}
+
+.panel-header {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.more {
+  flex: 1;
+  text-align: right;
+}
+
+.panel-footer {
+  margin-top: 15px;
+}
+
+.actions {
+  display: flex;
+  align-items: center;
+  padding-bottom: 15px;
+
+  .actions-left {
+    flex: 1;
+
+    label {
+      margin: 0;
+    }
+  }
+
+  .actions-right {
+    .label {
+      vertical-align: -8px;
+      margin-right: 10px;
+    }
+    .field-setting {
+      float: right;
+      vertical-align: middle;
+    }
+  }
+}
+.tips {
+  margin: 0 5px;
+  top: 1px;
+}
+.name-config {
+  margin: 15px 0;
+}

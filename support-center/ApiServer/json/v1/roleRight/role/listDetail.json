@@ -1,0 +1,50 @@
+{
+  "data": [
+    {
+      "belongUserCount": 2,
+      "comment": "销售经理",
+      "entityNo": 2,
+      "id": 1,
+      "name": "默认角色",
+      "parentId": 2,
+      "parentName": "马大荣",
+      "subRoleCount": 2,
+      "rights":["1655", "1677"]
+    },
+    {
+      "belongUserCount": 2,
+      "comment": "销售经理",
+      "entityNo": 2,
+      "id": 1,
+      "name": "默认角色",
+      "parentId": 1,
+      "parentName": "马大荣",
+      "subRoleCount": 2,
+      "rights":["1655", "1677"]
+    },
+    {
+      "belongUserCount": 2,
+      "comment": "销售经理",
+      "entityNo": 2,
+      "id": 1,
+      "name": "默认角色",
+      "parentId": 1,
+      "parentName": "马大荣",
+      "subRoleCount": 2,
+      "rights":["1655", "1677"]
+    },
+    {
+      "belongUserCount": 2,
+      "comment": "销售经理",
+      "entityNo": 2,
+      "id": 1,
+      "name": "默认角色",
+      "parentId": 1,
+      "parentName": "马大荣",
+      "subRoleCount": 2,
+      "rights":["1655", "1677"]
+    }
+  ],
+  "mcode": "m0000000",
+  "result": true
+}

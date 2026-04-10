@@ -1,0 +1,44 @@
+@import '~less/variables';
+.modal-body {
+    min-height: 200px;
+}
+
+.referralLink-div {
+    font-size: 12px;
+    line-height: 24px;
+    +.referralLink-div {
+        margin-top: 15px;
+    }
+}
+
+.label {
+    padding-left: 0;
+}
+
+.no-link-text {
+    text-align: left;
+    word-break: break-all;
+    padding: 0;
+}
+
+.link-text {
+    color: @main-color;
+    text-align: left;
+    word-break: break-all;
+    padding: 0;
+    a {
+        color: @main-color;
+        &:hover {
+            color: @main-color;
+            text-decoration: underline;
+        }
+    }
+}
+
+.btn {
+    margin-right: 5px;
+    border-color: @border-color;
+    color: @text-color;
+    background-color: transparent;
+    font-size: 12px;
+}

@@ -1,0 +1,66 @@
+@import '~less/fn.less';
+.content{
+    .hintTitle{
+        text-align: left;
+        .rem-padding(20,100);
+        span{
+            color: rgb(108,105,102);
+        }
+    }
+    .applying{
+        color: #00A3FE;
+        font-size: 20px;
+        line-height: 1.5;
+        text-align: center;
+    }
+    .textCenter{
+        color: #00A3FE;
+        line-height: 1.5;
+        text-align: center;
+    }
+    .formTop{
+        background-color: #fff;
+        border-top: 1px solid #e1e1e1;
+    }
+    .remark{
+        .rem(50, margin-top)
+    }
+    .submit{
+        .rem-padding(50,30)
+    }
+    .expectation-select{
+        overflow: hidden;
+        position: relative;
+        .rem(100px, height);
+        border-bottom: 1px solid rgb(225, 225, 225);
+        select{
+            top: 50%;
+            width: 90%;
+            .rem(175px, left);
+            position: absolute;
+            .rem(30px, font-size);
+            transform: translateY(-50%);
+            border: 0;
+            padding: 0;
+            appearance: none;
+            -moz-appearance: none;
+            -webkit-appearance: none;
+            background-color: transparent;
+        }
+    }
+    .expect-title{
+        left: 0;
+        top: 50%;
+        font-size: 15px;
+        position: absolute;
+        .rem(30,padding-left);
+        transform: translateY(-50%);
+    }
+    .down-icon{
+        top: 50%;
+        .rem(35px, right);
+        .rem(18px, width);
+        position: absolute;
+        transform: translateY(-50%);
+    }
+}

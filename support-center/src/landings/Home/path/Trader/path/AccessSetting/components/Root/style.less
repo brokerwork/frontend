@@ -1,0 +1,57 @@
+.access-settings {
+  .table {
+    width: 600px;
+  }
+  :global(.form-item-control) {
+    line-height: 30px;
+    width: auto !important;
+    & > div {
+      display: inline-block;
+    }
+  }
+  :global(.form-item-label) {
+    width: 160px !important;
+    line-height: 30px;
+    padding: 0;
+  }
+  :global(.tips) {
+    margin-left: 20px;
+  }
+  :global(.pwd-strong) {
+    :global(.radio) {
+      display: block;
+      margin: 0 !important;
+    }
+  }
+  .footer {
+    margin-left: 160px;
+    :global(.btn) {
+      margin-right: 10px;
+    }
+  }
+  :global(.registrable) {
+    :global(.form-item) {
+      margin-bottom: 5px;
+    }
+    :global(.form-item-label),
+    :global(.form-item-control),
+    :global(.form-item-help-text) {
+      line-height: 18px;
+    }
+  }
+}
+.tips {
+  margin: 0 5px;
+  top: 1px;
+}
+.login-type {
+  display: flex;
+  >span {
+    flex-basis: 160px;
+    text-align: right;
+  }
+}
+.tip {
+  color: #999;
+  margin-left: 10px;
+}

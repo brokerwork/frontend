@@ -1,0 +1,14 @@
+{
+  "data": [
+    {
+      "label": "每手",
+      "value": "0"
+    },
+    {
+      "label": "每处理",
+      "value": "1"
+    }
+  ],
+  "mcode": "m0000000",
+  "result": true
+}

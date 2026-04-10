@@ -1,0 +1,119 @@
+@import '~less/variables.less';
+.container {
+    padding: @padding-base 0;
+    display: flex;
+}
+
+.left {
+    flex: 1;
+}
+
+.tool-item {
+    margin-right: 10px;
+}
+.dropdown-width {
+    width: 100px;
+    margin-right: 10px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.search-input {
+    width: 240px;
+}
+
+.wrapper {
+    display: inline-block;
+}
+
+.default-container {
+    padding: 15px 0;
+    display: flex;
+    flex: 1;
+}
+
+.text {
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 12px;
+     :global(.badge) {
+        margin: 0 5px;
+        padding: 0;
+        background: transparent;
+        color: @main-color;
+        font-weight: normal;
+    }
+}
+
+.btn {
+    margin-left: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.num {
+    font-weight: bold;
+    margin: 0 4px;
+    font-size: 16px;
+}
+
+.tips {
+    font-size: 12px;
+    margin-bottom: 0;
+    .num {
+        font-weight: bold;
+        margin: 0 3px;
+        font-size: 14px;
+    }
+}
+
+.progress-part {
+    position: relative;
+    margin-right: 10px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.progressBar {
+    width: 190px;
+    height: 8px;
+    margin-bottom: 6px;
+    display: block;
+}
+
+.flux-label {
+    width: 190px;
+    font-size: 12px;
+    display: block;
+}
+
+.right-flux-label {
+    width: 110px;
+    display: inline-block;
+    text-align: right;
+    word-wrap: break-word;
+}
+
+.danger-right-flux-label {
+    width: 110px;
+    display: inline-block;
+    text-align: right;
+    color: #fa667a;
+    word-wrap: break-word;
+}
+
+.danger-progressBar {
+    width: 190px;
+    height: 8px;
+    margin-bottom: 6px;
+    div {
+        background-color: #fa667a;
+    }
+}
+
+.left-flux-label {
+    display: inline-block;
+    text-align: left;
+    width: 80px;
+    word-wrap: break-word;
+}

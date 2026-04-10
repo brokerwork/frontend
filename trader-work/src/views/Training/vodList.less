@@ -1,0 +1,182 @@
+.vodlist-container{
+    width: 100%;
+    min-height: 100%;
+    background: #f1f4f9;
+    .webcast-wrap{
+        width: 910px;
+        margin: 0 auto;
+    }
+    .webcast-tit{
+        height: 14px;
+        span{
+            line-height: 1;
+            line-height: 14px;
+        }
+        .webcast-right{
+            padding: 0 9px;
+            font-size: 12px;
+        }
+        .tit-menu-vod{
+            cursor: pointer;
+        }
+    }
+    
+    .webcast-content{
+        overflow: hidden;
+        margin-top: 20px;
+        .webcast-video{
+            float: left;
+            width: 590px;
+            border-radius: 4px;
+            background-color: #ffffff;
+            box-shadow: 0 1px 4px 0 rgba(4, 0, 0, 0.08);
+        }
+        .video-wrap{
+            padding: 5px;
+            position: relative;
+            width: 100%;
+            height: 325px;
+            #id-video-wrap{
+                width: 100%;
+                height: 100%;
+                overflow: hidden;
+                background-color: #ccc;
+            }
+            .cover-webcast{
+                top: 0;
+                left: 0;
+                bottom: 0;
+                width: 100%;
+                color: #fff;
+                font-size: 15px;
+                position: absolute;
+                background-color: rgba(0, 0, 0, 0.85);
+                div{
+                    top: 50%;
+                    left: 50%;
+                    position: absolute;
+                    transform: translate(-50%, -50%);
+                }
+                p{
+                    line-height: 2;
+                    text-align: center;
+                }
+            }
+        }
+        .video-tit{
+            padding: 30px 20px;
+            .video-tit-item{
+                
+            }
+            .video-share-word{
+                margin-right: 7px;
+            }
+            .video-share{
+                float: right;
+            }
+            .video-tit-name{
+                line-height: 1;
+                font-size: 18px;
+                color: #3e3e3e;
+                font-weight: 500;
+            }
+            .wechat{
+                cursor: pointer;
+                font-size: 14px;
+                padding: 3px 5px;
+                border: solid 1px #ededed;
+                background-color: #fafafa;
+            }
+            .weibo{
+                cursor: pointer;
+                font-size: 14px;
+                padding: 3px 5px;
+                border: solid 1px #ededed;
+                background-color: #fafafa;
+            }
+            .wechat:hover{
+                color: #42ae3c;
+            }
+            .weibo:hover{
+                color: #d21e27;
+            }
+            .video-special{
+                line-height: 1;
+                font-size: 12px;
+                color: #3e3e3e;
+                margin-top: 25px;
+                span{
+                    color: #adadad;
+                }
+            }
+            .video-watch{
+                line-height: 1;
+                font-size: 12px;
+                color: #3e3e3e;
+                margin-top: 12px;
+                span{
+                    color: #adadad;
+                }
+            }
+        }
+        .video-des{
+            font-size: 14px;
+            color: #adadad;
+            padding: 0 20px 30px;
+        }
+    }
+    .webcast-comment{
+        float: left;
+        width: 300px;
+        overflow: hidden;
+        margin-left: 20px;
+        border-radius: 4px;
+        box-sizing: border-box;
+        background-color: #fff;
+        box-shadow: 0 1px 4px 0 rgba(4, 0, 0, 0.08);
+        .comment-tit{
+            width: 100%;
+            height: 45px;
+            font-size: 14px;
+            padding: 0 15px;
+            line-height: 45px;
+        }
+        .video-list{
+            padding: 0 17px;
+            overflow: hidden;
+            .video-li{
+                cursor: pointer;
+                margin-bottom: 25px;
+            }
+            .video-li::after{
+                clear: both;
+                content: '';
+                display: table;
+            }
+            .video-li-img{
+                float: left;
+                width: 100px;
+                height: 55px;
+                background-color: #ccc;
+                img{
+                    width: 100%;
+                }
+            }
+            .video-li-des{
+                float: left;
+                width: 140px;
+                height: 36px;
+                padding: 4px;
+                font-size: 14px;
+                color: #999999;
+                overflow: hidden;
+                margin-left: 10px;
+                box-sizing: border-box;
+                display: -webkit-box;
+                -webkit-line-clamp: 2;
+                -webkit-box-orient: vertical;
+                overflow: hidden;
+            }
+        }
+    }
+}

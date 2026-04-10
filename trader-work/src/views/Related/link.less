@@ -1,0 +1,33 @@
+.link-container{
+    width: 100%;
+    padding: 30px;
+    .link-row{
+        font-size: 12px;
+        position: relative;
+        padding: 18px 40px 18px 10px;
+        border-bottom: 1px solid #e5e5e5;
+        &:hover{
+            box-shadow: 0 0 10px rgba(1,1,1,0.1);
+        }
+        .link-point{
+            top: 50%;
+            left: 10px;
+            width: 6px;
+            height: 6px;
+            border-radius: 50%;
+            position: absolute;
+            background-color: #dfdfdf;
+            transform: translateY(-50%);
+        }
+        .link-name{
+            margin-left: 20px;
+        }
+        .link-href{
+            float: right;
+            text-decoration: none;
+        }
+    }
+    div:first-child{
+        border-top: 1px solid #e5e5e5;
+    }
+}

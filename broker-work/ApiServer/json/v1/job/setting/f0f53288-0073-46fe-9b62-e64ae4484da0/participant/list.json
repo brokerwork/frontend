@@ -1,0 +1,158 @@
+{
+    "data": [
+        {
+            "email": "517207967@qq.com",
+            "entityNo": "ULKE",
+            "levelId": "0",
+            "name": "jerry",
+            "phone": "",
+            "right": "SUPER",
+            "roleId": "1",
+            "roleName": "销售总监",
+            "userId": "75463ffd-92df-4a6b-bd22-7a3d2afec6c6"
+        },
+        {
+            "email": "dfggdgfg@12121.com",
+            "entityNo": "TRFL",
+            "levelId": "33",
+            "levelName": "我是一层（前三层请别轻易删除）",
+            "name": "fdgvdfg",
+            "phone": "18565222236",
+            "right": "COMMON",
+            "roleId": "2",
+            "roleName": "销售经理",
+            "userId": "288a1454-2848-486f-ae3c-88d03e037522"
+        },
+        {
+            "email": "jasonn@lwork.com",
+            "entityNo": "UUVL",
+            "levelId": "32",
+            "levelName": "我是二层（前三层请别轻易删除）",
+            "name": "jasonn",
+            "phone": "",
+            "right": "ADMIN",
+            "roleId": "3",
+            "roleName": "销售经理2",
+            "userId": "69f92172-7550-44ee-9181-e69c3aabec55"
+        },
+        {
+            "email": "343787567@qq.com",
+            "entityNo": "OAMQ",
+            "levelId": "0",
+            "name": "周小礼1",
+            "phone": "",
+            "right": "COMMON",
+            "roleId": "3",
+            "roleName": "销售经理2",
+            "userId": "6e831416-4cda-4d98-93ed-b8874fb33589"
+        },
+        {
+            "email": "aabbb@qq.com",
+            "entityNo": "KNPG模糊化与删除节点测试",
+            "levelId": "103",
+            "levelName": "我的id是10000",
+            "name": "石小佳",
+            "phone": "17701324967",
+            "right": "ADMIN",
+            "roleId": "3",
+            "roleName": "销售经理2",
+            "userId": "383a4db7-ed24-45c2-8586-f1cd37058a16"
+        },
+        {
+            "email": "fghfh@qq.com",
+            "entityNo": "WWIZ",
+            "levelId": "33",
+            "levelName": "我是一层（前三层请别轻易删除）",
+            "name": "傅海峰",
+            "phone": "",
+            "right": "COMMON",
+            "roleId": "3",
+            "roleName": "销售经理2",
+            "userId": "f119ed26-cd90-4d62-8a45-44cab1b33dd2"
+        },
+        {
+            "email": "dgf@fsf.com",
+            "entityNo": "LFMP",
+            "levelId": "102",
+            "levelName": "我的id是10000",
+            "name": "色的观点",
+            "phone": "15115445541",
+            "right": "COMMON",
+            "roleId": "3",
+            "roleName": "销售经理2",
+            "userId": "aaf1bafa-4be7-4576-a1fa-a3d873076eec"
+        },
+        {
+            "email": "dfgdfg@sdf.com",
+            "entityNo": "HCOP",
+            "levelId": "102",
+            "levelName": "我的id是10000",
+            "name": "对方的风格的",
+            "phone": "16999885588",
+            "right": "COMMON",
+            "roleId": "3",
+            "roleName": "销售经理2",
+            "userId": "9285e4eb-f2ec-4908-a44c-2ee6e0d8e7be"
+        },
+        {
+            "email": "werwr@asda.com",
+            "entityNo": "RCAO",
+            "levelId": "54",
+            "levelName": "abc",
+            "name": "人人",
+            "phone": "15554556652",
+            "right": "COMMON",
+            "roleId": "3",
+            "roleName": "销售经理2",
+            "userId": "5f928690-b85a-4afb-8159-4f121ed36696"
+        },
+        {
+            "email": "cycle@lwork.com",
+            "entityNo": "NYXK",
+            "levelId": "126",
+            "levelName": "qqqq",
+            "name": "不cycle",
+            "phone": "",
+            "right": "COMMON",
+            "roleId": "3",
+            "roleName": "销售经理2",
+            "userId": "eb595363-fc49-4e07-98c2-5efc9fb7cc61"
+        },
+        {
+            "email": "102zdhmail@lwork.com",
+            "entityNo": "AEOU",
+            "levelId": "0",
+            "name": "李裴添加",
+            "phone": "",
+            "right": "COMMON",
+            "roleId": "3",
+            "roleName": "销售经理2",
+            "userId": "5c50cb5a-e82c-403f-a76c-2cec9f36b104"
+        },
+        {
+            "email": "bkjljlk@qq.com",
+            "entityNo": "TUCV",
+            "levelId": "103",
+            "levelName": "我的id是10000",
+            "name": "测试daisy",
+            "phone": "",
+            "right": "COMMON",
+            "roleId": "3",
+            "roleName": "销售经理2",
+            "userId": "606ca2f1-6940-44c9-a824-c1befc54f866"
+        },
+        {
+            "email": "lz@qq.com",
+            "entityNo": "CWCR",
+            "levelId": "200",
+            "levelName": "zdhcengji362",
+            "name": "老贾",
+            "phone": "17701324978",
+            "right": "COMMON",
+            "roleId": "3",
+            "userId": "a4bedfc7-ca97-4aa7-850d-3b81ef2283c8"
+        }
+    ],
+    "mcode": "m0000000",
+    "result": true
+}

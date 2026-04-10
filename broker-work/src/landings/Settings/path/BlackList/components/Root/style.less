@@ -1,0 +1,22 @@
+@import '~less/variables.less';
+
+.body {
+  :global(.lean-card-content) {
+    padding: 0;
+  }
+  :global(.lean-table) {
+    border-top: 1px solid transparent;
+  }
+  :global(.lean-card) {
+    overflow: hidden;
+  }
+}
+
+.right {
+  float: right;
+}
+:global(.disabled-btn) {
+  background-color: @disabled-color;
+  border-color: @disabled-color;
+  cursor: not-allowed;
+}

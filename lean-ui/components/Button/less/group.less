@@ -1,0 +1,33 @@
+.@{prefix}-btn-group {
+  white-space: nowrap;
+}
+.@{prefix}-btn-group > .@{prefix}-btn {
+  vertical-align: bottom;
+  &:first-child {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+  &:last-child {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    margin-left: -1px;
+  }
+  &:not(:first-child):not(:last-child) {
+    border-radius: 0;
+    margin-left: -1px;
+  }
+  &:hover,
+  &.hover,
+  &:focus,
+  &.focus,
+  &:active,
+  &.active,
+  &:disabled,
+  &.disabled {
+    position: relative;
+  }
+  &:focus,
+  &.focus {
+    z-index: 2;
+  }
+}

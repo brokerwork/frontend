@@ -1,0 +1,43 @@
+@import "~less/sc/variables.less";
+@radio-size: 16px;
+
+.radio {
+  position: relative;
+  display: flex;
+  margin: 0;
+  font-size: 12px;
+  cursor: pointer;
+  color: inherit;
+  align-items: center;
+
+  &.inline {
+    display: inline-flex;
+
+    & + & {
+      margin-left: 5px;
+    }
+  }
+  input {
+    display: none;
+  }
+
+  :global {
+    .fa {
+      font-size: @radio-size;
+      vertical-align: middle;
+      height: @radio-size;
+      width: @radio-size;
+      line-height: @radio-size;
+      margin-right: 2px;
+      color: @text-color-light;
+    }
+
+    input:checked + .fa {
+      color: @brand-primary;
+    }
+    input:disabled + .fa {
+      color: @base-disabled-bg-color;
+      cursor: @cursor-disabled;
+    }
+  }
+}

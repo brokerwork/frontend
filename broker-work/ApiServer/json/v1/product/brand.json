@@ -1,0 +1,17 @@
+{
+  "data": {
+    "companyAddress": "http://lwork.com",
+    "companyEmail": "support@lwork.com",
+    "companyName": "百度",
+    "companyPhone": "",
+    "companySite": "http://lwork.com",
+    "customerDomain": "",
+    "productDomain": "broker.btmsc.lwork.com",
+    "productIcon": "http://broker-upload.oss-cn-hangzhou.aliyuncs.com/test/c4d65f68-b318-45f1-b401-7bdfb159458f.ico",
+    "productLogo": "http://broker-upload.oss-cn-hangzhou.aliyuncs.com/test/7d87c91d-241c-4b70-aebb-93a9c5fdffed.JPG",
+    "siteName": "这是我们自己的网站-LEAN WORK！",
+    "tpId": "57b6d2b6ac67c5237dff8cc3"
+  },
+  "mcode": "m0000000",
+  "result": true
+}

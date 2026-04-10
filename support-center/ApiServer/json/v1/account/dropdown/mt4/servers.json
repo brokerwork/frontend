@@ -1,0 +1,24 @@
+{
+  "data": [
+    {
+      "tenantId": "T001001",
+      "serverId": "1",
+      "vendor": "MT4",
+      "serverType": "real",
+      "desc": "MT4真实测试1",
+      "beginNo": 0,
+      "endNo": 0
+    },
+    {
+      "tenantId": "T001001",
+      "serverId": "5",
+      "vendor": "MT4",
+      "serverType": "real",
+      "desc": "MT4真实测试2-我就是第二个真实服务器",
+      "beginNo": 0,
+      "endNo": 0
+    }
+  ],
+  "mcode": "m0000000",
+  "result": true
+}

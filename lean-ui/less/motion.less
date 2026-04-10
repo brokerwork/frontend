@@ -1,0 +1,14 @@
+@import "motion/fade";
+@import "motion/move";
+@import "motion/other";
+@import "motion/slide";
+@import "motion/swing";
+@import "motion/zoom";
+
+// For common/openAnimation
+.lean-motion-collapse {
+  overflow: hidden;
+  &-active {
+    transition: height .15s @ease-in-out, opacity .15s @ease-in-out !important;
+  }
+}

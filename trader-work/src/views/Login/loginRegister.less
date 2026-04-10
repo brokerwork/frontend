@@ -1,0 +1,121 @@
+@green: #00a8a6;
+@line: #e5e5e5;
+
+.login-reg-wrap{
+    .ant-tabs-bar{
+        margin-bottom: 20px;
+    }
+    .ant-tabs-nav{
+        width: 100%;
+        .ant-tabs-tab{
+            width: 50%;
+            margin-right: 0;
+            color: #999999;
+            text-align: center;
+        }
+        .ant-tabs-tab:active, .ant-tabs-tab:hover, .ant-tabs-tab-active{
+            color: @green;
+        }
+        .ant-tabs-ink-bar{
+            background-color: @green;
+        }
+    }
+    .ant-input{
+        font-size: 14px;
+        height: 32px;
+        border-radius: 4px;
+        border: 1px solid #c5c5c5;
+    }
+    .ant-input:hover, .ant-input:focus {
+        border-color: @green;
+        box-shadow: 0 0 0 2px rgba(0, 168, 168, 0.2);
+    }
+    .ant-input::-webkit-input-placeholder{
+        color: #c5c5c5;
+    }
+    .ant-btn{
+        border: 0;
+        width: 100%;
+        height: 40px;
+        color: #fff;
+        border-radius: 4px;
+        background-color: @green;
+    }
+    .reg-suc-wrap{
+        border-radius: 4px;
+        box-sizing: border-box;
+        padding: 30px 25px 40px;
+        background-color: #ffffff;
+        box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.25);
+        .reg-suc-center{
+            text-align: center;
+            .ant-btn{
+                border: 0;
+                width: 100%;
+                height: 40px;
+                color: #fff;
+                border-radius: 4px;
+                background-color: @green;
+            }
+            .reg-suc-word{
+                line-height: 1;
+                font-size: 14px;
+                color: #999999;
+                margin: 29px 0 61px;
+            }
+        }
+        
+    }
+    .update-pswd-form{
+        border-radius: 4px;
+        box-sizing: border-box;
+        padding: 20px 25px 40px;
+        background-color: #ffffff;
+        box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.25);
+        .update-pswd-wrap{
+            .update-pswd-tit{
+                font-size: 14px;
+                color: #333333;
+                font-family: PingFangSC;
+            }
+            .update-pswd-hint{
+                margin: 20px 0;
+                font-size: 14px;
+                color: #999999;
+                font-family: PingFangSC;
+                padding: 10px 37px 10px 0;
+                background-color: #f3f6f6;
+                border: 1px solid #e8eeed;
+                .iconfont{
+                    font-size: 14px;
+                    padding: 0 11px 0 12px;
+                }
+                .update-pswd-hint-word{
+                    padding-left: 37px;
+                    text-indent: -37px;
+                }
+            }
+        }
+        .btn-wrap{
+            text-align: right;
+            .ant-btn{
+                width: auto;
+                height: auto;
+                padding: 9px 22px;
+            }
+            .no-btn{
+                color: @green;
+                margin-right: 10px;
+                background-color: #fff;
+                border: solid 1px @green;
+            }
+            .yes-btn{
+                border: solid 1px @green;
+            }
+            .no-btn:hover{
+                color: #fff;
+                background-color: @green;
+            }
+        }
+    }
+}

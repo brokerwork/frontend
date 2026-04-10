@@ -1,0 +1,96 @@
+@import '~less/variables.less';
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  &.normal {
+    max-width: 950px;
+  }
+}
+
+.item {
+  display: flex;
+  margin-bottom: 15px;
+
+  &.item-longLabel {
+    width: 100%;
+    .label {
+      width: 70%;
+    }
+    .control {
+      width: 30%;
+    }
+  }
+  &.item-1 {
+    width: 100%;
+    .label {
+      width: 20%;
+    }
+    .control {
+      width: 80%;
+    }
+  }
+  &.item-2 {
+    width: 50%;
+    .label {
+      width: 40%;
+    }
+    .control {
+      width: 60%;
+    }
+  }
+  &.item-3 {
+    width: 33.33%;
+    .label {
+      width: 40%;
+    }
+    .control {
+      width: 60%;
+    }
+  }
+  &.item-4 {
+    width: 25%;
+    .label {
+      width: 40%;
+    }
+    .control {
+      width: 60%;
+    }
+  }
+  .control .control {
+    width: 100%;
+  }
+}
+
+.label {
+  padding: 5px 15px 0 0;
+  text-align: right;
+}
+
+.control {
+  &.checkbox {
+    padding-top: 5px;
+  }
+  :global(.form-control) {
+    font-size: 12px;
+    padding: 3px 10px;
+  }
+}
+
+.errorMsg {
+  color: @red;
+  padding-top: 3px;
+  font-size: 12px;
+}
+
+.ques-content {
+  white-space: nowrap;
+  &.long {
+    white-space: normal;
+    min-width: 200px;
+  }
+}
+
+.label-tips {
+  margin-left: 3px;
+}

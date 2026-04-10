@@ -1,0 +1,41 @@
+@import '~less/variables.less';
+
+.selector {
+  height: 300px;
+}
+
+.column-group {
+  height: 100%;
+  overflow-x: auto;
+  display: flex;
+  border-radius: 4px;
+  .selector {
+    border-radius: 0;
+    min-width: 100px;
+  }
+  .sub-picker {
+    margin-left: 20px;
+  }
+}
+.grid-control{
+  margin-top: 10px;
+  span {
+    margin-left:10px;
+  }
+  .radio {
+    vertical-align: sub;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+}
+
+.user-selector {
+  display: block;
+  padding: 10px;
+  margin: -10px;
+}
+.dropdown{
+  margin-bottom: 10px;
+  max-width: 230px;
+}

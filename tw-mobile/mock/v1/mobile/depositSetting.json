@@ -1,0 +1,57 @@
+{
+    "result": true,
+    "data": {
+        "charges": 0,
+        "exchangeRateSettings": [{
+                "exchange": 0.012,
+                "exchangeFloat": 0,
+                "exchangeMode": "Manual",
+                "payCurrency": "CNY",
+                "showExchange": false,
+                "transactionCurrency": "USD"
+            },
+            {
+                "exchange": 1.459015,
+                "exchangeFloat": 0.2,
+                "exchangeMode": "Automatic",
+                "payCurrency": "NZD",
+                "showExchange": true,
+                "transactionCurrency": "USD"
+            }
+        ],
+        "maxDeposit": 1000,
+        "payList": [{
+                "currency": "CNY",
+                "name": "LW支付通道",
+                "providerId": "3",
+                "providerName": "sina支付"
+            },
+            {
+                "currency": "CNY",
+                "name": "智付",
+                "providerId": "10",
+                "providerName": "智付"
+            },
+            {
+                "currency": "NZD",
+                "name": "UNIONPAY",
+                "providerId": "27",
+                "providerName": "UNIONPAY"
+            },
+            {
+                "currency": "CNY",
+                "name": "融智付",
+                "providerId": "32",
+                "providerName": "融智付"
+            },
+            {
+                "currency": "CNY",
+                "name": "多得宝",
+                "providerId": "33",
+                "providerName": "多得宝"
+            }
+        ],
+        "showCharge": true,
+        "telegraphic": "<html>\n<head>\n\t<title></title>\n</head>\n<body>\n<p>ad sdfgd dfg fdg dsfg dsfg fdg fdg dsfg fdg&nbsp;</p>\n</body>\n</html>\n"
+    }
+}

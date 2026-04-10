@@ -1,0 +1,60 @@
+@import "./mix.less";
+@import "./group.less";
+.@{prefix}-btn {
+  height: @button-height-default;
+  font-size: @button-text-size;
+  padding-left: @button-padding-horizontal-default;
+  padding-right: @button-padding-horizontal-default;
+  padding-top: 0;
+  padding-bottom: 0;
+  line-height: 1;
+}
+
+.@{prefix}-btn-small {
+  font-size: @button-text-size-small;
+  height: @button-height-small;
+  padding-left: @button-padding-horizontal-small;
+  padding-right: @button-padding-horizontal-small;
+}
+
+.@{prefix}-btn-large {
+  font-size: @button-text-size-large;
+  height: @button-height-large;
+  padding-left: @button-padding-horizontal-large;
+  padding-right: @button-padding-horizontal-large;
+}
+
+.@{prefix}-btn-icon {
+  padding: 0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  &.@{prefix}-btn {
+    height: @button-icon-size;
+    width: @button-icon-size;
+  }
+  &.@{prefix}-btn-small {
+    height: @button-icon-size-small;
+    width: @button-icon-size-small;
+  }
+  &.@{prefix}-btn-large {
+    height: @button-icon-size-large;
+    width: @button-icon-size-large;
+  }
+}
+
+.@{prefix}-btn-default {
+  .generate-button( @text-color, @button-border-color-default, @button-backgroud-default, @button-backgroud-default-hover, @button-backgroud-default-disabled, @button-border-color-default-disabled, @button-box-shadow-default-active, @button-box-shadow-default-focus);
+}
+
+.@{prefix}-btn-primary {
+  .generate-button( @button-text-color, @button-border-color-primary, @button-backgroud-primary, @button-backgroud-primary-hover, @button-backgroud-primary-disabled, @button-border-color-primary-disabled, @button-box-shadow-primary-active, @button-box-shadow-primary-focus);
+}
+
+.@{prefix}-btn-success {
+  .generate-button( @button-text-color, @button-border-color-success, @button-backgroud-success, @button-backgroud-success-hover, @button-backgroud-success-disabled, @button-border-color-success-disabled, @button-box-shadow-success-active, @button-box-shadow-success-focus);
+}
+
+.@{prefix}-btn-danger {
+  .generate-button( @button-text-color, @button-border-color-danger, @button-backgroud-danger, @button-backgroud-danger-hover, @button-backgroud-danger-disabled, @button-border-color-danger-disabled, @button-box-shadow-danger-active, @button-box-shadow-danger-focus);
+}

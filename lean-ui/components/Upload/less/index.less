@@ -1,0 +1,107 @@
+@import "./mix.less";
+.@{prefix}-upload {
+  &.is-head{
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    .upload-button{
+        min-width: 105px;
+        margin-top: 16px;
+    }
+    .@{prefix}-upload-container{
+        background: transparent;
+        margin-bottom: 0;
+        padding-bottom: 0;
+        border: 0;
+        &:hover .icon{
+          display: none;
+        }
+        .icon,span,.progress-container,p{
+            display: none;
+        }
+      img{
+          width: 120px;
+          height: 120px;
+          border-radius: 50%;
+      }
+    }
+    
+  }
+  .progress-container {
+    margin-top: 7px;
+    height: 1px;
+    background-color:  #dfe3e8;
+    .progress {
+      transition: all .4s;
+      height: 1px;
+      background-color: #4285f4;
+    }
+  }
+  .upload-button {
+    margin-bottom: 12px;
+    .icon-lw-upload {
+      margin-left: 6px;
+    }
+  }
+  
+  .upload-drag {
+    box-shadow: 0 1px 1px 0 rgba(229, 232, 235, 0.5);
+    border: dashed 1px #dfe3e8;
+    width: 360px;
+    height: 180px;
+    margin-bottom: 12px;
+    font-size: 13px;
+    color: #637381;
+    text-align: center;
+    &.enter, &:hover {
+      border: dashed 1px #4285f4;
+    }
+    .icon {
+      display: block;
+      font-size: 56px;
+      margin: 38px 0 10px;
+
+    }
+  }
+  .@{prefix}-upload-container {
+    .upload-container(
+      border,
+      @primary,
+      @upload-container-width,
+      @upload-container-padding,
+      @border-radius-base,
+      @upload-cursor-background-color,
+      none,
+      @upload-img-width,
+      @upload-img-height,
+      @upload-img-mr,
+      @upload-font-size,
+      @upload-color
+    );
+    p {
+      position: absolute;
+      top: 16px;
+      right: 20px;
+      margin: 0;
+      color: #919eab;
+      font-size: 13px;
+    }
+  }
+  .@{prefix}-upload-container-drag {
+    .upload-container(
+      border-bottom,
+      none,
+      @upload-container-drag-width,
+      @upload-container-drag-padding,
+      @upload-container-drag-border,
+      @component-background,
+      @upload-container-drag-cursor,
+      @upload-drag-img-width,
+      @upload-drag-img-height,
+      @upload-drag-img-mr,
+      @upload-drag-font-size,
+      @upload-drag-color
+    );
+    box-shadow: 0 1px 1px 0 rgba(229, 232, 235, 0.5);
+  }
+}

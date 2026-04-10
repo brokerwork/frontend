@@ -1,0 +1,116 @@
+.login-reg-wrap .ant-tabs-bar {
+  margin-bottom: 20px;
+}
+.login-reg-wrap .ant-tabs-nav {
+  width: 100%;
+}
+.login-reg-wrap .ant-tabs-nav .ant-tabs-tab {
+  width: 50%;
+  margin-right: 0;
+  color: #999999;
+  text-align: center;
+}
+.login-reg-wrap .ant-tabs-nav .ant-tabs-tab:active,
+.login-reg-wrap .ant-tabs-nav .ant-tabs-tab:hover,
+.login-reg-wrap .ant-tabs-nav .ant-tabs-tab-active {
+  color: #00a8a6;
+}
+.login-reg-wrap .ant-tabs-nav .ant-tabs-ink-bar {
+  background-color: #00a8a6;
+}
+.login-reg-wrap .ant-input {
+  font-size: 14px;
+  height: 32px;
+  border-radius: 4px;
+  border: 1px solid #c5c5c5;
+}
+.login-reg-wrap .ant-input:hover,
+.login-reg-wrap .ant-input:focus {
+  border-color: #00a8a6;
+  box-shadow: 0 0 0 2px rgba(0, 168, 168, 0.2);
+}
+.login-reg-wrap .ant-input::-webkit-input-placeholder {
+  color: #c5c5c5;
+}
+.login-reg-wrap .ant-btn {
+  border: 0;
+  width: 100%;
+  height: 40px;
+  color: #fff;
+  border-radius: 4px;
+  background-color: #00a8a6;
+}
+.login-reg-wrap .reg-suc-wrap {
+  border-radius: 4px;
+  box-sizing: border-box;
+  padding: 30px 25px 40px;
+  background-color: #ffffff;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.25);
+}
+.login-reg-wrap .reg-suc-wrap .reg-suc-center {
+  text-align: center;
+}
+.login-reg-wrap .reg-suc-wrap .reg-suc-center .ant-btn {
+  border: 0;
+  width: 100%;
+  height: 40px;
+  color: #fff;
+  border-radius: 4px;
+  background-color: #00a8a6;
+}
+.login-reg-wrap .reg-suc-wrap .reg-suc-center .reg-suc-word {
+  line-height: 1;
+  font-size: 14px;
+  color: #999999;
+  margin: 29px 0 61px;
+}
+.login-reg-wrap .update-pswd-form {
+  border-radius: 4px;
+  box-sizing: border-box;
+  padding: 20px 25px 40px;
+  background-color: #ffffff;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.25);
+}
+.login-reg-wrap .update-pswd-form .update-pswd-wrap .update-pswd-tit {
+  font-size: 14px;
+  color: #333333;
+  font-family: PingFangSC;
+}
+.login-reg-wrap .update-pswd-form .update-pswd-wrap .update-pswd-hint {
+  margin: 20px 0;
+  font-size: 14px;
+  color: #999999;
+  font-family: PingFangSC;
+  padding: 10px 37px 10px 0;
+  background-color: #f3f6f6;
+  border: 1px solid #e8eeed;
+}
+.login-reg-wrap .update-pswd-form .update-pswd-wrap .update-pswd-hint .iconfont {
+  font-size: 14px;
+  padding: 0 11px 0 12px;
+}
+.login-reg-wrap .update-pswd-form .update-pswd-wrap .update-pswd-hint .update-pswd-hint-word {
+  padding-left: 37px;
+  text-indent: -37px;
+}
+.login-reg-wrap .update-pswd-form .btn-wrap {
+  text-align: right;
+}
+.login-reg-wrap .update-pswd-form .btn-wrap .ant-btn {
+  width: auto;
+  height: auto;
+  padding: 9px 22px;
+}
+.login-reg-wrap .update-pswd-form .btn-wrap .no-btn {
+  color: #00a8a6;
+  margin-right: 10px;
+  background-color: #fff;
+  border: solid 1px #00a8a6;
+}
+.login-reg-wrap .update-pswd-form .btn-wrap .yes-btn {
+  border: solid 1px #00a8a6;
+}
+.login-reg-wrap .update-pswd-form .btn-wrap .no-btn:hover {
+  color: #fff;
+  background-color: #00a8a6;
+}

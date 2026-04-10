@@ -1,0 +1,76 @@
+@import '~less/sc/variables.less';
+
+.info {
+  display: flex;
+  border: 1px solid @wrapper-border-color;
+  border-radius: 4px;
+  align-items: center;
+  padding: 20px 15px;
+  margin-bottom: 15px;
+}
+
+.user-info {
+  display: flex;
+  align-items: center;
+}
+
+.user-pic {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 62px;
+  height: 62px;
+  overflow: hidden;
+  border-radius: 50%;
+
+  img {
+    max-height: 100%;
+  }
+}
+
+.user-detail {
+  display: flex;
+  flex-direction: column;
+  padding-left: 15px;
+}
+
+.name {
+  font-size: 18px;
+  color: @base-text-dark-color;
+}
+
+.detail {
+  list-style: none;
+  margin: 5px 0 0;
+  padding: 0;
+
+  li {
+    display: inline-block;
+    color: @base-text-light-color;
+    margin-right: 60px;
+  }
+}
+
+.balance {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+
+.count {
+  padding-bottom: 5px;
+}
+
+.count-number {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.buttonGroup {
+  > button:not(:last-child) {
+    margin-right: 12px;
+  }
+}

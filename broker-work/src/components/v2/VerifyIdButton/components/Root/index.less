@@ -1,0 +1,41 @@
+.tips {
+    // color: red;
+    .tips-box {
+        width: 422px;
+        max-width: 422px;
+        left: auto;
+        right: 0;
+        transform: translateX(-12px);
+        top: calc(~'100% + 17px');
+        :global(.arrow) {
+            left: auto;
+            right: 50px;
+            border-width: 5px;
+            margin-left: -5px;
+        }
+       
+        :global(.arrow:after) {
+            border-bottom-color: #f5f5f5;
+        }
+        :global(.popover-content) {
+            // padding:42px 40px;
+            padding: 0;
+        }
+    }
+}
+
+.result-title {
+    background-color: #f5f5f5;
+    border-radius: 6px 6px 0 0;
+    height: 60px;
+    line-height: 60px;
+    font-size: 16px;
+    font-weight: 500;
+    padding-left: 40px;
+    color: #333333;
+}
+
+.panel-block {
+    border-radius: 0 0 6px 6px;
+    padding: 20px 40px 42px 40px;
+}

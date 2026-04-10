@@ -1,0 +1,74 @@
+:global{
+	.g-mask{
+		z-index: 100;
+		position: fixed;
+		top:0;
+		right:0;
+		bottom:0;
+		left:0;
+		background-color: rgba(0,0,0,.8)
+	}
+	.datepicker{
+		background-color: #fff;
+		position: fixed;
+		width: 100%;
+		bottom: 0;
+		transition: all 0.2s;
+		.datepicker-head{
+			border: 1px solid rgba(0,0,0,.1);
+			padding: 10px;
+			display:flex;
+			flex-shrink: space-between;
+			.cancel{
+				flex:1;
+				font-size: 14px;
+				text-align: left;
+				color: #108ee9;
+			}
+			.title{
+				flex:1;
+				font-size: 14px;
+				text-align: center;
+			}
+			.confirm{
+				flex:1;
+				font-size: 14px;
+				text-align: right;
+				color: #108ee9;
+			}
+		}
+		.datepicker-body{
+			position: relative;
+			display:flex;
+			height: 280px;
+			overflow: auto;
+			font-size: 14px;
+			.indicator{
+				position: absolute;
+				top: 120px;
+				height: 40px;
+				width: 100%;
+				border-top: 1px solid rgba(0,0,0,.1);
+				border-bottom: 1px solid rgba(0,0,0,.1);
+			}
+			.column{
+				position: relative;
+				flex:1;
+				overflow:auto;
+				.col-mask{
+					
+				}
+				.col-items{
+					padding: 120px 0;
+				}
+				text-align:center;
+				.row{
+					height: 40px;
+					line-height: 40px;
+				}
+			}
+		}
+	
+	}
+
+}

@@ -1,0 +1,15 @@
+@import '~less/variables.less';
+
+.right {
+  float: right;
+}
+
+.body {
+  // 去掉table顶部的那根线
+  :global(.lean-table) {
+    border-top: 1px solid transparent;
+  }
+  :global(.lean-card-content) {
+    padding: 1px 0 40px;
+  }
+}

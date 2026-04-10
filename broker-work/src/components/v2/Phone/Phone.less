@@ -1,0 +1,80 @@
+@import '~less/variables.less';
+
+.container {
+  display: flex;
+  position: relative;
+}
+
+.dropdown {
+  position: initial;
+
+  :global(.lean-select) {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+  :global(.lean-select-value) {
+    margin-top: -2px;
+  }
+}
+
+.input {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.error {
+  .input,
+  .dropdown:global(.btn-group button.btn) {
+    border-color: @red;
+  }
+}
+
+.country {
+  display: flex;
+  align-items: center;
+}
+
+.country-name {
+  margin: 0 5px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  flex: 1;
+  word-break: keep-all;
+  max-width: 80px;
+}
+
+.country-code {
+  margin-left: 5px;
+}
+
+.code {
+  display: none;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 2;
+  font-size: 13px;
+  color: #303842;
+  height: 32px;
+  line-height: 32px;
+  width: 40px;
+  text-align: center;
+}
+
+.isSelected {
+  .code {
+    display: block;
+  }
+
+  .input-wrap {
+    .input {
+      // padding-left: 40px;
+    }
+  }
+}
+
+.input-wrap {
+  position: relative;
+  flex: 1;
+  margin-left: -1px;
+}

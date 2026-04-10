@@ -1,0 +1,142 @@
+{
+  "data": [
+    {
+      "allStep": 1,
+      "categoryName": "开户",
+      "categoryId": "34146884-0e07-4e3c-a66a-3d6f37a5fcac",
+      "createTime": 1479794457127,
+      "creator": {
+        "key": "121",
+        "name": "121"
+      },
+      "emergency": false,
+      "endTime": 1479984457127,
+      "itemId": "f0f53288-0073-46fe-9b62-e64ae4484da0",
+      "itemName": "TA",
+      "jobId": "147915b9-ebdf-4c5b-9cfc-3be96e11f819",
+      "jobName": "申请人：徐天翔；申请账号：321456",
+      "jobTag": "",
+      "jobType": "JOB_TYPE_TA_DEPOSIT",
+      "modifyTime": 1479794457127,
+      "nowStep": 0,
+      "priority": "3",
+      "processorList": [
+        {
+          "key": "121",
+          "name": "tom"
+        },{
+          "key": "121",
+          "name": "sam"
+        }
+      ],
+      "state": "Submited",
+      "verify": true,
+      "amount": "$100",
+      "payState": "已支付"
+    },
+    {
+      "allStep": 1,
+      "categoryName": "开户",
+      "categoryId": "34146884-0e07-4e3c-a66a-3d6f37a5fcac",
+      "createTime": 1479794457127,
+      "creator": {
+        "key": "121",
+        "name": "121"
+      },
+      "emergency": false,
+      "endTime": 1479984457127,
+      "itemId": "f0f53288-0073-46fe-9b62-e64ae4484da0",
+      "itemName": "TA",
+      "jobId": "147915b9-ebdf-4c5b-9cfc-3be96e11f819",
+      "jobName": "申请人：徐天翔；申请账号：321456",
+      "jobTag": "",
+      "jobType": "JOB_TYPE_TA_DEPOSIT",
+      "modifyTime": 1479794457127,
+      "nowStep": 0,
+      "priority": "2",
+      "processorList": [
+        {
+          "key": "121",
+          "name": "tom"
+        },{
+          "key": "121",
+          "name": "sam"
+        }
+      ],
+      "state": "Submited",
+      "verify": true,
+      "amount": "$100",
+      "payState": "已支付"
+    },
+    {
+      "allStep": 1,
+      "categoryName": "开户",
+      "categoryId": "34146884-0e07-4e3c-a66a-3d6f37a5fcac",
+      "createTime": 1479794457127,
+      "creator": {
+        "key": "121",
+        "name": "121"
+      },
+      "emergency": false,
+      "endTime": 1479704457127,
+      "itemId": "f0f53288-0073-46fe-9b62-e64ae4484da0",
+      "itemName": "TA",
+      "jobId": "147915b9-ebdf-4c5b-9cfc-3be96e11f819",
+      "jobName": "申请人：徐天翔；申请账号：321456",
+      "jobTag": "",
+      "jobType": "JOB_TYPE_TA_DEPOSIT",
+      "modifyTime": 1479794457127,
+      "nowStep": 0,
+      "priority": "1",
+      "processorList": [
+        {
+          "key": "121",
+          "name": "tom"
+        },{
+          "key": "121",
+          "name": "sam"
+        }
+      ],
+      "state": "Dealed",
+      "verify": true,
+      "amount": "$100",
+      "payState": "已支付"
+    },
+    {
+      "allStep": 1,
+      "categoryName": "开户",
+      "categoryId": "34146884-0e07-4e3c-a66a-3d6f37a5fcac",
+      "createTime": 1479794457127,
+      "creator": {
+        "key": "121",
+        "name": "121"
+      },
+      "emergency": false,
+      "endTime": 1479704457127,
+      "itemId": "f0f53288-0073-46fe-9b62-e64ae4484da0",
+      "itemName": "TA",
+      "jobId": "147915b9-ebdf-4c5b-9cfc-3be96e11f819",
+      "jobName": "申请人：徐天翔；申请账号：321456",
+      "jobTag": "",
+      "jobType": "JOB_TYPE_TA_DEPOSIT",
+      "modifyTime": 1479794457127,
+      "nowStep": 0,
+      "priority": "1",
+      "processorList": [
+        {
+          "key": "121",
+          "name": "tom"
+        },{
+          "key": "121",
+          "name": "sam"
+        }
+      ],
+      "state": "Closed",
+      "verify": true,
+      "amount": "$100",
+      "payState": "已支付"
+    }
+  ],
+  "mcode": "m0000000",
+  "result": true
+}

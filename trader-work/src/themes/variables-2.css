@@ -1,0 +1,320 @@
+/*
+科技 - 亮黑
+*/
+/* ---------------------> common <--------------------- */
+/* 主题色 */
+/** select选中框的选中的色值 */
+/** select选中下拉框的选中的色值 */
+/* 鼠标hover到主题色上后变化的颜色 */
+/* 主题色作为背景的一般情况下对应的字体颜色 */
+/* ---------------------> widgets <--------------------- */
+/* ---------------------> components <--------------------- */
+/* 左侧菜单背景图片 */
+/* 左侧菜单背景色 */
+/* 左侧菜单顶部logo区域背景色 */
+/* 左侧菜单一般字体颜色 */
+/* 左侧菜单鼠标hover一般字体颜色 */
+/* 左侧子菜单背景色 */
+/* 左侧被选中的菜单的字体颜色 */
+/* 左侧菜单中表示被选中项的高亮部分的颜色 */
+/* 左侧菜单底部工具栏上边框颜色 */
+/* ---------------------> login <--------------------- */
+/* 登录页背景图片 */
+/* 登录页左边背景图片 */
+/* 登录页右边背景图片 */
+/* 登录页背景色 */
+/* 登录页背景图片填充方式 */
+/* 登录页随主题变化元素的主色 */
+/* 登录页随主题变化元素的主色被hover后的颜色 */
+/* 登录页随主题变化元素的辅色 */
+/* 登录页随主题变化元素的融合色 */
+/* 登录页输入框用户输入字体颜色 */
+/* 登录页输入框placeholder字体颜色 */
+/* 登录页输入框背景色 */
+/* 快速开户link字体颜色 */
+.theme-2 .ant-input:focus,
+.theme-2 .ant-input:hover {
+  border-color: #b89972;
+  box-shadow: 0 0 0 2px rgba(184, 153, 114, 0.2);
+}
+.theme-2 .ant-pagination-item:focus,
+.theme-2 .ant-pagination-item:hover {
+  border-color: #b89972;
+}
+.theme-2 .ant-pagination-item:focus a,
+.theme-2 .ant-pagination-item:hover a {
+  color: #b89972;
+}
+.theme-2 .ant-pagination-item-active a,
+.theme-2 .ant-pagination-item-active:focus a,
+.theme-2 .ant-pagination-item-active:hover a {
+  color: #ffffff;
+}
+.theme-2 .ant-pagination-item-active,
+.theme-2 .ant-pagination-item-active:hover,
+.theme-2 .ant-pagination-item-active:focus {
+  background-color: #b89972;
+  border-color: #b89972;
+}
+.theme-2 .ant-pagination-prev:focus,
+.theme-2 .ant-pagination-next:focus,
+.theme-2 .ant-pagination-prev:hover,
+.theme-2 .ant-pagination-next:hover {
+  border-color: #b89972;
+}
+.theme-2 .ant-radio-wrapper .ant-radio-checked .ant-radio-inner {
+  border-color: #b89972;
+}
+.theme-2 .ant-radio-wrapper .ant-radio-checked .ant-radio-inner:after {
+  background-color: #b89972;
+}
+.theme-2 .ant-radio-wrapper:hover .ant-radio .ant-radio-inner {
+  border-color: #b89972;
+}
+.theme-2 .ant-select {
+  color: #b89972;
+}
+.theme-2 .ant-select-selection:focus,
+.theme-2 .ant-select-selection:active {
+  color: rgba(184, 153, 114, 0.8);
+}
+.theme-2 .ant-select-dropdown-menu-item:hover {
+  background-color: rgba(184, 153, 114, 0.2);
+}
+.theme-2 .ant-checkbox-wrapper:hover {
+  border-color: #b89972;
+}
+.theme-2 .ant-checkbox-wrapper:hover .ant-checkbox-inner {
+  border-color: #b89972;
+}
+.theme-2 .ant-checkbox:hover {
+  border-color: #b89972;
+}
+.theme-2 .ant-checkbox:hover .ant-checkbox-inner {
+  border-color: #b89972;
+}
+.theme-2 .ant-checkbox-checked .ant-checkbox-inner {
+  border-color: #b89972;
+  background-color: #b89972;
+}
+.theme-2 .ant-checkbox-input:focus + .ant-checkbox-inner {
+  border-color: #b89972;
+}
+.theme-2 .ant-calendar-picker:hover .ant-calendar-picker-input:not(.ant-input-disabled) {
+  border-color: #b89972;
+}
+.theme-2 .ant-calendar-selected-day .ant-calendar-date {
+  background: #b89972;
+}
+.theme-2 .ant-calendar-selected-day .ant-calendar-date:hover {
+  background: #b89972;
+}
+.theme-2 .tw-btn:hover {
+  color: #b89972;
+  border-color: #b89972;
+}
+.theme-2 .tw-btn-primary {
+  color: #fff;
+  background-color: #b89972;
+  border-color: transparent;
+}
+.theme-2 .tw-btn-primary:hover {
+  color: #fff;
+  background-color: #886944;
+  border-color: transparent;
+}
+.theme-2 .tw-btn-primary[disabled] {
+  color: rgba(0, 0, 0, 0.25);
+  background-color: #f7f7f7;
+  border-color: #d9d9d9;
+}
+.theme-2 .tw-btn-solid:hover {
+  color: #b89972;
+  border-color: #b89972;
+}
+.theme-2 .login-page {
+  background: url('../images/login_bg2.jpg') no-repeat;
+  background-size: cover;
+}
+.theme-2 .app-header .header-select .account-type-live {
+  border: 1px solid #b89972;
+  color: #b89972;
+}
+.theme-2 .app-header .header-select .account-curr,
+.theme-2 .app-header .header-select .account-select-label:hover {
+  color: #b89972;
+}
+.theme-2 .app-notice .header {
+  background: #b89972;
+}
+.theme-2 .app-sidebar {
+  background: #b89972 url('../images/menu_bg2.png') center center no-repeat;
+  background-size: cover;
+  color: #999;
+}
+.theme-2 .app-sidebar .app-logo {
+  background-color: rgba(42, 43, 47, 0.9);
+}
+.theme-2 .app-sidebar .app-menu .ant-menu-submenu-title:hover {
+  color: #c5c5c5;
+}
+.theme-2 .app-sidebar .app-menu .ant-menu-submenu {
+  color: #999;
+}
+.theme-2 .app-sidebar .app-menu .ant-menu-submenu > .ant-menu {
+  background-color: rgba(50, 51, 56, 0.9);
+}
+.theme-2 .app-sidebar .app-menu .ant-menu-submenu > .ant-menu > .ant-menu-item > a:hover {
+  color: #c5c5c5;
+}
+.theme-2 .app-sidebar .app-menu .ant-menu-submenu > .ant-menu > .ant-menu-item-selected {
+  color: #b89972;
+  border-left: 2px solid #b89972;
+}
+.theme-2 .app-sidebar .app-menu .ant-menu-submenu > .ant-menu > .ant-menu-item-selected > a {
+  color: #b89972;
+}
+.theme-2 .app-sidebar .app-menu .ant-menu-submenu > .ant-menu > .ant-menu-item-selected > a:hover {
+  color: #b89972;
+}
+.theme-2 .app-sidebar .synopsis .ant-tooltip-inner {
+  background-color: #b89972;
+}
+.theme-2 .app-sidebar .synopsis .ant-tooltip-arrow {
+  border-top-color: #b89972;
+}
+.theme-2 .app-sidebar .synopsis .side-language li:hover,
+.theme-2 .app-sidebar .synopsis .side-language .li-select {
+  color: #b89972;
+}
+.theme-2 .app-sidebar .about-us .logo {
+  background-color: rgba(42, 43, 47, 0.9);
+}
+.theme-2 .ant-steps .ant-steps-item-finish > .ant-steps-item-content > .ant-steps-item-title:after {
+  background-color: #b89972;
+}
+.theme-2 .ant-steps .ant-steps-item-finish .ant-steps-item-icon {
+  border-color: #b89972;
+}
+.theme-2 .ant-steps .ant-steps-item-finish .ant-steps-item-icon > .ant-steps-icon {
+  color: #b89972;
+}
+.theme-2 .ant-steps .ant-steps-item-finish .ant-steps-item-icon:before {
+  background: #b89972;
+}
+.theme-2 .ant-steps .ant-steps-item-finish .ant-steps-item-icon:after {
+  background: #b89972;
+}
+.theme-2 .ant-steps .ant-steps-item-process .ant-steps-item-icon {
+  border-color: #b89972;
+  background-color: #b89972;
+}
+.theme-2 .ant-steps .ant-steps-item-process .ant-steps-item-icon:before {
+  background: #b89972;
+}
+.theme-2 .ant-tabs .ant-tabs-nav .ant-tabs-tab-active {
+  color: #b89972;
+}
+.theme-2 .ant-tabs .ant-tabs-nav .ant-tabs-tab:hover {
+  color: #886944;
+}
+.theme-2 .ant-tabs .ant-tabs-ink-bar {
+  background-color: #b89972;
+}
+.theme-2 .overview .welcome-msg .last-login-msg {
+  color: #b89972;
+}
+.theme-2 .overview .welcome-msg .ant-tooltip-inner {
+  background-color: #b89972;
+}
+.theme-2 .overview .welcome-msg .ant-tooltip-arrow {
+  border-top-color: #b89972;
+}
+.theme-2 .overview .ant-table-tbody .account-default-flag {
+  color: #b89972;
+  border-color: #b89972;
+}
+.theme-2 .overview .ant-table-tbody .account-optbtn {
+  color: #b89972;
+}
+.theme-2 .overview .account-empty-text a,
+.theme-2 .overview .account-empty-text a:hover {
+  color: #b89972;
+}
+.theme-2 .live-container .li-hint {
+  color: #b89972;
+  border: 1px solid #b89972;
+}
+.theme-2 .webcast-container .webcast-content .ant-popover-buttons .ant-btn-primary {
+  color: #fff;
+  background-color: #b89972;
+  border-color: transparent;
+}
+.theme-2 .webcast-container .webcast-content .ant-popover-buttons .ant-btn-primary:hover {
+  color: #fff;
+  background-color: #886944;
+  border-color: transparent;
+}
+.theme-2 .bind-account .ant-select-selection:hover {
+  border-color: #b89972;
+}
+.theme-2 .account-info .account-changed-confirm {
+  color: #b89972;
+}
+.theme-2 .link-container .link-href {
+  color: #b89972;
+}
+.theme-2 .card-theme {
+  border-color: #b89972;
+}
+.theme-2 .card-theme .card-header {
+  background: #b89972;
+}
+.theme-2 .appropriate-test .result-item i {
+  color: #b89972;
+}
+.theme-2 .step-tit {
+  background: #b89972;
+}
+.theme-2 .reg-input-wrap .reg-only-btn {
+  color: #b89972;
+  border-color: #b89972;
+}
+.theme-2 .same-account .same-panel {
+  border: 1px solid #b89972;
+}
+.theme-2 .same-account .same-title {
+  background: #b89972;
+}
+.theme-2 .disclaimer .disclaimer-point {
+  color: #b89972;
+}
+.theme-2 .form-field-group .icon-delete-outline:hover {
+  color: #b89972;
+}
+.theme-2 .login-form-forget {
+  color: #b89972;
+}
+.theme-2 .login-page  .ant-btn {
+  border-color: #b89972 !important;
+  background-color: #b89972 !important;
+}
+.theme-2 .login-input-wrap .login-input-bottom span {
+  color: #b89972;
+}
+.theme-2 .ant-input-group-addon:hover {
+  border: 1px solid #b89972;
+  box-shadow: 0 0 0 2px rgba(184, 153, 114, 0.2);
+}
+.theme-2 .reg-input-phone-email {
+  color: #b89972;
+}
+.theme-2 .forget-pwd-wrapper .login a {
+  color: #b89972;
+}
+.theme-2 .register-mock-wrapper .select .ant-select-selection:hover {
+  border-color: #b89972;
+}
+.theme-2 .register-mock-wrapper .login a {
+  color: #b89972;
+}

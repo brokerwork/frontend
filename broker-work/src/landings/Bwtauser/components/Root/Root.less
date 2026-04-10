@@ -1,0 +1,10 @@
+@import '~less/variables.less';
+
+@iframePaddingWidth: @padding-base * 2;
+
+.container {
+  height: calc(~'100vh + @{iframePaddingWidth} - 3px');
+  width: calc(~'100% + @{iframePaddingWidth}');
+  margin: -@padding-base;
+  border: 0;
+}

@@ -1,0 +1,58 @@
+@import '~less/variables.less';
+
+.actionBar {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: @lean-padding-md;
+
+  :global(.lean-btn) {
+    & > span {
+      margin-right: 6px;
+      display: inline-block;
+    }
+  }
+}
+
+.info {
+  display: flex;
+
+  i {
+    font-size: 32px;
+    margin-right: @lean-padding-md;
+  }
+}
+
+.infoLabel {
+  font-size: 12px;
+  line-height: 1.5;
+  color: @lean-text-color;
+}
+
+.infoTitle {
+  font-size: 16px;
+  line-height: 1.5;
+  color: @lean-text-color-dark;
+}
+
+.actions {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+
+  & > button {
+    margin-bottom: @lean-padding-md;
+  }
+
+  :global(.lean-select-selection) {
+    background: white;
+  }
+
+  :global(.lean-select) {
+    height: unset;
+  }
+}
+
+.icon {
+  font-size: 32px;
+  margin-right: 16px;
+}

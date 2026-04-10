@@ -1,0 +1,37 @@
+@import '~less/variables.less';
+@import './LeftMenu/LeftMenu.less';
+
+.container {
+  background-color: @body-bg;
+  display: flex;
+  height: 100%;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  background-color: white;
+  overflow: auto;
+  height: 100%;
+
+  .content-wrapper {
+    flex: 1;
+    background-color: @body-bg;
+    padding: 15px;
+    overflow: auto;
+  }
+}
+
+.footer {
+  height: 28px;
+  box-shadow: inset 0 1px 0 0 #e5e8eb;
+  background-color: @lean-background-color;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 12px;
+  line-height: 28px;
+  color: @lean-text-color-light;
+}

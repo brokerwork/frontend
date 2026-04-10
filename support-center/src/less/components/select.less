@@ -1,0 +1,50 @@
+.select {
+
+  .dropdown-toggle {
+
+    .btn {
+      display: flex;
+      width: 100%;
+      border: 1px solid @border-color;
+      background-color: #fff;
+      text-align: left;
+      padding-left: 12px;
+      padding-right: 8px;
+
+      .text {
+        flex: 1 auto;
+        display: block;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        padding-right: 5px;
+      }
+
+      .arrow {
+        display: inline-block;
+        width: 0;
+        height: 0;
+        vertical-align: middle;
+        border-top: 4px solid;
+        border-right: 4px solid transparent;
+        border-left: 4px solid transparent;
+      }
+    }
+  }
+
+  &.inline {
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+  &.disabled {
+
+    .dropdown-toggle {
+      
+      .btn {
+        cursor: not-allowed;
+        background-color: @disabled-bg-color;
+      }
+    }
+  }
+}

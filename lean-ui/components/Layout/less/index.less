@@ -1,0 +1,58 @@
+.@{prefix}-layout{
+	box-sizing: border-box;
+	display: flex;
+	flex-direction: column;
+	flex: auto;
+	background-color: @layout-bg;
+}
+.@{prefix}-layout-horizontal{
+	flex-direction: row;
+}
+.@{prefix}-header{
+	background-color: @layout-header-bg;
+	width: 100%;
+	box-shadow: 0 -1px 0 0 @layout-border-color inset;
+	height: @layout-header-height;
+	flex: 0 0 auto;
+}
+.@{prefix}-footer{
+	background-color: @layout-bg;
+	height: @layout-footer-height;
+	box-shadow: 0 1px 0 0 @layout-border-color inset;
+}
+.@{prefix}-content{
+	flex: auto;
+	overflow: auto;
+}
+.@{prefix}-sider{
+    width: @layout-sider-width;
+	position: relative;
+	background-color: @layout-sider-bg;
+	box-shadow: -1px 0 0 0 @layout-border-color inset;
+	display: flex;
+	flex-direction: column;
+}
+.@{prefix}-sider-collapse{
+	width: @layout-sider-collapse-width;
+}
+.@{prefix}-sider-children{
+  overflow: auto;
+	flex: auto;
+}
+.@{prefix}-sider-btn{
+	box-sizing: border-box;
+	width: 100%;
+	height: @layout-sider-btn-height;
+	color: @layout-sider-btn-color;
+	line-height: 1;
+	box-shadow: 0 1px 0 0 @layout-border-color inset;
+	padding-left: 22px;
+	display: flex;
+	align-items:center;
+	cursor: pointer;
+}
+.@{prefix}-sider-btn-icon{
+	width: 16px;
+	height:16px;
+	margin-right: 6px;
+}

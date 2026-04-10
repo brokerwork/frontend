@@ -1,0 +1,28 @@
+@import '~less/variables.less';
+.header-right {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  font-size: 12px;
+  color: #999;
+  a {
+    display: inline-flex;
+    align-items: center;
+    cursor: pointer;
+    margin-right: 10px;
+    font-size: 16px;
+  }
+}
+
+.rtc-sider {
+  :global(.lean-calendar-picker) {
+    width: auto !important;
+  }
+  :global(.lean-calendar-range-picker-input) {
+    max-width: 110px !important;
+  }
+  // :global(.sider-content) {
+  //   width: 300px !important;
+  // }
+}

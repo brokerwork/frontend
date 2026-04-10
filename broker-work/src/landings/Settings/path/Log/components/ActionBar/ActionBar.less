@@ -1,0 +1,203 @@
+@import '~less/variables.less';
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: @lean-padding-lg;
+}
+
+.search-box-left {
+  flex: 1;
+  display: flex;
+}
+
+.search-box-right {
+  display: inline-flex;
+  position: relative;
+  :global(.lean-dropdown-trigger) {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    margin-right: -1px;
+    &:focus,
+    &:hover {
+      position: relative;
+      z-index: 2;
+    }
+  }
+}
+.dropdown-right-radius {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+.key {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  &:focus {
+    position: relative;
+  }
+  margin-left: -1px;
+  width: 240px;
+  padding-right: 20px;
+}
+.search-icon {
+  position: absolute;
+  right: 6px;
+  top: 7px;
+  font-size: 14px;
+}
+
+.time {
+  margin: 0 10px;
+  display: inline-flex;
+}
+
+.time-text {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  margin-right: -1px;
+  color: @text-color;
+  cursor: default;
+  background-color: @white;
+  padding: 0 10px;
+  &:hover,
+  &:focus {
+    border-color: @main-color;
+    color: @text-color;
+    background-color: @white;
+    position: relative;
+    z-index: 2;
+  }
+}
+
+.time-picker {
+  border-color: @main-color;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  margin-left: -1px;
+}
+
+.log-picker-left > span {
+  border-bottom-left-radius: 0;
+  border-top-left-radius: 0;
+}
+
+.search-box-input {
+  border-bottom-left-radius: 0;
+  border-top-left-radius: 0;
+}
+
+.actionBar {
+  display: flex;
+  align-items: center;
+
+  :global {
+    .lean-input-group-addon {
+      padding: 0;
+      padding-right: 2px;
+    }
+
+    .lean-input-group .lean-input:first-child {
+      border-radius: 0 4px 4px 0;
+    }
+
+    .lean-input-group-addon .lean-select {
+      background: white;
+      border: 1px solid transparent;
+      border-top-right-radius: 0;
+      border-bottom-right-radius: 0;
+    }
+
+    .lean-input {
+      height: 34px;
+    }
+  }
+}
+
+.dropDown {
+  position: relative;
+  margin-left: 8px;
+  .button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    border-radius: 4px;
+    border: solid 1px #dfe3e8;
+    background-color: #ffffff;
+    &:hover {
+      border-color: 0 0 0 2px fade(@main-color, 0.4);
+    }
+  }
+  i {
+    font-size: 14px;
+  }
+}
+
+.popupWrapper {
+  position: absolute;
+  overflow: hidden;
+  width: 340px;
+  top: 38px;
+  right: 0;
+  background: white;
+  z-index: 1000;
+
+  border-radius: 4px;
+  box-shadow: 0 2px 10px 0 rgba(48, 56, 66, 0.2);
+  background-color: #ffffff;
+}
+
+.fieldLabel {
+  font-size: 12px;
+  line-height: 1.5;
+  color: @lean-text-color;
+  margin-top: @lean-padding-lg;
+  margin-bottom: 6px;
+}
+
+.popContent {
+  & > div {
+    padding: 0 @lean-padding-lg;
+  }
+}
+
+.popupFooter {
+  box-shadow: inset 0 1px 0 0 @lean-disabled-color;
+  background-color: @lean-background-color;
+  height: 52px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin-top: @lean-padding-lg;
+
+  & > button:not(:last-child) {
+    margin-right: 8px;
+  }
+}
+
+.info {
+  display: flex;
+
+  i {
+    font-size: 32px;
+    margin-right: @lean-padding-md;
+  }
+}
+
+.infoLabel {
+  font-size: 12px;
+  line-height: 1.5;
+  color: @lean-text-color;
+}
+
+.infoTitle {
+  font-size: 16px;
+  line-height: 1.5;
+  color: @lean-text-color-dark;
+}
+
+.icon {
+  font-size: 32px;
+  margin-right: 16px;
+}

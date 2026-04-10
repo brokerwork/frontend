@@ -1,0 +1,39 @@
+@import '~less/variables.less';
+
+.td {
+  font-size: 13px;
+  color: #303842;
+}
+
+.td-title {
+  cursor: pointer;
+  font-size: 13px;
+}
+
+.status {
+    border-radius: 4px;
+    width: 78px;
+    height: 24px;
+    text-align: center;
+    line-height: 24px;
+    font-size: 12px;
+  &.STATUS_SUCCESS{
+    border: solid 1px rgba(72, 191, 28, 0.5);
+    background-color: rgba(115, 204, 85, 0.1);
+    color: #73cc55;
+  }
+  &.STATUS_FAIL{
+    background-color: rgba(255, 102, 92, 0.1);
+    border: 1px solid rgba(254, 68, 58, 0.5);
+    color: #ff665c;
+  }
+  &.STATUS_RETRY{
+    background-color: rgba(249,166,76, 0.1);
+    border: 1px solid rgba(247,144,0, 0.5);
+    color: #F9A64C;
+  }
+}
+.container {
+  overflow: scroll;
+  padding-bottom: 50px;
+}

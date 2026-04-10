@@ -1,0 +1,24 @@
+@import './mix.less';
+@dark-blue-1: #133AD6;
+@dark-blue-2: #2D53E5;
+@dark-blue-3: #4666E2;
+@dark-blue-4: #627BDD;
+@dark-blue-5: #7C91E0;
+:global {
+  .dark_blue-theme {
+    a {
+      color: @dark-blue-2;
+      &:hover {
+        color: @dark-blue-1;
+      }
+    }
+    .createThemes(
+      @dark-blue-1,
+      @dark-blue-2,
+      @dark-blue-3,
+      @dark-blue-4,
+      @dark-blue-5,
+      #000
+    );
+  }
+}

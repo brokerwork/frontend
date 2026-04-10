@@ -1,0 +1,19 @@
+{
+	"data": {
+		"createTime": 1493783478471,
+		"email": "sam@lwork.com",
+		"lastLoginTime": 1493783478471,
+		"locationInfo": {
+			"platformLimitList": [],
+			"productId": "TW",
+			"tenantId": "T001117",
+			"tokenHz": 15
+		},
+		"phone": "13761030402",
+		"token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJUMDAxMTE3VFciLCJleHAiOjE0OTM3ODUyNzgsImlhdCI6MTQ5Mzc4MzQ3OH0.FvOy6Top3gkwXwxQ_SPLoTka8kajC-wH_fLFoM1LGxY",
+		"userId": "8039897f-b61e-4cd2-9649-032a10999d8e",
+		"wxname": "张庆丰"
+	},
+	"mcode": "m0000000",
+	"result": true
+}

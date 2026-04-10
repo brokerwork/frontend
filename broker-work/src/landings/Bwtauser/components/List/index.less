@@ -1,0 +1,47 @@
+@import '~less/variables';
+
+.account-status {
+  cursor: pointer;
+  display: block;
+}
+
+.account-active {
+  color: @main-color;
+}
+.menu-pop {
+    :global(.lean-popover-inner-content) {
+      padding: 0;
+    }
+    ::global(.lean-menu) {
+      border: none;
+    }
+  }
+
+  .popver-td{
+      position: relative;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      margin-left: -16px;
+      padding-left: 16px;
+      padding-right: 30px;
+      cursor: pointer;
+      .edit-container{
+          display: flex;
+          align-items: center;
+          position: absolute;
+          z-index: 2;
+          right: 10px;
+          top: 0;
+          bottom: 0;
+          .actions-active-btn{
+              display: none;
+          }
+      }
+      &:hover{
+          box-shadow: inset 0 0 0 1px @main-color;
+          .actions-active-btn {
+              display: flex;
+          }
+      }
+  }

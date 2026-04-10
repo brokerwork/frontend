@@ -1,0 +1,11 @@
+{
+  "result": true,
+  "mcode": "m0000000",
+  "data": {
+    "serviceName": "service name",
+    "accountName": "test",
+    "account": "123456",
+    "password": "1234pwd",
+    "investorPassword": "investorpwd"
+  }
+}

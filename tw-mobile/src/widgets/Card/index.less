@@ -1,0 +1,61 @@
+@import "~less/fn.less";
+
+.tw-mobile-modal-overlay{
+    position: fixed;
+    display: flex;
+    align-items: flex-end;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0,0,0,.8);
+    z-index: 99;
+}
+.tw-mobile-modal-body{
+   background: white;
+   width: 100%;
+   height: 80%;
+   top: 100%;
+   position: relative;
+   display:flex;
+   flex-direction: column;
+   overflow-y: auto;
+   transition: all 0.3s;
+}
+.tw-mobile-modal-head{
+   height: 53px;
+   min-height: 53px;
+   background-image: url('images/icon_termofuse@3x.png');
+   background-repeat: no-repeat;
+   background-size: contain;
+   background-color: #edf5fe;
+   display: flex;
+   .title{
+       margin: auto;
+       font-size: 14px;
+   }
+}
+.tw-mobile-modal-content{
+    padding: 10px;
+    position: absolute;
+    top: 53px;
+    .rem(90, bottom);
+    overflow-y:auto;
+    -webkit-overflow-scrolling: touch;
+}
+.tw-mobile-modal-footer{
+    width: 100%;
+    position:absolute;
+    bottom:0;
+}
+
+[data-dpr="2"].tw-mobile-modal-head{
+   .title{
+       font-size: 28px;
+   }
+}
+[data-dpr="3"].tw-mobile-modal-head{
+   .title{
+       font-size: 42px;
+   }
+}

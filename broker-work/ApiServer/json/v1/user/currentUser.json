@@ -1,0 +1,29 @@
+{
+  "data": {
+    "active": 1,
+    "address": "阿斯顿发的法师地方",
+    "birthday": "2016-08-29T08:20:44.926Z",
+    "city": "22",
+    "comment": "",
+    "country": "1",
+    "createDate": 1471931964000,
+    "email": "51720227967@qq.com",
+    "headImage": "awards-3.png",
+    "id": 42,
+    "levelId": "0",
+    "modifyDate": 1477571859000,
+    "name": "jerry2",
+    "nickname": "吴彦祖a",
+    "phone": "17701324967",
+    "province": "19",
+    "pubUserId": "121",
+    "roleId": "2",
+    "sex": "1",
+    "subUserCount": 8,
+    "tenantId": "T001001",
+    "username": "么么哒",
+    "entityNo": "YSL"
+  },
+  "mcode": "m0000000",
+  "result": true
+}

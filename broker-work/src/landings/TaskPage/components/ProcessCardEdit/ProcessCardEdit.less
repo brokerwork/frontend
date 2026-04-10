@@ -1,0 +1,123 @@
+:global(.panel-body) {
+  padding: 0 24px 24px;
+}
+
+:global(.lean-card-content) {
+  padding: 24px;
+}
+.process-setting-header {
+  margin: 0;
+}
+.process-setting-title {
+  margin-bottom: 16px;
+}
+
+.process-setting-radio {
+  border-bottom: 1px solid #dfe3e8;
+  padding-bottom: 16px;
+  > div {
+    > label {
+      margin: 0 16px 0 0;
+      &:last-child {
+        margin: 0;
+      }
+      > label {
+        display: inline-block;
+        vertical-align: middle;
+        margin: 0;
+        line-height: 1;
+        &:last-child {
+          margin-left: 8px;
+        }
+      }
+    }
+  }
+}
+.process-setting-checkout {
+  border-bottom: 1px solid #dfe3e8;
+  padding-bottom: 16px;
+  > label {
+    margin: 0 16px 0 0;
+    &:last-child {
+      margin: 0;
+    }
+    > label {
+      display: inline-block;
+      vertical-align: middle;
+      margin: 0;
+      line-height: 1;
+      &:last-child {
+        margin-left: 8px;
+        cursor: pointer;
+        text-decoration: underline;
+      }
+    }
+  }
+}
+.process-setting-body {
+  margin-top: 24px;
+}
+.process-setting-menu {
+  margin-bottom: 16px;
+  > button {
+    font-size: 14px;
+    > span {
+      vertical-align: middle;
+    }
+    :global(.icon-lw-add-outline) {
+      margin-right: 7px;
+      font-size: 12px;
+    }
+  }
+}
+
+.pickelistDisplay {
+  text-overflow: ellipsis;
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  font-size: 12px;
+}
+
+.process-permissions-list {
+  margin: 0;
+  padding: 0;
+  font-size: 12px;
+
+  .process-permissions-item {
+    list-style: none;
+    margin-top: 4px;
+    display: flex;
+    :global(.lean-checkbox-wrapper) {
+      display: inline-block;
+      vertical-align: middle;
+      margin-right: 6px;
+      width: 105px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+    :global(.lean-picklist-button) {
+      display: inline-flex;
+      height: 24px;
+      min-height: 24px;
+      width: 150px;
+    }
+    :global(.lean-select-selection) {
+      line-height: 24px;
+      height: 24px;
+    }
+  }
+}
+.setTable {
+  :global(.lean-table-cell) {
+    padding: 10px 0 10px 16px;
+    > button {
+      height: 24px;
+      line-height: 24px;
+    }
+  }
+  :global(.lean-table thead th) {
+    white-space: nowrap;
+  }
+}

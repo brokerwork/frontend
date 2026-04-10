@@ -1,0 +1,78 @@
+{
+	"result": true,
+	"mcode": "TW_VIDEO_0000000",
+	"data": {
+		"list": [
+			{
+				"id": "5941ffee76a45b521c4aaab0",
+				"subject": "系列主题",
+				"cover": "https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1496902679074&di=3a03b7b0d5d2f03bc9d887021f1dcc96&imgtype=0&src=http%3A%2F%2Ff.hiphotos.baidu.com%2Fzhidao%2Fpic%2Fitem%2Fd043ad4bd11373f0a78a9e7ba10f4bfbfaed0498.jpg",
+				"lecturerName": "讲师姓名",
+				"sourceType": "视屏来源类型",
+				"description": "描述",
+				"replayListSize": 3,
+				"createTime": "1497497582",
+				"modifyTime": "1497497582"
+			},
+			{
+				"id": "5941ff6776a45b521c4aaaaf",
+				"subject": "tutorial",
+				"cover": "https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1496902679074&di=3a03b7b0d5d2f03bc9d887021f1dcc96&imgtype=0&src=http%3A%2F%2Ff.hiphotos.baidu.com%2Fzhidao%2Fpic%2Fitem%2Fd043ad4bd11373f0a78a9e7ba10f4bfbfaed0498.jpg",
+				"lecturerName": "tt01",
+				"sourceType": "UPLOAD",
+				"description": "nice replay",
+				"replayListSize": 5,
+				"createTime": "1497497447",
+				"modifyTime": "1497497447"
+			},
+			{
+				"id": "5941ffee76a45b521c4aaab0",
+				"subject": "系列主题",
+				"cover": "https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1496902679074&di=3a03b7b0d5d2f03bc9d887021f1dcc96&imgtype=0&src=http%3A%2F%2Ff.hiphotos.baidu.com%2Fzhidao%2Fpic%2Fitem%2Fd043ad4bd11373f0a78a9e7ba10f4bfbfaed0498.jpg",
+				"lecturerName": "讲师姓名",
+				"sourceType": "视屏来源类型",
+				"description": "描述",
+				"replayListSize": "3",
+				"createTime": "1497497582",
+				"modifyTime": "1497497582"
+			},
+			{
+				"id": "5941ff6776a45b521c4aaaaf",
+				"subject": "tutorial",
+				"cover": "https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1496902679074&di=3a03b7b0d5d2f03bc9d887021f1dcc96&imgtype=0&src=http%3A%2F%2Ff.hiphotos.baidu.com%2Fzhidao%2Fpic%2Fitem%2Fd043ad4bd11373f0a78a9e7ba10f4bfbfaed0498.jpg",
+				"lecturerName": "tt01",
+				"sourceType": "UPLOAD",
+				"description": "nice replay",
+				"replayListSize": "5",
+				"createTime": "1497497447",
+				"modifyTime": "1497497447"
+			},
+			{
+				"id": "5941ffee76a45b521c4aaab0",
+				"subject": "系列主题",
+				"cover": "https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1496902679074&di=3a03b7b0d5d2f03bc9d887021f1dcc96&imgtype=0&src=http%3A%2F%2Ff.hiphotos.baidu.com%2Fzhidao%2Fpic%2Fitem%2Fd043ad4bd11373f0a78a9e7ba10f4bfbfaed0498.jpg",
+				"lecturerName": "讲师姓名",
+				"sourceType": "视屏来源类型",
+				"description": "描述",
+				"replayListSize": "3",
+				"createTime": "1497497582",
+				"modifyTime": "1497497582"
+			},
+			{
+				"id": "5941ff6776a45b521c4aaaaf",
+				"subject": "tutorial",
+				"cover": "https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1496902679074&di=3a03b7b0d5d2f03bc9d887021f1dcc96&imgtype=0&src=http%3A%2F%2Ff.hiphotos.baidu.com%2Fzhidao%2Fpic%2Fitem%2Fd043ad4bd11373f0a78a9e7ba10f4bfbfaed0498.jpg",
+				"lecturerName": "tt01",
+				"sourceType": "UPLOAD",
+				"description": "nice replay",
+				"replayListSize": "5",
+				"createTime": "1497497447",
+				"modifyTime": "1497497447"
+			}
+		],
+		"pager": 1,
+		"pages": 1,
+		"size": 10,
+		"total": 3
+	}
+}

@@ -1,0 +1,21 @@
+@import '~less/variables.less';
+
+.container {
+  padding: 15px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  :global(.lean-pagination-options-quick-jumper) {
+    display: none;
+  }
+  :global(.lean-pagination-options-size-changer) {
+    display: none;
+  }
+}
+
+.table {
+  flex: 1;
+  padding-top: 10px;
+}
+

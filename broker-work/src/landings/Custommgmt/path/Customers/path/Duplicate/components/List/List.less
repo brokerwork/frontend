@@ -1,0 +1,55 @@
+@import '~less/variables';
+.toggle-btn {
+  cursor: pointer;
+}
+tbody.t-body {
+  & > :global(tr > td) {
+    border-bottom: 1px dashed #ddd;
+  }
+  :global(tr > td:first-child) {
+    border-bottom: 0;
+  }
+  &:hover {
+    background: #fafafa;
+  }
+}
+.t-body + .t-body {
+  border-top: 1px solid #ddd;
+}
+
+.dup-container {
+  padding-top: 25px;
+}
+.tip{
+  margin-bottom: 12px;
+  span{
+    color: red;
+    margin-right: 5px;
+  }
+}
+.tip1 {
+  margin-top: 12px;
+  span{
+    color: red;
+  }
+}
+.tip2{
+  margin-top: 12px;
+  color: #666666;
+}
+.list {
+  display: flex;
+  justify-content: space-between;
+  >span,>label {
+    flex-basis: 200px;
+  }
+  :global(.lean-radio-text){
+    padding-right: 8px;
+    padding-left: 8px;
+    max-width: 165px;
+    display: inline-block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}
+

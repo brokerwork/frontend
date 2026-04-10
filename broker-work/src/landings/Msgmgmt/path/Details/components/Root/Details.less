@@ -1,0 +1,51 @@
+@import '~less/variables.less';
+
+.container {
+  display: flex;
+  flex-direction: column;
+  padding: 24px 32px;
+}
+
+.type-container{
+  display: flex;
+  justify-content: space-between;
+
+  .msg-type {
+    font-size: 13px;
+    color:#303842;
+  }
+
+  .time {
+    font-size: 13px;
+    color:#919eab;
+
+    .time-icon {
+      margin-right: 6px;
+      position: relative;
+      top:1px;
+    }
+  }
+}
+
+.name {
+  display: flex;
+  margin-top: 8px;
+  font-size: 13px;
+  color:#637381;
+
+  .receiver {
+    margin-left: 32px;
+  }
+}
+
+.title {
+  margin-top: 24px;
+  font-size: 16px;
+  color:#303842;
+}
+
+.content {
+  margin-top: 24px;
+  border-top: 1px solid @border-color;
+  padding-top: 24px;
+}

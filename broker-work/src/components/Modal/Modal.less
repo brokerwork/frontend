@@ -1,0 +1,45 @@
+@import '~less/variables.less';
+
+.container {
+  background-color: rgba(0, 0, 0, .6);
+  overflow: auto;
+  display: block;
+  min-width: 1300px;
+}
+
+.modal-animate-initial-state() {
+  transform: translateY(-50px);
+  opacity: 0;
+}
+
+.modal-animate-appear-state() {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+:global(.modal-animate-enter) {
+  .modal {
+    .modal-animate-initial-state();
+    transition: transform .2s ease-in-out, opacity .2s ease-in-out;
+  }
+}
+
+:global(.modal-animate-enter.modal-animate-enter-active) {
+  .modal {
+    .modal-animate-appear-state();
+  }
+}
+
+:global(.modal-animate-leave) {
+  .modal {
+    .modal-animate-appear-state();
+    transition: transform .2s ease-in-out, opacity .2s ease-in-out;
+  }
+}
+
+:global(.modal-animate-leave.modal-animate-leave-active) {
+  .modal {
+    .modal-animate-initial-state();
+  }
+}
+

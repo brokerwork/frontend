@@ -1,0 +1,23 @@
+{
+  "extends": "./.eslintrc-es5",
+  "parser": "babel-eslint",
+  "plugins": [
+    "babel"
+  ],
+  "env": {
+    "es6": true,
+  },
+  "rules": {
+    "arrow-spacing": 1,
+    "babel/object-shorthand": 1,
+    "no-class-assign": 2,
+    "no-const-assign": 2,
+    "no-dupe-class-members": 2,
+    "no-var": 2,
+    "prefer-arrow-callback": 1,
+    "prefer-spread": 1,
+    "prefer-template": 1,
+    "require-yield": 2,
+    "eqeqeq": [1, "smart"]
+  }
+}

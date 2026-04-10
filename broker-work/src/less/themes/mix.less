@@ -1,0 +1,548 @@
+.createThemes
+  (
+  @main-color-1,
+  @main-color-2,
+  @main-color-3,
+  @main-color-4,
+  @main-color-5,
+  @text-color
+) {
+  .main-color {
+    color: @main-color-2 !important;
+  }
+  .hover-item:hover {
+    text-decoration: none;
+  }
+  .main-color-border {
+    border-color: @main-color-2 !important;
+  }
+  .main-control-color-border:hover {
+    border-color: @main-color-2 !important;
+  }
+  .main-color-bgc,
+  .main-color-bg {
+    background-color: @main-color-2 !important;
+  }
+  .main-control-color-border:hover {
+    border-color: @main-color-2 !important;
+  }
+  .main-color-bg-hover:hover {
+    color: #fff !important;
+    background-color: @main-color-2 !important;
+  }
+  .main-color-bg-active:active {
+    background-color: @main-color-2 !important;
+  }
+  .main-color-bg {
+    background: @main-color-2 !important;
+  }
+  .dropdown-menu {
+    a:hover {
+      background: fade(@main-color-2, 8) !important;
+    }
+  }
+  .main-color-hover:hover {
+    color: @main-color-2 !important;
+  }
+  .main-color-border-focus:focus {
+    border-color: @main-color-2 !important;
+  }
+  .main-color-border-hover:hover {
+    border-color: @main-color-2 !important;
+  }
+  .text-color {
+    color: @text-color !important;
+  }
+  .main-color-inset-shadow-hover:hover {
+    box-shadow: inset 0 0 0 1px @main-color-2;
+  }
+  // menu
+  .lean-menu,
+  .lean-dropdown {
+    a {
+      color: #303842;
+    }
+  }
+
+  .lean-menu-item-selected {
+    background-color: fade(@main-color-2, 8);
+    color: @main-color-2;
+  }
+  .lean-menu-inline {
+    .lean-menu-item:not(.lean-menu-item-selected):hover,
+    .lean-menu-submenu-title:hover {
+      background-color: fade(@main-color-2, 8);
+      .lean-menu-submenu-arrow:after .lean-menu-submenu-arrow:before {
+        background: linear-gradient(90deg, @main-color-2, @main-color-2);
+      }
+    }
+  }
+  .lean-menu-inline .lean-menu-sub li a {
+    color: #637381;
+  }
+  .sider-menu {
+    .lean-menu-item-selected {
+      background-color: @main-color-2;
+    }
+  }
+  .lean-menu-submenu-inline > .lean-menu-submenu-title:hover {
+    .lean-menu-submenu-arrow:after,
+    .lean-menu-submenu-arrow:before {
+      background: @main-color-2;
+    }
+  }
+  .lean-menu-horizontal {
+    & > .lean-menu-item-active,
+    & > .lean-menu-item-open,
+    & > .lean-menu-item-selected,
+    & > .lean-menu-item:hover,
+    & > .lean-menu-submenu-active,
+    & > .lean-menu-submenu-open,
+    & > .lean-menu-submenu-selected,
+    & > .lean-menu-submenu:hover {
+      border-color: @main-color-2;
+      color: @main-color-2;
+    }
+  }
+  .lean-menu-vertical {
+    .lean-menu-item,
+    .lean-menu-submenu {
+      &:hover {
+        background: fade(@main-color-2, 8);
+      }
+    }
+    & > .lean-menu-submenu-selected {
+      border-color: @main-color-2;
+      color: @main-color-2;
+    }
+  }
+  .lean-menu-item:not(.lean-menu-item-selected) > a:hover {
+    color: @main-color-2;
+  }
+  // button
+  .lean-btn-primary {
+    color: #fff;
+    background: linear-gradient(to bottom, @main-color-3, @main-color-2);
+    border-color: @main-color-1;
+    &.disabled,
+    &:disabled {
+      background: @main-color-5;
+      border-color: @main-color-4;
+    }
+    &.focus,
+    &:focus {
+      box-shadow: 0 0 0 2px fade(@main-color-2, 40);
+    }
+  }
+  .lean-btn-default {
+    &.focus,
+    &:focus {
+      box-shadow: 0 0 0 2px fade(@main-color-2, 40);
+    }
+  }
+  .btn-group {
+    &.focus,
+    &.open {
+      .dropdown-toggle {
+        border-color: @main-color-2 !important;
+      }
+    }
+  }
+  // dropdown
+  .lean-dropdown-menu-vertical .lean-dropdown-menu-item:hover,
+  .lean-dropdown-menu-vertical .lean-dropdown-menu-submenu:hover {
+    background: fade(@main-color-2, 8);
+    a {
+      text-decoration: none;
+    }
+  }
+  .dropdown-menu {
+    & > li > a:hover {
+      background-color: @main-color-2;
+    }
+    & > .active > a:not(:hover) {
+      color: @main-color-2;
+    }
+  }
+  .lean-dropdown-menu-item-selected,
+  .lean-dropdown-menu-item-selected > a,
+  .lean-dropdown-menu-submenu-title-selected,
+  .lean-dropdown-menu-submenu-title-selected > a {
+    color: @main-color-2;
+  }
+  .lean-dropdown-menu-item-selected {
+    color: @main-color-2;
+    &:hover {
+      color: #fff;
+    }
+  }
+  .lean-dropdown-menu-item-selected,
+  .lean-dropdown-menu-item-selected > a,
+  .lean-dropdown-menu-submenu-title-selected,
+  .lean-dropdown-menu-submenu-title-selected > a {
+    color: @main-color-2;
+  }
+  // select
+  .lean-select-option-active {
+    color: @main-color-2;
+  }
+  .lean-select-option:hover {
+    background-color: fade(@main-color-2, 8);
+  }
+  .lean-select:hover {
+    border-color: @main-color-2;
+  }
+  .lean-select-focused,
+  .lean-select:focus {
+    border-color: @main-color-2;
+    box-shadow: 0 0 0 2px fade(@main-color-2, 40);
+  }
+  // picklist
+  .lean-picklist-button {
+    &:hover,
+    &.hover {
+      border-color: @main-color-2;
+    }
+    &.focus,
+    &:focus {
+      border-color: @main-color-2;
+      box-shadow: 0 0 0 2px fade(@main-color-2, 40);
+    }
+  }
+  .lean-picklist-item.lean-menu-item-selected {
+    background-color: transparent;
+    color: @main-color-2;
+    &:before {
+      color: @main-color-2;
+    }
+  }
+  // tab
+  .lean-tabs-nav {
+    .lean-tabs-tab:active,
+    .lean-tabs-tab-active,
+    .lean-tabs-tab:hover,
+    .lean-tabs-tab-hover {
+      color: @main-color-2;
+    }
+  }
+  .lean-tabs-card > .lean-tabs-bar .lean-tabs-tab-active {
+    color: @main-color-1;
+  }
+  .lean-tabs-ink-bar {
+    background-color: @main-color-2;
+  }
+  //link
+  .link-active {
+    color: #32323a;
+    background-color: fade(@main-color-2, 8);
+    text-decoration: none;
+    border-right: 2px solid @main-color-2;
+  }
+  // input
+  .lean-input,
+  .lean-time-picker-input {
+    &:focus,
+    &:hover {
+      border-color: @main-color-2;
+    }
+    &:not(.lean-input-line):focus {
+      box-shadow: 0 0 0 2px fade(@main-color-2, 40);
+    }
+  }
+  // textarea
+  .lean-textarea {
+    &:hover,
+    &.hover {
+      border-color: @main-color-2;
+    }
+    &.focus,
+    &:focus {
+      box-shadow: 0 0 0 2px fade(@main-color-2, 40);
+      border-color: @main-color-2;
+    }
+  }
+  // checkbox
+  .lean-checkbox-checked .lean-checkbox-inner:after,
+  .lean-checkbox-wrapper:hover .lean-checkbox-inner:after,
+  .lean-checkbox-inner:hover:after {
+    color: @main-color-2;
+  }
+  .lean-checkbox-checked:after {
+    border-color: @main-color-2;
+    color: @main-color-2;
+  }
+  .lean-checkbox-indeterminate .lean-checkbox-inner:after {
+    color: @main-color-2;
+  }
+  // radio
+  .lean-radio:hover,
+  .lean-radio-checked {
+    .lean-radio-inner {
+      color: @main-color-2;
+    }
+  }
+  .lean-radio-button-checked {
+    background-color: @main-color-2;
+  }
+  // pagination
+  .lean-pagination.compact .lean-pagination-item-active {
+    background: @main-color-2;
+    border-color: @main-color-2;
+  }
+  .lean-pagination-next:focus,
+  .lean-pagination-next:hover,
+  .lean-pagination-prev:focus,
+  .lean-pagination-prev:hover {
+    .lean-pagination-item-link {
+      border-color: @main-color-2;
+      color: @main-color-2;
+    }
+  }
+  .lean-pagination-item:not(.lean-pagination-item-active) {
+    &:focus,
+    &:hover {
+      border-color: @main-color-2;
+      background-color: @main-color-2;
+      a {
+        color: #fff;
+      }
+    }
+  }
+  .lean-pagination-options-quick-jumper input {
+    &:hover {
+      border-color: @main-color-2;
+    }
+    &:focus {
+      border-color: @main-color-2;
+      box-shadow: 0 0 0 2px fade(@main-color-2, 40);
+    }
+  }
+  // form
+  .form-control {
+    &.focus,
+    &:focus {
+      border-color: @main-color-2;
+    }
+  }
+  // switch
+  .lean-switch-checked {
+    background-color: @main-color-2;
+  }
+  //progress
+  .lean-progress-bg {
+    background-color: @main-color-2;
+  }
+  //breadcrumb
+  .lean-breadcrumb {
+    a {
+      color: @main-color-2;
+    }
+  }
+  //loading
+  .lean-loading {
+    color: @main-color-2;
+  }
+  .lean-loading-dot i {
+    background-color: @main-color-2;
+  }
+  // canlendar
+  .lean-calendar-picker-container {
+    .lean-calendar-selected-day .lean-calendar-date {
+      background: @main-color-2;
+      &:hover {
+        background: @main-color-2;
+      }
+    }
+    .lean-calendar .lean-calendar-date-panel {
+      .lean-calendar-decade-panel-selected-cell,
+      .lean-calendar-year-panel-selected-cell,
+      .lean-calendar-month-panel-selected-cell {
+        .lean-calendar-year-panel-year,
+        .lean-calendar-decade-panel-decade,
+        .lean-calendar-month-panel-month {
+          background: @main-color-2;
+        }
+      }
+    }
+    .lean-calendar-date:hover {
+      background: fade(@main-color-2, 8);
+    }
+    .lean-calendar-footer
+      .lean-calendar-footer-extra.lean-calendar-range-quick-selector
+      a:hover {
+      background: fade(@main-color-2, 8);
+    }
+    .lean-calendar-today:not(.lean-calendar-selected-day) .lean-calendar-date {
+      color: @main-color-2;
+    }
+    .lean-calendar-range {
+      .lean-calendar-selected-day:before,
+      .lean-calendar-in-range-cell:before {
+        background: @main-color-2;
+      }
+      .lean-calendar-in-range-cell + .lean-calendar-next-month-btn-day:after {
+        background: @main-color-2;
+      }
+    }
+  }
+  //step
+  .lean-steps-item-finish {
+    border-color: @main-color-2;
+    background-color: @main-color-2;
+  }
+  .lean-steps-item-finish:after,
+  .lean-steps-item-finish:before {
+    color: @main-color-2;
+  }
+  // nav
+  .nav-tabs > li.active > a,
+  .nav-tabs > li.active > a:hover {
+    color: @main-color-2;
+    border-bottom-color: @main-color-2;
+  }
+  .nav-tabs > li > a:focus,
+  .nav-tabs > li > a:hover {
+    color: @main-color-2;
+  }
+  // old datetime-picker
+  .datetime-picker .calendar table tbody tr {
+    td.now {
+      color: @main-color-2;
+    }
+    td.selected {
+      background-color: @main-color-2;
+      color: #fff;
+    }
+    td.between {
+      background-color: @main-color-5;
+    }
+  }
+  // uploader
+  .lean-upload .lean-upload-container img + span {
+    color: @main-color-2;
+  }
+  // input-number
+  .lean-input-number {
+    &:hover {
+      border-color: @main-color-2;
+    }
+    &-focused,
+    &:focus {
+      border-color: @main-color-2;
+      box-shadow: 0 0 0 2px fade(@main-color-2, 40);
+    }
+  }
+  // tree select
+  .lean-tselect-selection:hover {
+    border-color: @main-color-2;
+  }
+  .lean-tselect-tree-checkbox-input:focus + .lean-tselect-tree-checkbox-inner,
+  .lean-tselect-tree-checkbox-wrapper:hover .lean-tselect-tree-checkbox-inner,
+  .lean-tselect-tree-checkbox:hover .lean-tselect-tree-checkbox-inner {
+    border-color: @main-color-2;
+  }
+  .lean-tselect-dropdown {
+    box-shadow: 0 2px 10px 0 fade(@main-color-2, 20);
+  }
+  .lean-tselect-tree li .lean-tselect-tree-node-content-wrapper:hover {
+    background-color: transparent;
+  }
+  .lean-tselect-open .lean-tselect-selection {
+    border-color: @main-color-2;
+    box-shadow: 0 0 0 2px fade(@main-color-2, 40%);
+  }
+  .lean-tselect-focused .lean-tselect-selection,
+  .lean-tselect-selection:active,
+  .lean-tselect-selection:focus {
+    border-color: @main-color-2;
+    box-shadow: 0 0 0 2px fade(@main-color-2, 40%);
+  }
+  .lean-tselect-tree-checkbox-checked .lean-tselect-tree-checkbox-inner,
+  .lean-tselect-tree-checkbox-indeterminate .lean-tselect-tree-checkbox-inner {
+    background-color: @main-color-2;
+    border-color: @main-color-2;
+  }
+  // 账户
+  .account-detail {
+    .account-detail-datas {
+      :global(.lean-select-placeholder),
+      :global(.lean-select-value) {
+        color: @main-color-2;
+      }
+    }
+    .trade {
+      .lean-table-header-icon {
+        color: @main-color-2;
+      }
+    }
+  }
+  // 客户
+  .customer-header-info {
+    .btn-group {
+      color: @main-color-2;
+    }
+    .right-sale {
+      border: 1px solid @main-color-2 !important;
+      background-color: fade(@main-color-2, 10%) !important;
+    }
+  }
+  .broker-button-radio {
+    .button.active,
+    .button:hover {
+      background: @main-color-2;
+      border-color: @main-color-2;
+      color: #fff;
+    }
+    .button,
+    .button:active,
+    .button:focus,
+    .button:disabled {
+      border-color: @main-color-2;
+    }
+  }
+  .lean-time-picker-panel
+    .lean-time-picker-panel-combobox
+    .lean-time-picker-panel-select
+    li.lean-time-picker-panel-select-option-selected,
+  .lean-time-picker-panel
+    .lean-time-picker-panel-combobox
+    .lean-time-picker-panel-select
+    li:hover {
+    background-color: fade(@main-color-2, 8);
+  }
+  .custom-report-type {
+    &:hover,
+    &.checked {
+      background-color: fade(@main-color-2, 8);
+      border-color: @main-color-2;
+    }
+  }
+  .datetime-range-picker .tools-bar .buttons .btn {
+    background: @main-color-2;
+  }
+  .rank-switch.active {
+    color: @main-color-2;
+  }
+  .lean-tag-default.active {
+    border-color: @main-color-2;
+    color: @main-color-2;
+  }
+  .lean-calendar-footer {
+    &-btn {
+      .lean-calendar-ok-btn {
+        color: #fff;
+        background: linear-gradient(to bottom, @main-color-3, @main-color-2);
+        border-color: @main-color-1;
+        &.disabled,
+        &:disabled {
+          background: @main-color-5;
+          border-color: @main-color-4;
+        }
+        &.focus,
+        &:focus {
+          box-shadow: 0 0 0 2px fade(@main-color-2, 40);
+        }
+      }
+    }
+  }
+}

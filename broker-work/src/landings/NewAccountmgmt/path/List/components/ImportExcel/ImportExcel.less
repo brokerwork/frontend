@@ -1,0 +1,98 @@
+@import "~less/variables.less";
+
+.import-btn {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  border: 1px solid @input-border;
+  border-radius: @input-border-radius;
+  height: @input-height-base;
+  padding: @padding-base-vertical @padding-base-horizontal;
+  font-size: 12px;
+  line-height: normal;
+  color: @input-color;
+  background-color: @input-bg;
+  cursor: pointer;
+  margin-bottom: 0;
+}
+
+.hidden-element {
+  position: absolute;
+  z-index: -1;
+  visibility: hidden;
+}
+
+.import-text {
+  margin-left: 5px;
+  font-weight: normal;
+}
+
+.file {
+  display: flex;
+  align-items: center;
+  background-color: #f5f5f5;
+  border-radius: 4px;
+  height: 24px;
+  font-size: 12px;
+  width: 300px;
+  padding: 0 10px;
+  margin-top: 5px;
+  
+  .file-name {
+    flex: 1;
+    margin-left: 5px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .clear-btn {
+    cursor: pointer;
+    color: #999;
+
+    &:hover {
+      opacity: .7;
+    }
+  }
+}
+
+.error {
+  background-color: #f9eeea;
+  border-radius: 4px;
+  padding: 10px 14px;
+  font-size: 12px;
+  margin-top: 5px;
+
+  .error-title {
+    display: flex;
+    align-items: center;
+    line-height: normal;
+  }
+
+  .alert-icon {
+    color: @red;
+    font-size: 14px;
+    width: 14px;
+    text-align: center;
+    margin-right: 5px;
+    vertical-align: middle;
+  }
+
+  .error-text {
+    color: #999;
+    padding-left: 19px;
+  }
+}
+
+.download {
+  font-size: 12px;
+  color: #666;
+  margin-left: 10px;
+}
+
+.tips {
+  color: #999;
+  font-size: 12px;
+  line-height: 1.5;
+  margin-top: 15px;
+}

@@ -1,0 +1,397 @@
+* {
+  box-sizing: border-box;
+  outline: none;
+}
+
+body {
+  font-family: @base-font-family;
+  font-size: @base-font-size;
+  color: @base-text-color;
+  background-color: @base-backgound-color;
+}
+
+a {
+  color: @brand-primary;
+  text-decoration: none;
+
+  &:hover {
+    cursor: pointer;
+    text-decoration: underline;
+  }
+}
+
+.transparent-mask {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: @loading-mask-zindex;
+  background-color: transparent;
+}
+
+.text-center {
+  text-align: center !important;
+}
+
+.text-left {
+  text-align: left !important;
+  justify-content: flex-start !important;
+}
+
+.text-right {
+  text-align: right !important;
+  justify-content: flex-end !important;
+}
+
+.text-danger {
+  color: @state-danger;
+}
+
+.text-success {
+  color: @state-success;
+}
+
+.text-warning {
+  color: @state-warning;
+}
+
+.text-orange {
+  color: @state-orange;
+}
+
+.text-disabled {
+  color: @state-disabled;
+}
+
+.inline {
+  display: inline-block;
+}
+
+.form-control {
+  display: block;
+  width: 100%;
+  height: 30px;
+  font-size: @base-font-size;
+  padding: 6px 12px;
+  background-color: #fff;
+  background-image: none;
+  border: 1px solid @border-color;
+  border-radius: 4px;
+  color: @input-color;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+
+  &:focus {
+    border-color: @brand-primary;
+  }
+
+  &[disabled],
+  &.disabled {
+    cursor: not-allowed;
+    background-color: @base-disabled-bg-color;
+  }
+}
+
+.form-control::-moz-placeholder {
+  color: @input-placeholder-color;
+  opacity: 1;
+}
+.form-control:-ms-input-placeholder {
+  color: @input-placeholder-color;
+}
+.form-control::-webkit-input-placeholder {
+  color: @input-placeholder-color;
+}
+
+textarea {
+  &.form-control {
+    height: auto;
+    line-height: 14px;
+  }
+}
+
+.btn {
+  display: inline-flex;
+  font-weight: 400;
+  font-size: 12px;
+  text-align: center;
+  vertical-align: middle;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  background-image: none;
+  border: none;
+  white-space: nowrap;
+  padding: 0 20px;
+  height: 30px;
+  line-height: normal;
+  border-radius: 4px;
+  user-select: none;
+
+  &:hover {
+    text-decoration: none;
+  }
+
+  &.disabled {
+    cursor: not-allowed;
+    pointer-events: none;
+    opacity: 0.65;
+  }
+
+  .fa {
+    margin-right: 5px;
+  }
+
+  &.icon {
+    padding: 0 5px;
+    min-width: 24px;
+    height: 24px;
+
+    .fa {
+      margin-right: 0;
+    }
+  }
+}
+
+.btn-default {
+  color: #fff;
+  background-color: @btn-default-bg-color;
+
+  &:hover {
+    background-color: @btn-default-hover-bg-color;
+  }
+}
+
+.btn-primary {
+  color: #fff;
+  background-color: @btn-primary-bg-color;
+
+  &:hover {
+    background-color: @btn-primary-hover-bg-color;
+  }
+}
+
+.btn-default-white {
+  border: 1px solid @border-color;
+  color: @base-text-color;
+  background-color: #fff;
+
+  &:hover {
+    border-color: @brand-primary;
+  }
+}
+
+.actions-bar {
+  display: flex;
+  align-items: center;
+  padding: 15px 0 10px;
+  min-height: 55px;
+
+  > * {
+    flex: 1;
+    display: inline-flex;
+    align-items: center;
+  }
+
+  .btn + .btn,
+  .action-item + .btn,
+  .action-item + .action-item,
+  .btn + .action-item {
+    margin-left: 10px;
+  }
+
+  .action-item {
+    display: inline-flex;
+    align-items: center;
+  }
+}
+
+.close {
+  display: inline-flex;
+  align-items: center;
+  font-size: 12px;
+  color: #c5c5c5;
+
+  &:hover {
+    color: #999;
+    opacity: 0.5;
+    text-decoration: none;
+    cursor: pointer;
+  }
+}
+
+// Card panel
+.card-panel-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 999;
+}
+
+.card-panel {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  width: 900px;
+  background-color: #fff;
+  box-shadow: -3px 0 10px rgba(9, 2, 4, 0.3);
+  border: 1px solid @border-color;
+  border-radius: 4px 0 0 4px;
+  z-index: 1;
+}
+
+.card-panel-mark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: @modal-backdrop-bg;
+  z-index: 0;
+}
+
+.card-panel-header {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  color: @base-text-dark-color;
+  background-color: #f5f5f5;
+  border-bottom: 1px solid @border-color;
+  height: 56px;
+  padding: 15px;
+
+  .card-panel-title {
+    flex: 1 auto;
+    padding-right: 5px;
+  }
+}
+
+.card-panel-body {
+  flex: 1 auto;
+  padding: 15px;
+  overflow-y: auto;
+}
+
+.card-panel-footer {
+  padding: 15px;
+  text-align: right;
+  border-top: 1px solid @border-color;
+
+  .btn {
+    margin-left: 10px;
+  }
+}
+
+// required
+.required:before {
+  content: '*';
+  color: @state-danger;
+  margin-right: 3px;
+  display: inline;
+}
+
+.error-msg {
+  color: @state-danger;
+  font-size: 12px;
+  padding-top: 3px;
+}
+
+.has-error {
+  .form-control {
+    border-color: @state-danger;
+  }
+
+  .select .dropdown-toggle .btn {
+    border-color: @state-danger;
+  }
+}
+
+// Form
+.form {
+  width: 100%;
+
+  th {
+    text-align: right;
+    font-weight: normal;
+    padding-top: 7px;
+    padding-right: 15px;
+  }
+
+  th,
+  td {
+    vertical-align: top;
+  }
+
+  tr:not(:last-child) {
+    th,
+    td {
+      padding-bottom: 15px;
+    }
+  }
+}
+
+.table {
+  tbody > tr > td {
+    .btn {
+      margin: 0 2.5px;
+    }
+
+    .switch {
+      margin: 0 2.5px;
+    }
+  }
+}
+
+.selected-count-text {
+  margin-right: 10px;
+}
+
+.selected-number {
+  color: @brand-primary;
+  margin: 0 5px;
+}
+
+.form-tips {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  color: @base-text-light-color;
+
+  li {
+    padding: 2px;
+  }
+}
+
+.field-inline {
+  display: inline-block;
+  margin-right: 5px;
+}
+
+.form-addon {
+  display: flex;
+
+  .form-control {
+    flex: 1;
+  }
+
+  .left-addon {
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+    background-color: #fafafa;
+    border-color: #ddd;
+    border-style: solid;
+    border-width: 1px 0 1px 1px;
+    border-radius: 4px 0 0 4px;
+
+    + .form-control {
+      border-top-left-radius: 0;
+      border-bottom-left-radius: 0;
+    }
+  }
+}

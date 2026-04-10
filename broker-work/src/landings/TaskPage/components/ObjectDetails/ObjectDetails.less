@@ -1,0 +1,181 @@
+@import '~less/variables';
+
+@icon-color: #999;
+
+.item {
+  height: 60px;
+  display: flex;
+  align-items: center;
+  padding: 0 10px;
+  cursor: pointer;
+  font-size: 16px;
+  color: @text-color-dark;
+  &:hover {
+    background-color: @gray-btn-hover-bg;
+    .icon,
+    .jobNum {
+      color: @icon-color;
+    }
+  }
+}
+
+.breadcrumb-current-page {
+  color: @text-color-dark;
+}
+
+.icon,
+.jobNum {
+  color: @text-color-light;
+  margin-left: 10px;
+}
+
+.task-group-item {
+  border-bottom: 1px solid #f4f4f4;
+}
+
+.tasks {
+  padding: 10px 20px;
+  display: none;
+  &.active {
+    display: block;
+  }
+}
+
+.handle_task_link {
+  color: @white;
+  &:hover {
+    text-decoration: none;
+    color: @white;
+  }
+}
+
+.title {
+  flex: 1;
+  color: @text-color-dark;
+}
+
+.jobName {
+  margin-right: 15px;
+}
+
+.acceptButton {
+  margin-right: 5px;
+}
+
+.task-item {
+  & + & {
+    margin-top: 5px;
+  }
+  a:focus {
+    outline: none;
+    text-decoration: none;
+  }
+}
+
+.task-closed,
+.tag {
+  color: #bbb;
+}
+
+.footer {
+  // position: absolute;
+  // bottom: 0;
+  // left: 0;
+  // right: 0;
+  padding: @padding-base;
+  // margin: 0 -@padding-base;
+  border-top: 1px solid @border-color;
+  background-color: @white;
+  > a {
+    margin-right: @padding-base;
+  }
+}
+
+.details-link:hover {
+  text-decoration: none;
+}
+
+.pay_status_pending {
+  color: #fc445b;
+}
+
+.pay_status_finished {
+  color: #33b07d;
+}
+.pay_status_telegraphic {
+  color: #ff8600;
+}
+.load-more-text {
+  padding: 15px;
+  display: inline-block;
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.nav {
+  border-bottom: none;
+  margin-left: -15px;
+  li {
+    margin-bottom: 0;
+    &:global(.active) {
+      color: red;
+      a {
+        border-bottom-width: 1px;
+        &:hover {
+          border-bottom-width: 1px;
+        }
+      }
+    }
+    a {
+      height: 40px;
+      padding: 0 15px;
+      display: flex;
+      align-items: center;
+    }
+  }
+}
+
+td {
+  .td-content {
+    //max-width: 200px;
+    line-height: 1;
+  }
+}
+
+.no-item {
+  width: 100%;
+  text-align: center;
+  padding: 60px 0;
+  i {
+    font-size: 24px;
+    color: #ddd;
+    margin-bottom: 10px;
+  }
+  p {
+    color: #999;
+    font-size: 14px;
+  }
+}
+
+.todo-count {
+  background-color: @red;
+  color: @white;
+  top: 5px;
+  border-radius: 10px;
+  position: absolute;
+  left: 100%;
+  margin-left: -20px;
+  z-index: 10;
+  line-height: 18px;
+  height: 18px;
+  min-width: 18px;
+  padding: 0 5px;
+  font-size: 14px;
+  transform: scale(0.7);
+  transform-origin: 50% 50%;
+}
+
+.btnGroup {
+  line-height: normal;
+}

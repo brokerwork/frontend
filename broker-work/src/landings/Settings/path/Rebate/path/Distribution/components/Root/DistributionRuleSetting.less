@@ -1,0 +1,31 @@
+.ellipsis {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  max-width: 300px;
+}
+
+.modeSelectContainer {
+  display: flex;
+  align-items: center;
+  margin-top: -5px;
+  margin-bottom: 15px;
+  .modeSelectTitle {
+    margin-right: 20px;
+  }
+  .tips {
+    :global(.popover) {
+      max-width: none;      
+    }
+    :global(.popover-content) {
+      white-space: nowrap;
+    }
+  }
+  :global(.radio) {
+    margin-top: 0;
+    margin-right: 20px; 	
+  }
+}
+.btn-right {
+  margin-left: 5px;
+}

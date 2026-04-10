@@ -1,0 +1,46 @@
+@import '~less/variables.less';
+.actions-bar {
+  width: 100%;
+}
+.left-part {
+  display: inline-flex;
+  width: 82%;
+  flex-direction: column;
+  .primary-top-title {
+    height: 42px;
+    .customer-icon {
+      font-size: 32px;
+      color: #00a8a6;
+      float: left;
+      margin-right: 16px;
+    }
+    .module-info {
+      min-width: 84px;
+    }
+    .report-name {
+      font-size: 16px;
+      line-height: 24px;
+      :global(.lean-btn) {
+        margin-left: 12px;
+      }
+    }
+  }
+}
+
+.right-part {
+  display: inline-flex;
+  width: 18%;
+  flex-direction: column;
+  text-align: right;
+  position: relative;
+  top: 10px;
+  .button-area {
+    height: 32px;
+    button {
+      margin-left: 8px;
+    }
+  }
+}
+.onclose-cancel {
+  float: left;
+}

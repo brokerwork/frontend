@@ -1,0 +1,170 @@
+@import '~less/variables.less';
+.item {
+    display: flex;
+    &+& {
+        padding-top: 10px;
+    }
+}
+.preview-image {
+    max-width: 225px;
+}
+
+.control {
+    flex: 1;
+    .textarea {
+        padding: 5px 10px;
+        resize: none;
+        height: 80px;
+    }
+}
+.form-body {
+    :global(.lean-modal-body) {
+        max-height: 600px;
+        overflow-y: auto;
+    }
+    :global(.lean-form-error-msg) {
+        position: relative;
+    }
+}
+
+.push-url-control {
+    width: 90%;
+    display: inline-block;
+    word-break: break-all;
+    word-wrap: break-word;
+    padding: 4px 10px 0 0;
+}
+
+.form-body {
+    width: 600px;
+}
+
+.initpassword {
+    display: inline-block;
+    position: relative;
+    top: 2px;
+}
+
+.initpassword-div {
+    position: relative;
+}
+
+.btn {
+    margin-right: 5px;
+    border-color: @border-color;
+    color: @text-color;
+    background-color: transparent;
+    font-size: 12px;
+}
+
+.image-size {
+    display: inline-block;
+    border-radius: 4px;
+    height: 40.25px;
+    width: 80.5px;
+    padding-left: 10px;
+    border-left: 1px solid #eee;
+    img {
+        display: inline-block;
+        height: 40.25px;
+        width: 80.5px;
+    }
+}
+.cover-content {
+    :global(.lean-form-control) {
+       display: inline-block;
+      }
+}
+.default-cover {
+    margin-left: 20px;
+    display: inline-block;
+    position: relative;
+}
+
+.default-cover-div {
+    position: relative;
+}
+
+.Raiders-label {
+    display: inline-block;
+}
+
+.pull-left {
+    display: inline-block;
+    font-size: 12px;
+}
+
+.header-link {
+    border-left: 1px solid @text-color;
+    padding-left: 5px;
+    margin-left: 5px;
+}
+
+.raiders-label {
+    font-size: 12px;
+    height: 31px;
+    line-height: 31px;
+    margin-left: 25px;
+}
+
+.disclaimer-label {
+    font-size: 12px;
+    color: #999;
+    text-align: justify;
+}
+
+.needRecord-div {
+    position: relative;
+    display: inline-block;
+    .needRecord-checkbox {
+        display: inline-block;
+        position: relative;
+        top: -9px
+    }
+    .needRecord-yes {
+        display: inline-block;
+        position: relative;
+        top: -9px;
+    }
+    .record-label {
+        display: inline-block;
+        margin-left: 10px;
+        .progressBar {
+            width: 190px;
+            height: 8px;
+            margin-bottom: 6px;
+        }
+        .flux-label {
+            width: 190px;
+            font-size: 12px;
+        }
+        .right-flux-label {
+            width: 110px;
+            display: inline-block;
+            text-align: right;
+        }
+        .danger-right-flux-label {
+            width: 110px;
+            display: inline-block;
+            text-align: right;
+            color: #fa667a;
+        }
+        .danger-progressBar {
+            width: 190px;
+            height: 8px;
+            margin-bottom: 6px;
+            div {
+                background-color: #fa667a;
+            }
+        }
+        .left-flux-label {
+            display: inline-block;
+            text-align: left;
+            width: 80px;
+        }
+    }
+}
+
+.error {
+    border-color: @red;
+}

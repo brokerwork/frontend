@@ -1,0 +1,54 @@
+@import '~less/sc/variables.less';
+
+.horizon {
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px;
+  & > div {
+    margin-right: 15px;
+  }
+  & > span {
+    margin-right: 15px;
+  }
+}
+.horizonSpan {
+  margin-bottom: 8px;
+  display: flex;
+  > span {
+    display: flex;
+    align-items: center;
+
+    > div {
+      margin-left: 8px;
+      margin-right: 8px;
+    }
+  }
+
+  > span:not(:last-child) {
+    margin-right: 12px;
+  }
+}
+
+.item {
+  margin-bottom: 15px;
+}
+
+.title {
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px;
+  color: @base-text-dark-color;
+  > i {
+    margin-left: 8px;
+    font-size: 14px;
+    color: @base-text-light-color;
+    cursor: pointer;
+    &:hover {
+      color: @brand-primary;
+    }
+  }
+}
+
+.error {
+  color: @state-danger;
+}

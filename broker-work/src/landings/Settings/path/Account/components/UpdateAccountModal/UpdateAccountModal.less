@@ -1,0 +1,23 @@
+@import '~less/variables.less';
+.errorText {
+  color: @red;
+  height: 12px;
+  font-size: 12px;
+  line-height: 12px;
+}
+
+:global(.form-control) {
+  font-size: 12px;
+}
+
+:global(.control-label) {
+  font-size: 12px;
+}
+
+.modalBody {
+  :global {
+    .lean-modal-body {
+      padding-bottom: 0;
+    }
+  }
+}

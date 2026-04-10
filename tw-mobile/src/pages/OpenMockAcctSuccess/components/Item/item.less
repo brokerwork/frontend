@@ -1,0 +1,35 @@
+@import '~less/fn.less';
+@contentColor: #3E3E3E;
+
+.item {
+    position: relative;
+    border-bottom: 1px solid #EDEDED;
+    font-size: 15px;
+    .rem(100px,height);
+    .rem(100px,line-height);
+    .rem(63px,padding-left);    // 25 + 38 = 63
+    > div {
+        display: inline-block;
+    }
+    .icon {
+        .rem-size(38px,38px);
+        position: absolute;
+        left: 0;
+        .rem(31px,top);
+    }
+    .title {
+        color: #939393;
+    }
+    .content {
+        .rem(15px,margin-left);
+        color: @contentColor;
+    }
+}
+
+[data-dpr="2"] .item {
+    font-size: 30px;
+}
+
+[data-dpr="3"] .item {
+    font-size: 45px;
+}

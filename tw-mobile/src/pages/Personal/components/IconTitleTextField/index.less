@@ -1,0 +1,14 @@
+@import '~less/fn.less';
+.formWrapper{
+    position: relative;
+    .title {
+        position: absolute;
+        .rem(63px, left);
+        .rem(30px, top);
+        color: #939393;
+    }
+    input[type="text"]:disabled { /* 用来覆盖 iphone 下 disabled 的 input 的样式 - 不让其变灰色 */
+        -webkit-text-fill-color: rgba(0, 0, 0, 1);
+        -webkit-opacity: 1;
+    }
+}

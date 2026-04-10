@@ -1,0 +1,68 @@
+.@{prefix}-collapse{
+	font-size: @collapse-font-size; 
+	color: @collapse-color;
+}
+.@{prefix}-collapseitem{
+    border-radius: 4px;
+	background-color: @collapse-bg-color;
+	border: solid 1px @collapse-border-color;
+    margin-bottom: 16px;
+    overflow: hidden;
+}
+.@{prefix}-collapseitem-disabled{
+	color: @collapse-disable-color;
+}
+.@{prefix}-collapseitem-icon{
+	margin-right: 8px;
+	font-size: 16px;
+	color: @collapse-icon-color;
+}
+.@{prefix}-collapseitem-title{
+	height:@collapse-title-height;
+	line-height: @collapse-title-height;
+	padding-left: 16px;
+	padding-right: 16px;
+	background-color: @collapse-title-bg-color;
+	display: flex;
+    align-items: center;
+}
+.@{prefix}-collapseitem-title-text{
+	display: inline-block;
+	width: 100%;
+}
+.@{prefix}-collapseitem-content{
+	border-top: solid 1px @collapse-border-color;
+	padding: 16px 16px 24px;
+	height:auto;
+	opacity: 1;
+}
+.@{prefix}-collapseitem-content-active{
+	animation: inCollap .15s ease both;
+}
+.@{prefix}-collapseitem-content-inactive{
+	animation: outCollap .15s ease both;
+}
+@keyframes outCollap {
+	0%{
+		opacity: 1;
+	}
+	100%{
+		opacity: 0;
+		height: 0;
+		padding-top: 0;
+		padding-bottom: 0;
+	}
+}
+@keyframes inCollap {
+	0%{
+		opacity: 0;
+		height: 0;
+		padding-top: 0;
+		padding-bottom: 0;
+	}
+	100%{
+		opacity: 1;
+		height: auto;
+		padding: 16px 16px 24px;
+	}
+}

@@ -1,0 +1,64 @@
+{
+"data": [
+{
+"fieldType": "text",
+"key": "contactsName",
+"label": "姓名",
+"validateType": {}
+},
+{
+"fieldType": "text",
+"key": "customName",
+"label": "客户名称",
+"validateType": { }
+},
+{
+"fieldType": "text",
+"key": "duty",
+"label": "职务",
+"validateType": { }
+},
+{
+"fieldType": "select",
+"key": "gender",
+"label": "性别",
+"optionList": [
+{
+"label": "男",
+"value": "0"
+},
+{
+"label": "女",
+"value": "1"
+}
+],
+"validateType": { }
+},
+{
+"fieldType": "phone",
+"key": "phones",
+"label": "手机",
+"validateType": { }
+},
+{
+"fieldType": "text",
+"key": "email",
+"label": "邮箱",
+"validateType": { }
+},
+{
+"fieldType": "datestring",
+"key": "birthday",
+"label": "出生年月",
+"validateType": { }
+},
+{
+"fieldType": "date",
+"key": "createTime",
+"label": "创建时间",
+"validateType": { }
+}
+],
+"mcode": "m0000000",
+"result": true
+}

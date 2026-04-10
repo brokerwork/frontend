@@ -1,0 +1,36 @@
+@import '~less/variables.less';
+.search-type-box {
+    width: 400px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    .key {
+        flex: 1;
+        padding-right: 20px;
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0;
+        margin-left: -1px;
+        position: relative;
+    }
+    .search-icon {
+        position: absolute;
+        right: 6px;
+        font-size: 14px;
+    }
+     :global(.form-control) {
+        font-size: 12px;
+    }
+    .tool-item {
+        margin-left: 10px;
+    }
+}
+
+.table {
+    margin-top: 20px;
+}
+
+.no-data-show {
+    margin-top: 20px;
+    width: 100%;
+    text-align: center
+}

@@ -1,0 +1,47 @@
+@import '~less/variables.less';
+
+.account-datas {
+  display: flex;
+  justify-content: space-between;
+  padding: 16px 50px 24px;
+  .item {
+    flex: 1;
+    label {
+      color: #637381;
+      display: block;
+      font-size: 12px;
+    }
+    :global(.lean-select) {
+      border: none;
+      box-shadow: none;
+    }
+    :global(.lean-select-arrow) {
+      display: none;
+    }
+    :global(.lean-select-placeholder),
+    :global(.lean-select-value) {
+      margin: 0 20px 0 0;
+    }
+    :global(.lean-select-placeholder) {
+      margin: 0;
+    }
+    :global(.lean-select-sm),
+    :global(.lean-select-selection) {
+      min-height: 24px;
+      height: auto;
+    }
+    .mWidth{
+      input{
+        min-width: 200px;
+      }
+    }
+  }
+
+  &:global(.text-success) {
+    color: @state-success-text;
+  }
+
+  &:global(.text-danger) {
+    color: @state-danger-text;
+  }
+}

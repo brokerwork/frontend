@@ -1,0 +1,133 @@
+@message-prefix-cls: ~"@{prefix}-message";
+@notice-top-padding: 5px;
+@notice-distance: 8px;
+@notice-h-padding: 16px;
+.@{message-prefix-cls} {
+  .reset-component;
+  .border-box(@message-prefix-cls);
+  position: fixed;
+  z-index: @zindex-message;
+  width: 100%;
+  top: 16px;
+  left: 0;
+  pointer-events: none;
+
+  &-notice {
+    padding: @notice-distance @notice-h-padding;
+    text-align: center;
+    &:first-child{
+      margin-top: -@notice-distance;
+    }
+  }
+  .@{message-prefix-cls}-custom-content {
+    padding: @notice-top-padding 32px;
+    min-width: @message-min-width;
+    border-radius: @border-radius-base;
+    // box-shadow: @shadow-2;
+    background: @component-background;
+    display: inline-block;
+    pointer-events: all;
+    // margin: 0 16px;
+    position: relative;
+    &-icon {
+      margin-right: 8px;
+      vertical-align: middle;
+    }
+    &-text {
+      vertical-align: middle;
+    }
+    &-full {
+      width: 100%;
+    } 
+  }
+  .@{message-prefix-cls}-success {
+    border: @border-width-base @border-style-base @message-success-border;
+    background-color: @message-success-bg;
+    color: @message-success-color;
+  }
+
+  .@{message-prefix-cls}-error {
+    border: @border-width-base @border-style-base @message-error-border;
+    background-color: @message-error-bg;
+    color: @message-error-color;
+  }
+
+  .@{message-prefix-cls}-warning {
+    border: @border-width-base @border-style-base @message-warning-border;
+    background-color: @message-warning-bg;
+    color: @message-warning-color;
+  }
+
+  .@{message-prefix-cls}-info,
+  .@{message-prefix-cls}-loading {
+    border: @border-width-base @border-style-base @message-info-border;
+    background-color: @message-info-bg;
+    color: @message-info-color;
+  }
+
+  .@{iconfont-css-prefix} {
+    margin-right: 8px;
+    font-size: @font-size-lg;
+    top: 1px;
+    position: relative;
+  }
+
+  &-notice.move-up-leave.move-up-leave-active {
+    // .@{message-prefix-cls}-custom-content {
+      animation-name: MessageMoveOut;
+      overflow: hidden;
+      animation-duration: 0.3s;
+    // }
+  }
+  &-notice.move-up-enter {
+    // .@{message-prefix-cls}-custom-content {
+      animation-name: MessageMoveIn;
+      overflow: hidden;
+      animation-duration: 0.3s;
+    // }
+  }
+  &-close-icon {
+    font-size: @font-size-sm;
+    position: absolute;
+    right: 15px;
+    top: 5px;
+    color: @message-info-color;
+    line-height: 22px;
+    overflow: hidden;
+    cursor: pointer;
+
+    .@{iconfont-css-prefix}-cross {
+      color: @text-color-secondary;
+      transition: color .3s;
+      &:hover {
+        color: #404040;
+      }
+    }
+  }
+}
+
+@keyframes MessageMoveOut {
+  0% {
+    opacity: 1;
+    max-height: 150px;
+    padding: @notice-distance @notice-h-padding;
+  }
+  100% {
+    opacity: 0;
+    max-height: 0;
+    padding: 0 @notice-h-padding;
+  }
+}
+
+@keyframes MessageMoveIn {
+  0% {
+    opacity: 0;
+    max-height: 0;
+    padding: 0 @notice-h-padding;
+  }
+  100% {
+    opacity: 1;
+    max-height: 150px;
+    padding: @notice-distance @notice-h-padding;
+  }
+}

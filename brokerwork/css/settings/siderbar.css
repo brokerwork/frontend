@@ -1,0 +1,170 @@
+.siderbarcontent{
+    width: 247px;
+    background-color: rgb(50,51,57);
+    display: inline-block;
+    margin-bottom: -15px;
+    padding-bottom: 15px;
+    position:fixed;
+    left:0px;
+    top: 80px;
+    z-index: 10;
+    .gotoright{
+        text-align: right;
+        flex: 1;
+        line-height: 50px;
+    }
+    .clickarea{
+        width: 100%;
+        height: 42px;
+    }
+    .personalsetting{
+        width:100%;
+        height:52px;
+        line-height:50px;
+        text-align:left;
+        color: $textColor;
+        cursor:pointer;
+        
+        i{
+            margin-left: 15px;
+            height: 50px;
+            line-height: 50px;
+            text-align: left;
+            font-size:15px;
+            width: 16px;
+        }
+        span{
+            margin-left: 10px;
+            margin-right: 15px;
+            display: flex;
+        }
+        & .dorpdownIcon{
+            height: 5px;
+            width:8px;
+            display: inline-block;
+            background-size:100% 100%;
+            background-repeat: no-repeat;
+            background-position: center;
+            vertical-align: middle;
+            margin-left: 100px;
+        } 
+        & .dorpupIcon{
+            height: 5px;
+            width:8px;
+            display: inline-block;
+            background-size:100% 100%;
+            background-repeat: no-repeat;
+            background-position: center;
+            vertical-align: middle;
+            margin-left: 100px;
+        }
+        & .personaldownIcon{
+            height: 15px;
+            width:15px;
+            background-image: url("./images/12_icon_down.png");
+            display: inline-block;
+            background-size:100% 100%;
+            background-repeat: no-repeat;
+            background-position: center;
+            vertical-align: middle;
+            margin-left: 100px;
+        } 
+        & .personalupIcon{
+            height: 15px;
+            width:15px;
+            background-image: url("./images/12_icon_up.png");
+            display: inline-block;
+            background-size:100% 100%;
+            background-repeat: no-repeat;
+            background-position: center;
+            vertical-align: middle;
+            margin-left: 100px;
+        }
+         & .messagedownIcon{
+            height: 15px;
+            width:15px;
+            background-image: url("./images/12_icon_down.png");
+            display: inline-block;
+            background-size:100% 100%;
+            background-repeat: no-repeat;
+            background-position: center;
+            vertical-align: middle;
+            margin-left: 100px;
+        } 
+        & .messageupIcon{
+            height: 15px;
+            width:15px;
+            background-image: url("./images/12_icon_up.png");
+            display: inline-block;
+            background-size:100% 100%;
+            background-repeat: no-repeat;
+            background-position: center;
+            vertical-align: middle;
+            margin-left: 100px;
+        }
+        & .triggerupIcon{
+            height: 15px;
+            width:15px;
+            background-image: url("./images/12_icon_up.png");
+            display: inline-block;
+            background-size:100% 100%;
+            background-repeat: no-repeat;
+            background-position: center;
+            vertical-align: middle;
+            margin-left: 87px;
+
+        }
+        & .triggerdownIcon{
+            height: 15px;
+            width:15px;
+            background-image: url("./images/12_icon_down.png");
+            display: inline-block;
+            background-size:100% 100%;
+            background-repeat: no-repeat;
+            background-position: center;
+            vertical-align: middle;
+            margin-left: 87px;
+        }
+    }
+    .active{
+        color:#ff4040;
+    }
+    .yoyo{
+        width:100%;
+        :hover{
+            color:$textColor;
+            background-color: rgb(32,32,37);
+        }
+    }
+    .personalsettingContent{
+        width:100%;
+        height: auto;
+        display: none;
+        & .personalsettingUl{
+            list-style: none;
+            width:100%;
+            padding:0;
+            li{
+              width:100%;   
+              height: 40px;
+              cursor:pointer;
+              color:rgb(156,160,164);
+              a{
+                  color:rgb(156,160,164);
+                  display:block;
+              }
+              span{
+                  height: 42px;
+                  line-height:42px;
+                  margin-left:51px;
+              }
+            }
+            :hover{
+                color:$textColor;
+                background-color: rgb(32,32,37);
+            }
+            
+        }
+    }
+
+}

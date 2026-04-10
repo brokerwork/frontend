@@ -1,0 +1,79 @@
+@import '~less/variables.less';
+@import '~components/DateRangePicker/DateRangePicker.less';
+
+.container {
+  display: inline-block;
+  position: relative;
+  z-index: 3;
+  min-width: 220px;
+  &.show > .popover-container {
+    display: block;
+  }
+  &.left > .popover-container {
+    left: 0;
+  }
+  &.right > .popover-container {
+    right: 0;
+  }
+}
+
+.icon {
+  position: absolute;
+}
+
+.input {
+  padding-left: 23px;
+}
+
+.popover-container {
+  width: 563px;
+  position: absolute;
+  background-color: @white;
+  z-index: 2;
+  top: calc(~'100% + 3px');
+  display: none;
+  border: 1px solid @border-color;
+  border-radius: @border-radius-base;
+  padding: @padding-base;
+  :global {
+    .datetime-range-picker {
+      position: relative;
+      padding-bottom: 40px;
+      .tools-bar {
+        float: none;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        z-index: 2;
+      }
+    }
+  }
+}
+
+.rangeView {
+  display: flex;
+  > ul {
+    width: 50%;
+    box-sizing: border-box;
+    border-left: 1px solid @border-color;
+    margin: 0;
+    padding: 10px 0;
+    list-style: none;
+    > li {
+      cursor: pointer;
+      padding: 3px 0 3px @padding-base;
+    }
+  }
+}
+
+.range-active {
+  margin-left: -1px;
+  border-left: 2px solid;
+}
+
+.view {
+  padding: @padding-base 0;
+}
+
+
+

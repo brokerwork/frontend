@@ -1,0 +1,107 @@
+@import '~less/variables.less';
+
+@bg-color: #fff;
+@tip-padding: 20px;
+@arrow-left: 55px;
+.root {
+  position: relative;
+}
+.tip {
+  position: absolute;
+  width: 295px;
+  border-radius: 4px;
+  background-color: @bg-color;
+  box-shadow: 0 0 10px 0 rgba(9, 2, 4, 0.15);
+  right: 50%;
+  margin-right: -@arrow-left;
+  z-index: @loading-mask-zindex - 1;
+  top: 100%;
+  margin-top: 30px;
+  padding: @tip-padding;
+  color: @text-color-dark;
+  text-decoration: none;
+  cursor: default;
+  line-height: normal;
+  font-size: 12px;
+  &:after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 0px;
+    height: 0;
+    border: 10px solid transparent;
+    top: -20px;
+    right: @arrow-left - 10px;
+    box-sizing: content-box;
+    border-color: transparent;
+    border-bottom: 10px solid @bg-color;
+  }
+  &.right {
+    left: 50%;
+    margin-left: -@arrow-left;
+    &:after {
+      right: auto;
+      left: @arrow-left - 10px;
+    }
+  }
+  &.top {
+    top:auto;
+    bottom: 100%;
+    margin-top: 0;
+    margin-bottom: 30px;
+    &:after {
+      top: auto;
+      bottom: -20px;
+      border: 10px solid transparent;
+      border-top: 10px solid @bg-color;
+    }
+  }
+  img {
+    width: 98px;
+    float: left;
+    margin: 10px - @tip-padding 20px 10px - @tip-padding 20px - @tip-padding;
+  }
+  p {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    text-align: left;
+    margin-bottom: 40px;
+  }
+  .button {
+    height: 28px;
+    padding: 0 9px;
+    line-height: 28px;
+    border-radius: 4px;
+    text-align: center;
+    background-color: #dddddd;
+    border: solid 1px #dddddd;
+    color: @text-color-light;
+    background: @bg-color;
+    position: absolute;
+    bottom: @tip-padding;
+    right: @tip-padding;
+    cursor: pointer;
+    &:hover {
+      color: @main-color;
+      border-color: @main-color;
+    }
+  }
+}
+.mask {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: @modal-backdrop-bg;
+  z-index: @loading-mask-zindex - 2;
+}
+
+.show {
+  .label {
+    color: #fff;
+    position: relative;
+    z-index: @loading-mask-zindex - 1;
+  }
+}

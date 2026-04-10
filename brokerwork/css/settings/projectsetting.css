@@ -1,0 +1,86 @@
+.project-table{
+
+    tr{
+        line-height:40px;
+        height:40px;
+        background-color: transparent !important;
+        td{
+            padding:0px !important;
+        }
+    }
+    tr.project-row + tr{
+        display: none;
+        height: 40px;
+        line-height: 40px;
+        background-color:transparent;
+    }
+    tr.project-row.open + tr{
+        display: table-row;
+        background-color:transparent;
+    }
+    td {
+        padding: 0px;
+        a{
+            text-decoration:none;
+        }
+        button{
+                width:24px;
+                height:24px;
+                border:0px;
+                font-size:10px;
+                i{
+                    width:16px;
+                    height: 16px;
+                    position:relative;
+                    margin-left: -7.5px;
+                    top: -1.5px;
+                }
+            }
+    }
+    .btn-primary[disabled]{
+            background-color:#ddd;
+            color:#999;
+    }
+    .sub-table{
+        background-color: #f9f9f9;
+        margin-bottom: 0 !important;
+        thead{
+            th{border-bottom:none;}
+        }
+        .flow-setting{
+            cursor:pointer;
+            text-decoration:none;
+            color: #428bca;
+        }
+    }
+    .expand{
+        cursor:pointer;
+        border: 1px #eee solid;
+        width: 24px;
+        height: 24px;
+        line-height: 24px;
+        text-align: center;
+        vertical-align: middle;
+        color:lightseagreen;
+        margin: 0 auto;
+        i{
+                    width:24px;
+                    height: 24px;
+                    position:relative;
+                    margin-left: 0px;
+                    font-size: 10px;
+                }
+    }
+
+}
+
+.required-field{
+    color:red;
+}
+.hr-lenth{
+    hr{
+        margin-left:-15px;
+        margin-right:-15px;
+
+}
+}

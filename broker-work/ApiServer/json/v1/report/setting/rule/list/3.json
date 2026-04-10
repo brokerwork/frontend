@@ -1,0 +1,58 @@
+{
+  "data": [
+    {
+      "accountGroups": "258",
+      "balanceLevelId": 103,
+      "balanceType": 1,
+      "commissionType": 0,
+      "createTime": 1479384663766,
+      "id": 17,
+      "mt4Groups": [
+        {
+          "groups": [
+            "D04DemoLWVIR"
+          ],
+          "serverId": "1",
+          "serverName": "MT4真实测试"
+        },
+        {
+          "groups": [],
+          "serverId": "5",
+          "serverName": "MT4真实测试2"
+        }
+      ],
+      "name": "测试",
+      "ruleType": 3,
+      "symbolGroups": ""
+    },
+    {
+      "accountGroups": "",
+      "balanceType": 1,
+      "commissionType": 0,
+      "createTime": 1479460143799,
+      "id": 30,
+      "mt4Groups": [
+        {
+          "groups": [],
+          "serverId": "5",
+          "serverName": "MT4真实测试2"
+        },
+        {
+          "groups": [],
+          "serverId": "6",
+          "serverName": "MT5真实测试1"
+        },
+        {
+          "groups": [],
+          "serverId": "1",
+          "serverName": "MT4真实测试1"
+        }
+      ],
+      "name": "ces",
+      "ruleType": 3,
+      "symbolGroups": ""
+    }
+  ],
+  "mcode": "m0000000",
+  "result": true
+}

@@ -1,0 +1,357 @@
+
+body {
+    font-size: 12px;
+    font-family: "Helvetica Neue",Helvetica,"PingFang SC","Hiragino Sans GB","Microsoft YaHei","微软雅黑",Arial,sans-serif;
+
+}
+
+.field-validate-error{
+    border:1px solid red;
+}
+
+.fui-loading-mask{
+    background-color: rgba( 1,1,1,0.6 );
+}
+
+.pagination-info{
+    color:#999;
+    >span:nth-of-type(2){
+        color:#666;
+    }
+}
+.fui-pagination {
+.btn-white{
+    padding-right:10px!important;
+}
+.dropdown-toggle{
+    font-size:12px;
+}
+    .dropdown-menu {
+        li {
+            a {
+                &:focus {
+                     background-color: #1FB5AD;
+                     border-radius: 5px;
+                 }
+            }
+        }
+    }
+    .page-no{
+        li{
+            border-radius:3px!important;
+            a{
+                padding:5px 9px!important;
+               &.btn-primary{
+                    border-color:#1FB5AD!important;
+                    border-radius:3px!important;
+                    &:hover{
+                        background:#1FB5AD!important;
+                        border-radius:3px!important;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/*modal*/
+.fui-modal-mask{
+    .panel-body{
+        padding:30px 15px;
+    }
+    input[type=text],select,.form-control[disabled]{
+        height:32px;
+    }
+    .settings-model{
+        .panel-body{
+            .btn-default{
+                margin-left:10px;
+            }
+        }
+    }
+    .panel-footer{
+        padding: 20px 15px;
+        background:#fff;
+        .btn{
+            padding: 6px 20px;
+            font-size: 12px;
+        }
+    }
+    .line-padding{
+        padding:17px 0px 5px;
+    }
+    .project-settings{
+        .panel-body{
+            padding-bottom:20px;
+            .btn-default{
+            margin-left:10px;
+        }
+        }
+    }
+        .btn{
+            padding: 6px 20px;
+            font-size: 12px;
+        }
+}
+    /*card样式*/
+    .card-panel{
+        color:#666;
+        font-size:12px;
+        input[type=text],select,.form-control[disabled]{
+            height:32px;
+        }
+        .m-bot15{
+            margin-bottom:0px;
+        }
+        .form-control[disabled]{
+            background:#fafafa;
+            color:#999;
+        }
+        .uploadcontent{
+            span{
+                color:#666!important;
+            }
+        }
+        .help-block{
+            line-height:12px;
+            margin-bottom:0px;
+            color:#FB445B;
+        }
+        .panel-heading{
+            height:56px;
+            line-height: 26px;
+            background:#fafafa;
+            font-size:14px;
+            color:#333;
+            .fa-times{
+                line-height:26px;
+            }
+        }
+        select{
+            color:#666;
+            option{
+                color:#666;
+            }
+        }
+        .subcard-panel{
+            color:#666;
+            font-size:12px;
+            border:none;
+            margin-bottom:15px;
+            border-top-left-radius:4px;
+            border-top-right-radius:4px;
+            &.subcard-height{
+                .extraPanel{
+                    margin-bottom: 20px;
+                    background-color: #fff;
+                    border: 1px solid #ddd;
+                    border-radius: 4px;
+                    box-shadow: 0 1px 1px rgba(0,0,0,.05);
+                }
+                .panel-header-cus{
+                    display:block;
+                }
+             }
+            .form-group{
+                &:last-child{
+                    margin-bottom:0px;
+                     .pull-right{
+                        .btn-default{
+                            margin-left:10px;
+                        }
+                     }
+                }
+            }
+            .fa-chevron-down, .fa-chevron-up{
+                line-height:0.5;
+             }
+            .m-bot15{
+                margin-bottom:0px;
+            }
+            .panel-heading{
+                height:36px;
+                background:#eee!important;
+                font-size:14px;
+                color:#333;
+                border-bottom:1px solid #ddd!important;
+                line-height: 0.5;
+            }
+            .checkbox{
+                line-height:12px;
+                min-height: 0px;
+                padding-left:0px;
+                input[type=checkbox]{
+                    margin:0px 5px 0px 0px;
+                }
+            }
+            .no-padding{
+                padding-top:0px;
+            }
+            .radio{
+                min-height:0px;
+                padding-top:0px;
+                margin-left:0px;
+            }
+            input[type=radio]{
+                margin:2px 5px 0px 0px;
+            }
+        }
+        .btn{
+            font-size:12px;
+        }
+            .pull-right{
+                .btn{
+                    padding:9px 20px;
+                    line-height:12px;
+                }
+                &.btn{
+                     padding:9px 20px;
+                     line-height:12px;
+                 }
+            }
+        .btn-card-wrapper-cus{
+            border-top:1px solid #ddd;
+            padding-top:20px;
+            margin-left: -15px;
+            margin-right: -15px;
+            .checkbox-inline{
+                margin-right:5px;
+            }
+            .control-label{
+                padding-right:0px;
+            }
+            .btn{
+                font-size:12px;
+                padding:9px 20px;
+                line-height:12px;
+                padding:9px 20px;
+                line-height:12px;
+                &.btn-default{
+                    &:hover{
+                        border:1px solid #b0b5b9;
+                    }
+                }
+
+
+            }
+
+        }
+    .fa-user{
+        vertical-align: middle;
+        margin-top:-4px;
+    }
+    .acct-id{
+        color:#333;
+    }
+    .acct-create-time{
+        color:#999;
+    }
+    .ed-acct-tabs{
+        ul{
+            li{
+                a{
+                    font-size:14px;
+                    &:hover{
+                        background:#fff;
+                        color:#1fb5ad;
+                        border-color:#fff #fff #ddd;
+                     }
+                }
+            }
+        }
+
+            .tab-content{
+            .form-group{
+                .control-label{
+                    font-size:12px!important;
+                }
+                .form-control{
+                    font-size:12px!important;
+                }
+
+            }
+            }
+        .pull-right{
+            &.btn-default{
+                margin-left:10px!important;
+            }
+        }
+    }
+    }
+    .has-error{
+        .form-control{
+            border-color:#FB445B;
+        }
+    }
+/*设置页面个人设置表单*/
+.emailsetting,.basicInfo,.changepwdcontent{
+    color:#666;
+    font-size:12px;
+    input[type=text],input[type=password],input[type=phone],input[type=email],select,.form-control[disabled]{
+    height:32px;
+    font-size:12px;
+}
+    .btn-basicinfo{
+        padding:6px 20px;
+    }
+select{
+    color:#666;
+}
+    .control-label{
+    font-size:12px;
+}
+    .form-control{
+        font-size:12px;
+    }
+.form-control[disabled], .form-control[readonly]{
+background:#fafafa;
+color:#999;
+font-size:12px;
+}
+.uploadcontent{
+span{
+font-size:12px;
+color:#666!important;
+}
+}
+.btn-test{
+    height:32px;
+    border-color:#e2e2e4;
+    &:hover{
+    border-color:#1ca59e;
+}
+    .fa-paperclip{
+    position:relative;
+    top:-1px;
+}
+}
+}
+.uploadmodal{
+    width: 420px;
+}
+
+.privilegeYes{
+    display: inline-block;
+}
+.privilegeNo{
+    display: none !important;
+}
+.confirmModal {
+	width: 490px;
+	height: 150px;
+	line-height: 150px;
+	text-align: center;
+}
+.linkStyle{
+    color: #428bca;
+    cursor: pointer;
+}
+.touchStyle{
+    cursor: pointer;
+}
+.sortTableIcon{
+        display: inline-block;
+    }
+.form-foredge{
+    padding-bottom:120px;
+}

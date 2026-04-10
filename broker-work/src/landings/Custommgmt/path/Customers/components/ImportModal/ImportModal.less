@@ -1,0 +1,121 @@
+@import '~less/variables.less';
+@import '~less/ui-variables.less';
+
+.upload :global(.upload-drag){
+  width:100%;
+  margin-bottom: 0;
+}
+
+.upload-footer {
+  margin-top: 6px;
+  text-align: left;
+  background-color: @white;
+  font-size: 12px;
+  color: @lean-grey-3;
+}
+
+.loading-container {
+  text-align: center;
+  padding: 68px 0 100px 0 ;
+}
+
+.file-info-container {
+  display:flex;
+  align-items: center;
+}
+
+.file-info-icon {
+  margin-right: 14px;
+  font-size: 40px;
+}
+
+.checkContent-container {
+  display: flex;
+  flex-direction:column;
+}
+
+.checkContent-file-container {
+  display: inline-flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: @lean-grey-5;
+  border: 1px solid @lean-grey-4;
+  border-radius: 4px;
+  padding: 14px 20px;
+}
+
+.checkContent-fileName {
+  font-size: 14px;
+}
+
+.checkContent-fileSize {
+  color: @lean-grey-2;
+  font-size: 13px;
+}
+
+.checkContent-reUpload {
+  display: inline-flex;
+  align-items: center;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.checkContent-reUpload-icon {
+  margin-right: 6px;
+  position: relative;
+  top: 1px;
+}
+
+.checkContent-result-title {
+  margin-top: 24px;
+  font-size: 12px;
+  padding-bottom: 6px;
+  border-bottom: 1px solid @lean-grey-4;
+  color: @lean-grey-2;
+}
+
+.checkContent-result-table-row {
+  display: inline-flex;
+  border-bottom: 1px solid @lean-grey-4;
+}
+
+.checkContent-result-table-title {
+  text-align: left;
+  color: @lean-grey-2;
+  font-size: 12px;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  padding-left:16px;
+  flex:1;
+}
+
+.checkContent-result-table-content {
+  text-align: left;
+  color: @lean-grey-1;
+  font-size: 12px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left:16px;
+  flex:1;
+}
+
+.importFailed-file-container {
+  display: inline-flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: fade(@lean-red-2,5);
+  border: 1px solid fade(@lean-red-2,20);
+  border-radius: 4px;
+  padding: 14px 20px;
+}
+
+.importFailed-file-notPass {
+  font-size: 14px;
+  color: @lean-red-2;
+}
+
+.import-success-container {
+  display: flex;
+  flex-direction:column;
+  border-top: 1px solid @lean-grey-4;
+}

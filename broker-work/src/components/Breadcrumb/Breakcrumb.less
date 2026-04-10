@@ -1,0 +1,28 @@
+@import '~less/variables.less';
+
+.breadcrumb {
+  a {
+    color: @text-color;
+    &:hover {
+      color: @main-color;
+      text-decoration: none;
+    }
+  }
+  &.gray-link {
+    color: @text-color-dark;
+    i {
+      color: @text-color; 
+      font-size: 12px;
+    }
+    a {
+      color: @main-color;
+      &:hover {
+        color: @main-color;
+        text-decoration: none;
+      }
+    }
+  }
+}
+.icon {
+  margin: 0 5px;
+}

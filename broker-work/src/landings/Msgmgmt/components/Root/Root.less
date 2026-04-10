@@ -1,0 +1,28 @@
+@import '~less/variables.less';
+
+.container {
+  background-color: @body-bg;
+  height: 100%;
+  display: flex;
+}
+
+.left-menu {
+  background-color: @white;
+  width: 240px;
+  overflow-y: auto;
+  border-right: 1px solid @border-color;
+}
+
+.content {
+  flex: 1;
+  background-color: @white;
+  overflow: auto;
+  img {
+    max-width: 100%;
+  }
+}
+
+.body {
+  padding: 0;
+  height: 100%;
+}

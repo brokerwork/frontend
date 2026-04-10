@@ -1,0 +1,215 @@
+@import "./mix.less";
+
+.@{prefix}-input {
+  .input;
+}
+.@{prefix}-input-disabled {
+  color: @input-color-grey1;
+  cursor: not-allowed;
+  background-color: @input-color-grey5;
+  &:hover {
+    border: 1px solid @input-color-grey4;
+  }
+}
+.@{prefix}-input-sm {
+  height: @input-sm-height;
+  padding: @input-sm-padding;
+}
+.@{prefix}-input-lg {
+  height: @input-lg-height;
+  padding: @input-lg-padding;
+  font-size: @input-lg-font-size;
+}
+.@{prefix}-input-line {
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-radius: 0;
+  padding: 0;
+  &:focus {
+    box-shadow: none;
+  }
+}
+.@{prefix}-input-affix {
+  width: @full-width;
+  font-size: @input-affix-font-size;
+  line-height: @input-affix-line-height;
+  color: @input-color-grey3;
+  box-sizing: border-box;
+  position: relative;
+  display: inline-block;
+  .@{prefix}-input {
+    z-index: @input-affix-input-z-index;
+  }
+  .@{prefix}-input:not(:last-child) {
+    padding-right: @input-affix-input-pd-right;
+  }
+  .@{prefix}-input:not(:first-child) {
+    padding-left: @input-affix-input-pd-left;
+  }
+  .@{prefix}-input-prefix,
+  .@{prefix}-input-suffix {
+    top: @input-affix-pre-suf-top;
+    z-index: @input-affix-pre-suf-z-index;
+    color: @input-color-grey3;
+    position: absolute;
+    transform: @input-affix-pre-suf-transform;
+  }
+  .@{prefix}-input-prefix {
+    left: @input-affix-prefix-left;
+  }
+  .@{prefix}-input-suffix {
+    right: @input-affix-suffix-right;
+  }
+}
+.@{prefix}-input-group-wrapper {
+  width: @full-width;
+  vertical-align: top;
+  display: inline-block;
+}
+.@{prefix}-input-group-wrapper-sm .@{prefix}-input,
+.@{prefix}-input-group-wrapper-sm .@{prefix}-input-group-addon {
+  height: @input-group-sm-input-addon-height;
+}
+.@{prefix}-input-group-wrapper-lg .@{prefix}-input,
+.@{prefix}-input-group-wrapper-lg .@{prefix}-input-group-addon {
+  height: @input-group-lg-input-addon-height;
+}
+.@{prefix}-input-group {
+  width: @full-width;
+  font-size: @input-group-font-size;
+  line-height: @input-group-line-height;
+  color: @input-color-grey3;
+  box-sizing: border-box;
+  position: relative;
+  display: table;
+  border-collapse: separate;
+  border-spacing: 0;
+  .@{prefix}-input-group-addon:first-child,
+  .@{prefix}-input:first-child {
+    border-bottom-right-radius: 0;
+    border-top-right-radius: 0;
+  }
+  .@{prefix}-input-group-addon:last-child,
+  .@{prefix}-input:last-child {
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 0;
+  }
+  .@{prefix}-input {
+    float: left;
+    width: @full-width;
+    margin-bottom: 0;
+    display: table-cell;
+  }
+  .@{prefix}-input-affix {
+    float: left;
+    width: @full-width;
+    margin-bottom: 0;
+    display: table-cell;
+  }
+  .@{prefix}-input-group-addon:not(:first-child):not(:last-child) {
+    border-radius: 0;
+  }
+  .@{prefix}-input:not(:first-child):not(:last-child) {
+    border-radius: 0;
+  }
+  .@{prefix}-input:focus {
+    z-index: @input-group-input-focus-z-index;
+  }
+}
+.@{prefix}-input-group-addon {
+  padding: @input-group-addon-padding;
+  font-size: @input-group-addon-font-size;
+  line-height: @input-group-addon-line-height;
+  color: @input-color-grey1;
+  text-align: center;
+  border-radius: @input-group-addon-border-radius;
+  position: relative;
+  transition: all @input-transition;
+  display: table-cell;
+  box-sizing: border-box;
+  border: 1px solid @input-color-grey4;
+  background-color: @input-color-grey5;
+  width: 1px;
+  white-space: nowrap;
+  vertical-align: middle;
+  &:first-child {
+    border-right: 0;
+  }
+  &:last-child {
+    border-left: 0;
+  }
+  .@{prefix}-icon {
+    vertical-align: middle;
+  }
+}
+.@{prefix}-input-has-error {
+  position: relative;
+  .@{prefix}-input-group-addon {
+    border-color: @input-color-red2;
+  }
+  .@{prefix}-input,
+  .@{prefix}-textarea {
+    border-color: @input-color-red2;
+    background-color: @input-has-error-bg-color;
+    &:focus {
+      background-color: #fff;
+      border-color: @input-color-red2;
+      box-shadow: @input-has-error-focus-box-shadow;
+    }
+    &:hover {
+      border-color: @input-color-red2;
+    }
+  }
+  .@{prefix}-input-error {
+    position: relative;
+    color: @input-color-red2;
+    line-height: @input-has-error-input-line-height;
+    font-size: @input-has-error-input-fone-size;
+    margin-top: @input-has-error-input-margin-top;
+    span:first-child {
+      float: left;
+    }
+    &:after {
+      clear: both;
+      content: "";
+      display: block;
+    }
+  }
+  .@{prefix}-input-error-text {
+    float: left;
+    line-height: @input-has-error-input-fone-size;
+    font-size: @input-has-error-input-text-font-size;
+    margin-left: @input-has-error-input-text-margin-left;
+  }
+}
+
+// ============================== TextArea ===================================
+.@{prefix}-textarea {
+  box-sizing: border-box;
+  position: relative;
+  display: inline-block;
+  padding: @input-textarea-padding;
+  width: @full-width;
+  height: auto;
+  min-height: @input-textarea-min-height;
+  line-height: @input-textarea-line-height;
+  font-size: @input-textarea-font-size;
+  color: @input-color-grey1;
+  background-color: #fff;
+  background-image: none;
+  border: 1px solid @input-color-grey4;
+  border-radius: @input-textarea-border-radius;
+  transition: all @input-transition;
+  &:hover {
+    border-color: @input-border-color;
+  }
+  &:focus {
+    outline: 0;
+    border-color: @input-border-color;
+    box-shadow: @input-textarea-focus-box-shadow;
+  }
+  &::-webkit-input-placeholder {
+    color: @input-color-grey3;
+  }
+}

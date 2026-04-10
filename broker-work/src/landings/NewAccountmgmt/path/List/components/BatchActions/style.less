@@ -1,0 +1,26 @@
+@import '~less/variables.less';
+
+.batch-actions {
+  padding: 15px 0 10px;
+  display: flex;
+  align-items: center;
+
+  > * > :global(.btn),
+  > :global(.btn) {
+    margin-left: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+.item {
+  padding: 0 32px 0 16px;
+  font-size: 13px;
+  line-height: 32px;
+  height: 32px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  &:hover {
+    background: rgba(66,133,244,.08);
+    cursor: pointer;
+  }
+}

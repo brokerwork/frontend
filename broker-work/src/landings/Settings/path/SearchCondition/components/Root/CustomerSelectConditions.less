@@ -1,0 +1,18 @@
+@import "~less/variables.less";
+.right {
+    float: right;
+}
+
+.tips {
+    margin-left: 5px;
+     :global(.fa) {
+        font-size: 14px;
+        vertical-align: text-top;
+    }
+     :global(.popover) {
+        color: @text-color-dark;
+       :global(.popover-content) {
+           width: 200px;
+       } 
+    }
+}

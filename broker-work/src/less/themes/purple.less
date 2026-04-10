@@ -1,0 +1,24 @@
+@import './mix.less';
+@purple-1: #611AC4;
+@purple-2: #722ED0;
+@purple-3: #7B43C8;
+@purple-4: #8659C5;
+@purple-5: #936EC7;
+:global {
+  .purple-theme {
+    a {
+      color: @purple-2;
+      &:hover {
+        color: @purple-1;
+      }
+    }
+    .createThemes(
+      @purple-1,
+      @purple-2,
+      @purple-3,
+      @purple-4,
+      @purple-5,
+      #000
+    );
+  }
+}

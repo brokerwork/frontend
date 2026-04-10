@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title id="pageTitle"></title>
+    <link id='iconLink' rel="shortcut icon" href="">
+    <link rel="stylesheet" href="http://traderaccount.oss-cn-hangzhou.aliyuncs.com/static/sdk/themes-default.css">
+    <link rel="stylesheet" href="/css/override.css">
+    <script>
+        /* @@${variable} is replaced by backend codes */
+        var _vds = _vds || [];
+        window._vds = _vds;
+        _vds.push(['setAccountId', "@@${accountId}"]);
+        _vds.push(['enableHT', true]);
+        var vds = document.createElement('script');
+        vds.type = 'text/javascript';
+        vds.async = true;
+        vds.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'dn-growing.qbox.me/vds.js';
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(vds, s);
+    </script>
+</head>
+
+<body>
+    <div id="main" class="main"></div>
+		<script src="http://traderaccount.oss-cn-hangzhou.aliyuncs.com/static/sdk/gt.js"></script>
+    <script src="http://traderaccount.oss-cn-hangzhou.aliyuncs.com/static/sdk/index.js"></script>
+</body>
+
+</html>

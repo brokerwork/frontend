@@ -1,0 +1,28 @@
+import i18n from 'utils/i18n';
+export const HOUR_OPTIONS = [
+  { label: `0${i18n['twapp.trade_time_setting.oclock']}`, value: '0' },
+  { label: `1${i18n['twapp.trade_time_setting.oclock']}`, value: '1' },
+  { label: `2${i18n['twapp.trade_time_setting.oclock']}`, value: '2' },
+  { label: `3${i18n['twapp.trade_time_setting.oclock']}`, value: '3' },
+  { label: `4${i18n['twapp.trade_time_setting.oclock']}`, value: '4' },
+  { label: `5${i18n['twapp.trade_time_setting.oclock']}`, value: '5' },
+  { label: `6${i18n['twapp.trade_time_setting.oclock']}`, value: '6' },
+  { label: `7${i18n['twapp.trade_time_setting.oclock']}`, value: '7' },
+  { label: `8${i18n['twapp.trade_time_setting.oclock']}`, value: '8' },
+  { label: `9${i18n['twapp.trade_time_setting.oclock']}`, value: '9' },
+  { label: `10${i18n['twapp.trade_time_setting.oclock']}`, value: '10' },
+  { label: `11${i18n['twapp.trade_time_setting.oclock']}`, value: '11' },
+  { label: `12${i18n['twapp.trade_time_setting.oclock']}`, value: '12' },
+  { label: `13${i18n['twapp.trade_time_setting.oclock']}`, value: '13' },
+  { label: `14${i18n['twapp.trade_time_setting.oclock']}`, value: '14' },
+  { label: `15${i18n['twapp.trade_time_setting.oclock']}`, value: '15' },
+  { label: `16${i18n['twapp.trade_time_setting.oclock']}`, value: '16' },
+  { label: `17${i18n['twapp.trade_time_setting.oclock']}`, value: '17' },
+  { label: `18${i18n['twapp.trade_time_setting.oclock']}`, value: '18' },
+  { label: `19${i18n['twapp.trade_time_setting.oclock']}`, value: '19' },
+  { label: `20${i18n['twapp.trade_time_setting.oclock']}`, value: '20' },
+  { label: `21${i18n['twapp.trade_time_setting.oclock']}`, value: '21' },
+  { label: `22${i18n['twapp.trade_time_setting.oclock']}`, value: '22' },
+  { label: `23${i18n['twapp.trade_time_setting.oclock']}`, value: '23' },
+  { label: `24${i18n['twapp.trade_time_setting.oclock']}`, value: '24' }
+];

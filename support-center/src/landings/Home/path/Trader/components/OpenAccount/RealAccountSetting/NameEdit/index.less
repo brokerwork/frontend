@@ -1,0 +1,23 @@
+@import '~less/sc/variables.less';
+
+.list {
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    padding: 12px 12px 0;
+  }
+
+  li {
+    min-height: 38px;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid @border-color;
+
+    & > i {
+      margin-right: 8px;
+      cursor: pointer;
+      color: @brand-primary;
+    }
+  }
+}

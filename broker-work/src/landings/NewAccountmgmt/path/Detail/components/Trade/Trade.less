@@ -1,0 +1,70 @@
+@import "~less/variables.less";
+
+.actions {
+  padding: 20px 0 15px;
+}
+
+.header {
+  color: #212224;
+  font-size: 12px;
+  border-left: 4px solid #bfbfbf;
+  padding: 0 8px;
+  height: 18px;
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.table {
+  margin-bottom: 10px;
+  
+  thead {
+
+    tr {
+
+      th {
+        background-color: #f9f9f9;
+        border-bottom: 0;
+        color: #212224;
+        font-weight: normal;
+        height: 38px;
+        vertical-align: middle;
+  
+        &:first-child {
+          border-top-left-radius: 4px;
+        }
+  
+        &:last-child {
+          border-top-right-radius: 4px;
+        }
+      }
+    }
+  }
+
+  tbody {
+
+    tr {
+
+      td {
+        height: 38px;
+        color: #686868;
+        border-bottom-color: #e9e9e9;
+
+        &:global(.text-success) {
+          color: @state-success-text
+        }
+
+        &:global(.text-danger) {
+          color: @state-danger-text
+        }
+      }
+    }
+  }
+}
+
+.trade {
+  :global(.lean-pagination) {
+    margin-top: 15px;
+  }
+}

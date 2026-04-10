@@ -1,0 +1,158 @@
+.open-real-account {
+	.struct-info{
+		display: flex;
+		border-bottom: 1px solid #e5e5e5;
+		height: 106px;
+		.struct-info-img{
+			display: inline-block;
+			width: 80px;
+			height: 80px;
+			border: 1px solid #eceff0;
+			border-radius: 100%;
+		}
+		.struct-info-right{
+			padding: 10px 15px;
+			flex: 1;
+			font-size: 12px;
+			color: #999;
+			.struct-info-title{
+				line-height: 40px;
+				font-size: 16px;
+				color: #333;
+			}
+		}
+	}
+	// form的label在超出宽度时自动换行，不省略
+	.ant-form-item-label{
+		white-space: normal;
+		padding-right: 20px;
+		label:after{
+			display: none;
+		}
+	}
+	.step{
+		margin: 0 auto;
+		white-space: nowrap;
+		display: flex;
+		justify-content: space-between;
+		margin-top: 30px;
+		.ant-steps-item{
+			position: relative;
+			display: flex;
+			flex: none;
+			flex-direction: column;
+			align-items: center;
+			margin-right: 0;
+			flex-grow:1;
+			&:first-child .ant-steps-item-icon:before{
+				display: none;
+			}
+			&:last-child .ant-steps-item-icon:after{
+				display: none;
+			}
+		}
+		 .ant-steps-item-title:after{
+			display: none;
+		}
+		.ant-steps-item-icon{
+			width: 46px;
+			height: 46px;
+			line-height: 43px;
+			margin-right: 0; 
+			font-size: 16px;
+			display: block;
+			position: relative;
+			&:after{
+				content: '';
+				height: 1px;
+				width: 9999px;
+				background: #e8e8e8;
+				display: block;
+				position: absolute;
+				top: 23px;
+				left: 56px;
+			}
+			&:before{
+				content: '';
+				height: 1px;
+				width: 300px;
+				background: #e8e8e8;
+				display: block;
+				position: absolute;
+				top: 23px;
+				right: 56px;
+			}
+		}
+		.ant-steps-item-content{
+			display: block;
+		}
+		.ant-steps-item-title{
+			position: inherit;
+			padding-right: 0;
+		}
+	}
+	.open-real-account-form{
+		margin: 0 auto;
+		padding: 36px 10px 0;
+		background: #fafafa;
+	}
+	.btn_panel{
+		border-top: 1px solid #f0f0f0;
+		margin: 0 30px;
+		padding: 36px;
+		text-align: center;
+	}
+    .ant-checkbox-group-item {
+        margin-bottom: 2px;
+	}
+	.open-real-disclaimer{
+		text-align: center;
+        margin: 0 auto 20px;
+	}
+	.foot {
+		border: solid 1px #eff1f1;
+		border-radius: 0 0 4px 4px;
+		border-top: 0;
+		background: #fafafa;
+		text-align: center;
+		padding: 36px;
+	}
+	.step-panel{
+		border-radius: 4px 4px 0 0;
+	}
+}
+.head-title {
+	margin: 0 auto 36px;
+	padding-bottom: 36px;
+	border-bottom: 1px solid  #f0f0f0;
+	font-weight: 500;
+	text-align: center;
+	font-size: 16px;
+	color: #323232;
+}
+@media print {
+	.app-header, .app-sidebar, .struct-info, .step, .disclaimer, .btn_panel, .stop-server-notice{
+		visibility: hidden!important;
+	}
+	.app-page {
+		min-width: 0;
+		.page-container{
+			position: inherit;
+			.page{
+				border: none;
+			}
+		}
+	} 
+	.open-real-account .open-real-account-form{
+        position: absolute;
+        top: 0;
+		left: 0;
+		padding: 0;
+		border: none;
+		width: 1086px;
+	}
+	.step-panel{
+		width: 1000px;
+		margin: 0 auto;
+	}
+}

@@ -1,0 +1,59 @@
+@import "~less/sc/variables.less";
+
+.container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  text-align: center;
+  overflow: auto;
+
+  &:before {
+    content: "";
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+  }
+}
+
+.box {
+  display: inline-block;
+  vertical-align: middle;
+  text-align: left;
+  width: 410px;
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 15px;
+}
+
+.row {
+  margin-top: 15px;
+}
+
+.form-control {
+  height: 42px;
+  font-size: 14px;
+}
+
+.btn {
+  width: 100%;
+  font-size: 18px;
+  padding: 10px 16px;
+  border-radius: 6px;
+  height: auto;
+
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+.heading {
+  display: flex;
+  align-items: center;
+  padding-bottom: 15px;
+}
+
+.title {
+  font-size: 18px;
+}

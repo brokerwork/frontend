@@ -1,0 +1,99 @@
+.same-account {
+  padding: 30px;
+  .same-commont-tit {
+    height: 45px;
+    color: #000;
+    font-size: 14px;
+    line-height: 45px;
+  }
+  .same-agreement {
+    width: 840px;
+    margin: 30px auto 0;
+  }
+  .same-btn {
+    width: 840px;
+    margin: 30px auto 0;
+    text-align: right;
+    .same-cancel {
+      margin-left: 10px;
+    }
+  }
+  .same-commont-con {
+    color: #666;
+  }
+  .open-same-account-form {
+    margin: 0 auto;
+    width: 998px;
+    padding: 30px 10px;
+    background-color: #fafafa;
+    border: 1px solid #eceff0;
+    border-radius: 4px;
+    margin-bottom: 30px;
+    margin-top: 30px;
+  }
+
+  .step {
+    margin: 0 auto;
+    white-space: nowrap;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+    .ant-steps-item {
+      position: relative;
+      display: flex;
+      flex: none;
+      flex-direction: column;
+      align-items: center;
+      margin-right: 0;
+      flex-grow: 1;
+      &:first-child .ant-steps-item-icon:before {
+        display: none;
+      }
+      &:last-child .ant-steps-item-icon:after {
+        display: none;
+      }
+    }
+    .ant-steps-item-title:after {
+      display: none;
+    }
+    .ant-steps-item-icon {
+      width: 46px;
+      height: 46px;
+      line-height: 43px;
+      margin-right: 0;
+      font-size: 16px;
+      display: block;
+      position: relative;
+      &:after {
+        content: "";
+        height: 1px;
+        width: 9999px;
+        background: #e8e8e8;
+        display: block;
+        position: absolute;
+        top: 23px;
+        left: 56px;
+      }
+      &:before {
+        content: "";
+        height: 1px;
+        width: 300px;
+        background: #e8e8e8;
+        display: block;
+        position: absolute;
+        top: 23px;
+        right: 56px;
+      }
+    }
+    .ant-steps-item-content {
+      display: block;
+    }
+    .ant-steps-item-title {
+      position: inherit;
+      padding-right: 0;
+    }
+  }
+  .ant-checkbox-group-item {
+    margin-bottom: 2px;
+  }
+}

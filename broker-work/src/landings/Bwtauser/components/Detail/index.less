@@ -1,0 +1,59 @@
+@import '~less/variables.less';
+.main-info:global(.table) {
+  margin: 15px 0 15px 50px;
+  width: calc(~'100% - 50px');
+  thead > tr > th,
+  td {
+    width: 1%;
+    text-align: left;
+    border: none;
+    padding: 2px;
+  }
+}
+
+.userRegisterName {
+  font-size: 20px;
+  padding: 0 10px;
+}
+
+.connectedCustomerNo {
+  color: #999;
+}
+
+.error {
+  border-color: @red;
+}
+
+.form-title {
+  font-size: 14px;
+  padding-bottom: 15px;
+  margin: 0 0 15px;
+  & label {
+    font-size: 14px;
+  }
+  button {
+    float: right;
+  }
+}
+
+.card-style {
+  margin-bottom: 16px;
+}
+.question-icon {
+  font-size: 15px;
+  vertical-align: middle;
+  margin-left: 10px;
+}
+.double_validate {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 16px;
+}
+.reset_btn {
+  margin-left: 10px;
+}
+.blackList {
+  float: right;
+  color: red;
+}

@@ -1,0 +1,323 @@
+.overview {
+  width: 100%;
+  padding: 30px;
+  min-height: 100%;
+  border-radius: 4px;
+  border: 1px solid #e5e5e5;
+  .first-login {
+    position: fixed;
+    background: rgba(0,0,0, .3);
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 3;
+    >div{
+      width: auto;
+      background: #fff;
+      float: right;
+      margin-right: 144px;
+      padding: 6px 16px;
+      border-radius: 3px;
+      p{
+        margin: 8px;
+        &.tip{
+          color: #323232;
+        }
+        &.content{
+          color: #666666;
+        }
+      }
+    }
+  }
+  .points {
+    display: flex;
+    margin-top: 20px;
+    list-style: none;
+    justify-content: space-around;
+    text-align: center;
+    p {
+      color: #666;
+    }
+  }
+  .welcome-msg {
+    h3 {
+      font-size: 18px;
+      color: #333;
+      font-weight: normal;
+      margin: 0;
+    }
+    h4 {
+      color: #999;
+      font-size: 12px;
+      margin-top: 10px;
+      font-weight: normal;
+    }
+    .last-login-msg {
+      font-size: 16px;
+      cursor: pointer;
+      margin-left: 8px;
+    }
+    .ant-tooltip-inner {
+      height: 32px;
+      min-height: 32px;
+      color: #fff;
+      box-shadow: none;
+      max-width: none;
+    }
+    .ant-tooltip-content {
+      // padding-top: 10px;
+    }
+    button {
+      margin-top: 8px;
+    }
+  }
+  .spread {
+    display: flex;
+    padding: 20px 0;
+    justify-content: space-between;
+    border-bottom: 1px solid #eceff0;
+    overflow: auto;
+    > div {
+      width: 50%;
+      &.left {
+        position: relative;
+        border-right: 1px solid #eceff0;
+        color: #262626;
+        div {
+          margin-bottom: 25px;
+          &:last-child {
+            margin-bottom: 0;
+          }
+        }
+        .canvas {
+          background: rgba(0, 0, 0, 0.5);
+          position: absolute;
+          top: -12px;
+          right: 0;
+          left: -31px;
+          bottom: -24px;
+          z-index: 1;
+          #canvas {
+            position: absolute;
+            left: 42%;
+            top: 28%;
+          }
+        }
+      }
+      &.right {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        text-align: center;
+        color: #666666;
+        .num {
+          display: block;
+          font-size: 24px;
+          color: #333333;
+          cursor: pointer;
+        }
+        .link {
+          font-size: 14px;
+          color: #00a3fe;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+  .set-account {
+    margin-left: 10px;
+    font-size: 13px;
+    color: #00a3fe;
+    cursor: pointer;
+  }
+  .divider {
+    width: 100%;
+    height: 1px;
+    background-color: #eceff0;
+    margin-top: 27px;
+  }
+  .accounts-header {
+    margin-top: 50px;
+    margin-bottom: 30px;
+    .header-title {
+      font-size: 16px;
+    }
+    .header-hints {
+      color: #abaaab;
+    }
+  }
+  .ant-table-thead {
+    tr {
+      height: 54px;
+      line-height: 1.5;
+      border-bottom: 1px solid #e5e5e5;
+    }
+    th {
+      padding: 0 12px;
+      background: #f1f4f9;
+      text-align: left;
+      color: #666;
+      font-weight: normal;
+    }
+  }
+  .ant-table-thead > tr:first-child > th:last-child {
+    text-align: right;
+    border-left: 0;
+  }
+  .ant-table-fixed-right {
+    th {
+      text-align: right;
+    }
+  }
+  .ant-table-tbody {
+    tr {
+      height: 64px;
+      font-size: 13px;
+      border-bottom: 1px solid #e5e5e5;
+      overflow: auto;
+    }
+    td {
+      padding: 0 12px;
+      text-align: left;
+      color: #333;
+      font-weight: normal;
+      position: relative;
+      background: transparent !important;
+      overflow: auto;
+    }
+    button {
+      padding: 0;
+      font-size: 13px;
+      padding: 0 12px;
+    }
+    .account-default-flag {
+      border: 1px solid #999;
+      display: inline-block;
+      margin-left: 8px;
+      padding: 3px 6px;
+      text-align: center;
+      line-height: 1;
+      border-radius: 2px;
+      font-size: 12px;
+    }
+    .account-optbtn {
+      margin-right: 12px;
+      cursor: pointer;
+    }
+  }
+  .active-account-modal {
+    .ant-row {
+      min-height: 32px;
+      margin-bottom: 25px;
+      clear: both;
+    }
+    .label-col {
+      margin-right: 20px;
+      line-height: 32px;
+      text-align: right;
+      color: #666;
+      span {
+        color: #f00;
+      }
+    }
+    input {
+      height: 32px;
+    }
+  }
+  .openaccount-modal {
+    .ant-modal {
+      top: 50%;
+      margin-top: -170px;
+    }
+    .modalContent {
+      font-size: 14px;
+      color: #333;
+      padding: 5px;
+    }
+    .ant-radio-wrapper {
+      min-width: 100px;
+    }
+    .radio-label {
+      margin-bottom: 15px;
+    }
+    .ant-radio-group {
+      margin-bottom: 35px;
+    }
+  }
+  .ant-table-footer {
+    padding: 0;
+    line-height: 43px;
+  }
+  .liveaccount-footer {
+    margin: 0 !important;
+    font-size: 14px;
+    color: #333;
+    background: #f1f4f9;
+    td {
+      padding: 0 20px;
+    }
+  }
+  .account-empty-text {
+    height: 30px;
+    line-height: 30px;
+    color: #999;
+    font-size: 14px;
+  }
+  .set-default-modal {
+    .account {
+      margin: 15px 0;
+    }
+    .account-tip {
+      color: #999999;
+      margin-top: 10px;
+    }
+    .set-default-wrap {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .ant-modal-body {
+      font-size: 14px;
+      color: #333;
+      padding: 20px;
+      .tips {
+        font-size: 12px;
+        color: #999;
+        padding: 10px 0;
+      }
+      .trader-pwd {
+        height: 32px;
+      }
+    }
+    .ant-modal-title {
+      font-size: 18px;
+    }
+  }
+  .ant-table-scroll {
+    overflow-y: hidden;
+  }
+  .ant-table-body {
+    overflow-y: hidden;
+  }
+.accountType_desc {
+  color: #999;
+  margin-top: 5px;
+}
+.account-modal-footer {
+  text-align: center;
+  button {
+    width: 150px;
+  }
+}
+.account_modal_container {
+  :global(.ant-radio-group) {
+    width: 100%;
+  }
+  :global(.ant-radio-wrapper) {
+    width: 100%;
+    word-break: break-all;
+    white-space: normal;
+  }
+}
+}

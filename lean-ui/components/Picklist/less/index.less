@@ -1,0 +1,101 @@
+@picklist: ~"@{prefix}-picklist";
+
+.@{picklist}-button {
+  .input;
+  padding: 0;
+  line-height: normal;
+  display: inline-flex;
+  align-items: center;
+  min-height: 32px;
+  height: auto;
+  width: 240px;
+  .@{picklist}-content {
+    flex: 1;
+    padding-left: 4px;
+    max-height: 97px;
+    overflow-y: auto;
+  }
+  .@{picklist}-icon {
+    color: @grey-3;
+    padding-right: 10px;
+  }
+}
+
+.@{picklist}-button-disabled {
+  cursor: not-allowed;
+  position: relative;
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 2;
+    background-color: fade(@disabled-color, 20);
+  }
+  &:hover {
+    border-color: @border-color;
+  }
+}
+
+.@{picklist}-search-input {
+  background-color: white;
+  border-bottom: 1px solid @border-color;
+  position: relative;
+  display: flex;
+  align-items: center;
+  height: 32px;
+  > input {
+    padding-left: 10px;
+    border: none;
+    flex: 1;
+    height: 100%;
+    &:focus {
+      outline: none;
+    }
+  }
+  > .@{picklist}-search-icon {
+    padding: 0 10px 0 5px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+  }
+}
+
+.@{picklist}-placeholder {
+  color: #919eab;
+  font-size: @font-size-base;
+}
+
+.@{picklist}-tag {
+  margin: 4px 4px 4px 0;
+}
+
+.@{picklist}-list {
+  font-size: 13px;
+  max-height: 182px;
+  overflow-y: auto;
+  border: 1px solid @border-color;
+  border-radius: @border-radius-base;
+  > .@{picklist}-menu {
+    border-right: none;
+  }
+  .@{picklist}-item {
+    display: flex;
+    align-items: center;
+    &::after {
+      display: none;
+    }
+    &::before {
+      .iconfont-font(@icon-lw-checkbox);
+      font-size: 14px;
+      color: #dfe3e8;
+      margin-right: 6px;
+    }
+    &.@{prefix}-menu-item-selected::before {
+      content: @icon-lw-checkbox-soild;
+      color: @checkbox-color;
+    }
+  }
+}

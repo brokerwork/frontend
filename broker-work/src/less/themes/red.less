@@ -1,0 +1,24 @@
+@import './mix.less';
+@red-1: #E61815;
+@red-2: #F53A37;
+@red-3: #F95855;
+@red-4: #FF7472;
+@red-5: #FF8E8C;
+:global {
+  .red-theme {
+    a {
+      color: @red-2;
+      &:hover {
+        color: @red-1;
+      }
+    }
+    .createThemes(
+      @red-1,
+      @red-2,
+      @red-3,
+      @red-4,
+      @red-5,
+      #000
+    );
+  }
+}

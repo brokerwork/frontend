@@ -1,0 +1,28 @@
+@import "~less/sc/variables.less";
+
+.step-number {
+  display: flex;
+  align-items: center;
+
+  .decrease-btn,
+  .increase-btn {
+    height: 30px;
+    width: 34px;
+    font-size: 12px;
+  }
+
+  .decrease-btn {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+
+  .increase-btn {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+  }
+
+  :global(.form-control) {
+    margin: 0 -1px;
+    border-radius: 0;
+  }
+}

@@ -1,0 +1,80 @@
+@import '~less/variables.less';
+
+.container {
+  position: relative;
+}
+.inline {
+  display: inline;
+}
+
+.icon {
+  color: @brand-primary;
+  cursor: pointer;
+}
+
+.show {
+  display: block;
+  &:global(.top-right) {
+    top: 10px;
+    left: 200%;
+    transform: translateY(-20%);
+    > :global(.arrow) {
+      top: 26px;
+      left: -@popover-arrow-outer-width;
+      margin-top: -@popover-arrow-outer-width;
+      border-left-width: 0;
+      border-right-color: @popover-arrow-outer-fallback-color; // IE8 fallback
+      border-right-color: @popover-arrow-outer-color;
+      &:after {
+        content: " ";
+        left: 1px;
+        bottom: -@popover-arrow-width;
+        border-left-width: 0;
+        border-right-color: @popover-arrow-color;
+      }
+    }
+  }
+  &:global(.bottom-right) {
+    top: calc(~'100% + 15px');
+    left: 10px;
+    transform: translateX(-30px);
+    > :global(.arrow) {
+      left: 24px;
+      margin-left: -@popover-arrow-outer-width;
+      border-top-width: 0;
+      border-bottom-color: @popover-arrow-outer-fallback-color; // IE8 fallback
+      border-bottom-color: @popover-arrow-outer-color;
+      top: -@popover-arrow-outer-width;
+      &:after {
+        content: " ";
+        top: 1px;
+        margin-left: -@popover-arrow-width;
+        border-top-width: 0;
+        border-bottom-color: @popover-arrow-color;
+      }
+    }
+  }
+  &:global(.top) {
+    top: auto;
+    bottom: 170%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  &:global(.bottom) {
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  &:global(.right) {
+    top: 50%;
+    left: 130%;
+    transform: translateY(-50%);
+  }
+  &:global(.left) {
+    top: 50%;
+    right: 200%;
+    left: auto;
+    transform: translateY(-50%);
+  }
+}
+

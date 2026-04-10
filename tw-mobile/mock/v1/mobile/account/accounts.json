@@ -1,0 +1,100 @@
+{
+  "data": [
+    {
+      "logo": "//broker-upload.oss-cn-hangzhou.aliyuncs.com/test/1296fc39-1205-46fb-9313-5164a7b3f406.jpg",
+      "mAccounts": [
+        {
+          "account": "2090013500",
+          "accountName": "乔巴又叫五百万",
+          "accountType": "Live",
+          "currency": "USD",
+					"serverId": "430"
+        },
+        {
+          "account": "2090013507",
+          "accountName": "乔巴又叫五百万",
+          "accountType": "Live",
+          "currency": "USD",
+					"serverId": "430"
+        },
+        {
+          "account": "2090013508",
+          "accountName": "乔巴又叫五百万",
+          "accountType": "Live",
+          "currency": "USD",
+					"serverId": "430"
+        },
+				{
+          "account": "2050013500",
+          "accountName": "乔巴又叫五百万",
+          "accountType": "Live",
+          "currency": "USD",
+					"serverId": "430"
+        },
+        {
+          "account": "2190013507",
+          "accountName": "乔巴又叫五百万",
+          "accountType": "Live",
+          "currency": "USD",
+					"serverId": "430"
+        },
+        {
+          "account": "1090013508",
+          "accountName": "乔巴又叫五百万",
+          "accountType": "Live",
+          "currency": "USD",
+					"serverId": "430"
+        },
+				
+        {
+          "account": "2090014193",
+          "accountName": "乔巴又叫五百万",
+          "accountType": "Live",
+          "currency": "USD",
+					"serverId": "430"
+        },
+        {
+          "account": "2090014195",
+          "accountName": "乔巴又叫五百万",
+          "accountType": "Live",
+          "currency": "USD",
+					"serverId": "430"
+        },
+
+				 {
+          "account": "2091014195",
+          "accountName": "乔巴又叫五百万",
+          "accountType": "Live",
+          "currency": "USD",
+					"serverId": "430"
+        },
+
+				 {
+          "account": "2092014195",
+          "accountName": "乔巴又叫五百万",
+          "accountType": "Live",
+          "currency": "USD",
+					"serverId": "430"
+        },
+				 {
+          "account": "2093014195",
+          "accountName": "乔巴又叫五百万",
+          "accountType": "Live",
+          "currency": "USD",
+					"serverId": "430"
+        },
+        {
+          "account": "2090022581",
+          "accountName": "atongTest",
+          "accountType": "Demo",
+          "currency": "USD",
+					"serverId": "430"
+        }
+      ],
+      "serverName": "MT4",
+      "vendor": "MT4"
+    }
+  ],
+  "mcode": "m0000000",
+  "result": true
+}

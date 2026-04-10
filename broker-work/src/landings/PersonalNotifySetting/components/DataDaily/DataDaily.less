@@ -1,0 +1,90 @@
+@import '~less/variables.less';
+.send {
+    display: flex;
+    align-items: center;
+}
+.label {
+    margin: 10px 40px 10px 0;
+    vertical-align: middle;
+    div{
+        margin-bottom: 10px;
+    }
+    &:last-child{
+        margin-top: 15px;
+    }
+    >span{
+        margin-right: 10px;
+        vertical-align: text-bottom;
+    }
+}
+
+
+
+.pop-icon {
+    margin-left: 15px;
+    margin-top: -5px;
+    display: inline-block;
+    color: white;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    background-color: #1fb5ad;
+    border-radius: 50%;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.data-daily {
+    padding-bottom: 10px;
+    :global(.lean-select) {
+        display: inline-block;
+        vertical-align: middle;
+    }
+}
+
+.header {
+    padding-top: 10px;
+    color: #303842;
+}
+.tip {
+    color: #919eab;
+    margin-left: 8px;
+}
+.tips {
+    margin-left: 5px;
+    display: inline-flex;
+    align-items: center;
+    line-height: normal;
+    font-size: 18px;
+    color: @brand-primary;
+    cursor: pointer;
+    :global(.popover) {
+        max-width: none;
+        background-color: transparent;
+        border: none;
+        border-radius: 0;
+        box-shadow: none;
+    }
+    :global(.arrow) {
+        z-index: 1;
+        top: 50%;
+        left: -11px;
+        margin-top: -11px;
+        border-left-width: 0;
+    }
+    :global(.popover-content) {
+        position: absolute;
+        top: -20px;
+        left: -1px;
+        z-index: 0;
+        padding: 10px;
+        white-space: nowrap;
+        background-color: #fff;
+        background-clip: padding-box;
+        border: 1px solid #ccc;
+        border: 1px solid rgba(0, 0, 0, .2);
+        border-radius: 6px;
+        box-shadow: 0 5px 10px rgba(0, 0, 0, .2);
+        width: 500px;
+    }
+}

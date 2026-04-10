@@ -1,0 +1,199 @@
+.logininline {
+	display: inline-block;
+}
+
+.left {
+	margin-left: 30px;
+}
+
+.ed-card-cus>.panel-body {
+	height: calc(100% - 51px);
+}
+
+.ed-acct-title {
+	overflow: hidden;
+	height: 80px;
+	line-height: 80px;
+	.acct-id {
+		float: left;
+		font-size: 18px;
+		.fa-user {
+			padding: 0 10px;
+			font-size: 27px;
+			color: #1fb5ad
+		}
+	}
+	.acct-create-time {
+		float: right;
+	}
+}
+
+.ed-acct-tabs {
+	.nav.nav-tabs {
+		a {
+			font-size: 14px;
+		}
+		.active {
+			a {
+				border: none;
+				border-bottom: 2px solid #1fb5ad;
+				color: #1fb5ad;
+			}
+		}
+	}
+}
+
+.ed-acct-tab-countent {
+	padding: 20px 0;
+}
+
+.acct-main .toolbar .fa {
+	line-height: inherit;
+}
+
+.acct-main .toolbar .fa-search,
+.acct-main .toolbar .fa-calendar {
+	top: 7px;
+}
+
+.acct-main .toolbar .fa-search:hover {
+	color: #1ca59e;
+}
+
+.acct-main .toolbar .btn {
+	margin-right: 10px;
+	height: 30px;
+	padding-left: 10px;
+	padding-right: 10px;
+	font-size: 12px;
+}
+
+.acct-main .toolbar .btn.fa-plus {
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+.acct-main .toolbar .btn:hover {
+	border-color: #1ca59e;
+}
+
+.acct-main .toolbar .pull-right .search-group button {
+	margin-right: 0;
+	border-color: #ddd;
+	border-top-right-radius: 0;
+	border-bottom-right-radius: 0;
+	font-size: 12px;
+}
+
+.acct-main .toolbar .pull-right .search-group button:hover {
+	border-color: #1ca59e;
+}
+
+.acct-main .toolbar .pull-right .fui-searchbox {
+	margin-left: -1px;
+}
+
+.acct-main .toolbar .pull-right .fui-searchbox input {
+	height: 30px;
+	border-color: #ddd;
+	border-left: 1px solid #ddd;
+	font-size: 12px;
+}
+
+.acct-main .toolbar .pull-right .fui-searchbox input:hover {
+	border-color: #1ca59e;
+}
+
+.acct-main .toolbar .fui-searchbox {
+	vertical-align: middle;
+}
+
+.acct-main .toolbar .calendar-group .btn-group:first-child .ghost-btn {
+	margin-right: 0px;
+	border-top-right-radius: 0px;
+	border-bottom-right-radius: 0px;
+}
+
+.acct-main .toolbar .calendar-group .inline-calendar .date-range-input {
+	border-left: none;
+	border-top-left-radius: 0;
+	border-bottom-left-radius: 0;
+	height: 30px;
+	font-size: 12px;
+}
+
+.acct-main .toolbar .calendar-group .inline-calendar .date-range-input:hover {
+	border-color: #1ca59e;
+}
+
+.acct-main .toolbar {
+	margin-bottom: 10px;
+	height: 34px;
+}
+
+.acct-main .toolbar .calendar-group .inline-calendar {
+	margin-right: 10px;
+	vertical-align: middle;
+}
+
+.acct-main .toolbar .pull-right .fuzzy-search-filter {
+	margin-right: 0;
+	border-top-right-radius: 0;
+	border-bottom-right-radius: 0;
+}
+
+.acct-main .usermgmt-toolbar .btn {
+	margin-right: 3px;
+}
+
+.table {
+	color: #333;
+	font-size: 12px;
+	tbody tr:nth-child(odd) {
+		background: #fafafa;
+	}
+	th {
+		text-align: center;
+	}
+	td {
+		text-align: center;
+	}
+	tr {
+		&:hover {
+			background: #f5f5f5!important;
+		}
+	}
+	thead {
+		tr {
+			&:first-child {
+				color: #333;
+				&:hover {
+					background: #fff!important;
+				}
+			}
+		}
+	}
+}
+
+.edit-card {
+	&:hover {
+		color: #2a6496!important;
+	}
+}
+
+.opera-type {
+	.control-label {
+		margin-right: 10px;
+	}
+}
+
+.touchhand {
+	cursor: pointer;
+}
+
+.confirmModal {
+	width: 490px;
+	height: 150px;
+	line-height: 150px;
+	text-align: center;
+}

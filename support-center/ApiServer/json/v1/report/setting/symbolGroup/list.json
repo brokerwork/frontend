@@ -1,0 +1,105 @@
+{
+  "data": [
+    {
+      "id": 32,
+      "name": "啦啦啦",
+      "symbols": [
+        {
+          "serverId": "1",
+          "serverName": "MT4真实测试",
+          "symbols": [
+            "USDJPY..",
+            "USDJPY",
+            "USDJPY.",
+            "USDJPY_NH"
+          ]
+        }
+      ]
+    },
+    {
+      "id": 36,
+      "name": "测试测试",
+      "symbols": [
+        {
+          "serverId": "1",
+          "serverName": "MT4真实测试1",
+          "symbols": [
+            "USDCHF."
+          ]
+        },
+        {
+          "serverId": "5",
+          "serverName": "MT4真实测试2-我就是第二个真实服务器",
+          "symbols": [
+            "AUS200.",
+            "CADCHF."
+          ]
+        }
+      ]
+    },
+    {
+      "id": 38,
+      "name": "添加测试",
+      "symbols": [
+        {
+          "serverId": "1",
+          "serverName": "MT4真实测试1",
+          "symbols": [
+            "AUS200."
+          ]
+        }
+      ]
+    },
+    {
+      "id": 39,
+      "name": "1234567890123456789012345678901111122222",
+      "symbols": [
+        {
+          "serverId": "1",
+          "serverName": "MT4真实测试1",
+          "symbols": [
+            "CADCHF."
+          ]
+        }
+      ]
+    },
+    {
+      "id": 40,
+      "name": "全选",
+      "symbols": [
+        {
+          "serverId": "1",
+          "serverName": "MT4真实测试1",
+          "symbols": [
+            "EURJPY..",
+            "EURJPY",
+            "EURJPY.",
+            "EURJPY_NH"
+          ]
+        }
+      ]
+    },
+    {
+      "id": 41,
+      "name": "再来一个",
+      "symbols": [
+        {
+          "serverId": "1",
+          "serverName": "MT4真实测试1",
+          "symbols": [
+            "AUDCHF"
+          ]
+        },
+        {
+          "serverId": "5",
+          "serverName": "MT4真实测试2-我就是第二个真实服务器",
+          "symbols": [
+            "USDJPY.."
+          ]
+        }
+      ]
+    }
+  ],
+  "mcode": "m0000000",
+  "result": true
+}

@@ -1,0 +1,23 @@
+@import '~less/variables.less';
+
+.button ,.button:active,.button:focus, .button:disabled{
+  background: @white;
+  border: 1px solid #ddd;
+  color: @text-color;
+  padding: 5px 16px;
+  line-height: 18px;
+  &.active, &:hover {
+    background: @main-color;
+    color: @white;
+    border-color: @main-color;
+  }
+  &:disabled {
+    opacity: .5;
+  }
+}
+
+.focus {
+  .button ,.button:active,.button:focus, .button:disabled{
+    border-color: @main-color;
+  }
+}

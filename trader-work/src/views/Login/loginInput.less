@@ -1,0 +1,119 @@
+@green: #00a8a6;
+
+.login-input-wrap{
+    .ant-checkbox-checked:after{
+        border: 1px solid @green;
+    }
+    .ant-checkbox-wrapper:hover .ant-checkbox-inner, .ant-checkbox:hover .ant-checkbox-inner, .ant-checkbox-input:focus + .ant-checkbox-inner{
+        border-color: @green;
+    }
+    .ant-checkbox-checked .ant-checkbox-inner, .ant-checkbox-indeterminate .ant-checkbox-inner{
+        background-color: @green;
+        border-color: @green;
+    }
+    .login-form-forget{
+        color: @green;
+    }
+    .login-other{
+        width: 52px;
+        font-size: 14px;
+        color: #999999;
+        text-align: center;
+        display: inline-block;
+    }
+    .login-line{
+        width: 154px;
+        height: 1px;
+        opacity: 0.5;
+        display: inline-block;
+        background-color: #c5c5c5;
+    }
+    .login-input-line{
+        margin-top: 28px;
+    }
+    .login-input-bottom{
+        margin-top: 28px;
+        line-height: 13px;
+        text-align: center;
+        span{
+            color: @green;
+            font-size: 13px;
+        }
+        i{
+            width: 4px;
+            height: 4px;
+            vertical-align: middle;
+            margin: 0 32px;
+            display: inline-block;
+            background-color: #e2e2e2;
+        }
+    }
+    .login-input-error{
+        font-size: 12px;
+        color: #f04134;
+        line-height: 1.5;
+        position: absolute;
+    }
+    .ant-checkbox-input, .ant-checkbox-inner{
+        width: 16px;
+        height: 16px;
+    }
+    .ant-checkbox-checked .ant-checkbox-inner:after{
+        width: 6px;
+        height: 9px;
+    }
+    
+    .reg-input-turn{
+        line-height: 1;
+        padding-bottom: 14px;
+    }
+    .reg-input-way{
+        font-size: 14px;
+        color: #333333;
+    }
+    .reg-input-phone-email{
+        color: @green;
+        font-size: 12px;
+    }
+    .iconfont{
+        font-size: 12px;
+    }
+    .iconfont_lecturer{
+        margin-right: 4px;
+    }
+    .login-type-wrap{
+        margin-bottom: 10px;
+        .ant-select{
+            width: auto;
+        }
+        .ant-select-selection{
+            border: 0;
+        }
+        .ant-select-selection{
+            border: 0;
+            box-shadow: none;
+        }
+        .ant-select-selection__rendered{
+            margin: 0;
+        }
+        .ant-select-arrow{
+            position: absolute;
+            right: 0;
+        }
+        .ant-select-dropdown{
+            min-width: 96px;
+        }
+    }
+    .login-action-wrap{
+        margin-bottom: 24px;
+        margin-top: 12px;
+        font-size: 13px;
+        &.wrap-center{
+            display: block;
+        }
+        &.wrap-border{
+            display: none;
+        }
+    }
+    
+}

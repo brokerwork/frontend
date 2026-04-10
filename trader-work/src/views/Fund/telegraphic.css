@@ -1,0 +1,56 @@
+.telegraphic .text {
+  color: #c5c5c5;
+  font-size: 12px;
+  margin-top: 5px;
+}
+.telegraphic .profile {
+  padding: 30px;
+}
+.telegraphic .dialogBtn {
+  margin-top: 30px;
+}
+.telegraphic .ant-modal-body {
+  padding: 30px;
+}
+.telegraphic .ant-modal-footer {
+  padding: 20px;
+}
+.telegraphic .ant-select-selection {
+  height: 40px;
+}
+.telegraphic .ant-select-selection .ant-select-selection__rendered {
+  line-height: 40px;
+}
+.telegraphic .account-info {
+  padding: 15px 40px;
+}
+.telegraphic .account-info p {
+  line-height: 30px;
+}
+.telegraphic .account-info p span {
+  display: inline-block;
+  width: 50%;
+  color: #999;
+}
+.telegraphic .account-info p :last-child {
+  text-align: right;
+  color: #333;
+}
+.telegraphic .label {
+  line-height: 30px;
+  margin-top: 10px;
+  font-size: 14px;
+}
+.telegraphic .input {
+  height: 40px;
+}
+.telegraphic .bank-info {
+  list-style: none;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+.telegraphic .bank-info li {
+  flex-basis: 50%;
+  margin-bottom: 15px;
+}

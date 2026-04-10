@@ -1,0 +1,21 @@
+@import "~less/sc/variables.less";
+
+circle {
+  transition: stroke-dasharray 0.25s;
+}
+
+.circle-progress {
+  position: relative;
+}
+
+.inner-circle {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  border-radius: 50%;
+  border: 2px solid @border-color;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

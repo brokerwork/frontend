@@ -1,0 +1,48 @@
+@import '~less/variables.less';
+.select-tree {
+  padding-left: @padding-base;
+  li {
+    list-style: none;
+    &:not(:last-child) {
+      margin-bottom: 4px;
+    }
+  }
+
+  li > ul {
+    margin-top: 4px;
+  }
+
+  &.hide {
+    display: none;
+  }
+  .icon,
+  .checkbox {
+    vertical-align: middle;
+    margin: 0 6px 0 0;
+    display: inline-block;
+  }
+
+  .icon {
+    font-size: 14px;
+  }
+}
+
+.tips-content {
+  min-width: 240px;
+}
+
+.safe-warning {
+  margin-left: 5px;
+  color: @badge-orange;
+  vertical-align: middle;
+}
+.unsafe-notice {
+  margin-left: 10px;
+  color: @badge-orange;
+  margin-bottom: 12px;
+  span {
+    margin-left: 5px;
+    font-size: 12px;
+    vertical-align: middle;
+  }
+}

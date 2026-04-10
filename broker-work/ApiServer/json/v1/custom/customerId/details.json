@@ -1,0 +1,56 @@
+{
+    "data": {
+        "basicinfo": {
+            "address": "999",
+            "ambitious": "2",
+            "comments": "999",
+            "country": {
+                "city": "797",
+                "country": "1",
+                "province": "792"
+            },
+            "createTime": 0,
+            "creator": "121",
+            "customName": "qingfeng",
+            "customNo": "999",
+            "customSource": "6",
+            "customerId": "3accc37d-a593-4188-9f87-2d9dc7f6ae79",
+            "email": "999",
+            "enabled": true,
+            "extra": {},
+            "idNum": "999",
+            "idType": "1",
+            "introducer": "999",
+            "modifyTime": 0,
+            "phones": {
+                "phone": "999",
+                "phoneStr": "999"
+            },
+            "postcode": "999",
+            "site": "999",
+            "tenantId": "T001001"
+        },
+        "followUpRecords": [
+            {
+                "followContent": "aaaaa bbbbbb ccccc",
+                "followTime": 1482399925676,
+                "followWay": "phone",
+                "recordId": "string"
+            },
+            {
+                "followContent": "aaaaa bbbbbb ccccc dddd eeee ffffff  ggggggg hhhhhhh",
+                "followTime": 1482399925676,
+                "followWay": "phone",
+                "recordId": "string"
+            },
+            {
+                "followContent": "aaaaa bbbbbb ccccc",
+                "followTime": 1482399925676,
+                "followWay": "phone",
+                "recordId": "string"
+            }
+        ]
+    },
+    "mcode": "m0000000",
+    "result": true
+}

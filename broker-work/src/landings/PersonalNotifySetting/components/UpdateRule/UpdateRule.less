@@ -1,0 +1,52 @@
+.hidden-input {
+    display: inline-block;
+    .hidden-field {
+        width: 80px;
+        margin-right: 5px;
+        display: inline-block;
+        vertical-align: middle;
+    }
+    :global(.col-sm-2) {
+        float: none;
+        display: inline-block;
+    }
+    :global(.col-sm-4) {
+        float: none;
+        display: inline-block;
+    }
+    :global(.btn-group) {
+        max-width: 70px;
+    }
+}
+.modal {
+    width: auto;
+}
+.tree-field {
+    height: 200px;
+    width: 200px;
+    overflow: auto;
+}
+.result-field {
+    width: 70px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    display: inline-block;
+    :global(.lean-select-value) {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+}
+.form-body {
+    :global(.lean-form-item){
+        padding-left: 0;
+        padding-right: 0;
+        &:last-child{
+            margin-bottom: 8px;
+        }
+    }
+    :global(.btn-group){
+        width: 100%;
+    }
+}

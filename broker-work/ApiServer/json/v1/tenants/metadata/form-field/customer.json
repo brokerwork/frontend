@@ -1,0 +1,86 @@
+{
+    "data": [
+        {
+            "fieldType": "text",
+            "key": "followContent",
+            "label": "跟进内容",
+            "validateType": {}
+        },
+        {
+            "fieldType": "date",
+            "key": "followTime",
+            "label": "跟进时间",
+            "validateType": {}
+        },
+        {
+            "fieldType": "text",
+            "key": "customName",
+            "label": "客户名称",
+            "validateType": {}
+        },
+        {
+            "fieldType": "select",
+            "key": "oweId",
+            "label": "客户归属",
+            "validateType": {}
+        },
+        {
+            "fieldType": "select",
+            "key": "customSource",
+            "label": "客户来源",
+            "optionList": [
+                {
+                    "label": "官网注册",
+                    "value": "1"
+                },
+                {
+                    "label": "名单数据",
+                    "value": "2"
+                },
+                {
+                    "label": "客户介绍",
+                    "value": "3"
+                },
+                {
+                    "label": "居间介绍",
+                    "value": "4"
+                },
+                {
+                    "label": "线下活动",
+                    "value": "5"
+                },
+                {
+                    "label": "销售新增",
+                    "value": "6"
+                }
+            ],
+            "validateType": {}
+        },
+        {
+            "fieldType": "city",
+            "key": "country",
+            "label": "国家/省/市",
+            "validateType": {}
+        },
+        {
+            "fieldType": "phone",
+            "key": "phones",
+            "label": "手机",
+            "validateType": {}
+        },
+        {
+            "fieldType": "text",
+            "key": "email",
+            "label": "邮箱",
+            "validateType": {}
+        },
+        {
+            "fieldType": "date",
+            "key": "createTime",
+            "label": "创建时间",
+            "validateType": {}
+        }
+    ],
+    "mcode": "m0000000",
+    "result": true
+}

@@ -1,0 +1,41 @@
+@import '~less/variables.less';
+.actions-bar {
+  width: 100%;
+}
+
+.left-part {
+  display: inline-flex;
+  width: 82%;
+  flex-direction: column;
+  .primary-top-title {
+    height: 42px;
+    .customer-icon {
+      font-size: 32px;
+      color: @main-color;
+      display: inline-block;
+      position: relative;
+      top: -3px;
+    }
+    .module-info {
+      display: inline-block;
+      min-width: 84px;
+      margin-left: 16px;
+      .module-name {
+        font-size: 12px;
+      }
+      .module-main-filter-title {
+        font-size: 16px;
+        cursor: pointer;
+      }
+      .module-main-filter {
+        line-height: 24px;
+      }
+    }
+  }
+  .list-item-summarize {
+    height: 18px;
+    font-size: 12px;
+    margin-top: 20px;
+    color: #637381;
+  }
+}

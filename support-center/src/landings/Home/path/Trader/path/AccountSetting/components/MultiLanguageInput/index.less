@@ -1,0 +1,47 @@
+@import '~less/sc/variables.less';
+.textarea{
+  margin-top: 5px;
+  width: 600px;
+  padding: 5px;
+  min-height: 100px;
+  resize: vertical;
+}
+.section {
+  > textarea {
+    margin-top: 8px;
+  }
+
+  > span {
+    display: block;
+    margin-top: 8px;
+  }
+}
+
+.section:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.content {
+  width: 100%;
+  textarea {
+    resize: none;
+  }
+}
+
+.title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.linkButton {
+  color: @brand-primary;
+  cursor: pointer;
+  text-decoration: underline;
+  border-left: 1px solid @border-color;
+  padding-left: 8px;
+
+  > i {
+    margin-left: 2px;
+  }
+}

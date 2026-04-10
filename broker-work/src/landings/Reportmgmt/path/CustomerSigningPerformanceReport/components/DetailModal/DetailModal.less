@@ -1,0 +1,56 @@
+@import '~less/variables';
+.detail-modal {
+     :global(.modal-dialog) {
+        width: auto;
+    }
+}
+
+.search-results {
+    list-style: none;
+    margin-bottom: 0;
+}
+
+.search-results-item {
+    display: block;
+    height: 15px;
+}
+
+.body {
+    tbody>tr>td {
+        padding: 7px 0px;
+        ul {
+            width: 100%;
+            padding-left: 0px;
+        }
+    }
+}
+
+.sort-text {
+    white-space: nowrap;
+    cursor: pointer;
+}
+
+.sort-icon {
+    position: relative;
+    margin-left: 3px;
+    color: @text-color-light;
+    > :global(.fa) {
+        position: absolute;
+        transform: translateY(3px);
+        &.active {
+            color: @main-color;
+        }
+    }
+}
+
+.safe {
+    color: #2FBA81
+}
+
+.drange {
+    color: red;
+}
+
+.warning {
+    color: #ffae00
+}

@@ -1,0 +1,46 @@
+@import '~less/variables';
+
+:global(.table) {
+  > thead > tr > th {
+    &.operationColumn {
+      text-align: left;
+    }
+  }
+  > tbody > tr > td {
+    &.drageCell {
+      width: 0;
+      padding: 0;
+    } 
+    &.operationColumn {
+      text-align: left;
+    }
+  }
+}
+
+.sortHelper {
+  background-color: rgba(0,0,0,0.2);
+  z-index: 9999;
+  cursor: row-resize;
+  > * {
+    visibility: hidden;
+  }
+}
+
+.tipsModalContent {
+  padding: 15px 0;
+  text-align: center;
+}
+
+.drag-icon {
+  cursor: move;
+}
+
+.drop-over-downward {
+  border-bottom: 2px dashed @main-color;
+}
+.drop-over-upward {
+  border-top: 2px dashed @main-color;
+}
+.action-button {
+  margin-left: 10px;
+}

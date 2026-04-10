@@ -1,0 +1,228 @@
+@import '~less/variables.less';
+
+.error {
+  border-color: @red;
+}
+
+.select {
+  width: 100%;
+  outline: 0;
+  :global(.lean-select-value){
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+}
+.radio {
+    white-space: normal;
+    word-break: break-all;
+}
+.vertical-form {
+  margin-left: -10px;
+  margin-right: -10px;
+  justify-content: space-between;
+  padding: 0 10px;
+  :global(.item) {
+    flex-direction: column;
+    padding: 0 10px;
+    :global(.item-label) {
+      width: 100%;
+      text-align: left;
+    }
+    :global(.item-control),
+    :global(.btn-group) {
+      width: 100%;
+    }
+  }
+  :global(.phone-field),
+  :global(.tax-field) {
+    :global(.btn-group) {
+      width: auto;
+    }
+  }
+}
+
+.new-form-field {
+  margin-left: -25px;
+  margin-right: -25px;
+  justify-content: space-between;
+  max-width: 100%;
+  :global {
+      .lean-radio-text{
+          white-space: normal;
+      }
+  }
+  .arrow-row {
+    margin-bottom: 24px;
+  }
+  :global(.item) {
+    flex-direction: column;
+    padding: 0 25px;
+    :global(.item-label) {
+      width: 100%;
+      text-align: left;
+      font-size: 12px;
+      color: #666;
+      :gloabal(.item-label-content) {
+        display: inline-block;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+        width: calc(~'100% - 40px');
+      }
+    }
+
+    :global(.item-control),
+    :global(.btn-group) {
+      width: 100%;
+      color: #333;
+
+      :global(.dropdown-toggle),
+      :global(.form-control) {
+        border-radius: 0;
+        border: 0;
+        border-bottom: 1px solid #ddd;
+        background-color: #fff;
+
+        &[disabled] {
+          border-style: dashed;
+        }
+      }
+    }
+
+    &.same-row {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+
+      > * {
+        width: auto;
+        padding-top: 0;
+        padding-bottom: 0;
+        margin-top: 0;
+        margin-bottom: 0;
+      }
+    }
+  }
+  :global(.phone-field),
+  :global(.tax-field) {
+    :global(.btn-group) {
+      width: auto;
+    }
+  }
+  .upload-custom-field,
+  .upload-custom-field:hover {
+    border: none;
+    background: transparent;
+    border-bottom: 1px solid #ddd;
+    border-radius: 0;
+  }
+
+  &.pure.disabled {
+    :global(.caret) {
+      display: none;
+    }
+    :global(input:not(:checked) + .fa + span) {
+      display: none;
+    }
+    :global(.glo-single-checkbox .fa) {
+      display: inline-block;
+    }
+    :global(.fa) {
+      display: none;
+    }
+    :global(.form-label-tips) {
+      i {
+        display: inline;
+      }
+    }
+    :global(.phone-field .btn-group) {
+      // :global(.tax-field .btn-group) {
+      display: none;
+    }
+    :global(.required) {
+      display: none;
+    }
+    :global(.datetime-trigger) {
+      input {
+        padding-left: 6px;
+      }
+    }
+    .upload-custom-field {
+      display: none;
+    }
+    :global(.tax-field .code) {
+      display: flex;
+    }
+
+    .array-remove-btn {
+      display: none;
+    }
+
+    .array-new-btn {
+      display: none;
+    }
+  }
+
+  &.disabled {
+    .upload-custom-field {
+      border-bottom-style: dashed;
+      :global(.fa) {
+        display: inline-block;
+      }
+    }
+  }
+}
+
+.tax-container {
+  .tax-field {
+    & + .tax-field {
+      margin-top: 10px;
+    }
+  }
+}
+
+.errorMsg {
+  color: @red;
+  padding-top: 3px;
+  font-size: 12px;
+}
+
+.field-reminder {
+  //写在根部 尽量降低优先级
+  color: @text-color-light;
+  margin-top: 5px;
+}
+
+.array-remove-btn {
+  border: 0;
+  background: none;
+  color: #c8cbd7;
+  outline: none;
+  padding: 0;
+  height: 30px;
+  width: 30px;
+  display: block;
+  text-align: center;
+  line-height: 30px;
+}
+
+.array-new-btn {
+  background: #fff!important;
+  padding: 4px 10px;
+  margin-top: 5px;
+  border-radius: 0;
+}
+
+.array-new-btn:active,
+.array-new-btn:hover {
+  color: #fff;
+}
+
+.arrow-row {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 24px;
+  .array-row-field {
+    flex: 1;
+  }
+}

@@ -1,0 +1,23 @@
+@import '~less/variables.less';
+.body {
+  max-height: 400px;
+  overflow: auto;
+}
+
+.tips-title {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.tips-text {
+  color: @text-color-light;
+  font-size: 12px;
+}
+
+.dialog {
+  :global {
+    .lean-modal-body {
+      padding: 0 8px 24px;
+    }
+  }
+}

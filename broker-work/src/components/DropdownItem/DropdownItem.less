@@ -1,0 +1,21 @@
+@import '~less/variables.less';
+
+.dropdown-container {
+  position: relative;
+}
+
+.dropdown-menu {
+  padding: 0;
+  &.dropdown-menu-auto-width {
+    min-width: 100%;
+    width: auto;
+    white-space: nowrap;
+  }
+  > li > a {
+    margin: 10px;
+  }
+  >li.exteranl-menu {
+    border-top: 1px solid #ddd;
+    margin-top: 0;
+  }
+}

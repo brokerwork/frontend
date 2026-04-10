@@ -1,0 +1,17 @@
+@import './mix.less';
+@blue-1: #0080F7;
+@blue-2: #1990FF;
+@blue-3: #339CFF;
+@blue-4: #4BA8FF;
+@blue-5: #68B6FF;
+:global {
+  .blue-theme {
+    a {
+      color: @blue-2;
+      &:hover {
+        color: @blue-1;
+      }
+    }
+    .createThemes(@blue-1, @blue-2, @blue-3, @blue-4, @blue-5, #000);
+  }
+}

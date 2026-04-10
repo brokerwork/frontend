@@ -1,0 +1,59 @@
+{
+    "data": {
+        "categorys": [
+            {
+                "categoryId": "34146884-0e07-4e3c-a66a-3d6f37a5fcac",
+                "categoryName": "真实账户开户",
+                "jobType": "JOB_TYPE_TA_OPEN",
+                "reminder": [
+                    {
+                        "name": "zl",
+                        "right": "COMMON",
+                        "userId": "121"
+                    }
+                ],
+                "stepNum": 1,
+                "verify": true
+            },
+            {
+                "categoryId": "4602ae95-eb7f-4f26-ac9d-2a6eaee57674",
+                "categoryName": "入金申请",
+                "jobType": "JOB_TYPE_TA_DEPOSIT",
+                "reminder": [
+                    {
+                        "name": "zl",
+                        "right": "COMMON",
+                        "userId": "121"
+                    }
+                ],
+                "stepNum": 1,
+                "verify": false
+            },
+            {
+                "categoryId": "8b54cb5e-e476-46f8-b9e8-4c925f0b943f",
+                "categoryName": "内部转账",
+                "jobType": "JOB_TYPE_TA_TRANSFER",
+                "stepNum": 1,
+                "verify": true
+            },
+            {
+                "categoryId": "935f079d-31fa-431a-bb9a-7cf74471a356",
+                "categoryName": "出金申请",
+                "jobType": "JOB_TYPE_TA_WITHDRAW",
+                "stepNum": 1,
+                "verify": false
+            },
+            {
+                "categoryId": "4cba85b3-70b7-4a8e-8f29-3a151a5bfa0f",
+                "categoryName": "调整杠杆",
+                "jobType": "JOB_TYPE_TA_LEVERAGE",
+                "stepNum": 1,
+                "verify": true
+            }
+        ],
+        "itemId": "f0f53288-0073-46fe-9b62-e64ae4484da0",
+        "itemName": "TA相关任务"
+    },
+    "mcode": "m0000000",
+    "result": true
+}

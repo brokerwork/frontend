@@ -1,0 +1,18 @@
+
+const prefix = "HOME_";
+// 最新版的版本号
+export const FRONT_LATEST_VERSION_STORAGE_KEY = `${prefix}FRONT_LATEST_VERSION_STORAGE_KEY`;
+
+// 当前用户的UI版本号
+export const CURRENT_USER_VERSION_TYPE_STORAGE_KEY = `${prefix}CURRENT_USER_VERSION_TYPE_STORAGE_KEY`
+
+// SC配置的UI版本可切换标示
+export const CONFIG_VERSION_TYPE_STORAGE_KEY = `${prefix}CONFIG_VERSION_TYPE_STORAGE_KEY`
+
+// 设置一个静态的最新的旧的版本号
+export const LATEST_OLD_RELEASE_VERSION_STORAGE_KEY = `${prefix}LATEST_OLD_RELEASE_VERSION_STORAGE_KEY`;
+export const LATEST_OLD_RELEASE_VERSION = 'v6.12.5';
+
+// UI的新旧切换版本标识
+export const VERSION_RELEASE = 'RELEASE';
+export const VERSION_BETA = 'BETA';

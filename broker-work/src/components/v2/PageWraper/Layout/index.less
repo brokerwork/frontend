@@ -1,0 +1,134 @@
+@import '~less/variables.less';
+.loading-wrap {
+  height: 100%;
+}
+.page-layout {
+  height: 100%;
+  overflow: hidden;
+  background: transparent;
+  &.border {
+    box-shadow: 0 0 0 1px @lean-grey-4;
+  }
+  &.background {
+    background: @white;
+  }
+}
+.page-layout-scroll {
+  overflow: auto;
+}
+.layout {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  overflow: hidden;
+
+  // background: @white;
+  &-innerbox {
+    flex: 1;
+    width: 100%;
+    > * {
+      height: 100%;
+    }
+  }
+  &-summary {
+    min-height: @layout-header-height;
+    padding: 16px;
+    height: auto;
+    background: @lean-grey-5;
+    &.border {
+      box-shadow: 0 0 0 1px @lean-grey-4;
+    }
+  }
+  &-content {
+    // background: @white;
+    &.old {
+      background: transparent;
+      padding: 15px;
+    }
+    &.scrollable-false {
+      overflow: hidden;
+    }
+    &.scrollable-x {
+      overflow-y: auto;
+      overflow-x: auto;
+    }
+    &.scrollable-y {
+      overflow-x: hidden;
+      overflow-y: auto;
+    }
+    &.table {
+      height: 100%;
+      :global(.lean-table-container) {
+        height: 100%;
+        min-width: 100%;
+        display: inline-block;
+        :global(.lean-table-fixed-scroll) {
+          height: 100%;
+        }
+      }
+      :global(.icon-lw-set-table-soild),
+      :global(.icon-lw-hamburger-table) {
+        //直接覆盖table的默认样式
+        color: #919eab;
+        font-size: 13px;
+        cursor: pointer;
+        display: block;
+      }
+      :global(.lean-table-cell),
+      :global(.lean-table-popover-edit-label) {
+        height: 40px;
+        line-height: 40px;
+        max-width: 230px;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+      }
+    }
+  }
+  &-body {
+    height: 100%;
+    display: flex;
+    width: 100%;
+  }
+}
+
+.alert {
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+  :global(.lean-alert-message) {
+    div {
+      display: inline-block;
+    }
+  }
+}
+
+.transparent-mask {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: @loading-mask-zindex;
+  background-color: transparent;
+}
+
+.summarize {
+  height: 18px;
+  font-size: 12px;
+  margin-top: 20px;
+  color: #637381;
+}
+
+@media (max-width: 1440px) {
+  .layout {
+    &-content {
+      &.table {
+        td {
+          height: 36px;
+        }
+      }
+    }
+  }
+}

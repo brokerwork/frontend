@@ -1,0 +1,107 @@
+@import '~less/variables.less';
+
+.levelFormContainer {
+  padding: 20px 0;
+}
+
+.formTable{
+  width: 100%;
+  td {
+    padding: 5px;
+  }
+  .field-td,
+  .dropdown-td {
+    width: 180px;
+  }
+  .field-unit-td {
+    width: 50px;
+  }
+  .label {
+    text-align: right;
+    width: 150px;
+    white-space: nowrap;
+  }
+  .conditionFormSplit{
+    width: 50px;
+  }
+  .conditionTitle{
+      font-weight: 700;
+      color: #333;
+  }
+  .conditionExplain{
+    font-size: 12px;
+    padding-bottom: 15px;
+  }
+}
+
+.conditionFormContainer{
+  border-top: 1px solid @border-color;
+  padding: 20px 0;
+
+}
+
+
+
+.field-group{
+  display: flex;
+  .field-small{
+    width: 50px;
+  }
+  span{
+    line-height: 30px;
+    padding: 0 10px;
+    white-space: nowrap;
+  }
+}
+
+.tips {
+  margin-left: 10px;
+  color: #333;
+  > :global(.popover) {
+    width: 450px;
+  }
+}
+
+.fieldErr {
+  border-color: @red;
+}
+
+.errorMsg {
+  color: @red;
+  font-size: 12px;
+}
+
+.skipLevel {
+  border-top: 1px solid @border-color;
+  margin-top: 15px;
+  margin-bottom: -15px;
+  padding-left: 15px;
+  padding-top: 15px;
+}
+
+.skipLevelTitle {
+  display: flex;
+}
+
+.skipLevelSwitch {
+  margin-right: 15px;
+}
+.skipLevelItem {
+  margin-right: 5px;
+}
+
+.dropdown{
+  width: 150px;
+  :global(.dropdown-menu) {
+    overflow: visible;
+    > li > a {
+      overflow: visible;
+      &:hover{
+        :global(.fa-question){
+          color: #fff;
+        }
+      }
+    }
+
+  }
+}

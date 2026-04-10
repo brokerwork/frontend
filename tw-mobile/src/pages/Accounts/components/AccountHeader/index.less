@@ -1,0 +1,33 @@
+@import "~less/fn.less";
+.taMobileAccount {
+	.taMobileAccountHeader {
+		font-size: 12px;
+		color: #fff;
+		text-align: center;
+		.rem(200px, height);
+		.rem(43px, padding-top);
+		.greetings {
+			font-size: 18px;
+			.rem(20px, margin-bottom);
+		}
+		.thanks {
+			.rem(10px, margin-bottom);
+		}
+	}
+	[data-dpr="2"].taMobileAccountHeader {
+		font-size: 24px;
+		.greetings {
+			font-size: 36px;
+		}
+	}
+	[data-dpr="3"].taMobileAccountHeader {
+		font-size: 72px;
+		.greetings {
+			font-size: 108px;
+		}
+	}
+	.taMobileAccountHeaderExtension {
+		.rem(200px, height);
+		.rem(60px, padding-top);
+	}
+}

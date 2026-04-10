@@ -1,0 +1,847 @@
+{
+    "data": [
+        {
+            "children": [
+                {
+                    "children": [
+                        {
+                            "children": [],
+                            "entityNo": "USER_SELECT_DIRECTLY",
+                            "id": 1657,
+                            "name": "直属用户"
+                        },
+                        {
+                            "children": [],
+                            "entityNo": "USER_SELECT_SUBORDINATE",
+                            "id": 1658,
+                            "name": "非直属用户"
+                        },
+                        {
+                            "children": [],
+                            "entityNo": "USER_SELECT_ALL",
+                            "id": 1659,
+                            "name": "所有用户"
+                        },
+                        {
+                            "children": [],
+                            "entityNo": "USER_SELECT_WILD",
+                            "id": 1660,
+                            "name": "无归属用户"
+                        }
+                    ],
+                    "entityNo": "USER_SELECT",
+                    "id": 1656,
+                    "name": "查看用户"
+                },
+                {
+                    "children": [],
+                    "entityNo": "USER_ADD",
+                    "id": 1661,
+                    "name": "添加用户"
+                },
+                {
+                    "children": [],
+                    "entityNo": "USER_MODIFY",
+                    "id": 1662,
+                    "name": "修改用户"
+                },
+                {
+                    "children": [],
+                    "entityNo": "USER_DISABLE",
+                    "id": 1663,
+                    "name": "禁用/启用 用户"
+                },
+                {
+                    "children": [],
+                    "entityNo": "USER_DELETE",
+                    "id": 1664,
+                    "name": "删除用户"
+                },
+                {
+                    "children": [],
+                    "entityNo": "USER_IP",
+                    "id": 1665,
+                    "name": "限制IP"
+                }
+            ],
+            "entityNo": "USER",
+            "id": 1655,
+            "name": "用户管理"
+        },
+        {
+            "children": [
+                {
+                    "children": [
+                        {
+                            "children": [],
+                            "entityNo": "CUSTOMER_SELECT_DIRECTLY",
+                            "id": 1668,
+                            "name": "直属客户"
+                        },
+                        {
+                            "children": [],
+                            "entityNo": "CUSTOMER_SELECT_SUBORDINATE",
+                            "id": 1669,
+                            "name": "下属客户"
+                        },
+                        {
+                            "children": [],
+                            "entityNo": "CUSTOMER_SELECT_ALL",
+                            "id": 1670,
+                            "name": "所有客户"
+                        },
+                        {
+                            "children": [],
+                            "entityNo": "CUSTOMER_SELECT_WILD",
+                            "id": 1671,
+                            "name": "无归属客户"
+                        }
+                    ],
+                    "entityNo": "CUSTOMER_SELECT",
+                    "id": 1667,
+                    "name": "查看客户"
+                },
+                {
+                    "children": [],
+                    "entityNo": "CUSTOMER_ADD",
+                    "id": 1672,
+                    "name": "添加客户"
+                },
+                {
+                    "children": [],
+                    "entityNo": "CUSTOMER_MODIFY",
+                    "id": 1673,
+                    "name": "修改客户"
+                },
+                {
+                    "children": [],
+                    "entityNo": "CUSTOMER_DELETE",
+                    "id": 1674,
+                    "name": "删除客户"
+                },
+                {
+                    "children": [],
+                    "entityNo": "CUSTOMER_TRANSFER",
+                    "id": 1675,
+                    "name": "划转客户"
+                }
+            ],
+            "entityNo": "CUSTOMER",
+            "id": 1666,
+            "name": "客户管理"
+        },
+        {
+            "children": [
+                {
+                    "children": [
+                        {
+                            "children": [],
+                            "entityNo": "MESSAGE_SELECT_SYSTEM-NOTIFICATION",
+                            "id": 1678,
+                            "name": "查看系统通知"
+                        },
+                        {
+                            "children": [],
+                            "entityNo": "MESSAGE_SELECT_POP",
+                            "id": 1679,
+                            "name": "查看弹窗推送"
+                        }
+                    ],
+                    "entityNo": "MESSAGE_SELECT",
+                    "id": 1677,
+                    "name": "查看消息"
+                },
+                {
+                    "children": [
+                        {
+                            "children": [],
+                            "entityNo": "MESSAGE_SEND_BROKER",
+                            "id": 1681,
+                            "name": "发送给Broker用户"
+                        },
+                        {
+                            "children": [],
+                            "entityNo": "MESSAGE_SEND_TRADER",
+                            "id": 1682,
+                            "name": "发送给Trader用户"
+                        },
+                        {
+                            "children": [],
+                            "entityNo": "MESSAGE_SEND_ACCOUNT-HOLDER",
+                            "id": 1683,
+                            "name": "发给交易账户持有人"
+                        },
+                        {
+                            "children": [],
+                            "entityNo": "MESSAGE_SEND_ALL-CUSTOMER",
+                            "id": 1684,
+                            "name": "发给所有客户"
+                        }
+                    ],
+                    "entityNo": "MESSAGE_SEND",
+                    "id": 1680,
+                    "name": "发送消息"
+                }
+            ],
+            "entityNo": "MESSAGE",
+            "id": 1676,
+            "name": "消息管理"
+        },
+        {
+            "children": [
+                {
+                    "children": [
+                        {
+                            "children": [
+                                {
+                                    "children": [],
+                                    "entityNo": "ACCOUNT_SELECT_DIRECTLY_BASE",
+                                    "id": 1688,
+                                    "name": "基本资料"
+                                },
+                                {
+                                    "children": [],
+                                    "entityNo": "ACCOUNT_SELECT_DIRECTLY_FIN",
+                                    "id": 1689,
+                                    "name": "财务信息"
+                                },
+                                {
+                                    "children": [],
+                                    "entityNo": "ACCOUNT_SELECT_DIRECTLY_ID",
+                                    "id": 1690,
+                                    "name": "证件信息"
+                                },
+                                {
+                                    "children": [],
+                                    "entityNo": "ACCOUNT_SELECT_DIRECTLY_ACC",
+                                    "id": 1691,
+                                    "name": "账户信息"
+                                },
+                                {
+                                    "children": [],
+                                    "entityNo": "ACCOUNT_SELECT_DIRECTLY_LEVER",
+                                    "id": 1692,
+                                    "name": "杠杆"
+                                },
+                                {
+                                    "children": [],
+                                    "entityNo": "ACCOUNT_SELECT_DIRECTLY_DW",
+                                    "id": 1693,
+                                    "name": "出入金"
+                                },
+                                {
+                                    "children": [],
+                                    "entityNo": "ACCOUNT_SELECT_DIRECTLY_CREDIT",
+                                    "id": 1694,
+                                    "name": "信用"
+                                },
+                                {
+                                    "children": [],
+                                    "entityNo": "ACCOUNT_SELECT_DIRECTLY_PWD",
+                                    "id": 1695,
+                                    "name": "密码"
+                                }
+                            ],
+                            "entityNo": "ACCOUNT_SELECT_DIRECTLY",
+                            "id": 1687,
+                            "name": "查看归属给我的账户"
+                        },
+                        {
+                            "children": [
+                                {
+                                    "children": [],
+                                    "entityNo": "ACCOUNT_SELECT_SUBORDINATE_BASE",
+                                    "id": 1697,
+                                    "name": "基本资料"
+                                },
+                                {
+                                    "children": [],
+                                    "entityNo": "ACCOUNT_SELECT_SUBORDINATE_FIN",
+                                    "id": 1698,
+                                    "name": "财务信息"
+                                },
+                                {
+                                    "children": [],
+                                    "entityNo": "ACCOUNT_SELECT_SUBORDINATE_ID",
+                                    "id": 1699,
+                                    "name": "证件信息"
+                                },
+                                {
+                                    "children": [],
+                                    "entityNo": "ACCOUNT_SELECT_SUBORDINATE_ACC",
+                                    "id": 1700,
+                                    "name": "账户信息"
+                                },
+                                {
+                                    "children": [],
+                                    "entityNo": "ACCOUNT_SELECT_SUBORDINATE_LEVER",
+                                    "id": 1701,
+                                    "name": "杠杆"
+                                },
+                                {
+                                    "children": [],
+                                    "entityNo": "ACCOUNT_SELECT_SUBORDINATE_DW",
+                                    "id": 1702,
+                                    "name": "出入金"
+                                },
+                                {
+                                    "children": [],
+                                    "entityNo": "ACCOUNT_SELECT_SUBORDINATE_CREDIT",
+                                    "id": 1703,
+                                    "name": "信用"
+                                },
+                                {
+                                    "children": [],
+                                    "entityNo": "ACCOUNT_SELECT_SUBORDINATE_PWD",
+                                    "id": 1704,
+                                    "name": "密码"
+                                }
+                            ],
+                            "entityNo": "ACCOUNT_SELECT_SUBORDINATE",
+                            "id": 1696,
+                            "name": "查看归属给下级的账户"
+                        },
+                        {
+                            "children": [
+                                {
+                                    "children": [],
+                                    "entityNo": "ACCOUNT_SELECT_ALL_BASE",
+                                    "id": 1706,
+                                    "name": "基本资料"
+                                },
+                                {
+                                    "children": [],
+                                    "entityNo": "ACCOUNT_SELECT_ALL_FIN",
+                                    "id": 1707,
+                                    "name": "财务信息"
+                                },
+                                {
+                                    "children": [],
+                                    "entityNo": "ACCOUNT_SELECT_ALL_ID",
+                                    "id": 1708,
+                                    "name": "证件信息"
+                                },
+                                {
+                                    "children": [],
+                                    "entityNo": "ACCOUNT_SELECT_ALL_ACC",
+                                    "id": 1709,
+                                    "name": "账户信息"
+                                },
+                                {
+                                    "children": [],
+                                    "entityNo": "ACCOUNT_SELECT_ALL_LEVER",
+                                    "id": 1710,
+                                    "name": "杠杆"
+                                },
+                                {
+                                    "children": [],
+                                    "entityNo": "ACCOUNT_SELECT_ALL_DW",
+                                    "id": 1711,
+                                    "name": "出入金"
+                                },
+                                {
+                                    "children": [],
+                                    "entityNo": "ACCOUNT_SELECT_ALL_CREDIT",
+                                    "id": 1712,
+                                    "name": "信用"
+                                },
+                                {
+                                    "children": [],
+                                    "entityNo": "ACCOUNT_SELECT_ALL_PWD",
+                                    "id": 1713,
+                                    "name": "密码"
+                                }
+                            ],
+                            "entityNo": "ACCOUNT_SELECT_ALL",
+                            "id": 1705,
+                            "name": "查看平台所有账户"
+                        },
+                        {
+                            "children": [
+                                {
+                                    "children": [],
+                                    "entityNo": "ACCOUNT_SELECT_WILD_BASE",
+                                    "id": 1996,
+                                    "name": "基本资料"
+                                },
+                                {
+                                    "children": [],
+                                    "entityNo": "ACCOUNT_SELECT_WILD_FIN",
+                                    "id": 1997,
+                                    "name": "财务信息"
+                                },
+                                {
+                                    "children": [],
+                                    "entityNo": "ACCOUNT_SELECT_WILD_ID",
+                                    "id": 1998,
+                                    "name": "证件信息"
+                                },
+                                {
+                                    "children": [],
+                                    "entityNo": "ACCOUNT_SELECT_WILD_ACC",
+                                    "id": 1999,
+                                    "name": "账户信息"
+                                },
+                                {
+                                    "children": [],
+                                    "entityNo": "ACCOUNT_SELECT_WILD_LEVER",
+                                    "id": 2000,
+                                    "name": "杠杆"
+                                },
+                                {
+                                    "children": [],
+                                    "entityNo": "ACCOUNT_SELECT_WILD_DW",
+                                    "id": 2001,
+                                    "name": "出入金"
+                                },
+                                {
+                                    "children": [],
+                                    "entityNo": "ACCOUNT_SELECT_WILD_CREDIT",
+                                    "id": 2002,
+                                    "name": "信用"
+                                },
+                                {
+                                    "children": [],
+                                    "entityNo": "ACCOUNT_SELECT_WILD_PWD",
+                                    "id": 2003,
+                                    "name": "密码"
+                                }
+                            ],
+                            "entityNo": "ACCOUNT_SELECT_WILD",
+                            "id": 1714,
+                            "name": "查看无归属账户"
+                        }
+                    ],
+                    "entityNo": "ACCOUNT_SELECT",
+                    "id": 1686,
+                    "name": "查看账户"
+                },
+                {
+                    "children": [],
+                    "entityNo": "ACCOUNT_OPEN",
+                    "id": 1723,
+                    "name": "开户"
+                },
+                {
+                    "children": [],
+                    "entityNo": "ACCOUNT_MODIFY-PERSONAL",
+                    "id": 1724,
+                    "name": "修改账户所有人资料"
+                },
+                {
+                    "children": [],
+                    "entityNo": "ACCOUNT_MODIFY-LEVER",
+                    "id": 1725,
+                    "name": "修改杠杆"
+                },
+                {
+                    "children": [],
+                    "entityNo": "ACCOUNT_MODIFY-PWD",
+                    "id": 1726,
+                    "name": "修改密码"
+                },
+                {
+                    "children": [],
+                    "entityNo": "ACCOUNT_MODIFY-DW",
+                    "id": 1727,
+                    "name": "出入金"
+                },
+                {
+                    "children": [],
+                    "entityNo": "ACCOUNT_MODIFY-CREDIT",
+                    "id": 1728,
+                    "name": "修改信用"
+                },
+                {
+                    "children": [],
+                    "entityNo": "ACCOUNT_DELETE",
+                    "id": 1729,
+                    "name": "删除账户"
+                },
+                {
+                    "children": [],
+                    "entityNo": "ACCOUNT_MODIFY-DATA",
+                    "id": 1730,
+                    "name": "修改账户信息"
+                },
+                {
+                    "children": [],
+                    "entityNo": "ACCOUNT_ADDCUSTOMER",
+                    "id": 1731,
+                    "name": "创建客户"
+                }
+            ],
+            "entityNo": "ACCOUNT",
+            "id": 1685,
+            "name": "账户管理"
+        },
+        {
+            "children": [
+                {
+                    "children": [],
+                    "entityNo": "TASK_ENABLE",
+                    "id": 1733,
+                    "name": "启用任务管理模块"
+                }
+            ],
+            "entityNo": "TASK",
+            "id": 1732,
+            "name": "任务管理"
+        },
+        {
+            "children": [
+                {
+                    "children": [
+                        {
+                            "children": [
+                                {
+                                    "children": [],
+                                    "entityNo": "SYSTEM_MESSAGE_SN_ADD",
+                                    "id": 1737,
+                                    "name": "添加"
+                                },
+                                {
+                                    "children": [],
+                                    "entityNo": "SYSTEM_MESSAGE_SN_UPDATE",
+                                    "id": 1738,
+                                    "name": "编辑"
+                                },
+                                {
+                                    "children": [],
+                                    "entityNo": "SYSTEM_MESSAGE_SN_DELETE",
+                                    "id": 1739,
+                                    "name": "删除"
+                                },
+                                {
+                                    "children": [],
+                                    "entityNo": "SYSTEM_MESSAGE_SN_USE",
+                                    "id": 1740,
+                                    "name": "使用"
+                                }
+                            ],
+                            "entityNo": "SYSTEM_MESSAGE_SN",
+                            "id": 1736,
+                            "name": "系统通知模板"
+                        },
+                        {
+                            "children": [
+                                {
+                                    "children": [],
+                                    "entityNo": "SYSTEM_MESSAGE_TP_ADD",
+                                    "id": 1742,
+                                    "name": "添加"
+                                },
+                                {
+                                    "children": [],
+                                    "entityNo": "SYSTEM_MESSAGE_TP_UPDATE",
+                                    "id": 1743,
+                                    "name": "编辑"
+                                },
+                                {
+                                    "children": [],
+                                    "entityNo": "SYSTEM_MESSAGE_TP_DELETE",
+                                    "id": 1744,
+                                    "name": "删除"
+                                },
+                                {
+                                    "children": [],
+                                    "entityNo": "SYSTEM_MESSAGE_TP_USE",
+                                    "id": 1745,
+                                    "name": "使用"
+                                }
+                            ],
+                            "entityNo": "SYSTEM_MESSAGE_TP",
+                            "id": 1741,
+                            "name": "弹窗推送模板"
+                        },
+                        {
+                            "children": [
+                                {
+                                    "children": [],
+                                    "entityNo": "SYSTEM_MESSAGE_EP_ADD",
+                                    "id": 1747,
+                                    "name": "添加"
+                                },
+                                {
+                                    "children": [],
+                                    "entityNo": "SYSTEM_MESSAGE_EP_UPDATE",
+                                    "id": 1748,
+                                    "name": "编辑"
+                                },
+                                {
+                                    "children": [],
+                                    "entityNo": "SYSTEM_MESSAGE_EP_DELETE",
+                                    "id": 1749,
+                                    "name": "删除"
+                                },
+                                {
+                                    "children": [],
+                                    "entityNo": "SYSTEM_MESSAGE_EP_USE",
+                                    "id": 1750,
+                                    "name": "使用"
+                                }
+                            ],
+                            "entityNo": "SYSTEM_MESSAGE_EP",
+                            "id": 1746,
+                            "name": "邮件推送模板"
+                        }
+                    ],
+                    "entityNo": "SYSTEM_MESSAGE",
+                    "id": 1735,
+                    "name": "消息设置"
+                },
+                {
+                    "children": [
+                        {
+                            "children": [],
+                            "entityNo": "SYSTEM_LOG_BASIC",
+                            "id": 1752,
+                            "name": "基础模块"
+                        },
+                        {
+                            "children": [],
+                            "entityNo": "SYSTEM_LOG_USER",
+                            "id": 1753,
+                            "name": "用户模块"
+                        },
+                        {
+                            "children": [],
+                            "entityNo": "SYSTEM_LOG_MESSAGE",
+                            "id": 1754,
+                            "name": "消息模块"
+                        },
+                        {
+                            "children": [],
+                            "entityNo": "SYSTEM_LOG_CUSTOMER",
+                            "id": 1755,
+                            "name": "客户模块"
+                        },
+                        {
+                            "children": [],
+                            "entityNo": "SYSTEM_LOG_ACCOUNT",
+                            "id": 1756,
+                            "name": "账户模块"
+                        },
+                        {
+                            "children": [],
+                            "entityNo": "SYSTEM_LOG_SYSTEM",
+                            "id": 1757,
+                            "name": "系统模块"
+                        }
+                    ],
+                    "entityNo": "SYSTEM_LOG",
+                    "id": 1751,
+                    "name": "操作日志"
+                },
+                {
+                    "children": [
+                        {
+                            "children": [],
+                            "entityNo": "SYSTEM_USER_ROLEAUTH",
+                            "id": 1759,
+                            "name": "角色权限设置"
+                        },
+                        {
+                            "children": [],
+                            "entityNo": "SYSTEM_USER_LEVEL",
+                            "id": 1760,
+                            "name": "用户层级设置"
+                        }
+                    ],
+                    "entityNo": "SYSTEM_USER",
+                    "id": 1758,
+                    "name": "用户管理"
+                },
+                {
+                    "children": [
+                        {
+                            "children": [],
+                            "entityNo": "SYSTEM_ACCOUNT_GROUP",
+                            "id": 1762,
+                            "name": "账户组设置"
+                        }
+                    ],
+                    "entityNo": "SYSTEM_ACCOUNT",
+                    "id": 1761,
+                    "name": "账户管理"
+                },
+                {
+                    "children": [],
+                    "entityNo": "SYSTEM_REBATE",
+                    "id": 1789,
+                    "name": "返佣设置"
+                }
+            ],
+            "entityNo": "SYSTEM",
+            "id": 1734,
+            "name": "系统设置"
+        },
+        {
+            "children": [
+                {
+                    "children": [],
+                    "entityNo": "TAUSER_ENABLE",
+                    "id": 1764,
+                    "name": "启用TA用户管理模块\t"
+                }
+            ],
+            "entityNo": "TAUSER",
+            "id": 1763,
+            "name": "TA用户管理"
+        },
+        {
+            "children": [
+                {
+                    "children": [
+                        {
+                            "children": [
+                                {
+                                    "children": [
+                                        {
+                                            "children": [],
+                                            "entityNo": "STAT_VIEW_ACC_REPORTTYPE_ZACC",
+                                            "id": 1769,
+                                            "name": "综合账户报表"
+                                        },
+                                        {
+                                            "children": [],
+                                            "entityNo": "STAT_VIEW_ACC_REPORTTYPE_FUND",
+                                            "id": 1770,
+                                            "name": "综合资金报表"
+                                        },
+                                        {
+                                            "children": [],
+                                            "entityNo": "STAT_VIEW_ACC_REPORTTYPE_POSITION",
+                                            "id": 1771,
+                                            "name": "持仓查询"
+                                        },
+                                        {
+                                            "children": [],
+                                            "entityNo": "STAT_VIEW_ACC_REPORTTYPE_GUADAN",
+                                            "id": 1772,
+                                            "name": "挂单查询"
+                                        },
+                                        {
+                                            "children": [],
+                                            "entityNo": "STAT_VIEW_ACC_REPORTTYPE_HISTORY",
+                                            "id": 1773,
+                                            "name": "交易历史查询"
+                                        }
+                                    ],
+                                    "entityNo": "STAT_VIEW_ACC_REPORTTYPE",
+                                    "id": 1768,
+                                    "name": "报表类型\t"
+                                },
+                                {
+                                    "children": [
+                                        {
+                                            "children": [],
+                                            "entityNo": "STAT_VIEW_ACC_RANGE_MY",
+                                            "id": 1775,
+                                            "name": "归属给我的账户\t"
+                                        },
+                                        {
+                                            "children": [],
+                                            "entityNo": "STAT_VIEW_ACC_RANGE_SUB",
+                                            "id": 1776,
+                                            "name": "归属给下级的账户"
+                                        },
+                                        {
+                                            "children": [],
+                                            "entityNo": "STAT_VIEW_ACC_RANGE_NO",
+                                            "id": 1777,
+                                            "name": "无归属账户"
+                                        },
+                                        {
+                                            "children": [],
+                                            "entityNo": "STAT_VIEW_ACC_RANGE_ALL",
+                                            "id": 1779,
+                                            "name": "平台所有账户"
+                                        }
+                                    ],
+                                    "entityNo": "STAT_VIEW_ACC_RANGE",
+                                    "id": 1774,
+                                    "name": "账户归属查看范围"
+                                }
+                            ],
+                            "entityNo": "STAT_VIEW_ACC",
+                            "id": 1767,
+                            "name": "账户报表"
+                        },
+                        {
+                            "children": [
+                                {
+                                    "children": [
+                                        {
+                                            "children": [],
+                                            "entityNo": "STAT_VIEW_COMMISSION_REPORTTYPE_TRADE",
+                                            "id": 1782,
+                                            "name": "交易返佣报表"
+                                        },
+                                        {
+                                            "children": [],
+                                            "entityNo": "STAT_VIEW_COMMISSION_REPORTTYPE_DEPOSIT",
+                                            "id": 1783,
+                                            "name": "入金返佣报表"
+                                        },
+                                        {
+                                            "children": [],
+                                            "entityNo": "STAT_VIEW_COMMISSION_REPORTTYPE_PROFIT",
+                                            "id": 1784,
+                                            "name": "盈利分成返佣报表"
+                                        },
+                                        {
+                                            "children": [],
+                                            "entityNo": "STAT_VIEW_COMMISSION_REPORTTYPE_AUTO",
+                                            "id": 1785,
+                                            "name": "自动返佣报表"
+                                        },
+                                        {
+                                            "children": [],
+                                            "entityNo": "STAT_VIEW_COMMISSION_REPORTTYPE_NETDEPOSIT",
+                                            "id": 2004,
+                                            "name": "净入金返佣报表"
+                                        }
+                                    ],
+                                    "entityNo": "STAT_VIEW_COMMISSION_REPORTTYPE",
+                                    "id": 1781,
+                                    "name": "报表类型"
+                                },
+                                {
+                                    "children": [
+                                        {
+                                            "children": [],
+                                            "entityNo": "STAT_VIEW_COMMISSION_RANGE_SUB",
+                                            "id": 1787,
+                                            "name": "下级的返佣"
+                                        },
+                                        {
+                                            "children": [],
+                                            "entityNo": "STAT_VIEW_COMMISSION_RANGE_ALL",
+                                            "id": 1788,
+                                            "name": "平台所有用户的返佣\t"
+                                        }
+                                    ],
+                                    "entityNo": "STAT_VIEW_COMMISSION_RANGE",
+                                    "id": 1786,
+                                    "name": "返佣对象查看范围"
+                                }
+                            ],
+                            "entityNo": "STAT_VIEW_COMMISSION",
+                            "id": 1780,
+                            "name": "佣金报表"
+                        }
+                    ],
+                    "entityNo": "STAT_VIEW",
+                    "id": 1766,
+                    "name": "查看统计报表"
+                }
+            ],
+            "entityNo": "STAT",
+            "id": 1765,
+            "name": "统计报表"
+        }
+    ],
+    "mcode": "m0000000",
+    "result": true
+}

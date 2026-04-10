@@ -1,0 +1,152 @@
+{
+  "data": {
+    "list": [
+      {
+        "createTime": 1481875756197,
+        "customName": "monkey",
+        "customNo": "U2016121608091626519",
+        "customerId": "e6b5a09e-bd5c-477e-a380-57d76a2736dd",
+        "enabled": true,
+        "extra": {},
+        "modifyTime": 1481875756197,
+        "tenantId": "T001001"
+      },
+      {
+        "createTime": 1481875435808,
+        "customName": "zita",
+        "customNo": "U2016121608035507314",
+        "customerId": "dec80720-0229-475d-aa64-bb130867f326",
+        "enabled": true,
+        "extra": {},
+        "modifyTime": 1481875435808,
+        "tenantId": "T001001"
+      },
+      {
+        "createTime": 1481873436317,
+        "customName": "hehe",
+        "customNo": "U2016121607303628435",
+        "customerId": "d77a2c0b-3444-4a4e-9216-8e7ce3ec66ef",
+        "email": "1231@qq.com",
+        "enabled": true,
+        "extra": {},
+        "modifyTime": 1481873987063,
+        "phones": {
+          "phone": "1388031236",
+          "phoneStr": "1388031236"
+        },
+        "tenantId": "T001001"
+      },
+      {
+        "createTime": 1481870125091,
+        "customName": "sunny(勿删！勿删！)",
+        "customNo": "U2016121606352525716",
+        "customerId": "df1f7c61-0060-4f9b-88f6-a7128fa00063",
+        "enabled": true,
+        "extra": {},
+        "modifyTime": 1481870125091,
+        "tenantId": "T001001"
+      },
+      {
+        "ambitious": "2",
+        "country": {
+          "city": "3243",
+          "country": "3225",
+          "province": "7045"
+        },
+        "createTime": 1481736192308,
+        "customName": "郑爽",
+        "customNo": "U2016121417231264918",
+        "customerId": "b9817dcb-c943-4d84-a729-d8266f0aa116",
+        "enabled": true,
+        "extra": {},
+        "idType": "12",
+        "modifyTime": 1481868483945,
+        "phones": {
+          "countryCode": "+86"
+        },
+        "tenantId": "T001001"
+      },
+      {
+        "address": "999",
+        "ambitious": "2",
+        "comments": "999",
+        "country": {
+          "city": "797",
+          "country": "1",
+          "province": "792"
+        },
+        "createTime": 1481867789525,
+        "creator": "121",
+        "customName": "qingfeng",
+        "customNo": "999",
+        "customSource": "6",
+        "customerId": "3accc37d-a593-4188-9f87-2d9dc7f6ae79",
+        "email": "999",
+        "enabled": true,
+        "extra": {},
+        "idNum": "999",
+        "idType": "1",
+        "introducer": "999",
+        "modifyTime": 1481867937644,
+        "phones": {
+          "phone": "999",
+          "phoneStr": "999"
+        },
+        "postcode": "999",
+        "site": "999",
+        "tenantId": "T001001"
+      },
+      {
+        "createTime": 1481859550769,
+        "customName": "bytest",
+        "customNo": "U2016121603391040156",
+        "customerId": "fd80f24d-9bcb-4ce3-9477-91b2a0f352cc",
+        "enabled": true,
+        "extra": {},
+        "modifyTime": 1481859550769,
+        "tenantId": "T001001"
+      },
+      {
+        "createTime": 1481858271227,
+        "customName": "hengxing",
+        "customNo": "U2016121603175124087",
+        "customerId": "6551bbb4-13de-4d85-a034-353ea3277f12",
+        "enabled": true,
+        "extra": {},
+        "modifyTime": 1481858271227,
+        "tenantId": "T001001"
+      },
+      {
+        "createTime": 1481857878461,
+        "customName": "郑爽",
+        "customNo": "U2016121603111834671",
+        "customerId": "f9c3fff1-b7d3-4534-bd7c-ba81f64bcb6e",
+        "enabled": true,
+        "extra": {},
+        "modifyTime": 1481857878461,
+        "tenantId": "T001001"
+      },
+      {
+        "ambitious": "1",
+        "createTime": 1481783860977,
+        "customName": "power",
+        "customNo": "U2016121506374007891",
+        "customSource": "1",
+        "customerId": "5c4ccdde-d678-4ba4-8af8-4190defacc43",
+        "enabled": true,
+        "extra": {},
+        "idType": "2",
+        "modifyTime": 1481814926520,
+        "oweName": "",
+        "tenantId": "T001001"
+      }
+    ],
+    "offset": 0,
+    "pager": 1,
+    "pages": 22,
+    "size": 10,
+    "total": 217
+  },
+  "mcode": "m0000000",
+  "result": true
+}

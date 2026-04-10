@@ -1,0 +1,51 @@
+{
+    "data": [
+        {
+            "groups": [
+                "D01DemoLWVIR",
+                "D02DemoLWVIR",
+                "D03DemoLWVIR",
+                "D04DemoLWVIR",
+                "D05DemoLWVIR",
+                "demoTB"
+            ],
+            "serverId": "1",
+            "serverName": "MT4真实测试1"
+        },
+        {
+            "groups": [
+                "D05DemoLWVIR"
+            ],
+            "serverId": "5",
+            "serverName": "MT4真实测试2-我就是第二个真实服务器"
+        },
+        {
+            "groups": [
+                "managers\\administrators",
+                "managers\\dealers",
+                "demo\\demoforex",
+                "real\\real",
+                "preliminary",
+                "To_MT5",
+                "real\\hedgeing",
+                "test",
+                "demo\\demoforex-D",
+                "demo\\demoforex\\1",
+                "demo\\demoforex\\1\\2",
+                "real\\xie\\neting",
+                "real\\xie\\hedgeing",
+                "real\\DGM",
+                "real\\LMAX",
+                "real\\DGMHedgin",
+                "real\\LMAXHedgin",
+                "managers\\1",
+                "real\\Jin\\Jin01",
+                "coverage"
+            ],
+            "serverId": "6",
+            "serverName": "MT5真实测试1"
+        }
+    ],
+    "mcode": "m0000000",
+    "result": true
+}
